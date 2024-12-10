@@ -57,6 +57,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. In **Type here to search**, type **Windows Powershell (1)**, on the **Windows Powershell (2)**, select **Run as administrator (3)**, and run the following commands to assign the usage location to all the users:
 
+    ![Access Your VM and Lab Guide](../Images/powershell.png)
+
     ```powershell
     Install-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201 -Force
     ```
@@ -81,8 +83,6 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 	```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation US
 	```
-
-    ![Access Your VM and Lab Guide](../Images/powershell.png)
 
 12. Close the **Windows Powershell**. Now, you can start with the Task 1.
 
@@ -236,7 +236,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. In the **Customize Microsoft 365 for your organization** pane that appears, you can customize the default theme that users see when signed into Microsoft 365, and you can add additional custom themes. Select the **+ Add theme** option.
 
-1. In the **Customize Microsoft 365 for your organization** pane that appears, notice how it displays the **Default theme**. Select the **Default theme**. 
+1. In the **Customize Microsoft 365 for your organization** pane that appears, notice how it displays the **Default theme**. 
 
 1. On the **Default theme** pane, notice how the **Show the user's display name** option is not selected. Select that check box, and **Save it**. Select the back arrow at the top of the pane to return to  the **Customize Microsoft 365 for your organization** pane.
 
@@ -262,7 +262,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. Select **Save**. Close the **M365 pilot project theme** pane once your changes are saved. 
 
-1. Select the **Refresh** icon at the top of the screen, to the left of the address bar. Once the screen refreshes, note how the **ODL user** name appears to the left of the circle with the **O1** initials. The signed-in user's name now appears to the left of their profile picture or initials due to the custom theme that you just created.
+1. Select the **Refresh** icon at the top of the screen, to the right of the address bar. Once the screen refreshes, note how the **ODL user** name appears to the right of the circle with the **O1** initials. The signed-in user's name now appears to the right of their profile picture or initials due to the custom theme that you just created.
 
 1. In the list of organization profile data, select **Custom themes**. Close the **Customize Microsoft 365 for your organization** pane.
 
@@ -302,9 +302,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 ### Task 4 – Turn on Audit Logging to enable Alert Policies 
 
-1. In the **Microsoft 365 admin center**, under the **Admin centers** section in the left-hand navigation pane, select **Security**. This will open the **Microsoft 365 Defender** portal in a new tab in your browser.
+1. In the **Microsoft 365 admin center**, under the **Admin centers** section in the left-hand navigation pane, select **Security**. This will open the **Microsoft Defender** portal in a new tab in your browser.
 
-1. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)**.
+1. In the **Microsoft Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)**.
 
 1. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity (2)**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
 

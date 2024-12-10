@@ -8,6 +8,8 @@ Once you're ready to dive in, your virtual machine and laboratory guide will be 
  
 ![Access Your VM and Lab Guide](../Images/image-01.png)
 
+> **Note:** **LON-CL1** is your lab VM. Ensure you are connected to it.
+
 ### Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
