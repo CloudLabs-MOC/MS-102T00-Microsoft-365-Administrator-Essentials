@@ -74,7 +74,7 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 24. Close both the **Message Header Analyzer** tab and the **Microsoft Remote Connectivity Analyzer** tab in your Edge browser. 
 
-25. Select the **Microsoft 365 admin center** tab. If you had closed this tab, then select the **Home | Microsoft 365** tab in your Edge browser, select the **App launcher** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
+25. Select the **Microsoft 365 admin center** tab. If you had closed this tab, then select the **Home | Microsoft 365** tab in your Edge browser, select the **App launcher (1) (2)** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 	![](../Images/MS-102-image-14.png)
 
@@ -143,21 +143,6 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 	> ![](../Images/usageoverview.png)
 
-	<!-- 7. On the same row as this chart, view the **Email activity** chart.  
-
-	**Note:** There may be little or no data shown due to the limited mailbox usage in the lab environment. 
-
-	8. Under the **Email activity** chart, select the **View more** button. This displays the **Exchange** report dashboard. At the top of the dashboard, the **Email activity** tab is displayed by default. Select the **Mailbox usage** tab that appears to the right of it.
-
-	9. The default mailbox usage that is initially displayed is **Past 30 days** (this usage factor appears on the far-right side of the row containing the **Mailbox usage** tab). Select the down-arrow that appears next to **Past 30 days** and select one of the other options that appear in the drop-down menu (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
-
-	10. Scroll down below the charts to see mailbox details for each of the active users.
-
-	11. Scroll back to the top of the page. On the navigation thread at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage Overview page.  -->
-
-	<!-- 12. Review the various reports on this page. While there may be limited or no data for each report, you can at least get a feel for the type of reporting that's available.  -->
-
-
 1. You now want to review the reports that are available in the **Exchange admin center**. In your browser, you should have the **Message trace - Exchange admin center** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group in the navigation pane, select **Exchange**.
 
 1. In the **Exchange admin center**, select **Reports (1)** in the navigation pane, and then select **Mail flow (2)**. 
@@ -207,4 +192,4 @@ In this lab, you have:
 - Monitored Service Health and Analyze Reports.
 - Submit a Help Request to Microsoft Support.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

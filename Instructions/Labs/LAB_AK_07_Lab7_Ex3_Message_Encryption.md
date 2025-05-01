@@ -91,4 +91,4 @@ In this lab, you have:
 - Created a Mail Flow Encryption Rule using Windows PowerShell.
 
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

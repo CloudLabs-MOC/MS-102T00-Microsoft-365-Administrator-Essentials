@@ -19,7 +19,7 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 	![](../Images/L6E6T1S4-3004.png)
 
-5. On the **Select Technique** page, select the **Drive-by URL (1)** option. Under this option, select the **View details of Drive-by URL (2)** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close (3) the **Drive-by URL** pane and select **Next (4)**.
+5. On the **Select Technique** page, select the **Drive-by URL (1)** option. Under this option, select the **View details of Drive-by URL (2)** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, **close (3)** the **Drive-by URL** pane and select **Next (4)**.
 
 	![](../Images/L6E6T1S5.1-3004.png)
 
@@ -27,7 +27,7 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 	![](../Images/L6E6T1S6-3004.png)
 
-7. On the **Select payload and login page**, the **Global payloads** tab is displayed by default. Select the **Tenant payloads (1)** tab, and then select **+Create a payload (2)** on the menu bar. This initiates the **Payload** wizard.
+7. On the **Select payload and login page**, the **Global payloads** tab is displayed by default. Select the **Tenant payloads (1)** tab, and then select **+ Create a payload (2)** on the menu bar. This initiates the **Payload** wizard.
 
 	![](../Images/L6E6T1S7-3004.png)
 
@@ -39,12 +39,13 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 10. On the **Payload name** page, enter the following information: 
 
-	- Payload name: **Free gift offer**
-	- Description: **This payload is for Drive-by URL threats offering free prizes and gifts that are too good to be true**
+	- Payload name: **Free gift offer (1)**
+	
+	- Description: **This payload is for Drive-by URL threats offering free prizes and gifts that are too good to be true (2)**
 
-	![](../Images/L6E6T1S10-3004.png)
+11. Select **Next (3)**.
 
-11. Select **Next**.
+	- ![](../Images/ms-102-107.png)Select **Next**.
 
 12. On the **Configure Payload** page, enter the following information: 
 
@@ -59,15 +60,15 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 	- Email message: Under the Text tab in this **Email message** section, enter the following text in the message box; this message will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: (9)**
 	- After entering the prior message, select the **Phishing link (10)** option at the top of the text form (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
 
-	The message should now appear as: 
+	- The message should now appear as: 
 
-	Tailspin Toys is offering you a FREE, one-time only gift of the toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: **Free25thAnniversaryGift@tailspintoys.com** 
+	- Tailspin Toys is offering you a FREE, one-time only gift of the toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: **Free25thAnniversaryGift@tailspintoys.com** 
 
-	![](../Images/L6E6T1S12.1-3004.png)
+		![](../Images/L6E6T1S12.1-3004.png)
 
-	![](../Images/L6E6T1S12.2-3004.png)
+		![](../Images/L6E6T1S12.2-3004.png)
 
-	![](../Images/configure-payload-3004.png)
+		![](../Images/configure-payload-3004.png)
 
 14. Select **Next (11)**.	
 
@@ -118,12 +119,15 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 34. On the **Select end user notification** page, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification (recommended) (1)**. In the list of notifications that appears, configure the following notifications:
 
-	 - Microsoft default positive reinforcement notification - set **Delivery preferences** to **Deliver after simulation ends (2)**
-	 - Microsoft default training reminder notification - set **Delivery preferences** to  **Weekly (3)**
-
-	![](../Images/L6E6T1S33-3004.png)
+	- Microsoft default positive reinforcement notification 
+	
+	- set **Delivery preferences** to **Deliver after simulation ends (2)**
+	
+	- Microsoft default training reminder notification - set **Delivery preferences** to  **Weekly (3)**
 
 35. Select **Next (4)**.
+
+	![](../Images/L6E6T1S33-3004.png)
 
 36. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
@@ -197,5 +201,5 @@ In this lab, you have:
 - Reviewed the Drive-by URL attack results.
 - Disabled Multi-factor Authentication for the Global Admin.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
  

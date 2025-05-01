@@ -17,7 +17,7 @@ In addition, Holly doesn't want to be forced to approve the role assignment when
 
 1. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
 
-1. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Identity**, select **Groups** and then select **All groups**.
+1. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Identity (1)**, select **Groups (2)** and then select **All groups (3)**.
 
     ![](../Images/L4E2T1S3.png)
 
@@ -37,7 +37,7 @@ In addition, Holly doesn't want to be forced to approve the role assignment when
 
     - Membership type - **Assigned (5)**
 
-    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly@otuwamsbZZZZZZ.onmicrosoft.com (6)** in the **Search** field and select the **Holly**'s user account.
+    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly@otuwamocZZZZZZ.onmicrosoft.com (6)** in the **Search** field and select the **Holly**'s user account.
 
     - Members - Select **No members selected (7)**. In the **Add members** pane, Enter **Alex** in the search field and then select **Alex Wilber**. Enter **Joni** in the Search field, and then select **Joni Sherman**.
 
@@ -67,7 +67,7 @@ In addition, Holly doesn't want to be forced to approve the role assignment when
 
      ![](../Images/L4E2T1S11.png)
 
-1. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Helpdesk Administrator**.
+1. In the **Adatum Corporation | Roles (1)** window, scroll down through the list of roles and select **Helpdesk Administrator (2)**.
 
      ![](../Images/L4E2T1S12.png)
 

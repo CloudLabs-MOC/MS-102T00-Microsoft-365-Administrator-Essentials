@@ -57,4 +57,4 @@ In this lab, you have:
 - Tested the first DLP Policy rule.
 - Tested the second DLP Policy rule.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

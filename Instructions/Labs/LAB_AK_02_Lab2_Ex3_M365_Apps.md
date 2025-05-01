@@ -74,9 +74,11 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 	![](../Images/computermanagement.png)
 
-1. Click on **Add** and in **Enter the object names to select**, type **Laura (1)** and click on **Ok (2)**. It will pop up a dialog box to enter **Network Credentials** of Laura, please enter **Username** as **adatum\laura** and **password** as **Pa55w.rd**. 
+1. Click on **Add** and in **Enter the object names to select**, type **Laura (1)** and click on **Ok (2)**.
 
 	![](../Images/L2E3T1S13-2904.png)
+
+1. It will pop up a dialog box to enter **Network Credentials** of Laura, please enter **Username** as **adatum\laura** and **password** as **Pa55w.rd**. Select **OK**.
 
 	![](../Images/L2E3T1S13.2-2904.png)
 
@@ -108,21 +110,19 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 1. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
 
-1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
-	
-	- Password:- <inject key="AzureAdUserPassword"></inject> and then select **Sign in.**
+	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-		>**Note**: if it asks you to change the password, then change the password for the laura's account.
+1. In the **Enter password** window, enter **<inject key="AzureAdUserPassword"></inject>** and then select **Sign in.**
 
-		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+	>**Note**: if it asks you to change the password, then change the password for the laura's account.
 
 1. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. In the **Save password** window, select **Never**.
 
-1. In the **Welcome to Microsoft 365** dialog box that appears in the middle of the screen, select the forward arrow twice and then the check mark. 
+1. In the **Welcome to Microsoft 365 Copilot** dialog box that appears in the middle of the screen, select the forward arrow twice and then the check mark. 
 
-1. In the **Welcome to Microsoft 365** window (which is Laura's Microsoft 365 home page), notice that no column of Microsoft 365 app icons appears in the navigation pane on the left-side of the screen. This is because Laura has not been assigned a Microsoft 365 license. Select the **Install and more (1)** button, and then in the drop-down menu that appears, select **Install Microsoft 365 apps (2)**. This opens the **My account** window for Laura.
+1. In the **Welcome to Microsoft 365 Copilot** window (which is Laura's Microsoft 365 home page), notice that no column of Microsoft 365 app icons appears in the navigation pane on the left-side of the screen. This is because Laura has not been assigned a Microsoft 365 license. Select the **Install and more (1)** button, and then in the drop-down menu that appears, select **Install Microsoft 365 apps (2)**. This opens the **My account** window for Laura.
 
-	![](../Images/installapps.png)
+	![](../Images/ms-102-106.png)
 
 1. In Laura's **My account** window, under the **Office apps & devices** tile, select **View apps & devices**. Note the message that appears at the top of page. Laura has not been assigned a license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. 
 
@@ -149,19 +149,11 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 
 1. In the **Microsoft 365 installation options** pane that appears, the **Feature Updates** tab is displayed by default. Select the **Installation (1)** tab that appears next to it. Then under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business) (2)** check box is currently selected. Select this check box to clear it. This disables the ability of users to download Office apps through Microsoft 365 Apps for enterprise. 
 
-	![](../Images/L2E3T2S4-2904.png)
-
 1. Select **Save (3)**. 
 
+	![](../Images/L2E3T2S4-2904.png)
+
 1. At the top of the **Microsoft 365 app installation options** pane, select the **X** in the upper-right corner of this window to close it. 
-
-	<!-- 1. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must assign Laura a Microsoft 365 license. However, since there are no available licenses, you must first unassign a license from an existing Microsoft 365 user account. In this case, Holly will unassign Pradeep Gupta's licenses, since he has taken on a new role and will no longer be involved in Adatum's Microsoft 365 pilot project.  
-
-	>**Note:** If **Pradeep Gupta** indicates **Unlicensed** then jump onto the Step-9.
-
-	1. In the **Microsoft 365 admin center** navigation pane, select **Users** and then select **Active users**. On the **Active users** page, select **Pradeep Gupta**.
-
-	1. In the **Pradeep Gupta** pane that appears, the **Account** tab is displayed by default. Select the **Licenses and apps** tab. Under **Licenses**, select the **Microsoft Business Premium** check box to clear it, and then select **Save Changes**. Close the **Pradeep Gupta** pane. The licenses that were previously assigned to Pradeep are now available for Laura.   -->
 
 1. In the **Active users (1)** list, scroll down to **Laura Atkins**. The value in the **Licenses (2)** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins (3)**.
 
@@ -280,4 +272,4 @@ In this lab, you have:
 - Verified how the global Office download setting affects installing Microsoft 365 Apps for enterprise.
 - Performed a User-Driven Installation of Microsoft 365 Apps for enterprise 
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

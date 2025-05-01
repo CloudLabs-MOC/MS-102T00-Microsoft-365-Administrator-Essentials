@@ -42,7 +42,7 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
     
     - Set all other locations to **Off**, and then select **Next**.
 
-    ![](../Images/L8E1T1S10-3004.png)
+        ![](../Images/L8E1T1S10-3004.png)
 
 1. On the **Define policy settings** page, the **Create or customize advanced DLP rules** option should be set by default (if it isn't already selected by default, then select it now) and then select **Next**. 
 
@@ -130,4 +130,4 @@ In this lab, you have:
 
 - Created a DLP policy with custom settings.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

@@ -18,11 +18,11 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
    ![](../Images/26.png)
 
-4. On the **Additional tasks** page, select the **Change user Sign-in** task and then select **Next**. 
+4. On the **Additional tasks** page, select the **Change user sign-in (1)** task and then select **Next (2)**. 
 
    ![](../Images/27.png)
 
-5. On the **Connect to Microsoft Entra** page, sign into Microsoft Entra ID. The **USERNAME** field is already filled with **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **PASSWORD** field, enter the <inject key="AzureAdUserPassword"></inject>, and then select **Next**.
+5. On the **Connect to Microsoft Entra** page, sign into Microsoft Entra ID. The **USERNAME** field is already filled with **Holly@otuwamocZZZZZZ.onmicrosoft.com (1)**. In the **PASSWORD** field, enter the **<inject key="AzureAdUserPassword"></inject>**, and then select **Next (2)**.
 
     ![](../Images/28.png)
 
@@ -36,7 +36,7 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
    ![](../Images/30.png)
 
-8. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **User name** and **Pa55w.rd** as the **Password**, and then select **OK**. 
+8. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **Username** and **Pa55w.rd** as the **Password**, and then select **OK**. 
 
 9. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**. 
 
@@ -79,13 +79,13 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 1. On LON-DC1, select the **Server Manager** icon on the taskbar if it’s already open; otherwise, open it now.
 
-2. In **Server Manager**, select **Tools** in the upper-right menu bar, and in the drop-down menu, select **Group Policy Management.**
+2. In **Server Manager**, select **Tools (1)** in the upper-right menu bar, and in the drop-down menu, select **Group Policy Management (2)**.
 
    ![](../Images/11.png)
 
 3. Maximize the **Group Policy Management** window.
 
-4. You want to edit the group policy that includes your organization's account lockout policy. If necessary, in the root console tree in the left-hand pane, expand **Forest:Adatum.com**, then expand **Domains**, and then expand **Adatum.com**.  Under **Adatum.com**, right-click on **Default Domain Policy** and then select **Edit** in the menu.
+4. You want to edit the group policy that includes your organization's account lockout policy. If necessary, in the root console tree in the left-hand pane, expand **Forest:Adatum.com**, then expand **Domains**, and then expand **Adatum.com**.  Under **Adatum.com**, right-click on **Default Domain Policy (1)** and then select **Edit (2)** in the menu.
 
    ![](../Images/10.png)
 
@@ -113,7 +113,7 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 	- In the **Custom smart lockout** section:
 
-		- **Lockout threshold:** this field indicates how many failed sign-ins are allowed on an account before its first lockout. The default is 10. For testing purposes, Adatum has requested that you set this to **3 (1)s**.
+		- **Lockout threshold:** this field indicates how many failed sign-ins are allowed on an account before its first lockout. The default is 10. For testing purposes, Adatum has requested that you set this to **3 (1)**.
 
 		- **Lockout duration in seconds:** This is the length in seconds of each lockout. The default is 60 seconds (one minute). Adatum has requested that you change this to **90 (2)** seconds.
 
@@ -180,6 +180,6 @@ In this lab, you have:
 - Deployed Microsoft Entra Pass-Through Authentication.
 - Deployed Microsoft Entra Smart Lockout.
 
-## Proceed to the next exercise.
+## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
 

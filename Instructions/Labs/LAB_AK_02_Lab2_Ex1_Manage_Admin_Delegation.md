@@ -65,7 +65,7 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box, and then select **Accept**.
+1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box, and then select **Accept (2)**.
 
 	![](../Images/ms-102-56.png)
 
@@ -334,5 +334,5 @@ In this lab, you have:
 - Assigned Delegated Administrators with Windows PowerShell.
 - Verified Delegated Administration.
 
-## Proceed to the next exercise.
+## ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 

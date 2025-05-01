@@ -79,7 +79,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. In the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the **Microsoft 365 admin center** in a new browser tab. 
 
-	>>**Note:** Select **X** for closing the **Business Advisor** pop-up.
+	>**Note:** Select **X** for closing the **Business Advisor** pop-up.
 
 1. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then under it, select **Active teams & groups**. 
 
@@ -140,7 +140,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. You will now assign Allan Deyoung and Patti Fernandez as owners of the Inside Sales group. In the **Assign owners** window, select **+ Assign owners (1)**.
 	
-1. In the **Assign owners** pane that appears, select the check boxes next to **Allan Deyoung** and **Patti Fernandez** **user (3)**, and then select the **Add (3)** button at the bottom of the pane.
+1. In the **Assign owners** pane that appears, select the check boxes next to **Allan Deyoung (2)** and **Patti Fernandez** **user (2)**, and then select the **Add (3)** button at the bottom of the pane.
 
 	![Access Your VM and Lab Guide](../Images/ms-102-41.png)
 
@@ -150,7 +150,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. You will now assign Diego Siciliani and Lynne Robbins as members of the Inside Sales group. In the **Add members** page, select **+ Add members (1)**.
 
-1. In the **Add members** pane that appears, select the check boxes next to **Diego Siciliani** and **Lynne Robbins** **users (2)**, and then select the **Add (3)** button at the bottom of the pane.
+1. In the **Add members** pane that appears, select the check boxes next to **Diego Siciliani** and **Lynne Robbins** users (2), and then select the **Add (3)** button at the bottom of the pane.
 
 	![Access Your VM and Lab Guide](../Images/ms-102-43.png)
 
@@ -216,7 +216,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. Once the three new members have been added to the group, select the **X** in the upper right-hand corner of the **Accounting** pane to close it. 
 
-1. After adding members to the Accounting group, you will be returned to the **Active teams and groups** window. Select the **Security groups** tab to display the list of Security groups, and select **+ Add a security group**. Repeat steps 3-14 to add a new group with the following information: 
+1. After adding members to the Accounting group, you will be returned to the **Active teams and groups** window. Select the **Security groups (1)** tab to display the list of Security groups, and select **+ Add a security group (2)**. Repeat steps 3-14 to add a new group with the following information: 
 
 	- Name: **IT Admins**
 
@@ -270,7 +270,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 1. To verify whether deleting this group affected any of its owners or members, select **Active Users** in the navigation pane. 
 
-1. In the **Active users** list verify that the Inside Sales group's two owners (**Allan Deyoung** and **Patti Fernandez**) and the two members (**Diego Siciliani** and **Lynne Robbins**) still appear in the list of users. This verifies that deleting a group does not delete the user accounts that were owners or members of the group.
+1. In the **Active users (1)** list verify that the Inside Sales group's two owners (**Allan Deyoung** and **Patti Fernandez** (2)) and the two members (**Diego Siciliani** and **Lynne Robbins** (2)) still appear in the list of users. This verifies that deleting a group does not delete the user accounts that were owners or members of the group.
 
 	![Access Your VM and Lab Guide](../Images/ms-102-55.png)
 
@@ -313,7 +313,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
+1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box and then select **Accept (2)**.
 
 	![Access Your VM and Lab Guide](../Images/ms-102-56.png)
 

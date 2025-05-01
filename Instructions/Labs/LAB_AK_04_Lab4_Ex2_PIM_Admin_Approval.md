@@ -31,7 +31,7 @@ In this exercise, you will perform these tasks for the Global administrator role
 
 1. On **LON-CL1**, you should still be logged into the machine and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-1. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, select **show all**, scroll down and select **All Admin centers** from the Admin centers section, and select **Microsoft Entra**.
+1. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, select **show all**, scroll down and select **All Admin centers (1)** from the Admin centers section, and select **Microsoft Entra (2)**.
 
     ![](../Images/ms-102-66.png)
 
