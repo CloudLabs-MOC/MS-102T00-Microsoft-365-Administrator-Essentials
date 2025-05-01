@@ -6,7 +6,9 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 ### Task 1 - Create a security group for Compliance Testing
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will create a security group specifically for users or devices involved in compliance testing to control access and apply targeted policies.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com**. At this point, you may have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the **Office 365 Home** tab and the **Microsoft 365 admin center** tab.
 
@@ -45,7 +47,9 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 ### Task 2 – Configure Mobile Device Management for compliance testing
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will set up Mobile Device Management (MDM) settings to enforce compliance policies on mobile devices used in the testing environment.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Microsoft Intune**. This returns the **Microsoft Intune admin center**.
 

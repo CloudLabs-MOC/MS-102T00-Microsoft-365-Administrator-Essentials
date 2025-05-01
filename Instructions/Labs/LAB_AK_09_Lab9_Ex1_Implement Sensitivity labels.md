@@ -13,6 +13,8 @@ Because we want you to gain experience creating and publishing a label and label
 
 ### Task 1 – Install the Azure Information Protection Unified Labeling client
 
+In this task, you will download and install the Azure Information Protection Unified Labeling client on your machine to enable labeling and protection features within Microsoft Office applications.
+
 1. You should still be logged into LON-CL1 and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 1. In **Microsoft Edge**, open a new tab and enter (or copy and paste) the following URL in the address bar: **[Microsoft Purview Information Protection client](https://www.microsoft.com/en-us/download/details.aspx?id=53018&lc=1033&msockid=26b47a4f8b336e87014e6f028a7f6fa0)**.
@@ -40,7 +42,9 @@ You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 ### Task 2 – Create a Sensitivity Label
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
+In this task, you will create a new sensitivity label in the Microsoft Purview compliance portal, defining classification and protection settings to control how data is handled.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 1. In your Edge browser, you should still have a tab open for the **Microsoft 365 admin center**. If not, open a new tab and enter the following URL: **https://admin.microsoft.com**.
 
@@ -195,6 +199,8 @@ You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 ### Task 3 – Assign a Sensitivity Label to a document
 
+In this task, you will apply a sensitivity label to a document using the Azure Information Protection client or supported Office application to enforce data protection policies.
+
 >**Important:** As outlined in the instructions at the start of this lab, it isn't possible to immediately test the sensitivity label and label policy that you created in the previous task. This is because it takes up to 24 hours for a new label policy to propagate through Microsoft 365 and for its label to become visible in applications like Microsoft Word and Outlook.
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
@@ -335,7 +341,7 @@ To verify whether the protection that you assigned to the document works, you wi
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabssupport@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="6d780c04-ac8f-4dea-a9d4-66ff39161d9f" />
 

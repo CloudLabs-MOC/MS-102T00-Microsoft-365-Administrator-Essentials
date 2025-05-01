@@ -6,6 +6,8 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 ### Task 1 – Create a SharePoint Permissions Alert
 
+In this task, you will set up an alert in SharePoint to notify users or administrators whenever there is a change in permissions within a document library or site. This helps track permission modifications and ensures proper access control.
+
 1. At the end of the prior lab, you were logged into LON-CL2. This lab will use LON-CL1. Switch to **LON-CL1**.
 
 2. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. In your Edge browser, select the **Alert policy - Microsoft 365 security** tab, which displays the **Microsoft 365 Defender** portal.
@@ -53,6 +55,8 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 You have now configured an additional alert policy that monitors when a user is added as a site collection administrator for a SharePoint Online site collection.
 
 ### Task 2 – Validate the  SharePoint Permissions Alert
+
+In this task, you will test the SharePoint permissions alert you created in Task 1 to ensure it is functioning correctly. You will verify that the alert triggers as expected when permission changes occur, confirming its accuracy and reliability.
 
 >**Note:** This task is currently read-only because alert emails intended for Lynne's inbox are not appearing. This issue originates from Microsoft's end, and we are actively working to resolve it.
 

@@ -12,9 +12,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
  
 ### Task 0- Pre-requisite
 
-1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the LON-CL1. If your VM environment opens with one of the other machines (such as LON-DC1), then switch to LON-CL1 now.
+1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the **LON-CL1**. If your VM environment opens with one of the other machines (such as **LON-DC1**), then switch to **LON-CL1** now.
 
-    >**Important**: LON-CL1 is the Lab-VM itself.
+    >**Important**: **LON-CL1** is the Lab-VM itself.
 
 1. In **search resources, services, and docs**, type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
@@ -76,6 +76,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 12. Close the **Windows Powershell**. Now, you can start with the Task 1.
 
 ### Task 1- Set up Adatum's Organization Profile
+
+In this task, you will configure the basic organizational settings for Adatum, including company details, contact information, and branding elements, to establish the organization's identity within the system.
 
 1. Open **Microsoft Edge**, launch a new tab, and navigate to the **Microsoft 365 Home page** by entering the URL: `https://portal.office.com` in the address bar.
 
@@ -173,6 +175,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 1. Remain logged into **LON-CL1** with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
 ### Task 2- Create a custom theme for Adatum's pilot project team 
+
+In this task, you will design and implement a custom theme tailored to Adatum's pilot project team, aligning with their branding and user experience requirements. This includes customizing colors, fonts, layouts, and other UI elements to support team identity and usability.
 
 1. In the **Microsoft 365 admin center**, select **Teams & groups (1)** in the left-hand navigation pane, and then under it, select **Active teams & groups (2)**. 
 
@@ -292,6 +296,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 ### Task 3 - Enable Information Rights Management for SharePoint Online  
 
+In this task, you will enable Information Rights Management (IRM) for SharePoint Online to protect sensitive documents by restricting actions such as copying, printing, or forwarding. This helps ensure data is only accessible to authorized users, even after downloading.
+
 >**Important:** While you will validate IRM for Exchange and SharePoint in Lab 7, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 7, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online. Keep this time issue in mind if you plan to enable IRM in your real-world deployment. 
 
 1. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane to see all the navigation options. Under the **Admin centers** group, select **SharePoint**. This will open the **SharePoint admin center** in a new tab.
@@ -319,12 +325,14 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="4727ed8b-1c44-4d48-8572-630a6026f8df" />
 
 
 ### Task 4 – Turn on Audit Logging to enable Alert Policies 
+
+In this task, you will enable Audit Logging in the Microsoft 365 compliance center to support the creation and operation of Alert Policies, allowing you to monitor and respond to user and admin activities across your organization.
 
 1. In the **Microsoft 365 admin center**, under the **Admin centers** section in the left-hand navigation pane, select **Security**. This will open the **Microsoft 365 Defender** portal in a new tab in your browser.
 
@@ -342,8 +350,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
  
 5. Close the **Microsoft 365 Defender** tab in your Edge browser. Leave your browser open and proceed to the next task. 
 
-
 ### Task 5 – Install Microsoft Graph PowerShell   
+
+In this task, you will install the Microsoft Graph PowerShell SDK to enable management and automation of Microsoft 365 services through Graph API cmdlets.
 
 1. On LON-CL1, you must open an elevated instance of **Windows PowerShell**. Type **power** in the Search box that appears in the bottom left corner of the taskbar. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu that appears. 
 

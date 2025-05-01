@@ -6,7 +6,9 @@ As in the previous lab exercises, you will take on the role of Holly Dickson, Ad
 
 During this exercise you will set up and manage Microsoft Entra Connect. You will create on-premises users and validate the sync process so that their identity is moved to the cloud. Some of the user and group maintenance steps may feel familiar from previous exercises; however, in this case they are needed to validate the synchronization process.
 
-### Task 1: Prepare problem user accounts   
+### Task 1: Prepare problem user accounts 
+
+In this task, you will identify and correct user account issues such as duplicate attributes, invalid characters, or formatting errors to ensure compatibility with Azure AD synchronization.
 
 1. Now you'll be working on **LON-DC1** VM. To do this, you must first switch back to **Hyper-V Manager**, right click on the **LON-DC1** VM and select **Connect**, on the **Connect to LON-DC1** select **Connect**. On the desktop window **Administrator** name will display, enter the **Pa55w.rd**, and select forward arrow.
 
@@ -28,6 +30,8 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 
 
 ### Task 2: Run the IdFix tool and fix identified issues 
+
+In this task, you will use the IdFix tool to scan your on-premises Active Directory for synchronization errors and apply recommended fixes to resolve conflicts or policy violations.
 
 1. You should still be logged into **LON-DC1** as the **Administrator** from the prior task. 
 
@@ -76,7 +80,9 @@ During this exercise you will set up and manage Microsoft Entra Connect. You wil
 15. Leave your Edge browser open. However, you can close the **Step 2: Install Id-Fix - Microsoft - IdFix** tab since you are done using IdFix.
 
 
-### Task 3: Prepare for Directory Synchronization    
+### Task 3: Prepare for Directory Synchronization  
+
+In this task, you will verify prerequisites, configure necessary settings, and ensure your environment is properly set up to support a successful Azure AD Connect synchronization process.
 
 1. You should still be logged into **LON-DC1**. 
 

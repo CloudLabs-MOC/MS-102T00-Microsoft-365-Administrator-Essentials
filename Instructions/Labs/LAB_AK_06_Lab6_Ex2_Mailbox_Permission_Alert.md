@@ -6,7 +6,9 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 ### Task 1 – Create a Mailbox Permission Alert
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. 
+In this task, you will create a mailbox permission alert to monitor and notify when there are changes to mailbox permissions in your environment, ensuring security and compliance.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. 
 
 2. **Microsoft Defender** portal should still be open in your Edge browser from the prior task. Select the **Microsoft Defender** tab now. In the left-hand navigation pane, under the **Email & collaboration** section, select **Policies & rules**. 
 

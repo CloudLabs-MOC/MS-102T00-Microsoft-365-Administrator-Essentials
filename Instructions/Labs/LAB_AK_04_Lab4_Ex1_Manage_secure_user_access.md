@@ -6,6 +6,8 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 ### Task 1: Deploy Microsoft Entra Pass-Through Authentication 
 
+In this task, you will configure Microsoft Entra Pass-Through Authentication to enable secure password validation for on-premises users directly against your Active Directory, without the need to store passwords in the cloud.
+
 1.  You should still be logged into **LON-DC1** as the local **adatum\administrator** from the prior task.
 
 2. On LON-DC1, select the **Start (1)** button on the taskbar, and then in the **Start** menu, select the **All Apps (2)** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect (3)**.
@@ -77,7 +79,9 @@ As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by
 
 ### Task 2: Deploy Microsoft Entra Smart Lockout
 
-1. On LON-DC1, select the **Server Manager** icon on the taskbar if it’s already open; otherwise, open it now.
+In this task, you will implement Microsoft Entra Smart Lockout to protect user accounts by automatically blocking sign-ins that exhibit suspicious behavior, such as repeated failed login attempts, while allowing legitimate users to continue signing in.
+
+1. On **LON-DC1**, select the **Server Manager** icon on the taskbar if it’s already open; otherwise, open it now.
 
 2. In **Server Manager**, select **Tools (1)** in the upper-right menu bar, and in the drop-down menu, select **Group Policy Management (2)**.
 

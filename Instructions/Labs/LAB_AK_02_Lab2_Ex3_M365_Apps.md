@@ -16,7 +16,9 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 ### Task 1 – Verify how licensing affects installing Microsoft 365 Apps for enterprise
 
-1. On LON-CL1, you should be logged into Microsoft 365 as Holly Dickson in your Edge browser. 
+In this task, you will review how user licensing impacts the ability to install Microsoft 365 Apps for enterprise and verify that the correct licenses are assigned.
+
+1. On **LON-CL1**, you should be logged into Microsoft 365 as **Holly Dickson** in your Edge browser. 
 
 1. In the **Microsoft 365 admin center**, in the navigation pane, select **Users (1)** and then select **Active users (2)**. 
 
@@ -135,7 +137,9 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 ### Task 2 – Verify how the global Office download setting affects installing Microsoft 365 Apps for enterprise
 
-Microsoft 365 includes a global Office download setting that controls the downloading of mobile and desktop apps for all users. Holly is now going to test whether users can be prohibited from downloading Microsoft 365 Apps for enterprise if an admin turns off this setting. In this test, Holly will once again use Laura Atkins as her test case. However, since you just proved in the prior task that Laura can't install Microsoft 365 Apps for enterprise without a proper license, you must first assign her a license. 
+In this task, you will check how the global Office download settings within the Microsoft 365 admin center influence the installation process for Microsoft 365 Apps for enterprise.
+
+>**Note:** Microsoft 365 includes a global Office download setting that controls the downloading of mobile and desktop apps for all users. Holly is now going to test whether users can be prohibited from downloading Microsoft 365 Apps for enterprise if an admin turns off this setting. In this test, Holly will once again use Laura Atkins as her test case. However, since you just proved in the prior task that Laura can't install Microsoft 365 Apps for enterprise without a proper license, you must first assign her a license. 
 	
 1. Switch back to **LON-CL1**. In your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson, Adatum’s Microsoft 365 Administrator.
 
@@ -209,11 +213,13 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 	
 	>**Important:** You have just verified that a user with a Microsoft 365 license is able to download Microsoft 365 Apps for enterprise if the global Office download setting is turned On. Do **NOT** select the **Install Office** button at this time.
 
-1. Remain on LON-CL2.
+1. Remain on **LON-CL2**.
 
 ### Task 3 – Perform a User-Driven Installation of Microsoft 365 Apps for enterprise 
 
-In the prior task, you logged into Laura Atkins client PC, and you verified that she could download Microsoft 365 Apps for enterprise once she was assigned a Microsoft 365 license and the global Office download setting was turned On. In this task, you will continue the process by having Laura perform a user-driven installation of the Microsoft 365 Apps for enterprise suite from the Microsoft 365 portal.  
+In this task, you will complete a manual, user-initiated installation of Microsoft 365 Apps for enterprise and confirm successful deployment on a device.
+
+>**Note:** In the prior task, you logged into Laura Atkins client PC, and you verified that she could download Microsoft 365 Apps for enterprise once she was assigned a Microsoft 365 license and the global Office download setting was turned On. In this task, you will continue the process by having Laura perform a user-driven installation of the Microsoft 365 Apps for enterprise suite from the Microsoft 365 portal.  
 
 1. On **LON-CL2**, your Edge browser should be open, and you should be logged into Microsoft 365 as Laura Atkins. 
 
@@ -260,7 +266,7 @@ In the prior task, you logged into Laura Atkins client PC, and you verified that
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="7d9fdfc3-5392-4896-ab0f-7b5f3a8a3b09" />
 

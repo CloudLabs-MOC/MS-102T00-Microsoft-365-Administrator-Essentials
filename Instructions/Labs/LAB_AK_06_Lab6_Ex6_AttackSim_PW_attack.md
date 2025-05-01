@@ -9,7 +9,9 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 ### Task 1: Configure and launch a Drive-by URL attack 
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will set up and execute a Drive-by URL attack to simulate how malicious websites can automatically download and run malware when visited.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. After the previous lab exercise, you should still be in the **Microsoft 365 Defender** portal. If not, then in the **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Security**.
 
@@ -137,6 +139,8 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 ### Task 2: Review the Drive-by URL attack results
 
+In this task, you will analyze the outcome of the Drive-by URL attack, examining logs, alerts, and system behavior to assess the impact and effectiveness of the attack.
+
 1. Switch to **LON-CL2**, by navigating back to the hyper-v manager, and connect to **LON-CL2** VM.
 
 1. On LON-CL2, in the Edge browser, you should have a tab open containing Lynne Robbins' Outlook mailbox from the prior lab exercise. In Lynne's Outlook Inbox, you should see the email that was sent by the Attack Simulator that's from **klemens@tailspintoys.com**. The subject of the email is **Free toy giveaway promotion from Tailspin Toys**. Select the email to open it and review the details in the body of the message. 
@@ -159,12 +163,14 @@ Holly Dickson is concerned that some of the users at Adatum may require training
 
 	![](../Images/L6E6T2S8-3004.png)
 
-1. Leave your browser open in LON-CL1 and do not close any of the tabs.
+1. Leave your browser open in **LON-CL1** and do not close any of the tabs.
 
 
 ### Task 3: Disable Multi-factor Authentication for the Global Admin
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will locate and disable Multi-factor Authentication (MFA) for the Global Admin account, simulating a scenario where a critical security control is intentionally removed.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 1. To disable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** open in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select the **Admin** icon that appears in the column of app icons on the left-side of the screen. This opens the **Microsoft 365 admin center** in a new browser tab. 
 

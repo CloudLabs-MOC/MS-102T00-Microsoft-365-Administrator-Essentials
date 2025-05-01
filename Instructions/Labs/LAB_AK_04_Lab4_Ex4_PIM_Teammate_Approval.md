@@ -124,7 +124,7 @@ As in the prior PIM exercise involving the Helpdesk admin role, Holly is trustin
 
 At this point in Holly's pilot project, the PIM-Intune-Administrators group has been made eligible for the Intune administrator role. Each member of the group (in this case, Alex Wilber and Joni Sherman) can now be assigned the Intune Administrator role by requesting approval from a member of this group, which in this case will be the other person. Holly wants to test out the PIM process in her pilot project. In this task, you will take on the role of Joni Sherman, who will submit a request to approve assigning the Intune Administrator role to her account.
 
-1.  In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
+1.  In **LON-CL1**, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
 
 2. In your InPrivate browsing session, copy and paste the following URL in the address bar: **[Azure Portal](https://portal.azure.com)**
 
@@ -230,7 +230,7 @@ When you earlier configured the Intune Administrator role, you set up the notifi
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="7f2aef73-ab8b-43a8-b70d-75bbef029a67" />
 

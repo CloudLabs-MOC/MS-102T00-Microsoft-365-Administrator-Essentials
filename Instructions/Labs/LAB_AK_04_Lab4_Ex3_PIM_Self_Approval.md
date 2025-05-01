@@ -13,7 +13,9 @@ In addition, Holly doesn't want to be forced to approve the role assignment when
 
 ### Task 1 - Create an eligible group for the Helpdesk Admin role
 
-1. You should still be logged into LON-CL1 and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
+In this task, you will create a group that is eligible to be assigned the Helpdesk Admin role, allowing users within this group to perform Helpdesk administrative tasks.
+
+1. You should still be logged into **LON-CL1** and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
 1. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
 
@@ -97,11 +99,13 @@ In addition, Holly doesn't want to be forced to approve the role assignment when
 
 ### Task 2 - Configure the Helpdesk Administrator role for self-activation
 
+In this task, you will configure the Helpdesk Administrator role to allow users to activate it themselves through self-service.
+
 Next, Holly wants to configure the Helpdesk administrator role settings and notification settings in Microsoft Entra ID. Privileged Identity Management (PIM) lets you know when important events occur in your Microsoft Entra ID organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails can also include links to relevant tasks, such activating or renewing a role. In this task, Holly wants to update the notifications to ensure that self-approvals are tracked in real-time in a proactive manner.
 
 In the prior lab exercise involving the Global administrator role, Holly updated the role so that she had to approve any activation requests for the role. However, for the Helpdesk admin role, Holly is less concerned about eligible users abusing the role permissions given the more limited scope of the role as compared to the Global Admin role. Holly trusts that Alex and Joni won't activate the role unless they're required to do so to respond to support requests. Therefore, Holly will only require that Alex and Joni provide justification whenever they must activate the role. Holly wants the role to be active for Alex and Joni for 15 days. This way, they won't be waiting for Holly to approve their activation requests, and they can simply provide justification and get started whenever they must take on this role.
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson from the prior task.
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson from the prior task.
 
 2. In your browser, you should still have the **Microsoft Entra admin center** open from the prior task. In the left-hand navigation pane, under the **Identity Governance** section, select **Privileged Identity Management**.
 
@@ -154,6 +158,8 @@ In the prior lab exercise involving the Global administrator role, Holly updated
 
 ### Task 3 - Self-activate the Helpdesk Admin role
 
+In this task, you will activate the Helpdesk Admin role for yourself through self-service, enabling you to take on the administrative responsibilities associated with this role.
+
 At this point in Holly's pilot project, the PIM-Helpdesk-Administrators group has been made eligible for the Helpdesk administrator role. The members of the group (Alex Wilber and Joni Sherman) can now be assigned the Helpdesk Administrator role using Microsoft Entra Privileged Identity Management. Holly wants to test out the PIM process in her pilot project. In this task, you will take on the role of Alex Wilber, who will submit a request to self-approve assigning the Helpdesk Administrator role to his user account.
 
 1. In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
@@ -193,9 +199,11 @@ As Alex Wilber, you have now self-approved the Helpdesk Administrator role. This
 
 ### Task 4 -  Verify a PIM notification was issued
 
+In this task, you will check to ensure that a notification was sent through Privileged Identity Management (PIM) confirming the activation of the Helpdesk Admin role.
+
 When you earlier configured the Helpdesk Administrator role, you set up the notification feature so that Holly would be notified any time an eligible user activated the role. Since Alex Wilber just self-activated the role, Holly should receive a notification of this activity. This task will verify that Holly received a notification.
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. In your Edge browser, select the **Home | Microsoft 365 Copilot** tab.
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. In your Edge browser, select the **Home | Microsoft 365 Copilot** tab.
 
 2. On the **Welcome to Microsoft 365 Copilot** page, select the **App Launcher (1)** on the left-side of the screen, select the **Outlook (2)** icon. This will open Outlook for Holly Dickson's mailbox in a new tab.
 

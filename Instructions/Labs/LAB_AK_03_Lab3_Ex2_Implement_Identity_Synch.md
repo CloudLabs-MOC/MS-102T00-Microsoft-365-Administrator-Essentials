@@ -8,6 +8,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 ### Task 1: Install Microsoft Entra Connect and Initiate Synchronization
 
+In this task, you will install Microsoft Entra Connect on a designated server and configure it to initiate the synchronization between your on-premises Active Directory and Microsoft Entra ID.
+
 1. You should still be logged into **LON-DC1** as the local **adatum\administrator** from the prior task. 
 
 1. After finishing the previous lab exercise, you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. If not then enter the URL **https://admin.microsoft.com/** and sign-in with the Holly's account.
@@ -164,7 +166,9 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 1. Leave LON-DC1 open as it will be used in the next exercise.
 
 
-### Task 2 - Create Group Accounts to Test Synchronization   
+### Task 2 - Create Group Accounts to Test Synchronization 
+
+In this task, you will create sample group accounts in your on-premises Active Directory to verify that they are correctly synchronized to Microsoft Entra ID.
 
 >**Important:** Built-in groups are predefined, on-premises security groups that are located under the **Builtin** container in **Active Directory Users and Computers**. They are created automatically when you create an Active Directory domain. You can use these groups to control access to shared resources and delegate specific domain-wide administrative roles. **However, they are NOT synchronized to Microsoft 365, even after adding members to them.** You will validate this functionality in this task.
 
@@ -228,6 +232,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
  
 ### Task 3 - Change Group Membership to Test Synchronization  
 
+In this task, you will modify the membership of the test groups created earlier to confirm that changes in group membership are properly reflected in Microsoft Entra ID after synchronization.
+
 1. This task continues from where the previous task left off in LON-DC1. In the **Active Directory Users and Computers** window, in the console tree under **Adatum.com**, the **Research** organizational unit is still selected. In the detail pane on the right, double-click the **Research** security group.
 
 2. In the **Research Properties** window, select the **Members** tab to view the members of this group.  
@@ -249,6 +255,8 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 	>**Important:** You should perform the next task immediately after completing this one so that Microsoft Entra ID Connect doesn’t automatically synchronize the changes that you just made to the identity objects in the previous tasks.
 
 ### Task 4 - Force a manual synchronization   
+
+In this task, you will manually trigger a directory synchronization using Entra Connect to immediately apply and test recent changes made in the on-premises Active Directory.
 
 >**IMPORTANT - PowerShell notice:** The prior lab exercise provided a disclaimer indicating why the tasks in that exercise used the MSOnline module rather than Microsoft Graph PowerShell. While Microsoft is in the process of replacing the two older PowerShell modules, MSOnline and Azure Active Directory (Microsoft Entra ID) PowerShell, with Microsoft Graph PowerShell, there is some functionality in the older modules that has not yet been incorporated into Microsoft Graph PowerShell. The commands in the prior exercise and the command used in this task fall into that category. The prior exercise connected to the MSOnline module, which is also used in this task per the Start-ADSyncSyncCycle command. 
 
@@ -272,7 +280,9 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 5. Remain in LON-DC1 and proceed to the next task.
   
-### Task 5 - Validate the Results of Directory Synchronization   
+### Task 5 - Validate the Results of Directory Synchronization 
+
+In this task, you will verify that the directory synchronization was successful by checking that all groups and their memberships are correctly reflected in Microsoft Entra ID.
 
 >**IMPORTANT - PowerShell notice:** This task employs basic PowerShell queries for Groups and Users, which are supported in Microsoft Graph PowerShell. Since Microsoft Graph PowerShell is replacing the two older PowerShell modules, MSOnline and Azure Active Directory (Microsoft Entra ID) PowerShell, you will use Microsoft Graph PowerShell in this task.
 

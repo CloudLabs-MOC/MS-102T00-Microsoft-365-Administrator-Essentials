@@ -6,6 +6,8 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 
 ### Task 1 - Assign Delegated Administrators in the Microsoft 365 Admin Center 
 
+In this task, you will use the Microsoft 365 Admin Center to grant delegated administration privileges to a partner or external administrator.
+
 1. On **LON-CL1**, in the **Microsoft 365 admin center** in your Edge browser, you should still be logged in as Holly Dickson from a prior lab exercise. In the left-hand navigation pane, select **Users** and then select **Active Users**. 
 
 1. In the **Active users** list, select **Diego Siciliani**.  
@@ -42,7 +44,9 @@ In this exercise, you will continue in your role as Holly Dickson, Adatum's new 
 
 1. Remain logged into LON-CL1 and the Microsoft 365 admin center as Holly Dickson.
 
-### Task 2 - Assign Delegated Administrators with Windows PowerShell  
+### Task 2 - Assign Delegated Administrators with Windows PowerShell 
+
+In this task, you will use PowerShell commands to assign delegated administrative roles in Microsoft 365, offering a scripted or automated approach.
 
 1. On LON-CL1, select the **Windows PowerShell** icon on the taskbar that you left open from a prior lab. If you closed the PowerShell window, then open an elevated instance of it using the same instruction as before. 
 
@@ -324,7 +328,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 	![](../Images/unblockalex.png)
 	
-48. On LON-CL1, leave your browser and all tabs open and proceed to the next exercise. 
+48. On **LON-CL1**, leave your browser and all tabs open and proceed to the next exercise. 
 
 ## Review
 

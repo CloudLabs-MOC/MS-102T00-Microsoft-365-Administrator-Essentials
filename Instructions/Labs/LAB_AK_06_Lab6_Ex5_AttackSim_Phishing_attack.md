@@ -7,6 +7,8 @@ Holly Dickson is concerned that some users at Adatum may require education about
 
 ### Task 1: Enable Multifactor Authentication for the Global Admin
 
+In this task, you will enable multifactor authentication (MFA) for the Global Administrator account to enhance account security by requiring an additional verification method beyond just a password.
+
 >**Important:** To implement MFA, you will need to use your mobile phone to receive a verification code so that you can enter it into your tenant as a second form of authentication. If you do not have a phone, you will have to skip this lab. If this is the case, notify your instructor, who can potentially partner you with another student to follow along through this lab.
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.  
@@ -139,6 +141,8 @@ In this lab exercise, you will use one of the existing payload templates. In the
 
 
 ### Task 3: Review the attack simulation results
+
+In this task, you will review the results of a previously run attack simulation to evaluate how users responded and to identify potential vulnerabilities or training needs within your organization.
 
 1. Switch to **LON-CL2**, where you should be logged into the machine as the local **adatum\administrator** account.
 

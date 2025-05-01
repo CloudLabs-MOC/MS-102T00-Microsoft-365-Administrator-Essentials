@@ -8,7 +8,9 @@ In this exercise you will learn how to create a mail flow encryption rule using 
 
 ### Task 1 – Create a Mail Flow Encryption Rule using the Exchange admin center 
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will use the Exchange admin center (EAC) to create a mail flow rule that automatically applies encryption to outgoing emails based on specified conditions such as keywords, recipients, or message sensitivity.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange Online admin center.
 
@@ -45,7 +47,9 @@ In this exercise you will learn how to create a mail flow encryption rule using 
 
 ### Task 2 – Create a Mail Flow Encryption Rule using Windows PowerShell
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will use Windows PowerShell with Exchange Online cmdlets to create and configure a mail flow rule that enforces email encryption under defined conditions.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. If Windows PowerShell is still open on your desktop, then select the PowerShell icon on the taskbar to maximize the PowerShell window. However, if you closed PowerShell after using it the last time, then enter **power** in the **Search** box on the taskbar, and in the menu that appears, right-click on **Windows PowerShell** and select **Run as administrator** in the drop-down menu. 
 

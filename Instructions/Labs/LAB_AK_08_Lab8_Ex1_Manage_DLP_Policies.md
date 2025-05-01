@@ -6,7 +6,9 @@ In your role as Holly Dickson, Adatum’s new Microsoft 365 Administrator, you h
 
 ### Task 1 – Create a DLP policy with custom settings
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will create a Data Loss Prevention (DLP) policy using custom settings to protect sensitive information by defining specific rules and actions that meet your organization's compliance requirements.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 1. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://compliance.microsoft.com**.
   

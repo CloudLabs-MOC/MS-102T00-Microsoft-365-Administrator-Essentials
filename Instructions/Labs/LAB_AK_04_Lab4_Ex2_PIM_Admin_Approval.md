@@ -26,8 +26,8 @@ In this exercise, you will perform these tasks for the Global administrator role
 
 ### Task 1 - Configure the Global Administrator role to require approval
 
-
-1. The prior lab exercise used Adatum's domain controller (LON-DC1). This lab will use LON-CL1. Switch back to **LON-CL1**. 
+In this task, you will configure settings to require approval before users are assigned the Global Administrator role, enhancing security and control.
+1. The prior lab exercise used Adatum's domain controller (**LON-DC1**). This lab will use LON-CL1. Switch back to **LON-CL1**. 
 
 1. On **LON-CL1**, you should still be logged into the machine and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
@@ -96,6 +96,8 @@ In this exercise, you will perform these tasks for the Global administrator role
 1. Leave all browser tabs open for the next task.
 
 ### Task 2 - Assign an eligible group to the Global Admin role
+
+In this task, you will assign an eligible group to the Global Administrator role, allowing members of the group to request the role when necessary.
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
@@ -172,6 +174,8 @@ In this exercise, you will perform these tasks for the Global administrator role
 
 ### Task 3 - Submit a request for the Global Admin role
 
+In this task, you will submit a request to be assigned the Global Administrator role, following the approval process set in Task 1.
+
 >**NOTE:** The activation request process is set up to require multifactor authentication (MFA). If you do not have a  to complete this process, notify your instructor. You may be able to partner with another student to watch them complete the remaining two tasks.
 
 1.  In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
@@ -212,7 +216,9 @@ In this exercise, you will perform these tasks for the Global administrator role
 
 ### Task 4 -  Approve the request for the Global Admin role
 
-1.  In LON-CL1, hover your mouse over the Edge icon on your taskbar to see the two Edge sessions that you have open - the window on the left is the original Edge browser session in which you are signed into **Microsoft 365** as **Holly Dickson**, and the window on the right is the InPrivate Browser session in which you are signed into **Microsoft Entra ID** as **Patti Fernandez**. Select the window on the left to go back to the original Edge browser session in which you are signed in as **Holly Dickson**. 
+In this task, you will review and approve the request for the Global Administrator role, granting the user access after the required approval process.
+
+1.  In **LON-CL1**, hover your mouse over the Edge icon on your taskbar to see the two Edge sessions that you have open - the window on the left is the original Edge browser session in which you are signed into **Microsoft 365** as **Holly Dickson**, and the window on the right is the InPrivate Browser session in which you are signed into **Microsoft Entra ID** as **Patti Fernandez**. Select the window on the left to go back to the original Edge browser session in which you are signed in as **Holly Dickson**. 
 
 2.  In your browser, the **Global Administrator | Assignments** window should be displayed in the **Microsoft Entra admin center**. In the navigation thread at the top of the page (**Home > Privileged Identity Management | Microsoft Entra roles > Adatum Corporation | Roles**), select **Privileged Identity Management | Microsoft Entra roles**.
 

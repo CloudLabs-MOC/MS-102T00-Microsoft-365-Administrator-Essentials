@@ -6,7 +6,9 @@ In this exercise, you will use the the Microsoft Exchange admin center to enable
 
 ### Task 1 – Activate In-Place Archiving for a new user's mailbox
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
+In this task, you will enable In-Place Archiving for a newly created user to provide them with an archive mailbox for storing older or infrequently accessed emails.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 1. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Exchange** to open the Exchange admin center.
 
@@ -27,7 +29,9 @@ In this exercise, you will use the the Microsoft Exchange admin center to enable
 
 ### Task 2 – Create an email retention policy for test users
 
-1. On LON-CL1, your Microsoft Edge browser should still have the **Microsoft 365 admin center** open. Select the tab for the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** section, select **Compliance**. Doing so will open the **Microsoft Purview** portal.
+In this task, you will create a custom email retention policy and apply it to a group of test users to control how long emails are retained before being archived or deleted.
+
+1. On **LON-CL1**, your Microsoft Edge browser should still have the **Microsoft 365 admin center** open. Select the tab for the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** section, select **Compliance**. Doing so will open the **Microsoft Purview** portal.
 
 1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)**, and then select **Data lifecycle management (2)**.
 
@@ -78,7 +82,9 @@ In this exercise, you will use the the Microsoft Exchange admin center to enable
 
 ### Task 3 – Create an email retention policy for all users
 
-1. On LON-CL1, your Edge browser should still have the **Microsoft Purview** portal open from the prior task, and it should be displaying the **Data lifecycle management** window.
+In this task, you will define and apply a global email retention policy that governs the email lifecycle for all users in the organization.
+
+1. On **LON-CL1**, your Edge browser should still have the **Microsoft Purview** portal open from the prior task, and it should be displaying the **Data lifecycle management** window.
 
 1. In the **Data lifecycle management** window, in the list of tabs that appear across the top of the page, select **Retention policies** (if another tab is selected).
 

@@ -9,6 +9,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 ### Task 1 - Manage Roles and Licenses for Adatum Microsoft 365 Users
 
+This task involves managing user roles and licenses within Microsoft 365 for Adatum. It includes assigning appropriate administrative roles, configuring user permissions, and allocating the correct Microsoft 365 licenses to ensure users have access to the necessary services and features.
+
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior lab exercise. You should be signed into Microsoft 365 as the **ODL user**. 
 
 1. Navigate back to the **Microsoft 365 admin center** navigation pane, select **Users (1)** and then select **Active users**. In the **Active users (2)** list, you will see the list of existing user accounts that were created by your lab hosting provider.
@@ -50,6 +52,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 1. Remain logged into the LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
 ### Task 2 – Set up Microsoft 365 User Accounts
+
+In this task, you will create and configure new user accounts in Microsoft 365, assigning appropriate licenses, roles, and settings.
 
 1. Select the user icon for the **ODL user** (the **O1** circle) in the upper right corner of your browser. In the **ODL user** window that appears, select **Sign out.**
 	
@@ -123,6 +127,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 1. Remain logged into LON-CL1 with the **Microsoft 365 admin center** open in your browser for the next task.
 
 ### Task 3 – Set up Microsoft 365 Groups 
+
+In this task, you will create Microsoft 365 Groups to enable collaboration across services like Outlook, SharePoint, and Teams.
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -279,6 +285,8 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 
 ### Task 4 – Recover Groups using PowerShell 
 
+In this task, you will use PowerShell commands to restore deleted Microsoft 365 Groups from the recycle bin within the retention period.
+
 >**IMPORTANT - Microsoft Graph PowerShell work around:** In a normal situation, you would use the Restore-MgDirectoryDeletedItem cmdlet to restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from the deleted items "container" (deleted items will remain available to restore for up to 30 days; after 30 days, the items are permanently deleted). This Microsoft Graph PowerShell cmdlet requires that you provide the ID of the item being restored. While you would normally use the Get-MgDirectoryDeletedItem cmdlet to display the list of deleted objects (along with their IDs), this cmdlet is currently not returning any data. As a workaround, this task will invoke a direct REST API call by using the Invoke-MgGraphRequest cmdlet.
 
 >**NOTE - Microsoft Graph PowerShell:** If you'll recall, in the first lab exercise for this course, you installed Microsoft Graph PowerShell. However, you did not import any of its 30+ sub-modules. You were told at the time that only 3 modules will be used in the labs for this training course, so you would install each sub-module individually as they were needed. For this lab exercise, you will import the **Microsoft.Graph.Identity.DirectoryManagement** sub-module and the **Microsoft.Graph.Groups** sub-module. You will then connect to these sub-modules with the appropriate Read/Write permissions that are needed to view and recover a deleted group. 
@@ -385,7 +393,7 @@ In the following lab exercise, you will continue in your role as Holly Dickson, 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="cbb4c7da-820d-421d-bafb-b9b58ce7bd4c" />
 

@@ -6,6 +6,8 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 ### Task 1 - Troubleshoot Mail Flow in Microsoft 365  
 
+In this task, you will investigate and resolve mail delivery issues in Microsoft 365 by using tools such as the Message Trace, Exchange admin center, and mail flow insights.
+
 1. You should still be logged into LON-CL1 after having completed the prior exercise, and you should still be logged into Microsoft 365 as Holly Dickson.
 
 2. In your **Microsoft Edge** browser, select the **Home | Microsoft 365** tab to display Holly's Microsoft 365 Home page, which should still be open. If not, navigate to **https://portal.office.com** and log in as **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
@@ -121,7 +123,9 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 ### Task 2 - Monitor Service Health and Analyze Reports 
 
-1. On the LON-CL1 VM, go to the **Microsoft 365 admin center** tab within your Edge browser. 
+In this task, you will monitor the health of Microsoft 365 services and analyze usage and activity reports to identify potential issues or trends.
+
+1. On the **LON-CL1** VM, go to the **Microsoft 365 admin center** tab within your Edge browser. 
 
 1. In the **Microsoft 365 admin center** navigation pane, select **Show all**,  select **Health (1)** and then select **Service health (2)**. 
 
@@ -160,7 +164,9 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 
 ### Task 3 – Submit a Help Request to Microsoft Support
 
-1. On LON-CL1, in the **Microsoft 365 admin center** tab of your Edge browser, select **Support (1)** in the navigation pane, and then select **View service requests (2)**. 
+In this task, you will create and submit a support request through the Microsoft 365 admin center to resolve a technical issue with assistance from Microsoft support.
+
+1. On **LON-CL1**, in the **Microsoft 365 admin center** tab of your Edge browser, select **Support (1)** in the navigation pane, and then select **View service requests (2)**. 
 
 	>**Note:** If the left-hand navigation pane has been minimized and only displays icons without any text, select the Navigation menu icon (the three horizontal lines) at the top of the navigation pane to expand it and display the accompanying text. 
 
@@ -182,7 +188,7 @@ In this exercise you will be introduced to some troubleshooting tools in Microso
 	
 1. Select the **X** in the upper right-hand corner of the page to close the **Contact support** window.
 	
-1. Leave LON-CL1 and your Edge browser open for the next lab exercise.  
+1. Leave **LON-CL1** and your Edge browser open for the next lab exercise.  
 
 ## Review
 

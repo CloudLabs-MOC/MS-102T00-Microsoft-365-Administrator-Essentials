@@ -8,7 +8,9 @@ Holly Dickson is now at the point in her pilot project where she wants to test t
 
 ### Task 1 – Test the first DLP Policy rule
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will simulate a scenario that triggers the first Data Loss Prevention (DLP) policy rule to verify that it correctly identifies and handles sensitive data as configured.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 1. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the email. In **Microsoft Edge**, select the **Microsoft Office Home** tab, and then select the **Outlook** icon in the column of app icons on the left-side of the screen. When Outlook on the web opens, you should be automatically logged in as Holly Dickson.  
 
@@ -38,7 +40,9 @@ Holly Dickson is now at the point in her pilot project where she wants to test t
 	
 ### Task 2 – Test the second DLP Policy rule  
 
-1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+In this task, you will validate the second DLP policy rule by performing actions that should match its conditions, ensuring the rule applies the appropriate restrictions or notifications.
+
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 	
 1. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
