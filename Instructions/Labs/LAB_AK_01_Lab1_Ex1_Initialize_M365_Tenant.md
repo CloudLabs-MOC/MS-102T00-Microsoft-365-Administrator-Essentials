@@ -1,4 +1,4 @@
-# Learning Path 1 - Lab 1 - Exercise 1 - Initialize your Microsoft 365 Tenant 
+# Learning Path 1 - Lab 01 - Exercise 1 - Initialize your Microsoft 365 Tenant 
 
 ## Lab scenario
 
@@ -395,3 +395,4 @@ In this lab, you have:
 
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
+

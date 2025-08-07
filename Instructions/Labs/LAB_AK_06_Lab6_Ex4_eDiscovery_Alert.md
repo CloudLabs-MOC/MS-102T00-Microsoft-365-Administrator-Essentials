@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 6 - Exercise 4 - Test the Default eDiscovery Alert
+# Learning Path 6 - Lab 06 - Exercise 4 - Test the Default eDiscovery Alert
 
 ## Lab scenario
 

@@ -1,4 +1,4 @@
-# Learning Path 1 - Lab 1 - Exercise 2 - Manage Users and Groups 
+# Learning Path 1 - Lab 01 - Exercise 2 - Manage Users and Groups 
 
 ## Lab scenario
 
