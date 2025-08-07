@@ -1,4 +1,4 @@
-# Learning Path 3 - Lab 3 - Exercise 2 - Implement Identity Synchronization 
+# Learning Path 3 - Lab 03 - Exercise 2 - Implement Identity Synchronization 
 
 ## Lab scenario
 

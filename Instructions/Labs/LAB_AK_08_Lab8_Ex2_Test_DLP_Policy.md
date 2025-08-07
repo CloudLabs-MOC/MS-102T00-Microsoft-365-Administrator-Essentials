@@ -1,4 +1,4 @@
-# Learning Path 8 - Lab 8 - Exercise 2 - Test the DLP Policy
+# Learning Path 8 - Lab 08 - Exercise 2 - Test the DLP Policy
 
 ## Lab scenario
 

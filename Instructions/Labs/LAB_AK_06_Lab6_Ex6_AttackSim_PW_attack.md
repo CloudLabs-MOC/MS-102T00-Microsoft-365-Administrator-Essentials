@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 6 - Exercise 6 - Conduct a Drive-by URL attack using Attack Simulation training
+# Learning Path 6 - Lab 06 - Exercise 6 - Conduct a Drive-by URL attack using Attack Simulation training
 
 ## Lab scenario
 

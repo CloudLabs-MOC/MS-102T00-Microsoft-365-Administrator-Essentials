@@ -1,4 +1,4 @@
-# Learning Path 5 - Lab 5 - Exercise 2 - Implement a Safe Links Policy
+# Learning Path 5 - Lab 05 - Exercise 2 - Implement a Safe Links Policy
 
 ## Lab scenario
 

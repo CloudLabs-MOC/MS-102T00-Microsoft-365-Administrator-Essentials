@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 6 - Exercise 2 - Implement Mailbox Permission Alert
+# Learning Path 6 - Lab 06 - Exercise 2 - Implement Mailbox Permission Alert
 
 ## Lab scenario
 
