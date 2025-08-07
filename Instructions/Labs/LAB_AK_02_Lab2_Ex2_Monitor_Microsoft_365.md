@@ -1,4 +1,4 @@
-# Learning Path 2 - Lab 02 - Exercise 2 - Monitor and Troubleshoot Microsoft 365  
+# Lab 02 - Exercise 2: Monitor and Troubleshoot Microsoft 365  
 
 ## Lab scenario
 

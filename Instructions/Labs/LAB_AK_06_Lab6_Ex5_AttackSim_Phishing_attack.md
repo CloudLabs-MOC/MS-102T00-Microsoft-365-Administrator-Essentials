@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 06 - Exercise 5 - Conduct a Spear Phishing attack using Attack Simulation training
+# Lab 06 - Exercise 5: Conduct a Spear Phishing attack using Attack Simulation training
 
 ## Lab scenario
 

@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 06 - Exercise 1 - Prepare for Alert Policies
+# Lab 06 - Exercise 1: Prepare for Alert Policies
 
 ## Lab scenario
 

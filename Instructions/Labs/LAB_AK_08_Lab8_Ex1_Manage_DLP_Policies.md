@@ -1,4 +1,4 @@
-# Learning Path 8 - Lab 08 - Exercise 1 - Manage DLP Policies  
+# Lab 08 - Exercise 1: Manage DLP Policies  
 
 ## Lab scenario
 

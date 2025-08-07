@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 04 - Exercise 1 - Manage secure user access 
+# Lab 04 - Exercise 1: Manage secure user access 
 
 ## Lab scenario
 

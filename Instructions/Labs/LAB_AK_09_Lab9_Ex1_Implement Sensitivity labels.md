@@ -1,4 +1,4 @@
-# Learning Path 9 - Lab 09 - Exercise 1 - Implement Sensitivity labels with Azure Information Protection Unified Labels client
+# Lab 09 - Exercise 1: Implement Sensitivity labels with Azure Information Protection Unified Labels client
 
 ## Lab scenario
 
