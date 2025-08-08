@@ -1,4 +1,4 @@
-# Learning Path 7 - Lab 07 - Exercise 1 - Initialize Compliance 
+# Lab 07 - Exercise 1: Initialize Compliance 
 
 ## Lab scenario
 

@@ -1,4 +1,4 @@
-# Learning Path 2 - Lab 02 - Exercise 1 - Manage Administration Delegation
+# Lab 02 - Exercise 1: Manage Administration Delegation
 
 ## Lab scenario
 

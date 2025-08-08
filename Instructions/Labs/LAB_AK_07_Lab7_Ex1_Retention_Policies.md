@@ -1,4 +1,4 @@
-# Learning Path 7 - Lab 07 - Exercise 1 - Configure In-place Archiving and Retention Policies  
+# Lab 07 - Exercise 1: Configure In-place Archiving and Retention Policies  
 
 ## Lab scenario
 

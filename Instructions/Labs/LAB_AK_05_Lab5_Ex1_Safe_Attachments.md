@@ -1,4 +1,4 @@
-# Learning Path 5- Lab 05 - Exercise 1 - Implement a Safe Attachments policy 
+# Lab 05 - Exercise 1: Implement a Safe Attachments policy 
 
 ## Lab scenario
 

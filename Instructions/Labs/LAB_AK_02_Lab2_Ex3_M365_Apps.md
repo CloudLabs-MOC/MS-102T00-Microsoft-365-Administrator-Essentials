@@ -1,4 +1,4 @@
-# Learning Path 2 - Lab 02 - Exercise 3 - Manage a Microsoft 365 Apps for enterprise installation
+# Lab 02 - Exercise 3: Manage a Microsoft 365 Apps for enterprise installation
 
 ## Lab scenario
 

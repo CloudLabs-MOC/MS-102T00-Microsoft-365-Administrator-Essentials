@@ -1,4 +1,4 @@
-# Learning Path 7 - Lab 07 - Exercise 3 - Create message encryption rules
+# Lab 07 - Exercise 3: Create message encryption rules
 
 ## Lab scenario
 

@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 06 - Exercise 3 - Implement SharePoint Permission Alert
+# Lab 06 - Exercise 3: Implement SharePoint Permission Alert
 
 ## Lab scenario
 

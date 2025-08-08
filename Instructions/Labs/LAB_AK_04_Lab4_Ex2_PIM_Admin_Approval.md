@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 04 - Exercise 2 - PIM Administrator approval
+# Lab 04 - Exercise 2: PIM Administrator approval
 
 ## Lab scenario
 
