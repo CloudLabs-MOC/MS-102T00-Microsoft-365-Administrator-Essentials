@@ -122,9 +122,11 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. In the **Welcome to Microsoft 365 Copilot** dialog box that appears in the middle of the screen, select the forward arrow twice and then the check mark. 
 
-1. In the **Welcome to Microsoft 365 Copilot** window (which is Laura's Microsoft 365 home page), notice that no column of Microsoft 365 app icons appears in the navigation pane on the left-side of the screen. This is because Laura has not been assigned a Microsoft 365 license. Select the **Install and more (1)** button, and then in the drop-down menu that appears, select **Install Microsoft 365 apps (2)**. This opens the **My account** window for Laura.
+1. In the **Welcome to Microsoft 365 Copilot** window (which is Laura's Microsoft 365 home page), notice that no column of Microsoft 365 app icons appears in the navigation pane on the left-side of the screen. This is because Laura has not been assigned a Microsoft 365 license.
 
-	![](../Images/ms-102-106.png)
+1. From the left navigation menu, select **Apps (1)**. Select the **Install apps (2)** button, and then in the drop-down menu that appears, select **Microsoft 365 apps (3)**. This opens the **My account** window for Laura.
+
+	![](../Images/im-01.png)
 
 1. In Laura's **My account** window, under the **Office apps & devices** tile, select **View apps & devices**. Note the message that appears at the top of page. Laura has not been assigned a license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. 
 
@@ -132,7 +134,7 @@ In this task, you will review how user licensing impacts the ability to install 
 	
 	>**Important:** You have just verified that a user can't download Microsoft 365 Apps for enterprise if they haven't been assigned an appropriate Microsoft 365 license. 
 	
-1. Leave LON-CL2 open and remain signed into Microsoft 365 as Laura Atkins for the next task. In your Edge browser, close the **My account** tab and the **Welcome to Microsoft Edge** tab, but leave the **Home | Microsoft 365** tab open for the next task.
+1. Leave LON-CL2 open and remain signed into Microsoft 365 as Laura Atkins for the next task. In your Edge browser, close the **My account** tab and the **Welcome to Microsoft Edge** tab, but leave the **Microsoft 365 Copilot** tab open for the next task.
 
 
 ### Task 2 – Verify how the global Office download setting affects installing Microsoft 365 Apps for enterprise
@@ -141,7 +143,7 @@ In this task, you will check how the global Office download settings within the 
 
 >**Note:** Microsoft 365 includes a global Office download setting that controls the downloading of mobile and desktop apps for all users. Holly is now going to test whether users can be prohibited from downloading Microsoft 365 Apps for enterprise if an admin turns off this setting. In this test, Holly will once again use Laura Atkins as her test case. However, since you just proved in the prior task that Laura can't install Microsoft 365 Apps for enterprise without a proper license, you must first assign her a license. 
 	
-1. Switch back to **LON-CL1**. In your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson, Adatum’s Microsoft 365 Administrator.
+1. Switch back to **LON-CL1**. Open the Edge browser.
 
 1. On **LON-CL1**, Holly wants to turn off the global Office download setting. To do so, select the **Microsoft 365 admin center** tab in your browser, and then if necessary, select **...Show all** in the navigation pane. Select **Settings (1)**, and then within the Settings group, select **Org Settings (2)**. 
 
@@ -171,15 +173,15 @@ In this task, you will check how the global Office download settings within the 
 
 	>**Note:** To do this, you must first switch back to **LON-CL2**, navigate back to the hyper-v manager, right click on the **LON-CL2** VM and select **Connect**.
 
-1. In **LON-CL2**, your Edge browser should still be open, and you should still be logged into Microsoft 365 as Laura Atkins (verify Laura's **LA** initials appear in the upper-right corner of the browser; note that Laura's name doesn't appear because she's not a member of the M365 pilot project group that was assigned to the custom theme). 
+1. In **LON-CL2**, your Edge browser should still be open, and you should still be logged into Microsoft 365 as Laura Atkins (verify Laura's **LA** initials appear in the below-left corner of the browser; note that Laura's name doesn't appear because she's not a member of the M365 copilot project group that was assigned to the custom theme). 
 
-1. In your browser, verify you're on the **Home | Microsoft 365** tab. When you left off after the prior lab task, this page didn't display any Microsoft 365 apps in the navigation pane on the left because Laura wasn't assigned a Microsoft 365 license. Let's see what happens now that Laura has been assigned a license. 
+1. In your browser, verify you're on the **Apps | Microsoft 365** tab. When you left off after the prior lab task, this page didn't display any Microsoft 365 apps in the navigation pane on the left because Laura wasn't assigned a Microsoft 365 license. Let's see what happens now that Laura has been assigned a license. 
 
 1. Select the **Refresh** icon that appears to the left of the address bar at the top of your browser. After refreshing the page, notice the Microsoft 365 app icons that now appear on the left-side of the screen because Laura has been assigned a Microsoft 365 license. 
 
 	>**Note:** If a **Find more apps** window appears, select the **X** to close it.
 
-1. Select the **Install and more** button, and then in the drop-down menu, select **Install Microsoft 365 apps**.
+1. Select the **Install apps** button, and then in the drop-down menu, select **Microsoft 365 apps**.
 	
 1. This will open Laura's **My account** window. Under the **Office apps & devices** tile, select **View apps & devices**. 
 
@@ -243,7 +245,7 @@ In this task, you will complete a manual, user-initiated installation of Microso
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-1. On the **Stay signed in to all your apps**, select **No, sign in to this app only**.
+1. On the Account asking pop-up, select **No, this app only**.
 
 	>**Note:** On **Your privacy matters** pop-up select **Close**.
 
@@ -259,7 +261,7 @@ In this task, you will complete a manual, user-initiated installation of Microso
 
 1. Minimize **LON-CL2**. Inside **LON-CL1** VM.
 
-1. Switch back to the Hyper-V Manager, on LON-CL2, right click on the **LON-CL2** VM and turn-off the VM, after the status shows Off, right click again and start the VM. Righ click on the **LON-CL2** VM click on **Connect**. 
+1. Switch back to the Hyper-V Manager, on LON-CL2, right click on the **LON-CL2** VM and turn-off the VM, after the status shows Off, right click again and start the VM. Right click on the **LON-CL2** VM click on **Connect**. 
 
 1. On the desktop, the **Laura Atkins** is selected by default. select **Other user**, enter **lon-cl2\admin** in the username filed and **Pa55w.rd** in the **Password** field and then select the forward arrow. The desktop should now display the logged-on user as **lon-cl2\admin**. LON-CL2 is now ready for the next lab that uses it.
 
