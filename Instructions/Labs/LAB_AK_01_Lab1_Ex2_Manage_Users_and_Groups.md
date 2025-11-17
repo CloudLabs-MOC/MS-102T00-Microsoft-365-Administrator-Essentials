@@ -59,7 +59,7 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 	
 	>**Important:** When signing out of one user account and signing in as another, you should close all your browser tabs except for the **Sign out** tab. This is a best practice that helps to avoid any confusion by closing the windows associated with the prior user. Once you're signed out of the ODL user account, take a moment and close all other browser tabs except for the **Sign out** tab. 
 	
-1. In your Microsoft Edge browser, in the **Sign out** tab, enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com**. 
+1. In your Microsoft Edge browser, in the **Sign out** tab, enter the following URL in the address bar to sign back into Microsoft 365: **https://www.microsoft365.com**. 
 
 1. In the **Pick an account** window, select **Use another account**. 
 
@@ -71,15 +71,15 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the screen, there's no option to close it. Instead, to the right of the window, select the forward arrow icon (**>**) two times and then select the check mark icon to advance through the slides in this messaging window. 
+1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-35.png)
+    ![](../Images/lab1-e1-11-0.png)
 
 	>**Note:** If a any pop-up appears, select the **X** in the upper right-hand corner of the window to close it. 
 
 1. The **Welcome to Microsoft 365 Copilot** page appears in your Edge browser in the **Home | Microsoft 365 Copilot** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the below-left corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-36.png)
+	![Access Your VM and Lab Guide](../Images/lab1-e1-11-4.png)
 
 1. In the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the **Microsoft 365 admin center** in a new browser tab. 
 

@@ -34,9 +34,9 @@ In this task, you will use the Microsoft 365 Admin Center to grant delegated adm
 
 1. In the **Lynne Robbins** pane that appears, the **Account** tab is displayed by default. In this tab, scroll down to the **Roles** section and select **Manage roles**. 
 
-1. In the **Manage admin roles** window, select the **Admin center access** option. This enables the list of commonly used admin roles for selection. 
+1. In the **Manage admin roles** window, select the **Admin center access (1)** option. This enables the list of commonly used admin roles for selection. 
  
-1. In the list of commonly used admin roles, select the **User Administrator (1)** role and then select **Save changes (2)**.
+1. In the list of commonly used admin roles, select the **User Administrator (2)** role and then select **Save changes (3)**.
 
 	![](../Images/ms-102-61.png)
 
@@ -83,13 +83,19 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 
 	>**Note:** This command displays the roles that have been enabled thus far in Microsoft 365. If the Service Support Administrator role appeared in this list, you could proceed directly to step 13 to assign the role to Patti. However, since the Service Support Administrator is not included in this list of enabled roles, you must perform steps 8-12 to enable the role from its corresponding role template before you can assign Patti to the role in step 13. 
 
-1. To enable a role in Microsoft Graph PowerShell, you must first locate its template to obtain the template's object ID. You need to know the template's object ID to enable the role from the template. To view the list of role templates along with their object ID and display name, type in the following command and then press Enter:
+1. To assign a role in Microsoft Graph PowerShell, you must first locate its object ID. There's two ways in which you can view the role templates - you can either display the entire list of role templates, or you can display the template for a specific role. As a learning experience, you will perform both methods so that you can see the difference. Let's start by displaying the complete list of role templates along with their object ID and display name. To do so, type in the following command and then press Enter:
 
 	```powershell
-	Get-MgDirectoryRoleTemplate | Format-List Id, DisplayName  
+	Get-MgDirectoryRoleTemplate | Sort DisplayName | Format-Table Id, DisplayName 
 	```
 
-1. In the list of role templates, locate the template record for the **Service Support Administrator** role (as of this writing, it's the seventh role in the list). Highlight the **ID** for the **Service Support Administrator** template (for example, fe930be7-5e62-47db-91af-98c3a49a38b1) and press **Ctrl+C** to copy it to the clipboard (when you copy it, the highlight disappears).
+1. As you can see after having run this command, you must scroll through the list of role templates looking for the Service Support Administrator role. You can easily see how this can be tedious, even with the table sorted. As an alternative, run the following command to query for a specific role template - in this case, the "Service Support Administrator" role template:
+
+	```
+	Get-MgDirectoryRoleTemplate | Where-Object DisplayName -eq "Service Support Administrator" | Format-Table Id, DisplayName
+	```
+
+	>**Note:** After having run this command, you can see that it displays only the requested role template. Obviously, there may be times when displaying the entire list of role templates is necessary. But when you need to look up a single role template, running the second PowerShell command will be much more efficient than having to scroll through the entire list of templates. Highlight the ID for the Service Support Administrator template (for example, fe930be7-5e62-47db-91af-98c3a49a38b1) and press **Ctrl+C** to copy it to the clipboard (when you copy it, the highlight disappears).
 
 1. You will now create a variable that captures the attributes for the Service Support Administrator template. When you type in the following command, press **Ctrl+V** to paste in the Service Support Administrator template ID that you copied to the clipboard in the prior step. At the command prompt, type the following command and press Enter: 
 
@@ -102,17 +108,17 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 1. To verify the Service Support Administrator role has been enabled, type in the following command and press enter. This command will display the list of enabled role:  
 			
 	```powershell
-	Get-MgDirectoryRole	
+	Get-MgDirectoryRole | Sort DisplayName | Format-Table Id, DisplayName	
 	```
 
 	>**Note:** This command displays the object ID of the Service Support Administrator role, which you will later copy and paste in step 15 when assigning Patti to this role.
-
-	![](../Images/adminroles.png)
+	
+	![](../Images/lab1-e1-11-6.png)
 
 1. To assign Patti Fernandez to the newly enabled Service Support Administrator role, you must first obtain the object ID for Patti's user account. To do so, type the following command and press Enter: 
 
 	```powershell
-	Get-MgUser | Format-List ID, DisplayName
+	Get-MgUser -Filter "DisplayName eq 'Patti Fernandez'" | Format-Table ID, DisplayName
 	```
 
 1. Now that you know the object ID of the recently enabled Service Support Administrator role and the object ID of Patti's user account, you can assign the role to Patti. Perform the following steps to complete this process: 
@@ -184,6 +190,8 @@ In this task, you will begin by examining the administrative properties of two u
 
 1. From the top-menu drop-down, and on the **Connect to LON-CL2** pop-up select **Connect**.
 
+	![](../Images/lab1-e1-11-7.png)
+
 	>**Note:** if required maximize the **LON-CL2** VM.
 
 1. In **LON-CL2**, on the log-in screen, you will log in as the local **Admin** account with a password of **Pa55w.rd**.
@@ -194,7 +202,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 	>**Note:** if any tabs opened close all the tabs.
 
-1. In your **Edge** browser navigate to **https://portal.office.com**. 
+1. In your **Edge** browser navigate to **https://www.microsoft365.com**. 
 
 1. You will begin by signing into Microsoft 365 as **Joni Sherman**. In the **Sign-in** window, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
@@ -204,13 +212,13 @@ In this task, you will begin by examining the administrative properties of two u
 
 1. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. If a **Save password** window appears, select **Never**.
 
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, select the forward-arrow (>) twice and then the check mark to close it.
+1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
 	>**Note:** Close the pop-up which appears.
 
 1. On the **Welcome to Microsoft 365** window, which is Joni's Microsoft 365 home page, a navigation pane appears on the left side of the screen that indicates the applications the user has permission to access. In this **Apps** pane, note how the **Admin** option is not displayed. This is because Joni was never assigned a Microsoft 365 administrator role. 
 
-	![](../Images/ms-102-65.png)
+	![](../Images/lab1-e1-11-8.png)
 
 17. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Welcome to Microsoft 365** page, select the user icon for **Joni Sherman** (the circle in the bottom left-hand corner), and in the **Joni Sherman** window that appears, select **Sign out.** 
 
@@ -220,13 +228,13 @@ In this task, you will begin by examining the administrative properties of two u
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-19. If a **Welcome to Microsoft 365** dialog box appears, select the forward arrow (>) two times and then select the check mark to close the window.
+19. If a **Welcome to Microsoft 365** dialog box appears, select the **X** in the upper right-hand corner of the window to close it.
 
 20. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it.
 
 21. On the **Welcome to Microsoft 365** window, which is Lynne's Microsoft 365 home page, note how the **Admin** icon is displayed in the navigation pane on the left side of the screen. This icon appears because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
 
-	![](../Images/MS-102-image-11.png)
+	![](../Images/lab1-e1-11-9.png)
 
 22. In the **Microsoft 365 admin center**, select **Users (1)** on the navigation pane and then select **Active users (2)**. 
 
@@ -300,7 +308,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 42. You previously blocked Alex Wilber from being able to sign in. To verify whether he is blocked, you will attempt to sign in as Alex. Log out of Microsoft 365 by selecting the user icon for **Lynne Robbins** (the circle in the upper right-hand corner), and in the **Lynne Robbins** window that appears, select **Sign out.** 
 
-43. As a best practice, close all your browser tabs except for the **Sign out** tab once you have been signed out. On the **Sign out** tab, navigate to **https://portal.office.com**. 
+43. As a best practice, close all your browser tabs except for the **Sign out** tab once you have been signed out. On the **Sign out** tab, navigate to **https://www.microsoft365.com**. 
 
 44. In the **Pick an account** window, select **Use another account**. In the **Sign in** window, enter **Alex.wilber@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
