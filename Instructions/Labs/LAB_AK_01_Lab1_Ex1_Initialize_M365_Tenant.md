@@ -83,9 +83,9 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
     >**Note:** if any pop-up appears select **Skip for now**.
     
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the screen, there's no option to close it. Instead, to the right of the window, select the forward arrow icon (**>**) two times and then select the check mark icon to advance through the slides in this messaging window. 
+1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-    ![Access Your VM and Lab Guide](../Images/ms-102-10.png)
+    ![](../Images/lab1-e1-11-0.png)
 
 1. The **Welcome to Microsoft 365** page appears in your Edge browser in the **Home | Microsoft 365 Copilot** tab. This is the ODL user's Microsoft 365 home page.
 
@@ -93,7 +93,7 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
     ![Access Your VM and Lab Guide](../Images/lab1-e1-11-1.png)
 
-1. On the **Welcome to Microsoft 365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Admin**, this opens the **Microsoft 365 admin center** in a new browser tab. 
+1. On the **Microsoft 365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Admin**, this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 	![](../Images/lab1-e1-11-2.png)
 

@@ -71,9 +71,9 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the screen, there's no option to close it. Instead, to the right of the window, select the forward arrow icon (**>**) two times and then select the check mark icon to advance through the slides in this messaging window. 
+1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-35.png)
+    ![](../Images/lab1-e1-11-0.png)
 
 	>**Note:** If a any pop-up appears, select the **X** in the upper right-hand corner of the window to close it. 
 
