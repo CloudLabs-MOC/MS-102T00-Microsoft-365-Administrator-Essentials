@@ -59,7 +59,7 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 	
 	>**Important:** When signing out of one user account and signing in as another, you should close all your browser tabs except for the **Sign out** tab. This is a best practice that helps to avoid any confusion by closing the windows associated with the prior user. Once you're signed out of the ODL user account, take a moment and close all other browser tabs except for the **Sign out** tab. 
 	
-1. In your Microsoft Edge browser, in the **Sign out** tab, enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com**. 
+1. In your Microsoft Edge browser, in the **Sign out** tab, enter the following URL in the address bar to sign back into Microsoft 365: **https://www.microsoft365.com**. 
 
 1. In the **Pick an account** window, select **Use another account**. 
 
@@ -79,7 +79,7 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. The **Welcome to Microsoft 365 Copilot** page appears in your Edge browser in the **Home | Microsoft 365 Copilot** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the below-left corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-36.png)
+	![Access Your VM and Lab Guide](../Images/lab1-e1-11-4.png)
 
 1. In the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the **Microsoft 365 admin center** in a new browser tab. 
 

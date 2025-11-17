@@ -34,7 +34,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
     ![Access Your VM and Lab Guide](../Images/subscriptions.png)
 
-1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Bowen, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
+1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber, Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Bowen, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
 
     ![Access Your VM and Lab Guide](../Images/ms-102-8.png)
 
@@ -43,6 +43,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 1. Close the assigned licenses pane, and close the **Microsoft 365 admin center**.
 
 1. On the Lab-VM, in the Type here to search box, type **Windows PowerShell (1)**. In the **Windows PowerShell (2)** results, select **Run as administrator (3)**, and run the following commands to assign the usage location to all users:
+
+    ![Access Your VM and Lab Guide](../Images/powershell.png)
 
     ```powershell
     Install-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201 -Force
@@ -71,15 +73,13 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
     Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation US
 	```
 
-    ![Access Your VM and Lab Guide](../Images/powershell.png)
-
 12. Close the **Windows Powershell**. Now, you can start with the Task 1.
 
 ### Task 1- Set up Adatum's Organization Profile
 
 In this task, you will configure the basic organizational settings for Adatum, including company details, contact information, and branding elements, to establish the organization's identity within the system.
 
-1. Open **Microsoft Edge**, launch a new tab, and navigate to the **Microsoft 365 Home page** by entering the URL: `https://portal.office.com` in the address bar.
+1. Open **Microsoft Edge**, launch a new tab, and navigate to the **Microsoft 365 Home page** by entering the URL: `https://www.microsoft365.com` in the address bar.
 
     >**Note:** if any pop-up appears select **Skip for now**.
     
@@ -91,11 +91,11 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
 	>**Note:** Notice the initials **O1** displayed inside a circle in the bottom-left corner of the screen. These represent the **ODL user** account, which is the tenant admin account you just signed in with. When a user, such as the ODL user, does not have a profile picture assigned, their initials are shown instead.
 
-    ![Access Your VM and Lab Guide](../Images/ms-102-11.png)
+    ![Access Your VM and Lab Guide](../Images/lab1-e1-11-1.png)
 
 1. On the **Welcome to Microsoft 365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Admin**, this opens the **Microsoft 365 admin center** in a new browser tab. 
 
-	![](../Images/ms-102-12.png)
+	![](../Images/lab1-e1-11-2.png)
 
     >**Note:** Close the **Business Advisor** pop-up.
 
@@ -372,12 +372,12 @@ In this task, you will install the Microsoft Graph PowerShell SDK to enable mana
     Get-InstalledModule Microsoft.Graph.* 
     ```
 
-	 >**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
+	  >**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
 
-1. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:
+1. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **RemoteSigned** enables Holly to load all signed configuration files and run all signed scripts. At the command prompt, type the following command, and then press Enter:
 	
      ```powershell
-     Set-ExecutionPolicy unrestricted
+     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
      ```
 1. If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
