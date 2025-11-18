@@ -54,19 +54,13 @@ In this task, you will configure Microsoft Entra Pass-Through Authentication to 
 
 12. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://entra.microsoft.com**
 
-13. This opens the **Microsoft Entra admin center**. In the left-hand navigation pane, under **Identity**, click on **Show more**.
-
-    ![](../Images/35.png)
-
-1. Select **Microsoft Entra Connect** under **Hybrid Management**. 
-
-    ![](../Images/34.png)
+1. This opens the **Microsoft Entra admin center**. Under **Entra ID**, in the navigation pane, select **Entra Connect**. 
 
 17. On the **Microsoft Entra Connect | Get started** page, in the middle navigation pane, select **Connect Sync**.
 
 18. On the **Microsoft Entra Connect | Connect Sync** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**. 
 
-    ![](../Images/12.png)
+    ![](../Images/lab4-e1-11-1.png)
 
 19. On the **Passthrough Authentication** page, review the list of servers on which your pass-through authentication agents are installed. This should display **LON-DC1.Adatum.com**.
 
@@ -105,9 +99,7 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
 9. Select the Edge browser icon on the taskbar, which should be displaying the **Microsoft Entra admin center**. 
 
-9. In the **Microsoft Entra admin center**, in the left-hand navigation pane, select **Authentication methods** under the **Protection** submenu.
-
-   ![](../Images/8.png)
+9. In the **Microsoft Entra admin center**, under **Entra ID** in the navigation pane, select **Authentication methods** 
 
 12. In the **Authentication methods | Policies** page, in the middle pane under the **Manage** section, select **Password protection.**
 
@@ -145,9 +137,9 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
     ![](../Images/5.png)
 
-1. Select **Password** from the left-hand navigation pane.
+1. In the **My account** window that appears, in the **Password** tile, select **CHANGE PASSWORD**.
 
-    ![](../Images/4.png)
+    ![](../Images/lab4-e1-11-2.png)
 
 16. A new tab will open displaying the **Change your password** window. Enter **Never4get!!** in the **New password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
 
@@ -173,9 +165,12 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
 	>**Note:** If you do not receive this lockout message after the third attempt, then the system has not yet finished propagating this lockout threshold change throughout the service. It may take several minutes for the change to take effect. Wait a few minutes and then sign-in again with a bogus password. Testing of this lab has seen varying results. The change sometimes propagates almost immediately so that you get locked out after the third sign-in attempt. Other times it has taken anywhere from 5 to 10 minutes before the lockout message is displayed. Continue this process until you receive the lockout message, at which point Laura's account will be temporarily locked to prevent unauthorized access.
 
-22. You will be prohibited from logging in again as Laura until after the **90 second lockout duration** that you set earlier. Once you've been locked out, wait 90 seconds and then sign back in as **Laura**'s account. Verify that you are able to successfully sign-in as Laura.
+22. You will be prohibited from logging in again as Laura until after the **90 second lockout duration** that you set earlier. Once you've been locked out, wait 90 seconds and then sign back in as **Laura**'s account. 
 
-23. Once your log-in is successful, you can close all open applications. This will be your last lab exercise using the LON-DC1 domain controller.
+23. Because MFA is enabled for all users except for the M365 pilot project group members (of which, Laura is not a member), a **Let's keep your account secure** window appears so that you can complete the MFA process for Laura. This is verification that your sign-in attempt using Laura's actual password was successful.  <br>
+
+	**Note:** You do NOT need to complete the MFA process for Laura, since this is your last lab exercise using the LON-DC1 domain controller. You can close all applications on LON-DC1.
+ 
    
 ## Review
 

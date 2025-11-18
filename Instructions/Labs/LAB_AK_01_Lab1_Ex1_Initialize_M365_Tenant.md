@@ -83,17 +83,17 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
     >**Note:** if any pop-up appears select **Skip for now**.
     
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
     ![](../Images/lab1-e1-11-0.png)
 
-1. The **Welcome to Microsoft 365** page appears in your Edge browser in the **Home | Microsoft 365 Copilot** tab. This is the ODL user's Microsoft 365 home page.
+1. The **M365 Copilot** page appears in your Edge browser in the **M365 Copilot** tab. This is the ODL user's Microsoft 365 home page.
 
 	>**Note:** Notice the initials **O1** displayed inside a circle in the bottom-left corner of the screen. These represent the **ODL user** account, which is the tenant admin account you just signed in with. When a user, such as the ODL user, does not have a profile picture assigned, their initials are shown instead.
 
-    ![Access Your VM and Lab Guide](../Images/lab1-e1-11-1.png)
+    ![](../Images/lab1-e1-11-1.png)
 
-1. On the **Microsoft 365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Admin**, this opens the **Microsoft 365 admin center** in a new browser tab. 
+1. On the **M365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Admin**, this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 	![](../Images/lab1-e1-11-2.png)
 
@@ -109,7 +109,7 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
 	![](../Images/MS-102-image-3.png)
 
-1. In the **Organization information** pane that appears, enter the following information:
+1. In the **Organization information** pane that appears, enter the following information: (READ ONLY)
 
     - Name: **Adatum Corporation (1)**
 
@@ -133,7 +133,7 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
         ![](../Images/ms-102-14.png)
 
-1. At the top of the **Organization information** pane, note the message indicating the **Saved (1)**. Select the **X (2)** in the upper right-hand corner to close the pane.
+1. At the top of the **Organization information** pane, note the message indicating the **Saved (1)**. Select the **X (2)** in the upper right-hand corner to close the pane. (READ ONLY)
 
     ![](../Images/ms-102-15.png)
 

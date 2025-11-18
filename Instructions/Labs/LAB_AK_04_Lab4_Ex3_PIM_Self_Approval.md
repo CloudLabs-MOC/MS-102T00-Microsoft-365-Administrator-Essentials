@@ -19,13 +19,13 @@ In this task, you will create a group that is eligible to be assigned the Helpde
 
 1. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
 
-1. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Identity (1)**, select **Groups (2)** and then select **All groups (3)**.
+1. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Entra Id (1)**, select **Groups (2)** and then select **All groups (3)**.
 
-    ![](../Images/L4E2T1S3.png)
+    ![](../Images/lab4-e1-11-5.png)
 
 1. In the **Groups | All groups** window, select **New group** in the menu bar.
 
-    ![](../Images/L4E2T1S4.png)
+    ![](../Images/lab4-e1-11-8.png)
 
 1. In the **New group** window, enter the following information:
 
@@ -57,21 +57,21 @@ In this task, you will create a group that is eligible to be assigned the Helpde
 
      ![](../Images/L4E2T1S8.png)
 
-1. You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **Identity Governance (1)** to expand the section, and then select **Privileged Identity Management (2)**.
+1. You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **Id Governance (1)** to expand the section, and then select **Privileged Identity Management (2)**.
 
-     ![](../Images/ms-102-92.png)
+     ![](../Images/lab4-e1-11-3.png)
 
 1. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
      ![](../Images/L4E2T1S10.png)
 
-1. In the **Adatum Corporation | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
+1. In the **OTU WA MOC | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
 
-     ![](../Images/L4E2T1S11.png)
+     ![](../Images/lab4-e1-11-9.png)
 
-1. In the **Adatum Corporation | Roles (1)** window, scroll down through the list of roles and select **Helpdesk Administrator (2)**.
+1. In the **OTU WA MOC | Roles (1)** window, scroll down through the list of roles and select **Helpdesk Administrator (2)**.
 
-     ![](../Images/L4E2T1S12.png)
+     ![](../Images/lab4-e1-11-10.png)
 
 1. In the **Helpdesk Administrator | Assignments** window, select **+ Add assignments** on the menu bar. 
 
@@ -107,13 +107,13 @@ In the prior lab exercise involving the Global administrator role, Holly updated
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson from the prior task.
 
-2. In your browser, you should still have the **Microsoft Entra admin center** open from the prior task. In the left-hand navigation pane, under the **Identity Governance** section, select **Privileged Identity Management**.
+2. In your browser, you should still have the **Microsoft Entra admin center** open from the prior task. In the left-hand navigation pane, under the **Id Governance** section, select **Privileged Identity Management**.
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-4. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+4. In the **OTU WA MOC | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
-5. In the **Adatum Corporation | Settings** window, select the **Helpdesk Administrator** role.
+5. In the **OTU WA MOC | Settings** window, select the **Helpdesk Administrator** role.
 
     **>Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Helpdesk administrator role.
 
@@ -190,7 +190,7 @@ At this point in Holly's pilot project, the PIM-Helpdesk-Administrators group ha
 
 12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Microsoft Entra roles appeared. Now that Alex has self-approved the **Helpdesk Administrator** role, it's now been assigned to his user account. 
 
-13. Close the InPrivate browser session. This should return you to the **Microsoft Entra admin center**, which should be displaying the **Adatum Corporation | Settings** page.
+13. Close the InPrivate browser session. This should return you to the **Microsoft Entra admin center**, which should be displaying the **OTU WA MOC | Settings** page.
 
 14. Leave your browser and all tabs open for the next task.
 
@@ -205,9 +205,9 @@ When you earlier configured the Helpdesk Administrator role, you set up the noti
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. In your Edge browser, select the **Home | Microsoft 365 Copilot** tab.
 
-2. On the **Welcome to Microsoft 365 Copilot** page, select the **App Launcher (1)** on the left-side of the screen, select the **Outlook (2)** icon. This will open Outlook for Holly Dickson's mailbox in a new tab.
+2. In the **365 Copilot page** page, select **Apps (1)**. On the **Apps** page, close the **Welcome to Apps** window by selecting the **X** in the upper-right corner of the window. In the row of app tiles, select **Outlook (2)**. 
 
-     ![](../Images/ms-102-95.png)
+     ![](../Images/lab1-e1-11-10.png)
 
 3. In Holly's Outlook mailbox, her **Inbox** is displayed by default. Verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role for the Adatum Corporation Directory**. 
 
@@ -217,11 +217,11 @@ When you earlier configured the Helpdesk Administrator role, you set up the noti
 
 5. To review the audited list of activities related to Alex's self-approval of the Helpdesk Administrator role, select the **Microsoft Entra admin center** tab in your Edge browser. 
 
-6. In the **Microsoft Entra admin center**, the **Adatum Corporation | Settings** page should be displayed. This is where you left off in the prior task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
+6. In the **Microsoft Entra admin center**, the **OTU WA MOC | Settings** page should be displayed. This is where you left off in the prior task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
 
-7. In the **Adatum Corporation | Resource audit** page, review the list of PIM activities. Note the two most recent activities, which include Alex's request to be assigned to the Helpdesk Administrator role, and the completion of Alex's request. 
+7. In the **OTU WA MOC | Resource audit** page, review the list of PIM activities. Note the two most recent activities, which include Alex's request to be assigned to the Helpdesk Administrator role, and the completion of Alex's request. 
 
-     ![](../Images/ms-102-97.png)
+     ![](../Images/lab4-e1-11-11.png)
 
 8. Leave your browser and all tabs open for the next task.
 

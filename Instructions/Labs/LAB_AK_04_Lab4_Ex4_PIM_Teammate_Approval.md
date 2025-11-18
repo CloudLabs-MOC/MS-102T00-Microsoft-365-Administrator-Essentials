@@ -20,7 +20,7 @@ For this final test of PIM in Adatum's pilot project, Holly has selected Alex Wi
 
 2. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
 
-3. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Identity** select **Groups**, and then select **All groups**.
+3. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Entra Id** select **Groups**, and then select **All groups**.
 
 4. In the **Groups | All groups** window, select **New group** in the menu bar.
 
@@ -46,13 +46,13 @@ For this final test of PIM in Adatum's pilot project, Holly has selected Alex Wi
 
 8. On the **Groups | All groups** window, if the **PIM-Intune-Administrators** group does not appear, select **Refresh** on the menu bar. It may take a few minutes for the group to appear.
 
-9. You must now make the **PIM-Intune-Administrators** group eligible for role assignment. In the **Microsoft Entra admin center** navigation pane, under the **Identity Governance** section, select **Privileged Identity Management**.
+9. You must now make the **PIM-Intune-Administrators** group eligible for role assignment. In the **Microsoft Entra admin center** navigation pane, under the **Id Governance** section, select **Privileged Identity Management**.
 
 10. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-11. In the **Adatum Corporation | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
+11. In the **OTU WA MOC | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
 
-12. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Intune Administrator**.
+12. In the **OTU WA MOC | Roles** window, scroll down through the list of roles and select **Intune Administrator**.
 
     >**Note:** If in **Select role** nothing is mentioned, then select the drop-down, search and select **Intune Administrators**.
 
@@ -81,13 +81,13 @@ As in the prior PIM exercise involving the Helpdesk admin role, Holly is trustin
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-2. In your browser, you should still have the **Microsoft Entra admin center** open from the prior task. In the left-hand navigation pane, under the **Identity Governance** section, select **Privileged Identity Management**.
+2. In your browser, you should still have the **Microsoft Entra admin center** open from the prior task. In the left-hand navigation pane, under the **Id Governance** section, select **Privileged Identity Management**.
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-4. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+4. In the **OTU WA MOC | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
-5. In the **Adatum Corporation | Settings** window, select the **Intune Administrator** role.
+5. In the **OTU WA MOC | Settings** window, select the **Intune Administrator** role.
 
     >**Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Intune administrator role.
 
@@ -219,13 +219,13 @@ When you earlier configured the Intune Administrator role, you set up the notifi
 
 5. To review the audited list of activities related to Joni's approval of the Intune Administrator role, select the **Microsoft Entra admin center** tab in your Edge browser. 
 
-6. In the **Microsoft Entra admin center**, the **Adatum Corporation | Settings** page should be displayed. This is where you left off in an earlier task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
+6. In the **Microsoft Entra admin center**, the **OTU WA MOC | Settings** page should be displayed. This is where you left off in an earlier task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
 
-7. In the **Adatum Corporation | Resource audit** page, review the list of PIM activities. Note the two most recent activities. Select the second activity, where the requestor is Alex Wilber. In the **Audit details** pane that appears, note the **Subject** is Joni Sherman, and the **Action** indicates Alex approved Joni's role request for the Intune Administrator role. Select **Close**.
+7. In the **OTU WA MOC | Resource audit** page, review the list of PIM activities. Note the two most recent activities. Select the second activity, where the requestor is Alex Wilber. In the **Audit details** pane that appears, note the **Subject** is Joni Sherman, and the **Action** indicates Alex approved Joni's role request for the Intune Administrator role. Select **Close**.
 
-8. In the **Adatum Corporation | Resource audit** page, in the list of PIM activities, select the first activity. In the **Audit details** pane that appears, note the **Subject** is Joni Sherman, and the **Action** indicates Joni was added to the Intune Administrator role. Also note the **Reason** that you entered for the role request. Select **Close**.
+8. In the **OTU WA MOC | Resource audit** page, in the list of PIM activities, select the first activity. In the **Audit details** pane that appears, note the **Subject** is Joni Sherman, and the **Action** indicates Joni was added to the Intune Administrator role. Also note the **Reason** that you entered for the role request. Select **Close**.
 
-9. In your Edge browser session, close all the tabs except for the **Home | Microsoft 365 Copilot** tab and the tab containing the **Microsoft 365 admin center**. Leave these two tabs open for the next lab.
+9. In your Edge browser session, close all the tabs except for the **Microsoft 365 Copilot** tab and the tab containing the **Microsoft 365 admin center**. Leave these two tabs open for the next lab.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.

@@ -188,9 +188,11 @@ In this task, you will begin by examining the administrative properties of two u
 
 	![](../Images/lynne.png)
 
-1. From the top-menu drop-down, and on the **Connect to LON-CL2** pop-up select **Connect**.
+1. To Switch between the Virtual Machines, select **LON_CL1 (1)** the required VM from the dropdown.
 
-	![](../Images/lab1-e1-11-7.png)
+	 ![](../Images/lab1-e1-11-7.png)
+
+1. From the top-menu drop-down, and on the **Connect to LON-CL2** pop-up select **Connect**.
 
 	>**Note:** if required maximize the **LON-CL2** VM.
 
@@ -212,15 +214,17 @@ In this task, you will begin by examining the administrative properties of two u
 
 1. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. If a **Save password** window appears, select **Never**.
 
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-	>**Note:** Close the pop-up which appears.
+ 	![](../Images/lab1-e1-11-0.png)
 
-1. On the **Welcome to Microsoft 365** window, which is Joni's Microsoft 365 home page, a navigation pane appears on the left side of the screen that indicates the applications the user has permission to access. In this **Apps** pane, note how the **Admin** option is not displayed. This is because Joni was never assigned a Microsoft 365 administrator role. 
+	 >**Note:** Close the pop-up which appears.
+
+1. On the **Microsoft 365 Copilot** window, which is Joni's Microsoft 365 home page, a navigation pane appears on the left side of the screen that indicates the applications the user has permission to access. In this **Apps** pane, note how the **Admin** option is not displayed. This is because Joni was never assigned a Microsoft 365 administrator role. 
 
 	![](../Images/lab1-e1-11-8.png)
 
-17. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Welcome to Microsoft 365** page, select the user icon for **Joni Sherman** (the circle in the bottom left-hand corner), and in the **Joni Sherman** window that appears, select **Sign out.** 
+17. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Microsoft 365 Copilot** page, select the user icon for **Joni Sherman** (the circle in the bottom left-hand corner), and in the **Joni Sherman** window that appears, select **Sign out.** 
 
 18. You will now sign back into Microsoft 365 as **Lynne Robbins**. In your current **Edge** browser tab, it should display a message indicating **Joni, you're signed out now**. In this window, it gives you the option of signing back in as Joni, or signing in as a different user. Select **Switch to a different account**, and in the **Email address** field that appears, enter **lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
@@ -228,11 +232,11 @@ In this task, you will begin by examining the administrative properties of two u
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-19. If a **Welcome to Microsoft 365** dialog box appears, select the **X** in the upper right-hand corner of the window to close it.
+19. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
 20. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it.
 
-21. On the **Welcome to Microsoft 365** window, which is Lynne's Microsoft 365 home page, note how the **Admin** icon is displayed in the navigation pane on the left side of the screen. This icon appears because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
+21. On the **Microsoft 365 Copilot** window, which is Lynne's Microsoft 365 home page, note how the **Admin** icon is displayed in the navigation pane on the left side of the screen. This icon appears because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
 
 	![](../Images/lab1-e1-11-9.png)
 

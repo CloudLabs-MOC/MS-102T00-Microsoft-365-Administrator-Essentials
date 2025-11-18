@@ -35,9 +35,9 @@ In this task, you will configure settings to require approval before users are a
 
     ![](../Images/ms-102-66.png)
 
-1. In the **Microsoft Entra admin center**, the **Home** page is displayed by default. From the left-hand navigation pane, select **Privileged Identity Management (2)** under **Identity Governance (1)**.
+1. In the **Microsoft Entra admin center**, select **ID governance (1)** in the navigation pane to expand this group, and then select **Privileged Identity Management (2)**.
 
-    ![](../Images/ms-102-67.png)
+    ![](../Images/lab4-e1-11-3.png)
 
 1. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
@@ -103,9 +103,9 @@ In this task, you will assign an eligible group to the Global Administrator role
 
 1. You will begin by creating a new, role-assignable security group called **PIM-Global-Administrators** in Microsoft Entra ID, and you will assign Patti as a member of the group. 
 
-1. In your **Edge** browser, you should still have the **Microsoft Entra admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window from the prior task. In the left-hand navigation pane, under **Identity (1)** select **Groups (2)**, and then select **All groups (3)**.
+1. In your **Edge** browser, you should still have the **Microsoft Entra admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window from the prior task. In the left-hand navigation pane, under **Entra ID (1)** select **Groups (2)**, and then select **All groups (3)**.
 
-    ![](../Images/ms-102-76.png)
+    ![](../Images/lab4-e1-11-5.png)
 
 1. In the **Groups | All groups** window, in the detail pane on the right, select **New group** in the menu bar.
 
@@ -139,7 +139,7 @@ In this task, you will assign an eligible group to the Global Administrator role
 
     ![](../Images/ms-102-80.png)
 
-1. You must now make the **PIM-Global-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **Identity Governance** to expand the section, and then select **Privileged Identity Management**.
+1. You must now make the **PIM-Global-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **ID Governance** to expand the section, and then select **Privileged Identity Management**.
 
 1. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 

@@ -16,7 +16,7 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-3. In the **Welcome to Microsoft 365** page, select **Apps (1)**. On the **Apps** page, close the **Welcome to Apps** window by selecting the **X** in the upper-right corner of the window. In the row of app tiles, select **Outlook (2)**. 
+3. In the **Microsoft 365 Copilot page** page, select **Apps (1)**. On the **Apps** page, close the **Welcome to Apps** window by selecting the **X** in the upper-right corner of the window. In the row of app tiles, select **Outlook (2)**. 
 
 	![](../Images/lab1-e1-11-10.png)
 
@@ -76,9 +76,7 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
 24. Close both the **Message Header Analyzer** tab and the **Microsoft Remote Connectivity Analyzer** tab in your Edge browser. 
 
-25. Select the **Microsoft 365 admin center** tab. If you had closed this tab, then select the **Home | Microsoft 365** tab in your Edge browser, select the **App launcher (1) (2)** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
-
-	![](../Images/MS-102-image-14.png)
+25. Select the **Microsoft 365 admin center** tab. If you had closed this tab, then select the **Microsoft 365 Copilot** tab in your Edge browser, on the **Microsoft 365 Copilot** page  in the list of application icons that appear in the left-hand pane, select  **Admin** this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 26. On the **Microsoft 365 admin center** page, in the navigation pane, select **Show all** (if necessary). 
 

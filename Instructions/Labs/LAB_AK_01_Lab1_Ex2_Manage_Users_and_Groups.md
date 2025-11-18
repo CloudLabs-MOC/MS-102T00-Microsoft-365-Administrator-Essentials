@@ -71,13 +71,13 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. If a **Welcome to Microsoft 365** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
     ![](../Images/lab1-e1-11-0.png)
 
 	>**Note:** If a any pop-up appears, select the **X** in the upper right-hand corner of the window to close it. 
 
-1. The **Welcome to Microsoft 365 Copilot** page appears in your Edge browser in the **Home | Microsoft 365 Copilot** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the below-left corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
+1. The **Microsoft 365 Copilot** page appears in your Edge browser in the **Microsoft 365 Copilot** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the below-left corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
 
 	![Access Your VM and Lab Guide](../Images/lab1-e1-11-4.png)
 

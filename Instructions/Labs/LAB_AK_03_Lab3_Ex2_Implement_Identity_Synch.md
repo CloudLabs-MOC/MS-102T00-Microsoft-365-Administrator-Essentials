@@ -10,7 +10,7 @@ In this exercise, you will use Microsoft Entra Connect to enable synchronization
 
 In this task, you will install Microsoft Entra Connect on a designated server and configure it to initiate the synchronization between your on-premises Active Directory and Microsoft Entra ID.
 
-1. You should still be logged into **LON-DC1** as the local **adatum\administrator** from the prior task. 
+1. You should still be logged into **LON-DC1** as **adatum\administrator** from the prior task. 
 
 1. After finishing the previous lab exercise, you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. If not then enter the URL **https://admin.microsoft.com/** and sign-in with the Holly's account.
 
@@ -54,15 +54,19 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
 1. Select **Next**. The wizard will deploy the recommended solution, **Microsoft Entra Connect Sync**. 
 
-1. On the **Sync your users** page, under the **Installation options**, select the hyperlink which states **Getting started with Microsoft Entra Connect Sync using express settings.** This opens a new tab in your browser and takes you to the Microsoft Learn page. Here, click on the hyperlink **download Microsoft Entra Connect sync**, which will take you to Download Center.
+1. The new **Entra Connect Sync** can now only be downloaded from the **Entra portal** (not the Microsoft 365 Admin portal). 
 
-	![](../Images/L3E2T1S12-2904.png)
+    To access it, open a new browser tab and go to: **https://entra.microsoft.com**
 
-	![](../Images/L3E2T1S12.2-2904.png)
+    - Sign in if prompted.  
+    - In the **Microsoft Entra admin center**, use the **Search resources, services, and docs** box to search for **Microsoft Entra Connect**.
 
-1. Under **Microsoft Entra Connect**, select **Download**.
+1. On the **Microsoft Entra Connect | Get started** page:  
+    - Select the **Manage** tab.  
+    - Scroll down and choose **Download Connect Sync Agent**.  
+    - Select **Accept terms & Download** to begin.  
 
-	- Select the **Open file** link that appears below the **AzureADConnect.msi** file once it's finished downloading.
+1. If a **Downloads** window appears at the top of the screen, select the **Open file** link that appears below the **AzureADConnect.msi** file once it finishes downloading. <br/>
 
 	- However, if a **Downloads** window doesn't appear at the top of the screen, select the ellipsis icon (three dots) that appears to the right of the **Profile 1** icon (the image of a person inside a circle). In the drop-down menu that appears, select **Downloads**. If a **Downloads** window appears at the top of the screen and it includes the **AzureADConnect.msi** file, then select the **Open file** link that appears below it. However, if **AzureADConnect.msi**  does not appear in the **Downloads** window, then on the **Microsoft Download Center** page, select the **click here to download manually** hyperlink and then repeat this step to open the **AzureADConnect.msi** file.
 
@@ -120,7 +124,7 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
 	>**Note:** (if the **Next** button is not enabled, then tab off the PASSWORD field to enable it). 
 
-1. In the **Microsoft Entra ID sign-in configuration** window, select the **Continue without matching all UPN suffixes to verified domains** check box at the bottom of the page and then select **Next**.
+1. In the **Microsoft Entra sign-in configuration** window, select the **Continue without matching all UPN suffixes to verified domains** check box at the bottom of the page and then select **Next**.
 
 1. On the **Ready to configure** screen, select the check box for **Start the synchronization process when configuration completes** if it’s not already selected, and then select **Install**.   
 

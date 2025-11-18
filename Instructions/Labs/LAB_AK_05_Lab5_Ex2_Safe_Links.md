@@ -66,7 +66,7 @@ You will then go back into Holly's Outlook mailbox and open the email in her Sen
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-1. In your **Microsoft Edge** browser, select the **Home | Microsoft 365 Copilot** tab and then in the column of app launcher icons on the left side of the screen, select the **Outlook** icon. This will open Holly Dickson's mailbox.
+1. In your **Microsoft Edge** browser, select the **Microsoft 365 Copilot** tab, in the left-hand navigation pane, select **Apps** and then select the **Outlook** app. 
 
 1. **Outlook** will open in a new tab in your browser, and Holly's **Inbox** will be displayed.
 
