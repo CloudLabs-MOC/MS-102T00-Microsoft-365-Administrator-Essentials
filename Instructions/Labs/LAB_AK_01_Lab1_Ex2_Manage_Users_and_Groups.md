@@ -39,11 +39,11 @@ This task involves managing user roles and licenses within Microsoft 365 for Ada
 
 1. Select **Licenses and apps (1)**,
 
-	- Licenses: Select the **Enterprise Mobility + Security E5** and **Microsoft 365 E5** **(2)** check boxes.
+	- Licenses: Select the **Enterprise Mobility + Security E5** and **Microsoft 365 Business Premium** **(2)** check boxes.
 
 1. Select **Save changes (3)**.
 
-	![Access Your VM and Lab Guide](../Images/licensesandapps.png)
+	![](../Images/lab1-e1-11-16.png)
 
 1. Select **Close.**
 

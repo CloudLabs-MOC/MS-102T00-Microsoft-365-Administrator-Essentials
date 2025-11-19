@@ -40,6 +40,16 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
     ![Access Your VM and Lab Guide](../Images/ms-102-9.png)
 
+1. After assigning the **Enterprise Mobility + Security E5** licenses, select **Licenses - Subscriptions** at the top to return to the subscriptions list. 
+
+1. From the list of available subscriptions, select **Microsoft 365 Business Premium** to continue with the next licensing assignment steps.
+
+1. On the **Microsoft 365 Business Premium** page, select **+ Assign licenses (1)**. In the **Assign licenses to users** pane, search for and select **Alex Wilber**, **Joni Sherman**, and **Lynne Robbins (1)**, and then select **Assign licenses (2)**.
+
+     ![](../Images/lab1-e1-11-13.png)
+
+     ![](../Images/lab1-e1-11-14.png)
+
 1. Close the assigned licenses pane, and close the **Microsoft 365 admin center**.
 
 1. On the Lab-VM, in the Type here to search box, type **Windows PowerShell (1)**. In the **Windows PowerShell (2)** results, select **Run as administrator (3)**, and run the following commands to assign the usage location to all users:
@@ -105,39 +115,7 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
 1. On the **Org settings** page, the **Services** tab is displayed by default. Select the **Organization profile** tab.
 
-1. In the **Organization profile (1)** tab, select **Organization information (2)** from the list of profile data.
-
-	![](../Images/MS-102-image-3.png)
-
-1. In the **Organization information** pane that appears, enter the following information: (READ ONLY)
-
-    - Name: **Adatum Corporation (1)**
-
-    - Street Address: **555 Main Street (2)**
-
-    - City: **Redmond (3)**
-
-    - State or province: **Washington (4)**
-
-    - ZIP or postal code: **98052 (5)**
-
-    - Phone: **Keep it as Default (6)**
-
-    - Technical contact: **<inject key="AzureAdUserEmail"></inject> (7)**
-
-    - Preferred language: **English (8)**
-    
-    - Select **Save (9)**
-
-        ![](../Images/ms-102-13.png)
-
-        ![](../Images/ms-102-14.png)
-
-1. At the top of the **Organization information** pane, note the message indicating the **Saved (1)**. Select the **X (2)** in the upper right-hand corner to close the pane. (READ ONLY)
-
-    ![](../Images/ms-102-15.png)
-
-1. Back on the **Organization profile** tab, in the list of organization profile data, select **Release preferences**.
+1. In the **Organization profile** tab, select **Release preferences** from the list of profile data.
 
     >**Note:** One of the benefits of Microsoft 365 is its ability to have the latest features and updates automatically applied to your environment. This process can reduce maintenance costs and overhead for an organization and allow early-adopter users to test new features. By setting up your **Release preferences**, you can control how and when your Microsoft 365 tenant receives these updates.
 

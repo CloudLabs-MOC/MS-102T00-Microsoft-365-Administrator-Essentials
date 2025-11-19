@@ -4,9 +4,9 @@ Welcome to your MS-102 : MICROSOFT 365 ADMINISTRATOR AND ESSENTIALS workshop! We
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![Enter Your Password](../Images/ms-102-2.png) 
+![Enter Your Password](../Images/ms-102-g1.png) 
 
 ### Virtual Machine & Lab Guide
  
@@ -16,23 +16,29 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Explore Lab Resources](../Images/ms-102-3.png)
+![Explore Lab Resources](../Images/ms-102-g2.png)
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](../Images/ms-102-4.png)
+![Use the Split Window Feature](../Images/ms-102-g3.png)
  
 ## Managing Your Virtual Machine
  
-1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+1. Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+
+    - Once you finish using the lab for the day, please **stop or deallocate** the VM from the Resources tab as shown in the image below.
  
-    ![Manage Your Virtual Machine](../Images/image-04.png)
+    - **Label (2)** indicates **starting the VM**, and **label (3)** indicates **stopping or deallocating** it. Stopping or deallocating the VM helps preserve the VM uptime limit so you can continue working the next day without exhausting the available uptime.
+ 
+    - Please note that once the lab is launched, the overall lab session cannot be paused and will continue to run until the allotted time is fully consumed. Only the VM itself can be stopped or deallocated as described above.
+ 
+      ![Manage Your Virtual Machine](../Images/ms-102-g5.png)
 
 2. To initiate the required VMs, use the dropdown menu located at the top of the lab environment
 
-    ![Manage Your Virtual Machine](../Images/ms-102-28.png)
+    ![Manage Your Virtual Machine](../Images/ms-102-g4.png)
  
 3. When logging into the Hyper-V virtual machines, if a message appears stating **"Press Ctrl+Alt+Delete to unlock"**, navigate to the **Actions** menu in the Virtual Machine Connection window and select the **Ctrl+Alt+Delete** option, as shown in the image below.
 
@@ -44,14 +50,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Lab Guide Zoom In/Zoom Out
  
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![](../Images/ms-102-31.png)
+   ![](../Images/ms-102-g6.png)
 
 ## Pasting Commands in the PowerShell/CloudShell Environment
 
 Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting commands inside the PowerShell/CloudShell environment instead of right-clicking
-
 
 ## Let's Get Started with Azure Portal
  
@@ -63,16 +68,18 @@ Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting com
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-        ![Enter Your Username](../Images/user.png)
+        ![Enter Your Username](../Images/ms-102-g7.png)
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-        ![Enter Your Password](../Images/user1.png)
+        ![Enter Your Password](../Images/ms-102-g8.png)
 
-4. If prompted to stay signed in, you can click "No."
+4. If prompted to **Stay signed in**, you can click **No.**
  
+     ![](../Images/ms-102-g9.png)
+
 5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
 
 6. If you want a list of users and their email IDs, you can select the **Environment** page and scroll down to view the users list. 
@@ -87,9 +94,13 @@ Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting com
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
-1. At the **"More information required"** prompt, select **Next**.
+1. On the **Let's Keep your account secure** page, select **Next** twice.
 
-1. On the **"Keep your account secure"** page, select **Next** twice.
+     ![](../Images/ms-102-g11.png)
+
+1. On the **Set up your account in app** screen, select **Next** to continue.
+
+    ![](../Images/ms-102-g12.png)
 
 1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
 
@@ -97,14 +108,22 @@ Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting com
    - Search for **Microsoft Authenticator** and tap **Install**.
    - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
 
+     ![](../Images/ms-102-g13.png)
+
 1. A **QR code** will be displayed on your computer screen.
 
 1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+
+     ![](../Images/ms-102-g14.png)
 
 1. After scanning, click **Next** to proceed.
 
 1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
        
+    ![](../Images/ms-102-g15.png)
+
+1. Click on **Done**.
+
 1. If prompted to stay signed in, you can click "No."
  
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
@@ -114,7 +133,7 @@ Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting com
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
-- Email Support: labs-support@spektrasystems.com
+- Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
 - Now, click on **Next** from the lower right corner to move on to the next page.

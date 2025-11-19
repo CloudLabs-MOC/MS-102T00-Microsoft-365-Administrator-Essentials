@@ -12,7 +12,7 @@ In this task, you will simulate a scenario that triggers the first Data Loss Pre
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-1. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the email. In **Microsoft Edge**, select the **Microsoft Office Home** tab, and then select the **Outlook** icon in the column of app icons on the left-side of the screen. When Outlook on the web opens, you should be automatically logged in as Holly Dickson.  
+1. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the message. In **Microsoft Edge**, select the **Microsoft 365 (Copilot)** tab. In the left navigation pane, select **Apps**, and then choose **Outlook**. Outlook on the web will open, and you should be automatically signed in as **Holly Dickson**.
 
 	>**Note:** If **Outlook on the web** was already open, then verify that you're logged in as **Holly** by checking the user icon in the upper right corner (the **HD** circle). If Outlook was open for any other user, then close the tab and repeat the instructions in this step to open Outlook on the Web for Holly.
 
@@ -34,9 +34,7 @@ In this task, you will simulate a scenario that triggers the first Data Loss Pre
 
 		![](../Images/sendblocked.png)
 
-
 1. Leave the Outlook tab open in the Edge browser for the next task. 
-
 	
 ### Task 2 – Test the second DLP Policy rule  
 

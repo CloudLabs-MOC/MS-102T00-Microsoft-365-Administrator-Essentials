@@ -10,7 +10,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-1. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal should still be open; if not, then open a new tab and navigate to **https://purview.microsoft.com**.
   
     > **Note:** if prompted to switch to the new Compliance portal, click on switch to new portal. 
 
@@ -18,11 +18,13 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
 1. In the **Policies** page, select the **+ Create policy** option on the menu bar to start the **Create policy** wizard.
 
-1. On the **Start with a template or create a custom policy** page, the **Categories** column displays the policy categories. Each policy category provide templates that can be used to create that type of policy, except for the **Custom** category. This category does not provide any specific template; instead, it enables organizations to create custom policies from scratch. When you select a category, **Templates** column appears that displays the available templates to choose from for the selected category. When you select a template, another column appears that displays the type of information that is protected in that template. 
+1. On the **Choose what type of data to protect** page, select **Data stored in connected sources** and then select **Next** 
 
-1. For example, select **Financial** in the left-hand pane and then scroll through the various templates that you can choose from in the **Templates** column. Select one or two of the templates to see what type of information it protects. If you want, select each of the remaining categories to see what type of templates are provided. 
+1. On the **Start with a template or create a custom policy** page, the **Categories** column displays the policy categories. Each policy category provide Regulations that can be used to create that type of policy, except for the **Custom** category. This category does not provide any specific template; instead, it enables organizations to create custom policies from scratch. When you select a category, **Regulations** column appears that displays the available Regulations to choose from for the selected category. When you select a template, another column appears that displays the type of information that is protected in that template.
+
+1. For example, select **Financial** in the side pane and then scroll through the various Regulations that you can choose from in the **Regulations** column. Select one or two of the Regulations to see what type of information it protects. If you want, select each of the remaining categories to see what type of Regulations are provided.  
   
-1. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the **Categories** column, select the **Custom policy** template in the **Templates** column, and then select **Next**.
+1. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the **Categories** column, select the **Custom policy** template in the **Regulations** column, and then select **Next**.
 
 1. In the **Name your DLP policy** page, enter the following information and then select **Next**:
 
@@ -32,7 +34,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
 1. On the **Assign admin units** page, select **Next**. 
 
-1. On the **Choose where to apply the policy** page, verify the **Status** toggle is set to **On** for the following locations (if any of these locations is not set to **On** by default, then set it to **On** now): 
+1. On the **Choose where to assign the policy** page, verify the Checkbox is selected for the following locations (if any of these locations is not set to selected by default, then add them now):
 
     - **Exchange email**
     
@@ -42,7 +44,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
     
     - **Teams chats and channel messages**
     
-    - Set all other locations to **Off**, and then select **Next**.
+    - Set all other locations to **Off** by unchecking them, and then select **Next**.
 
         ![](../Images/L8E1T1S10-3004.png)
 
@@ -104,10 +106,10 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
       - Enter the following text in this field: **ATTENTION! You have entered sensitive information (multiple IP addresses) in this message. You will be blocked if you attempt to send this message. Overriding this block indicates you have authorized sending this sensitive data to the recipients.** 
 
-    - In the **User overrides** section, select the **Allow overrides from M365 services** check box. This enables additional settings that indicate how overrides will be handled. Select each of the check boxes for the following two options: 
+    - In the **User overrides** section, select the **Allow overrides from Microsoft 365 files and Microsoft Fabric items** check box. This enables additional settings that indicate how overrides will be handled. Select each of the check boxes for the following two options: 
 
-    - **Require a business justification to override**
-    - **Override the rule automatically if they report it as a false positive**
+       - **Require a business justification to override**
+       - **Override the rule automatically if they report it as a false positive**
     
     - In the **Incident reports** section, verify the **Send an alert to admins when a rule match occurs** toggle switch is set to **On** (if necessary, set it to **On**).
 
@@ -121,15 +123,54 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
 1. On the **Review your policy and create it** page, review the policy that you just created. If anything needs to be corrected, select the appropriate **Edit** option and make your corrections. When everything appears OK, select **Submit**.
 
-I8. it may take a minute or so for the **New policy created** page to appear. When it does, select **Done**.
-
+1. it may take a minute or so for the **New policy created** page to appear. When it does, select **Done**.
 
 You have now created a DLP policy that scans for IP addresses in emails and documents that are sent or shared in your organization.
+
+### Task 2 – Turn off the Send to Kindle feature that bypasses DLP policies 
+
+In this task, you will create a configuration policy in the Microsoft Intune admin center to disable the **Send to Kindle** feature in Microsoft Word. This feature allows users to send documents directly to their Kindle library, which can bypass Data Loss Prevention (DLP) controls. By adding and enabling the **Turn off Send to Kindle** setting in an Intune policy, you ensure that this feature is turned off across the organization, preventing users from transferring sensitive files to external locations that DLP policies cannot monitor.
+
+1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+
+2. In your Edge browser, locate the **Microsoft 365 admin center** tab. In the Microsoft 365 admin center's navigation pane, under the **Admin centers** group, select **Microsoft Intune**.
+
+3. In the **Microsoft Intune admin center** that opens up in a new tab, select **Apps** in the navigation pane.
+
+4. On the **Apps | Overview** page, in the middle navigation pane, select **Policies for Microsoft 365 apps** under the **Manage apps** section.
+
+5. On the **Apps | Policies for Microsoft 365 apps** page, select the **Create** button. This initiates the wizard to create a new policy. In the remaining steps, you'll enable the **Turn off Send to Kindle** setting within this policy.
+
+6. On the **Start with the basics** page, enter **Turn off Send to Kindle setting** in the **Name** field and then select **Next**.
+
+7. On the **Choose the scope** page, select the **This policy configuration applies to all users** option and then select **Next**.
+
+8. On the **Configure Settings** page, note the metrics that are displayed above the list of settings. There are over 2300 Office app settings for your tenant configuration. To quickly locate this setting, enter **Kindle** in the **Search** field and then press **Enter**. This should display any policies with **Kindle** in the policy name.
+
+9. As you can see, there's only one Kindle setting, which is **Turn off Send to Kindle**. Select this setting, which opens the **Turn off Send to Kindle** pane.
+
+10. In the **Turn off Send to Kindle** pane, the plaforms and applications that this setting applies to are displayed. Under the the description, select the **Show more** option. Finish reading the complete description of this setting.
+
+11. Select the drop-down arrow in the **Configuration setting** field. In the drop-down menu that appears, select **Enabled**.
+
+12. At the bottom of the pane, select the **Apply** button.
+
+13. On the **Configure Settings** page, the **Turn off Send to Kindle** policy should appear, and its **Status** should be set to **Configured**. Select **Next**.
+
+14. On the **Review configuration and create** page, select the **Create** button. 
+
+15. On the **Policy configuration created** page, select **Done**.
+ 
+16. Leave your Edge browser open. Do not close any of the tabs.
+
+By enabling this **Turn off Send to Kindle** setting in the new policy that you just created, you have turned off the **Send to Kindle** feature. This will prevent Adatum users from sending Word documents to their Kindle library, which bypasses the company's DLP policies.
+
 
 ## Review
 
 In this lab, you have:
 
 - Created a DLP policy with custom settings.
+- Turn off the Send to Kindle feature that bypasses DLP policies
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.

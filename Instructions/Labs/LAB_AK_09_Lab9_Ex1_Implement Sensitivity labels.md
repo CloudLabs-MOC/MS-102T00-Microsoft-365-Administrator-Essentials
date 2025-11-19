@@ -48,7 +48,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. In your Edge browser, you should still have a tab open for the **Microsoft 365 admin center**. If not, open a new tab and enter the following URL: **https://admin.microsoft.com**.
 
-1.  On the **Microsoft 365 admin center**, if necessary, select **... Show all**. Select **Compliance** under the **Admin centers** group.
+1.  On the **Microsoft 365 admin center**, if necessary, select **... Show all**. Select **Microsoft Purview** under the **Admin centers** group.
 
 1. On the **Microsoft Purview** portal, in the left-hand navigation pane, under **Solutions**, select **Information protection** and then select **Sensitivity labels**. 
 
@@ -60,7 +60,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
     >**Note:** how the message has now changed to indicate: **You can now create sensitivity labels with privacy and access control settings for Teams, SharePoint sites, and Microsoft 365 Groups.**	
 
-1. On the **Sensitivity labels** page, select the **+ Create a label** option that appears on the menu bar in the middle of the screen, below the previous message. This initiates the **New sensitivity label** wizard.
+1. On the **Sensitivity labels** page, select **+ Create**, and then choose **Label** from the dropdown menu. This starts the **New sensitivity label** wizard. 
 
 1. In the **New sensitivity label** wizard, on the **Name and tooltip** page, enter the following information:
 
@@ -76,7 +76,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, verify the **Items** check box is selected, as well as the **Files**, **Emails**, and **Meetings** check boxes below it (select all four of these check boxes now, if necessary). These check boxes allow you to define where this sensitivity label will be used so that you can configure the applicable protection settings. Select **Next**.
+1. On the **Define the scope for this label** page, verify that the **Files & other data assets**, **Emails**, and **Meetings** check boxes contain a tick mark. These check boxes allow you to define where this sensitivity label will be used so that you can configure the applicable protection settings. Select **Next**.
 
 1. On the **Choose protection settings for the types of items you selected** page, you can begin the process of using encryption settings to restrict access to content that the label will be applied to. When a document, email, or meeting invitation is encrypted, access to content is restricted, so that it:  <br/>
 
@@ -88,7 +88,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. Because you selected the **Control access** option on the prior page, the **Access control** page now appears. This page enables you to configure how the label applies encryption. You can choose to either:
 
-	- **Remove access control settings if already applied to items**: When you select this option, applying the label removes existing encryption, even if it was applied independently from a sensitivity label. It's important to understand that thi setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions to remove the existing encryption.
+	- **Remove access control settings if already applied to items**: When you select this option, applying the label removes existing encryption, even if it was applied independently from a sensitivity label. It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions to remove the existing encryption.
 
 	- **Configure access control settings**: This option turns on encryption with rights management. It also makes the following settings visible:
 		- Assign permissions now or let users decide?
@@ -97,9 +97,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. As such, select the **Remove access control settings if already applied to items** option and then select **Next**.
 
-1. On the **Encryption** page, you will define who can access items that have this label applied. Select the **Remove encryption if the file or email is encrypted** option and then select **Next**.
-
-1. On the **Content Marking** page, set the **Content Marking** toggle switch to **On**. This displays three options that enable you to customize how you want to mark files and emails. 
+1. Because you selected the **Apply content marking** option on the earlier page, the **Content marking** page now appears. Set the **Content marking** toggle switch to **On**. This displays three options that enable you to customize how you want to mark files and emails.
 
 1. Select all three check boxes. Under each setting, select **Customize text**. This opens a pane to customize that particular setting. Enter the following information in the **Customize** pane for each option (select **Save** after entering the settings for each option): 
 
@@ -141,8 +139,6 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. On the **Define protection settings for groups and sites** page, leave both check boxes blank and select **Next**.
 
-1. On the **Auto-labeling for schematized data assets (preview)** page, do not enable Auto-labeling for schematized data assets (preview). Select **Next**.
-
 1. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option and make any necessary changes. When all information appears correct, select **Create label**.
 
 1. A **Client Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. 
@@ -165,7 +161,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. In the **Sensitive info types** window, in the list of sensitive information types, this time only select the **ABA routing number** and the **U.S. Social security Number (SSN)** check boxes, and then select **Add**. Back on the **Auto-labeling for files and emails** page, both of these sensitive information types will appear. Select **Next**.
 
-1. On the **Define protection settings for groups and sites** page, leave the two check boxes blank and select **Next**.
+1. On the **Define protection settings for groups and sites** page, leave all check boxes unselected and select **Next**.
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
@@ -178,8 +174,6 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 1. In the **Create policy** wizard, on the **Choose sensitivity labels to publish** page, under **Sensitivity labels to publish**, **PII** label is already selected, select **Next** for **Assign admin units**. On **Assign admin units** select **Next**.
 
 1. On the **Publish to users and groups** page, The **Users and groups** option is already selected by default (if not, then select it now). This will make your policy available to all users and groups. Select **Next**.
-
-1. On the **Publish to users and groups** page, select **Next**.
 
 1. On the **Policy settings** page, select the **Users must provide a justification to remove a label or lower its classification** check box, and then select **Next**. 
 
@@ -337,13 +331,6 @@ To verify whether the protection that you assigned to the document works, you wi
 26. You will now test what happens when you attempt to open the document that was sent to your personal email address. Use your phone or classroom PC to access your personal email address. Open the email that you (in the role of Holly) just sent to your personal email address, and then attempt to open the attached file. 
 
 27. You should receive a message indicating that you are not signed into Office with an account that has permission to access the document. You can optionally sign in with an account that has permission to access the file, or request access from the **Holly**'s account account, or Cancel out of the operation. Select **Cancel**. Since only Joni was assigned permission to read the document, you just verified that Azure Information Protection protected the document based on the PII policy parameters that you configured.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabssupport@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="6d780c04-ac8f-4dea-a9d4-66ff39161d9f" />
 
 ## Review
 

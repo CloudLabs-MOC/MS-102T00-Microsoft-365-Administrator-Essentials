@@ -31,7 +31,7 @@ In this task, you will enable In-Place Archiving for a newly created user to pro
 
 In this task, you will create a custom email retention policy and apply it to a group of test users to control how long emails are retained before being archived or deleted.
 
-1. On **LON-CL1**, your Microsoft Edge browser should still have the **Microsoft 365 admin center** open. Select the tab for the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** section, select **Compliance**. Doing so will open the **Microsoft Purview** portal.
+1. On **LON-CL1**, your Microsoft Edge browser should still have the **Microsoft 365 admin center** open. Select the tab for the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** section, select **Microsoft Purview**. Doing so will open the **Microsoft Purview** portal.
 
 1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)**, and then select **Data lifecycle management (2)**.
 

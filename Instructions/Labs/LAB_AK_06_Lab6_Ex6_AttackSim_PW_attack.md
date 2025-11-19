@@ -85,7 +85,7 @@ In this task, you will set up and execute a Drive-by URL attack to simulate how 
 
 18. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. This returns you to the **Add indicator** pane. 
 
-19. In the **Indicator Description** field, replace the default description with the following text: **Free gifts or other one-time only promotional giveaways**.
+19. In the **Indicator Description** field, replace the default description with the following text enter, **Free gifts or other one-time only promotional giveaways**.
 
 20. Select inside the **Indicator Preview** to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
 
