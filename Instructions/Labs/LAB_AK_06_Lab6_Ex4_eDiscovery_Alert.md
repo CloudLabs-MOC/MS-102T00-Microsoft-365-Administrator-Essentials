@@ -65,17 +65,18 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 	![](../Images/ms-102-102.png)
 
 	> **Note:** If you encounter an **permission error -** _You are not a member of the content search case_ please follow the below steps to add the eDiscovery manager role to Holly.
-	> - In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
-
-	  ![](../Images/ediscovery1.png)
-
-	> - In the list of Role groups, select **eDiscovery Manager (1)** and click on **Edit (2)**.
- 
-	  ![](../Images/ediscovery2.png)
-
-	> - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** and click on **Select (3)**. Now click on **Next** twice, select **Save** and **Done**.
 	
-	  ![](../Images/ediscovery3.png)
+	 - In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
+
+		![](../Images/ediscovery1.png)
+
+	 - In the list of Role groups, select **eDiscovery Manager (1)** and click on **Edit (2)**.
+ 
+	   ![](../Images/ediscovery2.png)
+
+	 - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** and click on **Select (3)**. Now click on **Next** twice, select **Save** and **Done**.
+	
+	  	![](../Images/ediscovery3.png)
 
 1. On the **Searches** tab, select **Create a search**. This initiates the **New search wizard**.  
 

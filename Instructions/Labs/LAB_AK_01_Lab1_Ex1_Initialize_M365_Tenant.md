@@ -44,7 +44,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. From the list of available subscriptions, select **Microsoft 365 Business Premium** to continue with the next licensing assignment steps.
 
-1. On the **Microsoft 365 Business Premium** page, select **+ Assign licenses (1)**. In the **Assign licenses to users** pane, search for and select **Alex Wilber**, **Joni Sherman**, and **Lynne Robbins (1)**, and then select **Assign licenses (2)**.
+1. On the **Microsoft 365 Business Premium** page, select **+ Assign licenses**. In the **Assign licenses to users** pane, search for and select **Alex Wilber**, **Joni Sherman**, and **Lynne Robbins (1)**, and then select **Assign licenses (2)**.
 
      ![](../Images/lab1-e1-11-13.png)
 
@@ -349,8 +349,7 @@ In this task, you will install the Microsoft Graph PowerShell SDK to enable mana
     ```powershell
     Get-InstalledModule Microsoft.Graph.* 
     ```
-
-	  >**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
+	 >**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
 
 1. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **RemoteSigned** enables Holly to load all signed configuration files and run all signed scripts. At the command prompt, type the following command, and then press Enter:
 	

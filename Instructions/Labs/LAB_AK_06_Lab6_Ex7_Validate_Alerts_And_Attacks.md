@@ -63,7 +63,7 @@ In Lab 6, Exercise 4, you created a default Microsoft 365 alert policy that noti
 
 6. While this exercise was about validating the alert that was generatred when running an eDiscovery search, you can perform the following steps if you're interested in viewing the statistics that were generated from this search:
 
-	- Select the **Home - Microsoft 365 admin center** tab in your Edge browser. In the **Microsoft 365 admin center**, select **Compliance** in the navigation pane to open the Microsoft Purview portal.
+	- Select the **Home - Microsoft 365 admin center** tab in your Edge browser. In the **Microsoft 365 admin center**, select **Microsoft Purview** in the navigation pane to open the Microsoft Purview portal.
 	
 	- In the **Microsoft Purview** portal, select **Solutions**, and then select **eDiscovery** in the navigation pane.
 
