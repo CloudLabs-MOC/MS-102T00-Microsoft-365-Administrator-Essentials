@@ -93,7 +93,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. Back on the **Confidential search** window, the **Statistics** tab should now display results.  
 
-   **Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise. You will validate this alert email in **Exercise 7, Task 3**.  
+   **Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
 
 Leave your browser open in **LON-CL1** and do not close any tabs.  
 

@@ -45,11 +45,11 @@ In this task, you will configure settings to require approval before users are a
 
 1. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings (1)**. 
 
-1. In the **Adatum Corporation | Settings** window, select the **Global Administrator (2)** role. 
+1. In the **OTU WA MOC | Settings** window, select the **Global Administrator (2)** role. 
 
     >**Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Global administrator role.
 
-    ![](../Images/ms-102-69.png)
+    ![](../Images/lab4-e1-11-4.png)
 
 1. In the **Role setting details -  Global Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 
@@ -143,13 +143,13 @@ In this task, you will assign an eligible group to the Global Administrator role
 
 1. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-1. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This window displays the following sections - Assign, Activate, Approve, and Audit. Under the **Assign** section, select the **Assign Eligibility** button.
+1. In the **OTU WA MOC | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This window displays the following sections - Assign, Activate, Approve, and Audit. Under the **Assign** section, select the **Assign Eligibility** button.
 
     ![](../Images/ms-102-81.png)
 
-1. In the **Adatum Corporation | Roles** window, search for and select the "**Global Administrator**" role.
+1. In the **OTU WA MOC | Roles** window, search for and select the "**Global Administrator**" role.
 
-    ![](../Images/ms-102-82.png)
+    ![](../Images/lab4-e1-11-6.png)
 
 1. In the **Global Administrator | Assignments** window, select **+ Add assignments** on the menu bar. 
 
@@ -224,11 +224,11 @@ In this task, you will review and approve the request for the Global Administrat
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Tasks**, select **Approve requests**.
 
-4. In the **Adatum Corporation | Approve requests** window, in the **Requests for role activations** section, select the check box to the left of the **Global Administrator (1)** request from Patti Fernandez, and then select the **Approve (2)** button.
+4. In the **OTU WA MOC | Approve requests** window, in the **Requests for role activations** section, select the check box to the left of the **Global Administrator (1)** request from Patti Fernandez, and then select the **Approve (2)** button.
 
 	>**Note:** Wait for a while if the requests haven’t appeared yet. Since it may take some time, you can proceed with the next exercise and come back later to check here.
 
-    ![](../Images/ms-102-90.png)
+    ![](../Images/lab4-e1-11-7.png)
 
 5. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
 

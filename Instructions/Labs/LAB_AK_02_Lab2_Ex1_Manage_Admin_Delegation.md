@@ -188,7 +188,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 	![](../Images/lynne.png)
 
-1. To Switch between the Virtual Machines, select **LON_CL1 (1)** the required VM from the dropdown.
+1. On the **LON-CL1** dropdown menu (1), select **LON-CL2** (2) to connect.
 
 	 ![](../Images/lab1-e1-11-7.png)
 
