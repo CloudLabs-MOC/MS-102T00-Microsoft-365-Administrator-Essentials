@@ -373,3 +373,4 @@ In this lab, you have:
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
+ ![](../Images/ms-102-g-next.png)

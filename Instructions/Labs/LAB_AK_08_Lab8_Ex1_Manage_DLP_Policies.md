@@ -174,3 +174,4 @@ In this lab, you have:
 - Turn off the Send to Kindle feature that bypasses DLP policies
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
+ ![](../Images/ms-102-g-next.png)

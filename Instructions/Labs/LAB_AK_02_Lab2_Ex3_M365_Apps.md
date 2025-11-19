@@ -281,3 +281,4 @@ In this lab, you have:
 - Performed a User-Driven Installation of Microsoft 365 Apps for enterprise 
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
+ ![](../Images/ms-102-g-next.png)

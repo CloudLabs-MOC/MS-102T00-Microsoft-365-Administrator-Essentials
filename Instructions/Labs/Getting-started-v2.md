@@ -138,6 +138,6 @@ Learner Support Contacts:
 
 - Now, click on **Next** from the lower right corner to move on to the next page.
 
-    ![Start Your Azure Journey](../Images/image-06.png)
+    ![](../Images/ms-102-g-next.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
