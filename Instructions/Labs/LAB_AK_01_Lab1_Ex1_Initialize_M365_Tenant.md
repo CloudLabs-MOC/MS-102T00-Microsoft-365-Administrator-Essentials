@@ -9,6 +9,8 @@ As Adatum's Microsoft 365 administrator, you have been tasked with deploying Mic
 In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you. 
 
 You are logged into the LON-CL1. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (ODL user). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Entra ID and for later labs using Information Rights Management, audit alerts, Microsoft Graph PowerShell.
+
+> **Note:** Please ensure you manage your VM uptime carefully. Once you complete your lab activities for the day, **stop or deallocate the VM** to preserve the remaining uptime and continue the lab on subsequent days. For detailed instructions on VM usage and stopping/deallocating the VM, refer to the **Getting Started** page.
  
 ### Task 0- Pre-requisite
 
@@ -374,3 +376,4 @@ In this lab, you have:
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
  ![](../Images/ms-102-g-next.png)
+
