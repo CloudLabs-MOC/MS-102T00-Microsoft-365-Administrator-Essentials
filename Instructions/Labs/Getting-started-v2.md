@@ -1,6 +1,8 @@
 # Getting Started with Your MS-102 : MICROSOFT 365 ADMINISTRATOR AND ESSENTIALS Workshop
  
 Welcome to your MS-102 : MICROSOFT 365 ADMINISTRATOR AND ESSENTIALS workshop! We've prepared a seamless environment for you to explore and learn about key elements of Microsoft 365 administration: Microsoft 365 tenant management, Microsoft 365 identity synchronization, and Microsoft 365 security and compliance. Let's begin by making the most of this experience:
+
+>**Note**: `Once you launch the track, you'll have access to a virtual machine (VM) for 40 hours. The displayed track duration of 4 days and 8 hours is based on an estimated usage time of 8 hours per day. Please plan your lab sessions accordingly. If the VM uptime of 40 hours is fully exhausted before completing the labs, access will be lost`
  
 ## Accessing Your Lab Environment
  
