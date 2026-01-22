@@ -39,7 +39,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
     - Please note that once the lab is launched, the overall lab session cannot be paused and will continue to run until the allotted time is fully consumed. Only the VM itself can be stopped or deallocated as described above.
  
-      ![Manage Your Virtual Machine](../Images/ms-102-g5.png)
+      ![Manage Your Virtual Machine](../Images/ms-102-g5n.png)
 
 2. To initiate the required VMs, use the dropdown menu located at the top of the lab environment
 
