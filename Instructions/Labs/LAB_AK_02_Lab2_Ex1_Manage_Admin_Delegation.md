@@ -22,11 +22,11 @@ In this task, you will use the Microsoft 365 Admin Center to grant delegated adm
 
 1. Diego has been promoted to Billing Administrator, but since this role does not appear in the list of commonly used roles, scroll down and select **Show all by category (2)**. 
 
-	![](../Images/ms-102-59.png)
+	![](../Images/ms102-p4t1p1.png)
 
 1. In the list of roles that are sorted by category, scroll down to the **Other** category, select the **Billing Administrator (1)** check box, and then select **Save changes (2)**. Note the **Admin roles updated** message that appears at the top of the pane once the changes are saved.
 
-	![](../Images/ms-102-60.png)
+	![](../Images/ms102-p4t1p2.png)
 
 1. On the **Manage admin roles** window, select the **X** in the upper-right corner of the screen to close it. This returns you to the **Active users** list. 
 
@@ -38,7 +38,7 @@ In this task, you will use the Microsoft 365 Admin Center to grant delegated adm
  
 1. In the list of commonly used admin roles, select the **User Administrator (2)** role and then select **Save changes (3)**.
 
-	![](../Images/ms-102-61.png)
+	![](../Images/ms102-p4t1p3.png)
 
 1. Close the **Manage admin roles** window once the message appears indicating Lynne's admin roles were updated. 
 
@@ -71,7 +71,7 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box, and then select **Accept (2)**.
 
-	![](../Images/ms-102-56.png)
+	![](../Images/ms102-p2t4p2.png)
 
 1. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign this role using Microsoft Graph PowerShell, you must first obtain the object ID of the Service Support Administrator role so that you can assign it to Patti. However, in Microsoft Graph PowerShell, you can only assign roles that have been "enabled". Enabled roles are roles that were either enabled from a role template, or they have already been assigned to users through PowerShell or the Microsoft 365 admin center.
 
@@ -94,6 +94,8 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 	```
 	Get-MgDirectoryRoleTemplate | Where-Object DisplayName -eq "Service Support Administrator" | Format-Table Id, DisplayName
 	```
+
+	![](../Images/ms102-p4t1p4.png)
 
 	>**Note:** After having run this command, you can see that it displays only the requested role template. Obviously, there may be times when displaying the entire list of role templates is necessary. But when you need to look up a single role template, running the second PowerShell command will be much more efficient than having to scroll through the entire list of templates. Highlight the ID for the Service Support Administrator template (for example, fe930be7-5e62-47db-91af-98c3a49a38b1) and press **Ctrl+C** to copy it to the clipboard (when you copy it, the highlight disappears).
 
@@ -121,6 +123,8 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 	Get-MgUser -Filter "DisplayName eq 'Patti Fernandez'" | Format-Table ID, DisplayName
 	```
 
+	![](../Images/ms102-p4t1p5.png)
+
 1. Now that you know the object ID of the recently enabled Service Support Administrator role and the object ID of Patti's user account, you can assign the role to Patti. Perform the following steps to complete this process: 
 
 	- a. In the previous command, you displayed the list of active users. Highlight the **Id** for Patti's account and copy it (**Ctrl+C**) to the clipboard. The highlight disappears once it's copied to the clipboard.  
@@ -133,6 +137,8 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 
 		>**For example:** $UserObject = @{ "@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/22fddbf7-42d2-4698-be65-ebc972a023e3" }
 
+		![](../Images/ms102-p4t1p6.png)
+
 	- c. In step 12, you displayed the list of enabled roles. Highlight the ID for the Service Support Administrator role and copy it (**Ctrl+C**) to the clipboard. 
 
 	- d. Run the following command that assigns the variable containing Patti's user account ($UserObject) to the directory role. When typing in this command, paste in (**Ctrl+V**) the ID that you just copied for for the Service Support Administrator role.  
@@ -140,6 +146,8 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 		```powershell
 		New-MgDirectoryRoleMemberByRef -DirectoryRoleId 'paste the ID of the role here' -BodyParameter $UserObject
 		```
+
+		![](../Images/ms102-p4t1p7.png)
 				
 1. You now want to verify that Patti has been assigned to the Service Support Administrator role. You previously copied the Object ID of this role to the clipboard, and you pasted it in the prior command. You should paste it into this command as well. Type the following command and press Enter:
 	
@@ -151,7 +159,7 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 				
 1. The prior command only displays the IDs of the users assigned to the selected role. However, you can match the ID that's displayed with Patti's ID to verify that her account has been assigned the **Service Support Administrator** role. As you can see, Patti is the only user assigned to the role.
 
-	![](../Images/ms-102-63.png)
+	![](../Images/ms102-p4t1p8.png)
 
 1. Let's now repeat this process to see all the users assigned to the Global Administrator role. Repeat step 15 to verify how many Adatum users have been assigned to the **Global Administrator** role. To complete this command, you must first copy (**Ctrl+C**) the ID of the Global Administrator role to the clipboard. You can find this ID in the list of enabled roles when you ran step 12. 
 
@@ -159,7 +167,7 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 
 1. Verify there are multiple Adatum users who've been assigned the Global Administrator role. In a real-world scenario, the Microsoft 365 Administrator would use this PowerShell command to monitor how many global admins exist in their Microsoft 365 deployment. They would then remove the Global Administrator role from any users who truly shouldn't have it (remember, the best practice guideline is to have between 2 to 4 global admins in a Microsoft 365 deployment, depending on the size of the organization).  
 
-	![](../Images/globaladmin.png)
+	![](../Images/ms102-p4t1p9.png)
 
 1. In the case of this lab, while your lab hosting provider assigned the Global Administrator role to users other than the ODL user (and you assigned it to Holly Dickson), you'll leave these users as is. In this fictitious Adatum deployment, there's no point in wasting your time removing this role from their accounts. Plus, some of the future lab tasks are based on these users being assigned the Global Administrator role. 
 
@@ -180,15 +188,15 @@ In this task, you will begin by examining the administrative properties of two u
 
 1. In the **Joni Sherman** properties window, the **Account** tab is displayed by default. Under the **Roles** section, it should indicate that Joni has **No administrator access**. Select the **X** in the upper right corner to close Joni's properties window.
 
-	![](../Images/ms-102-64.png)
+	![](../Images/ms102-p4t1p10.png)
 
 1. In the **Active users** list, select **Lynne Robbins**. 
 
 1. In **Lynne Robbins's** properties window, it should indicate that Lynne has been assigned the **User Administrator** role. Close Lynne's properties window.
 
-	![](../Images/lynne.png)
+	![](../Images/ms102-p4t2p1.png)
 
-1. On the **LON-CL1** dropdown menu (1), select **LON-CL2** (2) to connect.
+1. On the **LON-CL1** dropdown menu **(1)**, select **LON-CL2** **(2)** to connect.
 
 	 ![](../Images/lab1-e1-11-7.png)
 
@@ -212,13 +220,13 @@ In this task, you will begin by examining the administrative properties of two u
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-1. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. If a **Save password** window appears, select **Never**.
+1. On the **Stay signed in?** window, select **Yes**. If a **Save password** window appears, select **Never**.
 
-1. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
- 	![](../Images/lab1-e1-11-0.png)
-
-	 >**Note:** Close the pop-up which appears.
+    ![](../Images/ms102-p1t1p5.png)
+	
+	>**Note:** Close the pop-up which appears.
 
 1. On the **Microsoft 365 Copilot** window, which is Joni's Microsoft 365 home page, a navigation pane appears on the left side of the screen that indicates the applications the user has permission to access. In this **Apps** pane, note how the **Admin** option is not displayed. This is because Joni was never assigned a Microsoft 365 administrator role. 
 
@@ -232,13 +240,15 @@ In this task, you will begin by examining the administrative properties of two u
 
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-19. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+
+    ![](../Images/ms102-p1t1p5.png)
 
 20. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it.
 
-21. On the **Microsoft 365 Copilot** window, which is Lynne's Microsoft 365 home page, note how the **Admin** icon is displayed in the navigation pane on the left side of the screen. This icon appears because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
+21. On the **Microsoft 365 Copilot** window, which is Lynne's Microsoft 365 home page, note how the **Admin (2)** icon is displayed in the navigation pane on the left side of the screen under **Apps**. This icon appears because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
 
-	![](../Images/lab1-e1-11-9.png)
+	![](../Images/ms102-p4t2p2.png)
 
 22. In the **Microsoft 365 admin center**, select **Users (1)** on the navigation pane and then select **Active users (2)**. 
 
@@ -254,11 +264,11 @@ In this task, you will begin by examining the administrative properties of two u
 
 25. Enter **diego** in the **Password** field. Note to the right of the password, the system displays a message indicating this is a **Weak (1)** password. Also note the message that appears below the field indicating **This password isn't strong enough (2)**. Finally, note how the **Reset password** button at the bottom of the pane is not enabled. **This button will only be enabled once you enter a strong password**.  
 
-	![](../Images/deiogo.png)
+	![](../Images/ms102-p4t2p3.png)
 
 26. Verify the **Require this user to change their password when they first sign in (1)** checkbox is selected (if not, then select it now to show a checkmark). Enter **Pa55w.rd** in the **Password** field. Note that the **Password** field indicates this is a **Strong (2)** password. 
 
-	![](../Images/strong.png)
+	![](../Images/ms102-p4t2p4.png)
 
 27. However, now select the **Require this user to change their password when they first sign in** checkbox to clear it. Note the error message that appears indicating the password (Pa55w.rd) contains a word, phrase, or series of numbers that makes it easily guessable. In this case, you entered a variation of the word **password**, which will trigger this error. The system allows you enter this password if you force the user to change it at their first sign-in. But if you don't force the user to enter a different password at their first sign-in, then this password isn't allowed.
 
@@ -270,13 +280,13 @@ In this task, you will begin by examining the administrative properties of two u
 
 	>**Note:** If prompted to save the password, select **never** to close the window.
 
-	![](../Images/L2E1T3S30-2904.png)
+	![](../Images/ms102-p4t2p5.png)
 
 31. You should receive an error message. In Diego’s case, you assigned him the Billing Administrator role earlier in this lab exercise. Since only Global administrators can change another administrator's password, and because Lynne is not a Global administrator, she will have to ask Holly Dickson to make this change. Select **Close** in the **Reset password** pane. 
 
 	>**Note:** If a survey request window appears, select **Cancel**.
 
-	![](../Images/L2E1T3S31-2904.png)
+	![](../Images/ms102-p4t2p6.png)
 
 33. In the **Active users** list, select the **key (Reset a password)** icon for **Pradeep Gupta**. 
 
@@ -298,7 +308,9 @@ In this task, you will begin by examining the administrative properties of two u
 
 	![](../Images/MS-102-image-13.png)
 
-39. In the **Block sign-in** pane that appears, verify Alex's email address appears below the **Block sign-in** heading. Select the **Block this user from signing in** check box, and then select **Save changes.** 
+39. In the **Block sign-in** pane that appears, verify Alex's email address appears below the **Block sign-in** heading. Select the **Block this user from signing in (1)** check box, and then select **Save changes (2)**.
+
+	![](../Images/ms102-p4t2p7.png)
 
 40. The **Block sign-in** window should display a message indicating that Alex is now blocked from signing in (and no one can sign in with Alex's username in the event that his username was actually compromised). In addition, Alex will automatically be signed out of Microsoft services within 60 minutes. Select the **X** in the upper right-hand corner of the pane to close it. 
 
@@ -332,9 +344,13 @@ In this task, you will begin by examining the administrative properties of two u
 
 46. In **LON-CL1**, you should still be logged into **Microsoft 365** as Holly Dickson in your Edge browser. The **Active users** list should be displayed in the **Microsoft 365 admin center** from earlier in this task. 
 
-47. Upon further investigation, Adatum's CTO has determined that Alex Wilber's account has, in fact, not been compromised; therefore, the CTO has asked Holly to remove the block on Alex's user account. Repeat steps 37 through 40 to unblock his account. Note how the **Block sign-in** window from step 39 now displays the **Unblock sign-in** window instead.  
+47. Upon further investigation, Adatum's CTO has determined that Alex Wilber's account has, in fact, not been compromised; therefore, the CTO has asked Holly to remove the block on Alex's user account. Repeat steps 37 through 40 to unblock his account. Note how the **Block sign-in** window from step 39 now displays the **Unblock sign-in** window instead.
 
-48. In the **Unblock sign-in** window, the **Block this user from signing in** check box is currently selected. Select this check box to clear it, and then select **Save changes**. 
+	![](../Images/ms102-p4t2p8.png)
+
+48. In the **Unblock sign-in** window, the **Block this user from signing in** check box is currently selected. Select this check box to clear it **(1)**, and then select **Save changes (2)**. 
+
+	![](../Images/ms102-p4t2p9.png)
 	
 	>**IMPORTANT:** A warning message is displayed indicating it can take up to 15 minutes before Alex can sign in again. Given the time constraints with the training, you will **NOT** try to verify whether Alex can log back in. If you want, you can try logging in as Alex at a later time if you're on a break or have spare time and you want to test this out. For now, remain on LON-CL1 and simply close the **Unblock sign-in** window.
 
@@ -350,6 +366,6 @@ In this lab, you have:
 - Assigned Delegated Administrators with Windows PowerShell.
 - Verified Delegated Administration.
 
-## ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
+### The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
  ![](../Images/ms-102-g-next.png)

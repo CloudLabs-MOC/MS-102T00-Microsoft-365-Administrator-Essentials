@@ -38,11 +38,13 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber, Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Bowen, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
 
-    ![Access Your VM and Lab Guide](../Images/ms-102-8.png)
+    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p1.png)
 
-    ![Access Your VM and Lab Guide](../Images/ms-102-9.png)
+    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p2.png)
 
 1. After assigning the **Enterprise Mobility + Security E5** licenses, select **Licenses - Subscriptions** at the top to return to the subscriptions list. 
+
+    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p3.png)
 
 1. From the list of available subscriptions, select **Microsoft 365 Business Premium** to continue with the next licensing assignment steps.
 
@@ -54,9 +56,9 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. Close the assigned licenses pane, and close the **Microsoft 365 admin center**.
 
-1. On the Lab-VM, in the Type here to search box, type **Windows PowerShell (1)**. In the **Windows PowerShell (2)** results, select **Run as administrator (3)**, and run the following commands to assign the usage location to all users:
+1. On the Lab-VM, in the Type here to search box, type **Windows PowerShell (1)**. In the **Windows PowerShell (2)** results, right-click and select **Run as administrator (3)**, and run the following commands to assign the usage location to all users:
 
-    ![Access Your VM and Lab Guide](../Images/powershell.png)
+    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p4.png)
 
     ```powershell
     Install-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201 -Force
@@ -65,24 +67,40 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
     Import-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201
     ```
     ```powershell
-    Install-Module -Name "AzureAD"
+    Install-Module Microsoft.Graph -Scope CurrentUser -Force
     ```
 
-    >**Note:** When it asks **You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from 'PSGallery'? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A**, Enter **A** .
+    >**Note:** Your response will initiate the installation of all the Microsoft Graph sub-modules. Once all the installation messages (for each sub-module) have finished displaying, it will still take approximately 5 to 10 minutes to complete the Microsoft Graph PowerShell installation. During this time, the cursor will continue to blink below the untrusted repository message. This may be a good time to take a short break.
+
+    >**Note:** If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All** and then press Enter. .
 
     >**Note:** Please wait until the command above executes successfully.
-    
-    ```powershell
-    Install-Module AzureAD -Force
-    ```
 
 	```powershell
-    Connect-AzureAD
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
     ```
+
+    >**Note:** On the **Let's get you signed in** window, select **Work or school account (1)** and then click **Continue (2)**.
+
+    ![](../Images/ms102-p1t1p4(1).png)
+
 	>**Note:** Provide the ODL credentials, on the Sign in page, enter the username **<inject key="AzureAdUserEmail"></inject>**, and enter the password **<inject key="AzureAdUserPassword"></inject>**
 
+    >**Note:** On the **Permission requested** page, check **(1)** the **Consent on behalf of your organization** box and then click **Accept (2)**.
+
+    ![](../Images/ms102-p1t1p4(2).png)
+
+    >**Note:** On the **Sign in to all apps, websites, and services on this device?** window, click on **Yes**. And then on the **Account added to this device** click **Done**.
+
+    ![](../Images/ms102-p1t1p4(3).png)
+
+    ![](../Images/ms102-p1t1p4(4).png)
+
+
 	```powershell
-    Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation US
+    Get-MgUser -All | ForEach-Object {
+    Update-MgUser -UserId $_.Id -UsageLocation "US"
+    }
 	```
 
 12. Close the **Windows Powershell**. Now, you can start with the Task 1.
@@ -95,19 +113,19 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
     >**Note:** if any pop-up appears select **Skip for now**.
     
-1. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-    ![](../Images/lab1-e1-11-0.png)
+    ![](../Images/ms102-p1t1p5.png)
 
 1. The **M365 Copilot** page appears in your Edge browser in the **M365 Copilot** tab. This is the ODL user's Microsoft 365 home page.
 
 	>**Note:** Notice the initials **O1** displayed inside a circle in the bottom-left corner of the screen. These represent the **ODL user** account, which is the tenant admin account you just signed in with. When a user, such as the ODL user, does not have a profile picture assigned, their initials are shown instead.
 
-    ![](../Images/lab1-e1-11-1.png)
+    ![](../Images/ms102-p1t1p6.png)
 
-1. On the **M365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Admin**, this opens the **Microsoft 365 admin center** in a new browser tab. 
+1. On the **M365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Apps (1)**, and then select **Admin (2)**, this will open up Microsoft 365 admin center in a new browser tab. 
 
-	![](../Images/lab1-e1-11-2.png)
+	![](../Images/ms102-p1t1p7.png)
 
     >**Note:** Close the **Business Advisor** pop-up.
 
@@ -168,13 +186,13 @@ In this task, you will design and implement a custom theme tailored to Adatum's 
 
 1. In the **Set up the basics** page, enter **M365 pilot project (1)** in the **Name** field, and then enter **Members of the Microsoft 365 pilot project team (2)** in the **Description** field (Note: even if you don't enter a description, you must still select into this field to enable the **Next** button). Select **Next (3)**.
 
-	![](../Images/MS-102-image-6.png)
+	![](../Images/ms102-p1t2p1.png)
 
 1. You will now assign the ODL user as owner of the **M365 pilot project** group. In the **Assign owners** window, select **+ Assign owners**.
 	
-1. In the **Assign owners** pane that appears, select the check box next to **odl_user <inject key="DeploymentID" enableCopy="false"/> (1)**, and then select the **Add (2)** button at the bottom of the pane.
+1. In the **Assign owners** pane that appears, select the check box next to **odl_user <inject key="DeploymentID" enableCopy="false"/> (1)**, and then select the **Add(1) (2)** button at the bottom of the pane.
 
-	![](../Images/MS-102-image-7.png)
+	![](../Images/ms102-p1t2p2.png)
 
 1. On the **Assign owners** page, **ODL user (1)** should appear as owner of the group. Select **Next (2)**.
 
@@ -182,13 +200,13 @@ In this task, you will design and implement a custom theme tailored to Adatum's 
 
 1. You will now assign members to the M365 pilot project group. In the **Add members** page, select **+ Add members (1)**.
 
-1. In the **Add members** pane that appears, select the check boxes next to the following **users (2)**: **Alex Wilber**, **Allan Deyoung**, **Diego Siciliani**, **Isaiah Langer**, **Joni Sherman**, **Lynne Robbins**, **Megan Bowen**, **ODL user**, **Nestor Wilke**, and **Patti Fernandez**. Then select the **Add (3)** button at the bottom of the pane.
+1. In the **Add members** pane that appears, select the check boxes next to the following **users (2)**: **Alex Wilber**, **Allan Deyoung**, **Diego Siciliani**, **Isaiah Langer**, **Joni Sherman**, **Lynne Robbins**, **Megan Brown**, **ODL user**, **Nestor Wilke**, and **Patti Fernandez**. Then select the **Add (10) (3)** button at the bottom of the pane.
 
-    ![](../Images/ms-102-17.png)
+    ![](../Images/ms102-p1t2p3.png)
 
 1. On the **Add members** page, verify all the 10 users are listed as members of the group. If you missed a user, select **+ Add members** and then add any users that you missed. When all 10 users appear on this page, select **Next**.
 
-    ![](../Images/ms-102-18.png)
+    ![](../Images/ms102-p1t2p4.png)
 
 1. In the **Edit settings** page, enter the following information:
 
@@ -230,7 +248,7 @@ In this task, you will design and implement a custom theme tailored to Adatum's 
 
 	>**Note:** Holly decides to make the **Show the user's display name** option a permanent feature, she selected this option in the **Default theme** pane so that it applies to all Adatum users.
 
-    ![](../Images/ms-102-22.png)
+    ![](../Images/ms102-p1t2p5.png)
 
 1. In the **Customize Microsoft 365 for your organization** pane that appears, you can customize the default theme that users see when signed into Microsoft 365, and you can add additional custom themes. Select the **+ Add theme** option.
 
@@ -244,7 +262,7 @@ In this task, you will design and implement a custom theme tailored to Adatum's 
 
 1. Select the **Show the user's display name (3)** check box. This is the setting that Holly wants to customize for the M365 pilot project team members.
  
-    ![](../Images/ms-102-23.png)
+    ![](../Images/ms102-p1t2p6.png)
     
 1. Select the **Logos** tab and take some time to review its options. Do the same for the **Colors** tab. Note the various theme and branding options that are available for you to update.
 
@@ -264,13 +282,13 @@ In this task, you will design and implement a custom theme tailored to Adatum's 
 
 1. Select **Nestor Wilke (3)** (not the check box). On the **Account (4)** tab, under **Roles** select **Manage roles (5)**.
 
-    ![](../Images/ms-102-25.png)
+    ![](../Images/ms102-p1t2p7.png)
 
 1. On the **Manage admin roles** page, select **Admin center access (1)**, and select **Global Administrator (2)**.
 
 1. Select **Save Changes (3)**. After saving the changes close the pane.
 
-    ![](../Images/ms-102-26.png)
+    ![](../Images/ms102-p1t2p8.png)
 
 1. Remain logged into **LON-CL1** with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
@@ -342,7 +360,7 @@ In this task, you will install the Microsoft Graph PowerShell SDK to enable mana
     Install-Module Microsoft.Graph -Scope CurrentUser
     ```
 
-1. You will be prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All** and then press Enter.
+1. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All** and then press Enter.
 
     >**Note:** Your response will initiate the installation of all the Microsoft Graph sub-modules. Once all the installation messages (for each sub-module) have finished displaying, it will still take approximately 5 to 10 minutes to complete the Microsoft Graph PowerShell installation. During this time, the cursor will continue to blink below the untrusted repository message. This may be a good time to take a short break.
 

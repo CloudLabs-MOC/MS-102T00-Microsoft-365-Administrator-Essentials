@@ -26,7 +26,7 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. At the top of the **Active users** window, select **Add a user (3)** on the menu bar. Doing so initiates the **Add a user** wizard.
 
-	![](../Images/L2E3T1S3-2904.png)
+	![](../Images/ms102-p6t1p1.png)
 
 1. In the **Add a user** wizard, in the **Set up the basics** window, enter the following information:
 	
@@ -46,11 +46,11 @@ In this task, you will review how user licensing impacts the ability to install 
 	
 	- Select **Next (8)**.
 
-		![](../Images/L2E3T1S4-2904.png)
+		![](../Images/ms102-p6t1p2.png)
 
 1. In the **Assign product licenses** window, select the **Create user without product license (not recommended) (1)** option, and then select **Next (2)**.
 
-	![](../Images/L2E3T1S5-2904.png)
+	![](../Images/ms102-p6t1p3.png)
 
 1. In the **Optional settings** window, select **Next**. 
 
@@ -60,7 +60,7 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. On the **Laura Atkins added to active users** page, select **Close**. If a survey form appears, select **Cancel**. 
 
-	![](../Images/L2E3T1S8-2904.png)
+	![](../Images/ms102-p6t1p4.png)
 
 1. Open **Hyper-V Manager** page, Right click on the **LON-CL2** VM, click on **Connect**, and on the **Connect to LON-CL2** pop-up select **Connect**.
 
@@ -74,11 +74,11 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. Under **Computer Management (Local) (1)**, select **Local users and groups (2)** > **Groups (3)** > Open **Remote Desktop Users (4)** group.
 
-	![](../Images/computermanagement.png)
+	![](../Images/ms102-p6t1p5.png)
 
-1. Click on **Add** and in **Enter the object names to select**, type **Laura (1)** and click on **Ok (2)**.
+1. Click on **Add(1)** and in **Enter the object names to select**, type **Laura (2)** and click on **Ok (3)**.
 
-	![](../Images/L2E3T1S13-2904.png)
+	![](../Images/ms102-p6t1p6.png)
 
 1. It will pop up a dialog box to enter **Network Credentials** of Laura, please enter **Username** as **adatum\laura** and **password** as **Pa55w.rd**. Select **OK**.
 
@@ -86,7 +86,7 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. Select **Apply (1)** and **OK (2)**.
 
-	![](../Images/L2E3T1S14-2904.png)
+	![](../Images/ms102-p6t1p7.png)
 
 1. Now restart the LON-CL2 VM and try logging in with Laura user again. Minimize **LON-CL2**. Inside **LON-CL1** open **Hyper-V Manager**.
 
