@@ -55,7 +55,7 @@ In this task, you will create a group that is eligible to be assigned the Helpde
 
 1. In the **Groups | All groups** window, if the **PIM-Helpdesk-Administrators** group does not appear, click **Refresh** on the menu bar.
 
-     ![](../Images/L4E2T1S8.png)
+     ![](../Images/ms102-p11t1p1.png)
 
 1. You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the left-hand navigation pane, select **Id Governance (1)** to expand the section, and then select **Privileged Identity Management (2)**.
 
@@ -111,7 +111,9 @@ In the prior lab exercise involving the Global administrator role, Holly updated
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-4. In the **OTU WA MOC | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+4. In the **OTU WA MOC | Quick start** window, in the middle pane under the **Manage** section, select **Settings**.
+
+     ![](../Images/ms102-p11t2p1.png)
 
 5. In the **OTU WA MOC | Settings** window, select the **Helpdesk Administrator** role.
 
@@ -119,25 +121,31 @@ In the prior lab exercise involving the Global administrator role, Holly updated
 
 6. In the **Role setting details -  Helpdesk Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 
-7. In the **Edit role setting - Helpdesk Administrator** window, the **Activation** tab is displayed by default. In this tab, the slider for the **Activation maximum duration (hours)** setting is set to **8**. Holly wants to increase this to the maximum allowable time, which is **24** hours. You can either move the slider to the end of the line, or you can type **24** in the field next to the slider. 
+     ![](../Images/ms102-p11t2p2.png)
+
+7. In the **Edit role setting - Helpdesk Administrator** window, the **Activation** tab is displayed by default. In this tab, the slider for the **Activation maximum duration (hours)** setting is set to **8**. Holly wants to increase this to the maximum allowable time, which is **24** hours **(1)**. You can either move the slider to the end of the line, or you can type **24** in the field next to the slider. 
 
     >**Note:** If you try to enter any value greater than 24, it will automatically reset to 24.
 
-8. Below the activation slider, set the **On activation, require** setting to **None**.
+8. Below the activation slider, set the **On activation, require** setting to **None (2)**.
 
     >**Note:** In the prior lab exercise, Holly required that Patti Fernandez sign in using Microsoft Entra MFA when she requested activation of the Global admin role. In doing so, Holly verified the Microsoft Enrtra MFA sign-in worked. However, for the purpose of the pilot project, Holly will not require verification using multi-factor authentication when activating the Helpdesk administrator role (and since you already tested this MFA feature in the prior lab exercise, there's no reason to take time in class to do it again). 
 
-9. The screen then displays a group of three settings, each with a check box. Verify that all three check boxes are blank. If any check box is selected by default, then un-check (clear) it now. 
+9. The screen then displays a group of three settings, each with a check box. Verify that all three check boxes are blank. If any check box is selected by default, then un-check (clear) **(3)** it now. 
 
     >**Note:** For the pilot project, Holly does not want the **Require justification on activation** check box selected. Holly knows that Alex and Joni will only activate the role when needed, so she doesn't require a justification from them to activate the role assignment (however, in the next step, Holly will require justification when they assign the role to themselves). Leaving the **Require approval to activate** setting unchecked will enable an eligible user to self-approve, or self-activate without requiring another user's approval.
 
-10. You're currently in the **Activation** tab. Select the **Next: Assignment**. When this role is assigned to Alex or Joni, Holly wants the assignment to expire after 15 days. To implement this requirement, configure the following settings on this tab:
+    ![](../Images/ms102-p11t2p3.png)
 
-    - Uncheck (clear) the **Allow permanent active assignment** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days**.
+10. You're currently in the **Activation** tab. Select the **Next: Assignment (4)**. When this role is assigned to Alex or Joni, Holly wants the assignment to expire after 15 days. To implement this requirement, configure the following settings on this tab:
 
-    - Verify the **Require justification on active assignment** check box is selected (if not, select it now).
+    - Uncheck (clear) the **Allow permanent active assignment (1)** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days (2)**.
 
-11. Select the **Next: Notification**.
+    - Verify the **Require justification on active assignment (3)** check box is selected (if not, select it now).
+
+11. Select the **Next: Notification (4)**.
+
+     ![](../Images/ms102-p11t2p4.png)
 
 12. On the **Notification** tab, note the three activities that can trigger a notification being sent: **Send notifications when...**
 
@@ -170,7 +178,7 @@ At this point in Holly's pilot project, the PIM-Helpdesk-Administrators group ha
 
      >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later** to skip the tour.
+     > **Note:** If you are prompted to configure Multi-Factor Authentication (MFA), complete the MFA setup process as instructed. Once the setup is finished, proceed with the sign-in process.
 
 5. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the forward arrow icon). This opens the **All services** window.
 
@@ -182,7 +190,13 @@ At this point in Holly's pilot project, the PIM-Helpdesk-Administrators group ha
 
 9. Alex is now ready to self-approve, or self-activate the Helpdesk administrator role. Select the **Eligible assignments** tab. Under the **Action** column for the **Helpdesk Administrator** role, select **Activate**.
 
+     ![](../Images/ms102-p11t3p1.png)
+
 10. In the **Activate - Helpdesk Administrator** pane that appears, enter **Support requests from Sales team members that require resolution** in the **Reason** field. This is the reason why Alex wants to self-activate this role. Then select the **Activate** button at the bottom of the pane. Note the three stages of activation that appear in the **Activate - Helpdesk Administrator** pane and the progress made on each stage. Wait for all three stages to automatically complete (Stage 2 typically takes the longest). After the final stage is completed, the **Activate - Helpdesk Administrator** pane will automatically close, and you will be returned to the **My roles | Microsoft Entra roles** window.
+
+     ![](../Images/ms102-p11t3p2.png)
+
+     ![](../Images/ms102-p11t3p3.png)
 
 11. On the **My roles | Microsoft Entra roles** window, note that you're still in the **Eligible assignments** tab. Also note the message at the top of the window indicating **Your active roles have changed. Click here to view your active roles**. Select this message. This simply displays the **Active assignments** tab, which you could have selected yourself instead of selecting the message. 
 
@@ -205,13 +219,13 @@ When you earlier configured the Helpdesk Administrator role, you set up the noti
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson. In your Edge browser, select the **Home | Microsoft 365 Copilot** tab.
 
-2. In the **365 Copilot page** page, select **Apps (1)**. On the **Apps** page, close the **Welcome to Apps** window by selecting the **X** in the upper-right corner of the window. In the row of app tiles, select **Outlook (2)**. 
+2. From the left navigation pane, select **Apps (1)**. In the Apps flyout menu that appears, choose **Outlook (2)** to open it. 
 
-     ![](../Images/lab1-e1-11-10.png)
+     ![](../Images/ms102-p11t4p1.png)
 
 3. In Holly's Outlook mailbox, her **Inbox** is displayed by default. Verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role for the Adatum Corporation Directory**. 
 
-     ![](../Images/ms-102-96.png)
+     ![](../Images/ms102-p11t4p2.png)
 
 4. Select the email to open it. Review the information in the email and then close it. 
 
