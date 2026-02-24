@@ -88,15 +88,27 @@ In this task, you will review how user licensing impacts the ability to install 
 
 	![](../Images/ms102-p6t1p7.png)
 
-1. Now restart the LON-CL2 VM and try logging in with Laura user again. Minimize **LON-CL2**. Inside **LON-CL1** open **Hyper-V Manager**.
+1. Now restart the **LON-CL2 VM** and attempt to sign in again using the Laura account. On the sign-in screen, select **Other user (1)**, enter **adatum\laura (2)** as the username and **Pa55w.rd (3)** as the password, then press **Enter** to log in.
 
-1. Right click on **LON-CL2**, and select **Turn-off** option, it will turn-off your VM, as you can see the state of the **LON-CL2** VM is showing as **Off**. Now, right click on the **LON-CL2** VM, select **Start** button, and see the VM is now in running state. Again right click on the Client-2 VM (LON-CL2) and select **Connect**, and select **Connect**.
+	![](../Images/ms102-p6t1p8.png)
+
+1. Minimize **LON-CL2**. On **LON-CL1**, use the search bar to open **Hyper-V Manager (1)**, and then select it from the search results **(2)**.
+
+	![](../Images/ms102-p6t1p9.png)
+	
+1. Right click on **LON-CL2 (1)**, and select **Turn-off (2)** option, it will turn-off your VM, as you can see the state of the **LON-CL2** VM is showing as **Off**.
+
+	![](../Images/ms102-p6t1p10.png)
+
+1. Now, right click on the **LON-CL2** VM, select **Start** button, and see the VM is now in running state. Again right click on the Client-2 VM (LON-CL2) and select **Connect**, and select **Connect**.
 
 	>**Note:** if the **Connect to LON-CL2** pop-up appears select **Connect**.
 
 1. On **LON-CL2**, you want to log into the machine as **Laura Atkins**. the desktop displays the **Admin** and **Other user** options. Select **Other user**. Since you want to log on to the LON-CL2 machine using Laura Atkins's local account (adatum\laura).
 
-1. In the **Other user** log in, enter **adatum\laura** in the **Username** field, enter **Pa55w.rd** as the **Password**, and then select the forward arrow to log in.  
+1. In the **Other user (1)** log in, enter **adatum\laura (2)** in the **Username** field, enter **Pa55w.rd (3)** as the **Password**, and then select the forward arrow to log in.
+
+	![](../Images/ms102-p6t1p8.png)
 
 1. Select the **Microsoft Edge** icon on the taskbar.
 
@@ -118,17 +130,21 @@ In this task, you will review how user licensing impacts the ability to install 
 
 	>**Note**: if it asks you to change the password, then change the password for the laura's account.
 
-1. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**. In the **Save password** window, select **Never**.
+1. In the **Stay signed in?** window, select **Yes**.
 
-1. In the **Welcome to Microsoft 365 Copilot** dialog box that appears in the middle of the screen, select the forward arrow twice and then the check mark. 
+1. In the **All your work in one place, now easier with AI.** dialog box that appears in the middle of the screen, close it by clicking on **X**.
 
-1. In the **Welcome to Microsoft 365 Copilot** window (which is Laura's Microsoft 365 home page), notice that no column of Microsoft 365 app icons appears in the navigation pane on the left-side of the screen. This is because Laura has not been assigned a Microsoft 365 license.
+1. On the **Microsoft 365 Copilot home page** (Laura’s Microsoft 365 landing page), observe that the usual list of Microsoft 365 app icons does not appear in the left navigation pane. This indicates that a Microsoft 365 license has not yet been assigned to Laura’s account.
+
+	![](../Images/ms102-p6t1p11)
 
 1. From the left navigation menu, select **Apps (1)**. Select the **Install apps (2)** button, and then in the drop-down menu that appears, select **Microsoft 365 apps (3)**. This opens the **My account** window for Laura.
 
-	![](../Images/im-01.png)
+	![](../Images/ms102-p6t1p12)
 
 1. In Laura's **My account** window, under the **Office apps & devices** tile, select **View apps & devices**. Note the message that appears at the top of page. Laura has not been assigned a license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. 
+
+	![](../Images/ms102-p6t1p13)
 
 	![](../Images/appsdevice.png)
 	
@@ -147,27 +163,27 @@ In this task, you will check how the global Office download settings within the 
 
 1. On **LON-CL1**, Holly wants to turn off the global Office download setting. To do so, select the **Microsoft 365 admin center** tab in your browser, and then if necessary, select **...Show all** in the navigation pane. Select **Settings (1)**, and then within the Settings group, select **Org Settings (2)**. 
 
-	![](../Images/L2E3T2S2-2904.png)
+	![](../Images/ms102-p6t2p1.png)
 
 1. In the **Org settings** window, the **Services (1)** tab is displayed by default. Scroll down through the list of services and select **Microsoft 365 installation options (2)**.
 
-	![](../Images/L2E3T2S3-2904.png)
+	![](../Images/ms102-p6t2p2.png)
 
 1. In the **Microsoft 365 installation options** pane that appears, the **Feature Updates** tab is displayed by default. Select the **Installation (1)** tab that appears next to it. Then under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business) (2)** check box is currently selected. Select this check box to clear it. This disables the ability of users to download Office apps through Microsoft 365 Apps for enterprise. 
 
 1. Select **Save (3)**. 
 
-	![](../Images/L2E3T2S4-2904.png)
+	![](../Images/ms102-p6t2p3.png)
 
 1. At the top of the **Microsoft 365 app installation options** pane, select the **X** in the upper-right corner of this window to close it. 
 
 1. In the **Active users (1)** list, scroll down to **Laura Atkins**. The value in the **Licenses (2)** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins (3)**.
 
-	![](../Images/L2E3T2S7-2904.png)
+	![](../Images/ms102-p6t2p4.png)
 
 1. In **Laura Atkins** account pane, select the **Licenses and apps (1)** tab. In the **Licenses** section, select the **Microsoft 365 Business Premium (2)** check boxes and then select **Save changes (3)**. Once the changes are saved, close Laura’s account pane. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Microsoft 365 Business Premium**. 
 
-	![](../Images/L2E3T2S8-2904.png)
+	![](../Images/ms102-p6t2p5.png)
 
 1. You should now check whether Laura can download Microsoft 365 Apps for enterprise to her client PC when the global Office download setting has been turned Off. 
 
@@ -177,11 +193,15 @@ In this task, you will check how the global Office download settings within the 
 
 1. In your browser, verify you're on the **Apps | Microsoft 365** tab. When you left off after the prior lab task, this page didn't display any Microsoft 365 apps in the navigation pane on the left because Laura wasn't assigned a Microsoft 365 license. Let's see what happens now that Laura has been assigned a license. 
 
-1. Select the **Refresh** icon that appears to the left of the address bar at the top of your browser. After refreshing the page, notice the Microsoft 365 app icons that now appear on the left-side of the screen because Laura has been assigned a Microsoft 365 license. 
+1. Click the **Refresh** icon next to the browser’s address bar to reload the page. After refreshing, notice that the Microsoft 365 applications are now displayed on the **Apps** page (such as Outlook, Word, Excel, etc.). Previously, no apps were visible because Laura had not yet been assigned a Microsoft 365 license.
+
+	![](../Images/ms102-p6t2p6.png)
 
 	>**Note:** If a **Find more apps** window appears, select the **X** to close it.
 
-1. Select the **Install apps** button, and then in the drop-down menu, select **Microsoft 365 apps**.
+1. Select the **Install apps (1)** button, and then in the drop-down menu, select **Microsoft 365 apps (2)**.
+
+	![](../Images/ms102-p6t2p7.png)
 	
 1. This will open Laura's **My account** window. Under the **Office apps & devices** tile, select **View apps & devices**. 
 
@@ -195,13 +215,15 @@ In this task, you will check how the global Office download settings within the 
 
 	>**Note:** To do this, switch back to **LON-CL1**. 
 
-1. On **LON-CL1**, you should still be logged into Microsoft 365 as Holly Dickson. In the **Microsoft 365 admin center**, under the **Settings** section in the navigation pane, select **Org Settings**. 
+1. On **LON-CL1**, you should still be logged into Microsoft 365 as Holly Dickson. In the **Microsoft 365 admin center**, under the **Settings (1)** section in the navigation pane, select **Org Settings (2)**. 
 
-1. In the **Org settings** window, the **Services** tab is displayed by default. Scroll down through the list of services and select **Microsoft 365 installation options**.
+1. In the **Org settings** window, the **Services** tab is displayed by default. Scroll down through the list of services and select **Microsoft 365 installation options (3)**.
 
-1. In the **Microsoft 365 installation options** pane, select the **Installation** tab, then under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business)** check box is currently blank. Select this check box so that it displays a check mark, which now turns this feature back On.
+1. In the **Microsoft 365 installation options** pane, select the **Installation (4)** tab, then under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business) (5)** check box is currently blank. Select this check box so that it displays a check mark, which now turns this feature back On.
 
-1. Select **Save**, and then once the update has been saved, select the **X** in the upper-right corner of this window to close it. 
+1. Select **Save (6)**, and then once the update has been saved, select the **X** in the upper-right corner of this window to close it. 
+
+	![](../Images/ms102-p6t2p8.png)
 
 1. Now that this global Office download option is turned back On, you should see if it affects Laura’s ability to download Microsoft 365 Apps for enterprise. 
 
@@ -237,6 +259,8 @@ In this task, you will complete a manual, user-initiated installation of Microso
 
 1. On the **Sign in to get started with Word** pop-up select **Sign in or create account**.
 
+	![](../Images/ms102-p6t3p1.png)
+
 1. Enter **Laura@otuwamocZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
 
 1. In the **Enter password** window, For the password, sign-in with the same **Microsoft 365 Tenant Password**.
@@ -246,6 +270,8 @@ In this task, you will complete a manual, user-initiated installation of Microso
 		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. On the Account asking pop-up, select **No, this app only**.
+
+	![](../Images/ms102-p6t3p2.png)
 
 	>**Note:** On **Your privacy matters** pop-up select **Close**.
 
