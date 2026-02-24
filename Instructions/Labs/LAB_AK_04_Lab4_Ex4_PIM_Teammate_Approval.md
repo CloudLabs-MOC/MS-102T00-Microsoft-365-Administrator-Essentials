@@ -20,27 +20,31 @@ For this final test of PIM in Adatum's pilot project, Holly has selected Alex Wi
 
 2. In your Edge browser, select the tab containing the **Microsoft Entra admin center**, which should still be open from the prior lab exercise. 
 
-3. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Entra Id** select **Groups**, and then select **All groups**.
+3. In the **Microsoft Entra admin center**, in the left-hand navigation pane, under **Entra Id (1)** select **Groups (2)**, and then select **All groups (3)**.
+
+    ![](../Images/ms102-p12t1p1.png)
 
 4. In the **Groups | All groups** window, select **New group** in the menu bar.
 
 5. In the **New group** window, enter the following information:
 
-    - Group type - **Security**
+    - Group type - **Security** **(1)**
 
-    - Group name - **PIM-Intune-Administrators**
+    - Group name - **PIM-Intune-Administrators** **(2)**
 
-    - Group description - **Group of eligible users who can be assigned to the Intune Administrator role in PIM**
+    - Group description - **Group of eligible users who can be assigned to the Intune Administrator role in PIM** **(3)**
 
-    - Microsoft Entra roles can be assigned to the group - **Yes**
+    - Microsoft Entra roles can be assigned to the group - **Yes** **(4)**
 
-    - Membership type - **Assigned**
+    - Membership type - **Assigned** **(5)**
 
-    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly** in the **Search** field and select the **Holly**'s user account
+    - Owners - Select **No owners selected**. In the **Add owners** pane, enter **Holly** in the **Search** field and select the **Holly**'s user account **(6)**
 
-    - Members - Select **No members selected**. In the **Add members** pane, select **Alex Wilber** and select **Joni Sherman**.
+    - Members - Select **No members selected**. In the **Add members** pane, select **Alex Wilber** and select **Joni Sherman** **(7)**.
 
-6. In the **New group** window, select **Create**.
+6. In the **New group** window, select **Create (8)**.
+
+    ![](../Images/ms102-p12t1p2.png)
 
 7. A dialog box appears towards the top of the page that says: **Creating a group to which Microsoft Entra roles can be assigned is a setting that cannot be changed later. Are you sure that you want to add this capability?**. Select **Yes**.
 
@@ -52,7 +56,11 @@ For this final test of PIM in Adatum's pilot project, Holly has selected Alex Wi
 
 11. In the **OTU WA MOC | Quick start** window, under the **Assign** section, select the **Assign Eligibility** button.
 
-12. In the **OTU WA MOC | Roles** window, scroll down through the list of roles and select **Intune Administrator**.
+    ![](../Images/ms102-p12t1p3.png)
+
+12. In the **Roles** page, type **Intune Administrator (1)** in the search box to filter the list of roles. From the results, select **Intune Administrator (2)** to view and manage its assignments.
+
+    ![](../Images/ms102-p12t1p4.png)
 
     >**Note:** If in **Select role** nothing is mentioned, then select the drop-down, search and select **Intune Administrators**.
 
@@ -93,30 +101,40 @@ As in the prior PIM exercise involving the Helpdesk admin role, Holly is trustin
 
 6. In the **Role setting details -  Intune Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 
-7. Below the activation slider, set the **On activation, require** setting to **None**.
+    ![](../Images/ms102-p12t2p1.png)
+
+7. Below the activation slider, set the **On activation, require** setting to **None (1)**.
 
     >**Note:** In a previous lab exercise, Holly required that Patti Fernandez sign in using Microsoft Entra MFA when she requested activation of the Global admin role. In doing so, Holly verified the Microsoft Entra MFA sign-in worked. However, for the purpose of the pilot project, Holly will not require verification using multi-factor authentication when activating the Intune administrator role (and since you already tested this MFA feature in the prior lab exercise, there's no reason to take time in class to do it again). 
 
-8. In the **Edit role setting - Intune Administrator** window, the **Activation** tab is displayed by default. For the pilot project, Holly does not want the **Require justification on activation** check box selected. If this check box is selected, then un-select (clear) it now. Holly knows that Alex and Joni will only activate the role when needed, so she doesn't require a justification from them to activate the role assignment (however, in the next step, Holly will require justification when they request assignment of the role). 
+8. In the **Edit role setting - Intune Administrator** window, the **Activation** tab is displayed by default. For the pilot project, Holly does not want the **Require justification on activation** check box selected. If this check box is selected, then un-select (clear) **(2)** it now. Holly knows that Alex and Joni will only activate the role when needed, so she doesn't require a justification from them to activate the role assignment (however, in the next step, Holly will require justification when they request assignment of the role). 
 
-9. Select the **Require approval to activate** check box. By doing so, the **Select approver(s)** section becomes enabled.
+9. Select the **Require approval to activate (3)** check box. By doing so, the **Select approver(s)** section becomes enabled.
 
 10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign the members of the PIM-Intune-Administrators group as the approver for this role, so select this section. 
 
-11. In the **Select a member** pane that appears, enter **PIM** in the Search box. In the list of users and groups whose name starts with **PIM**, select **PIM-Intune-Administrators** and then select the **Select** button. By selecting this group, the members of the group will receive notification to approve the request made by any eligible user for this role.
+11. In the **Select a member (4)** pane that appears, enter **PIM** in the Search box. In the list of users and groups whose name starts with **PIM**, select **PIM-Intune-Administrators** and then select the **Select** button. By selecting this group, the members of the group will receive notification to approve the request made by any eligible user for this role.
 
-12. In the **Edit role setting - Intune Administrator** window, you're currently in the **Activation** tab. Select the **Next: Assignment** tab that appears next to it. Verify the **Require justification on active assignment** check box is selected (if not, select it now).
+12. In the **Edit role setting - Intune Administrator** window, you're currently in the **Activation** tab. Select the **Next: Assignment (5)** tab that appears next to it. 
 
-13. In the **Edit role setting - Intune Administrator** window, select the **Next: Notification**.
+    ![](../Images/ms102-p12t2p2.png)
 
-14. On the **Notification** tab, under the **Send notifications when eligible members activate this role** section, Holly wants to be notified when Alex or Joni approve this role. Therefore:
+1. Verify the **Require justification on active assignment (1)** check box is selected (if not, select it now).
+
+13. In the **Edit role setting - Intune Administrator** window, select the **Next: Notification (2)**.
+
+    ![](../Images/ms102-p12t2p3.png)
+
+14. On the **Notification** tab, under the **Send notifications when eligible members activate this role (1)** section, Holly wants to be notified when Alex or Joni approve this role. Therefore:
 
     - Verify the **Role activation alert** check box is selected.
     - The default recipient for the **Role activation alert** is **Admin**. This refers to the Global Administrators (Holly) and any Privileged Role Administrators. 
     - Un-check (clear) the **Notification to activated user (requestor)**. Since Alex and Joni will be approving each other's requests, they don't need to receive a notification when they do so.
     -  Verify the **Request to approve an activation** check box is selected. 
 
-15. At the bottom of the **Edit role setting - Intune Administrator** window, select **Update**.
+15. At the bottom of the **Edit role setting - Intune Administrator** window, select **Update (2)**.
+
+    ![](../Images/ms102-p12t2p4.png)
 
 16. Leave all browser tabs open for the next task.
 
@@ -132,7 +150,7 @@ At this point in Holly's pilot project, the PIM-Intune-Administrators group has 
 
     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-4. If a **Welcome to Microsoft Azure** dialog box appears, select **Maybe later** to skip the tour.
+    > **Note:** If you are prompted to configure Multi-Factor Authentication (MFA), complete the MFA setup process as instructed. Once the setup is finished, proceed with the sign-in process.
 
 5. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the forward arrow icon). This opens the **All services** window.
 
@@ -140,11 +158,19 @@ At this point in Holly's pilot project, the PIM-Intune-Administrators group has 
 
 7. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My Roles**.
 
+    ![](../Images/ms102-p12t2p5.png)
+
 8. In the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed by default. Remember, in the prior task Holly assigned Joni and Alex as members of the **PIM-Intune-Administrators** group, which Holly later assigned as an eligible group for the Intune Administrator role. As such, this role appears in the list of **Eligible assignments** for Joni. Under the **Action** column for the Intune Administrator role, select **Activate**.
 
-9. In the **Activate - Intune Administrator** pane that appears, enter **Device management support requests from various users that require resolution** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
+    ![](../Images/ms102-p12t2p6.png)
 
-10. On the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. 
+9. In the **Activate - Intune Administrator** pane that appears, enter **Device management support requests from various users that require resolution** in the **Reason (1)** field, and then select the **Activate (2)** button at the bottom of the pane.
+
+    ![](../Images/ms102-p12t2p7.png)
+
+10. On the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear.
+
+    ![](../Images/ms102-p12t2p8.png)
 
     >**Note:** If the prior task, Holly set up the Intune Administrator role so that activation to a user account will require approval by a member of the PIM-Intune-Administrators group. What Joni just did was request that the Intune Admin role be activated for her user account. This will send a notification request to the members of the PIM-Intune-Administrators group to approve Joni's request. Since Alex Wilber is a member of the group, he can then either approve or deny Joni's request for role activation. Alex will review this request in the next task.
 
@@ -161,7 +187,11 @@ As a member of the PIM-Intune-Administrators group, Joni can approve requests fo
 
 1. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **Approve requests**.
 
+    ![](../Images/ms102-p12t4p1.png)
+
 1. In the **Approve requests | Microsoft Entra roles** window, there are two sections - **Requests to renew or extend role assignments**, and **Requests for role activations**. Under the **Requests to renew or extend role assignments** section, note that Joni has no requests pending approval.
+
+    ![](../Images/ms102-p12t4p2.png)
 
     >**Important:** You have just verified that Joni can't self-approve her own request for the Intune Administrator role, even though she's a member of the PIM-Intune-Administrators group. One of the other members of the group must approve Joni's request. You'll do this in the remaining steps of this task, where Alex will approve her request. 
 
@@ -181,9 +211,13 @@ As a member of the PIM-Intune-Administrators group, Joni can approve requests fo
 
 1. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **Approve requests**.
 
-1. In the **Approve requests | Microsoft Entra roles** window, in the **Requests for role activations** section, select the check box to the left of the **Intune Administrator** request from Joni Sherman, and then select the **Approve** button.
+1. In the **Approve requests | Microsoft Entra roles** window, in the **Requests for role activations** section, select the check box **(1)** to the left of the **Intune Administrator** request from Joni Sherman, and then select the **Approve (2)** button.
 
-1. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
+    ![](../Images/ms102-p12t4p3.png)
+
+1. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** **(1)** in the **Justification** field and then select **Confirm (2)**.
+
+    ![](../Images/ms102-p12t4p4.png)
 
 1. Close the InPrivate browser session for Alex.
 
@@ -201,6 +235,8 @@ As a member of the PIM-Intune-Administrators group, Joni can approve requests fo
 
 1.  In the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed by default. Select the **Active assignments** tab. Note the Intune Administrator role is now activated for Joni. 
 
+    ![](../Images/ms102-p12t4p5.png)
+
 1. Close the InPrivate browser session.
 
 1. Leave your Edge browser and all tabs open. 
@@ -217,13 +253,21 @@ When you earlier configured the Intune Administrator role, you set up the notifi
 
 4. Select the email to open it. Review the information in the email. 
 
+    ![](../Images/ms102-p12t4p6.png)
+
 5. To review the audited list of activities related to Joni's approval of the Intune Administrator role, select the **Microsoft Entra admin center** tab in your Edge browser. 
 
 6. In the **Microsoft Entra admin center**, the **OTU WA MOC | Settings** page should be displayed. This is where you left off in an earlier task. In the middle pane, under the **Activity** section towards the bottom of the page, select **Resource audit**.
 
+    ![](../Images/ms102-p12t4p7.png)
+
 7. In the **OTU WA MOC | Resource audit** page, review the list of PIM activities. Note the two most recent activities. Select the second activity, where the requestor is Alex Wilber. In the **Audit details** pane that appears, note the **Subject** is Joni Sherman, and the **Action** indicates Alex approved Joni's role request for the Intune Administrator role. Select **Close**.
 
+    ![](../Images/ms102-p12t4p8.png)
+
 8. In the **OTU WA MOC | Resource audit** page, in the list of PIM activities, select the first activity. In the **Audit details** pane that appears, note the **Subject** is Joni Sherman, and the **Action** indicates Joni was added to the Intune Administrator role. Also note the **Reason** that you entered for the role request. Select **Close**.
+
+    ![](../Images/ms102-p12t4p9.png)
 
 9. In your Edge browser session, close all the tabs except for the **Microsoft 365 Copilot** tab and the tab containing the **Microsoft 365 admin center**. Leave these two tabs open for the next lab.
 

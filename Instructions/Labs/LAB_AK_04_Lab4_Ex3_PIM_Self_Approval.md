@@ -223,7 +223,7 @@ When you earlier configured the Helpdesk Administrator role, you set up the noti
 
      ![](../Images/ms102-p11t4p1.png)
 
-3. In Holly's Outlook mailbox, her **Inbox** is displayed by default. Verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role for the Adatum Corporation Directory**. 
+3. In Holly's Outlook mailbox, her **Inbox** is displayed by default. Verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role for the Adatum Corporation Directory**.
 
      ![](../Images/ms102-p11t4p2.png)
 

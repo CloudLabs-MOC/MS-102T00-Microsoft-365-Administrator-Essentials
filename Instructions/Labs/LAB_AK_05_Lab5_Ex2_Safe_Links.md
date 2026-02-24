@@ -18,11 +18,15 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
     >**NOTE:** If you had closed the **Safe Attachments** tab after the prior task, then navigate to the **Threat policies** page by selecting **Policies & rules** in the left-hand navigation pane, and then selecting **Threat policies**.
 
-4. In the **Threat policies** window, under the **Policies** section, select **Safe Links**. 
+4. In the **Threat policies** window, under the **Policies** section, select **Safe Links**.
+
+    ![](../Images/ms102-p14t1p1.png)
 
 5. On the **Safe links** page, select **+ Create** on the menu bar. This initiates the **Create safe links policy** wizard.
 
-6. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
+6. On the **Name your policy (1)** page, enter **LinkPolicy1** in the **Name** field and then select **Next (2)**.
+
+    ![](../Images/ms102-p14t1p2.png)
 
 7. On the **Users and domains** page, enter **on** in the **Domains** field. In the menu of suggested domains that appears, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
 
