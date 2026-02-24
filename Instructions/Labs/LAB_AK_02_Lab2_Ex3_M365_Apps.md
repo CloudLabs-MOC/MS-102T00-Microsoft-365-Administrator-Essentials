@@ -233,9 +233,11 @@ In this task, you will check how the global Office download settings within the 
 
 1. In the **My account** window that appears, under the **Office apps & devices** tile, an **Install Office** button appears along with a message indicating you can install Office on up to 5 PCs or Macs, 5 tablets, and 5 smartphones.  
 
-	![](../Images/MS-102-image-16.png)
+	![](../Images/ms102-p6t3p3.png)
 	
 	>**Important:** You have just verified that a user with a Microsoft 365 license is able to download Microsoft 365 Apps for enterprise if the global Office download setting is turned On. Do **NOT** select the **Install Office** button at this time.
+
+	>**Note:** It may take several minutes for the **Install Office** option and device installation message to appear after enabling the global Office download setting or assigning the license. If the option is not visible, wait a few minutes and refresh the page. You may proceed with the next exercise in the meantime and return later to verify that the option is available.
 
 1. Remain on **LON-CL2**.
 
