@@ -16,7 +16,7 @@ In this task, you will enable In-Place Archiving for a newly created user to pro
 
 1. To enable Holly’s archive mailbox, select **Holly Dickson** in the user list. In the **Holly Dickson** pane that appears, select the **Others** tab. In the **Mailbox archive** section, note that Holly's archive mailbox is disabled. In this group, select **Manage mailbox archive**. 
 
-	![](../Images/managearchive.png)
+	![](../Images/ms102-p21t1p1.png)
 
 1. In the **Manage mailbox archive** pane that appears, select the toggle switch for **Mailbox archive status** to change it to **Enabled**. Select **Save** and then close the pane.
 
@@ -51,15 +51,19 @@ In this task, you will create a custom email retention policy and apply it to a 
 
 1. On the **Choose where to apply the policy** page, note the **Exchange mailboxes** location. It's currently set to include **All mailboxes**. You want to change this to just apply to Joni Sherman and Lynne Robbins' mailboxes. Under All mailboxes, select **Edit**.
 
-1. In the **Exchange mailboxes** pane that appears, hover your mouse over **Joni Sherman** and then select her check box. Do the same for **Lynne Robins**. 
+	![](../Images/ms102-p21t1p2.png)
+
+1. In the **Exchange mailboxes** pane that appears, hover your mouse over **Joni Sherman (1)** and then select her check box. Do the same for **Lynne Robins (2)**. 
 
 	>**Note:** If you select a user's name, the other check boxes that have been selected will be unselected. To select multiple users, you must hover your mouse over each user's name and select their check box that appears. 
 
-1. Once both check boxes are selected, select **Done**.
+1. Once both check boxes are selected, select **Done (3)**.
 
-1. On the **Choose where to apply the policy** page, the **Exchange mailboxes** location should now indicate that **2 mailboxes** are included.  Since this policy will only apply to Exchange mailboxes for Joni and Lynne, set the **Status** toggle switch to **Off** for all other locations in which it's currently set to On (**SharePoint classic and communcation sites, OneDrive accounts, and Microsoft 365 Group mailboxes & sites**). Select **Next**.
+	![](../Images/ms102-p21t1p3.png)
 
-	![](../Images/2mailboxes.png)
+1. On the **Choose where to apply the policy** page, the **Exchange mailboxes** location should now indicate that **2 mailboxes (1)** are included.  Since this policy will only apply to Exchange mailboxes for Joni and Lynne, set the **Status** toggle switch to **Off (2)** for all other locations in which it's currently set to On (**SharePoint classic and communcation sites, OneDrive accounts, and Microsoft 365 Group mailboxes & sites**). Select **Next (3)**.
+
+	![](../Images/ms102-p21t1p4.png)
 
 1. On the **Decide if you want to retain content, delete it, or both** page, verify the **Retain items for a specific period** option is selected (if necessary, select it now). Then enter the following information for this option: 
 
@@ -90,7 +94,7 @@ In this task, you will define and apply a global email retention policy that gov
 
 1. On the **Retention policies** tab, select the check box next to **Test user email retention (1)**, and then select **Disable policy (2)** on the menu bar.  Once the policy is disabled, a message will briefly appear at the top of the page indicating the policy is disabled. You can test this out by once again selecting the check box next to **Test user email retention**. Note that the menu bar includes an **Enable policy** option. This option indicates the policy is currently disabled. You can now proceed to the remaining steps in this task to create Adatum's official, organization-wide email retention policy.
 
-	![](../Images/disablepolicy.png)
+	![](../Images/ms102-p21t1p5.png)
 
 1. On the **Retention policies** tab, select **+ New retention policy** on the menu bar. This initiates the **Create retention policy** wizard.
 

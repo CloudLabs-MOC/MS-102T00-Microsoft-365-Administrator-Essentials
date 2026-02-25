@@ -18,13 +18,17 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
 1. In the **Policies** page, select the **+ Create policy** option on the menu bar to start the **Create policy** wizard.
 
-1. On the **Choose what type of data to protect** page, select **Data stored in connected sources** and then select **Next** 
+1. On the **Choose what type of data to protect** page, select **Enterprise applications & devices**.
+
+    ![](../Images/ms102-p22t1p1.png)
 
 1. On the **Start with a template or create a custom policy** page, the **Categories** column displays the policy categories. Each policy category provide Regulations that can be used to create that type of policy, except for the **Custom** category. This category does not provide any specific template; instead, it enables organizations to create custom policies from scratch. When you select a category, **Regulations** column appears that displays the available Regulations to choose from for the selected category. When you select a template, another column appears that displays the type of information that is protected in that template.
 
 1. For example, select **Financial** in the side pane and then scroll through the various Regulations that you can choose from in the **Regulations** column. Select one or two of the Regulations to see what type of information it protects. If you want, select each of the remaining categories to see what type of Regulations are provided.  
   
-1. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the **Categories** column, select the **Custom policy** template in the **Regulations** column, and then select **Next**.
+1. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the **Categories (1)** column, select the **Custom policy (2)** template in the **Regulations** column, and then select **Next (3)**.
+
+    ![](../Images/ms102-p22t1p2.png)
 
 1. In the **Name your DLP policy** page, enter the following information and then select **Next**:
 
@@ -70,7 +74,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy using custom s
 
     - Select the **Notify users in Office 365 service with a policy tip checkbox. In the Policy tips section, select the Customize the policy tip text** check box.
 
-    Enter the following text in this field: **ATTENTION! You have entered sensitive information (an IP address) in this message. You will not be prevented from sending this message, but please review whether the recipients are authorized to see this sensitive data.** 
+    - Enter the following text in this field: **ATTENTION! You have entered sensitive information (an IP address) in this message. You will not be prevented from sending this message, but please review whether the recipients are authorized to see this sensitive data.** 
 
     - In the **Incident reports** section, verify the **Send an alert to admins when a rule match occurs** toggle switch is set to **On** (if necessary, set it to **On**)
 
@@ -135,11 +139,13 @@ In this task, you will create a configuration policy in the Microsoft Intune adm
 
 2. In your Edge browser, locate the **Microsoft 365 admin center** tab. In the Microsoft 365 admin center's navigation pane, under the **Admin centers** group, select **Microsoft Intune**.
 
-3. In the **Microsoft Intune admin center** that opens up in a new tab, select **Apps** in the navigation pane.
+3. In the **Microsoft Intune admin center** that opens up in a new tab, select **Apps (1)** in the navigation pane.
 
-4. On the **Apps | Overview** page, in the middle navigation pane, select **Policies for Microsoft 365 apps** under the **Manage apps** section.
+4. On the **Apps | Overview** page, in the middle navigation pane, select **Policies for Microsoft 365 apps (2)** under the **Manage apps** section.
 
-5. On the **Apps | Policies for Microsoft 365 apps** page, select the **Create** button. This initiates the wizard to create a new policy. In the remaining steps, you'll enable the **Turn off Send to Kindle** setting within this policy.
+5. On the **Apps | Policies for Microsoft 365 apps** page, select the **Create (3)** button. This initiates the wizard to create a new policy. In the remaining steps, you'll enable the **Turn off Send to Kindle** setting within this policy.
+
+    ![](../Images/ms102-p22t1p3.png)
 
 6. On the **Start with the basics** page, enter **Turn off Send to Kindle setting** in the **Name** field and then select **Next**.
 
@@ -154,6 +160,8 @@ In this task, you will create a configuration policy in the Microsoft Intune adm
 11. Select the drop-down arrow in the **Configuration setting** field. In the drop-down menu that appears, select **Enabled**.
 
 12. At the bottom of the pane, select the **Apply** button.
+
+    ![](../Images/ms102-p22t1p4.png)
 
 13. On the **Configure Settings** page, the **Turn off Send to Kindle** policy should appear, and its **Status** should be set to **Configured**. Select **Next**.
 
