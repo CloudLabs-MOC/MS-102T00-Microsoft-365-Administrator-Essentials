@@ -43,31 +43,29 @@ In this task, you will enable multifactor authentication (MFA) for the Global Ad
 
 1. In the **Pick an account** window, select **Holly**'s account and then select **Next**. In the **Enter password** window, enter **<inject key="AzureAdUserPassword"></inject>** and select **Sign in**.
 
-1. Because MFA is enabled for Holly, a **Action Required** window appears. Select **Next**.
+1. Because MFA is enabled for Holly. On the **Let’s keep your account secure** screen, click **Next**.
 
-	![](../Images/actionrequired.png)
+    ![](../Images/ms102-p19t1p1(1).png)
 
-1. On the **Microsoft Authenticator** page, you have to install the Microsoft Authenticator app in your phone. Select **Next**, on the **Start by getting the app** page. On **Set up your account** page, select **Next**. 
+4. Download and install the **Microsoft Authenticator** app on your mobile device from the Google Play Store or Apple App Store, then return to this screen and click **Next** to continue.
 
-	![](../Images/mfa3.png)
+    ![](../Images/ms102-p19t1p1.png)
 
-1. On **Set up your account** page, select **Next**.
+4. Open the **Microsoft Authenticator** app on your mobile device, allow notifications if prompted, tap **Add account**, select **Work or school**, and then return to this screen and click **Next** to continue.
 
-1. On **Scan the QR code**, first scan the code from your phone using Authenticator app, after scanning select **Next**, on the **Scan the QR code** page. On **Let's try it out** page, enter the code in your phone, after entering the code as you can see the **Notification approved** message, select **Next**.
+    ![](../Images/ms102-p19t1p2.png)
 
-	![](../Images/mfa4.png)
+5. Open the **Microsoft Authenticator** app on your mobile device, use it to scan the displayed QR code to connect your account, then return to this screen and click **Next** to continue.
 
-1. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (use your country specific formatting). Verify the **Receive a code** option is selected and then select **Next**.
+    ![](../Images/ms102-p19t1p3.png)
+ 
+6. Check the notification in your **Microsoft Authenticator** app, enter the number displayed on this screen to approve the sign-in request, and complete the authentication process.
 
-1. Retrieve the verification code from the text message that is sent to your phone.
+    ![](../Images/ms102-p19t1p4.png)
 
-1. In the **Phone** window, enter the 6-digit verification code in the code field and then select **Next**. When the Phone window displays a message indicating your phone was registered successfully, select **Next**.
+7. The Microsoft Authenticator app has been successfully added and set as your default sign-in method; click **Done** to complete the setup process.
 
-1. Once it shows the **Verification complete. Your phone has been registered.**, select **Next**.
-
-	![](../Images/mfa5.png)
-
-1. On the **Success!** page, select **Done**.
+    ![](../Images/ms102-p19t1p5.png)
 
 1. If a **Stay signed in?** dialog box appears, select the **Don’t show this again** check box and then select **Yes.** 
 

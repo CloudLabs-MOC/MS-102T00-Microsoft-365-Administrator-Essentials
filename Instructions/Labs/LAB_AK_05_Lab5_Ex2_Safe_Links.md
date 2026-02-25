@@ -28,29 +28,43 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
     ![](../Images/ms102-p14t1p2.png)
 
-7. On the **Users and domains** page, enter **on** in the **Domains** field. In the menu of suggested domains that appears, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
+7. On the **Users and domains** page, enter **on** in the **Domains** field. In the menu of suggested domains that appears, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com (1)** domain. Adatum's domain will now appear below the **Domains** field. Select **Next (2)**.
+
+    ![](../Images/ms102-p14t1p3.png)
 
     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-8. On the **URL & click protection settings** page, update the following settings and then select **Next**: 
+8. On the **URL & click protection settings** page, update the following settings and then select **Next (3)**: 
 
-    - Under the **Email** section, verify that all check boxes are selected (if any are not selected by default, then select them now):
+    - Under the **Email (1)** section, verify that all check boxes are selected (if any are not selected by default, then select them now):
     - Under the **Click protection settings** section:
-        - **Track user clicks** - Adatum does not want to track user clicks, so clear this check box if it's selected by default
+        - **Track user clicks (2)** - Adatum does not want to track user clicks, so clear this check box if it's selected by default
+
+            ![](../Images/ms102-p14t1p4.png)
    
 9. On the **Notification** page, verify the **Use the default notification text** option is selected (if necessary, select it now) and then select **Next**.
 
 10. On the **Review** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the necessary corrections. Once they all appear correct, select **Submit**. 
 
-11. On the **New Safe Links policy created** page, select **Done**. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
+11. On the **New Safe Links policy created** page, select **Done**. 
+
+    ![](../Images/ms102-p14t1p5.png)
+
+1. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list.
 
 12. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe links**), select **Threat policies**.
 
 13. In the **Threat policies** page, under the **Rules** section, select **Tenant Allow/Block Lists**.
 
-14. On the **Tenant Allow/Block Lists** page, the **Domains & addresses** tab is displayed by default. Select the **URLs** tab.
+    ![](../Images/ms102-p14t1p6.png)
 
-15. On the **URLs** tab, select **+ Add** drop-down and select **Block** on the menu bar. In the **Block URLs** pane that appears, enter **http://tailspintoys.com/*** in the **Add URLs with wildcards (20 max)** field and then select **Add**.
+14. On the **Tenant Allow/Block Lists** page, the **Domains & addresses** tab is displayed by default. Select the **URLs (1)** tab.
+
+15. On the **URLs** tab, select **+ Add (2)** drop-down and select **Block (3)** on the menu bar. In the **Block URLs** pane that appears, enter **http://tailspintoys.com/** in the **Add URLs with wildcards (20 max) (4)** field and then select **Add (5)**.
+
+    ![](../Images/ms102-p14t1p7.png)
+
+    ![](../Images/ms102-p14t1p8.png)
 
     > **Note:** When you enter the URL, make sure you enter the wildcard at the end of it. The * wildcard represents "any characters" and is used to match multiple URLs. When you enter **https://tailspintoys.com/*** , you're telling Microsoft 365 to block all URLs that start with https://tailspintoys.com/, including any subdirectories, paths, or additional characters after the domain. This ensures a broader and more effective block, covering any page or resource under the tailspintoys.com domain. If you enter https://tailspintoys.com without the wildcard (*), Microsoft 365 might interpret it as an exact match to that specific domain. As such, it may fail to block it because URLs on the web typically have paths, query strings, or other parts after the domain name. For example, https://tailspintoys.com/contact or https://tailspintoys.com/shop would not be blocked if you only specify https://tailspintoys.com without a wildcard.
  
@@ -70,7 +84,9 @@ You will then go back into Holly's Outlook mailbox and open the email in her Sen
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-1. In your **Microsoft Edge** browser, select the **Microsoft 365 Copilot** tab, in the left-hand navigation pane, select **Apps** and then select the **Outlook** app. 
+1. In your **Microsoft Edge** browser, select the **Microsoft 365 Copilot** tab, in the left-hand navigation pane, select **Apps (1)** and then select the **Outlook (2)** app. 
+
+    ![](../Images/ms102-p14t2p1.png)
 
 1. **Outlook** will open in a new tab in your browser, and Holly's **Inbox** will be displayed.
 
@@ -78,21 +94,27 @@ You will then go back into Holly's Outlook mailbox and open the email in her Sen
 
 1. In the email form that appears, enter the following information:
 
-    - To: You will be sending an email to the ODL user, so enter **<inject key="AzureAdUserEmail"></inject>** in the **To** field and then select the **<inject key="AzureAdUserEmail"></inject>** email address from the user list.
+    - To: You will be sending an email to the ODL user, so enter **<inject key="AzureAdUserEmail"></inject>** in the **To** field and then select the **<inject key="AzureAdUserEmail"></inject> (1)** email address from the user list.
 
-    - Add a subject: **Test email with an unblocked URL**
+    - Add a subject: **Test email with an unblocked URL (2)**
 
-    - Body of the message: **This message is linked to an unblocked URL.**
+    - Body of the message: **This message is linked to an unblocked URL. (3)**
+
+        ![](../Images/ms102-p14t2p2.png)
   
-1. Select the entire text string that you just added in the body of the message. From the top menu bar select **Link** drop-down and select the **Insert hyperlink**.
+1. Select the entire text string **(1)** that you just added in the body of the message. From the top menu bar select **Link (1)** drop-down and select the **Insert hyperlink (3)**.
 
-1. In the **Insert link** window that appears, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://adatum.com/aboutus**
+    ![](../Images/ms102-p14t2p3.png)
 
-1. Select **OK**. In the body of the email, the message should now be hyperlinked.
+1. In the **Insert link** window that appears, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL) (1)** field, enter the following URL: **http://adatum.com/aboutus**
 
-1. Select the **Send (1)** button. Select Holly's **Sent Items (2)** folder to verify the message was sent.
+1. Select **OK (2)**. In the body of the email, the message should now be hyperlinked.
 
-    ![](../Images/ms-102-99.png)
+    ![](../Images/ms102-p14t2p4.png)
+
+1. Select the **Send** button. Select Holly's **Sent Items (1)** folder to verify the message was sent **(2)**.
+
+    ![](../Images/ms102-p14t2p5.png)
 
 1. Select the **New mail** button in the upper left part of the screen
    
@@ -133,6 +155,8 @@ You will then go back into Holly's Outlook mailbox and open the email in her Sen
     -  Verify that you received the first email that Holly sent that contained the Subject line **"Test email with an unblocked URL"**. This email showed that the email system is working, and that an email with an unblocked URL could successfully be sent and not be blocked by Safe Links since it isn't malicious.
 
     - Next, verify that Holly's email with the Subject line **"Free stuff for Adatum users"** never arrived in the ODL User's Inbox. Since you already verified from Holly's Sent Items folder that the email was sent, the fact that it never arrived verifies that the email was blocked due to the blocked URL.
+
+        ![](../Images/ms102-p14t2p6.png)
 
 1. You now want to go back to Holly's Outlook mailbox, open the email with the subject line **"Free stuff for Adatum users"** that's in Holly's Sent Items folder, and verify the Safe Links policy that you created is working.
 

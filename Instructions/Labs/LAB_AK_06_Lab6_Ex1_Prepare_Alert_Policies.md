@@ -35,21 +35,31 @@ Perform the following steps to assign Lynne Robbins the Compliance Data Administ
 
 4. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and expand the **System** section a and select **Permissions**.
 
-5. On the **Permissions** page, there are four sections - Microsoft Defender XDR, Microsoft Entra ID, Email & collaboration roles and Cloud Apps. Under the **Email & collaboration roles** section, select **Roles**. 
+    ![](../Images/ms102-p15t1p1.png)
 
-6. In the list of roles that appears, select the **Name** column heading to sort the roles in ascending alphabetical name order. Select the **Compliance Data Administrator** role group. 
+5. On the **Permissions** page, there are four sections - Microsoft Entra ID, Email & collaboration roles and Cloud Apps. Under the **Email & collaboration roles (1)** section, select **Roles (2)**. 
 
-7. In the **Compliance Data Administrator** pane that appears, note the list of roles that have been assigned to this role group. select **Edit**. 
+    ![](../Images/ms102-p15t1p2.png)
 
-8. In the **Edit members of the role group** window, select **Choose users** under the Members pane. 
+6. In the list of roles that appears, select the **Name** column heading to sort the roles in ascending alphabetical name order. Select the **Compliance Data Administrator** role group.
 
-9. In the **Choose users** window, in the search filed type **Lynne** press enter, select the check box next to **Lynne Robbins** and then click on **Select** button.
+7. In the **Compliance Data Administrator (1)** pane that appears, note the list of roles that have been assigned to this role group and select **Edit (2)**.
 
-10. In the **Edit members of the role group** window, select **Next**.
+    ![](../Images/ms102-p15t1p2(1).png)
+
+8. In the **Edit members of the role group** window, select **Choose users (1)** under the Members pane. 
+
+9. In the **Choose users** window, in the search filed type **Lynne (2)** press enter, select the check box next to **Lynne Robbins (3)** and then click on **Select (4)** button.
+
+10. In the **Edit members of the role group** window, select **Next (5)**.
+
+    ![](../Images/ms102-p15t1p3.png)
 
 11. In the **Review the role group and finish** window, select **Save**.
 
 12. The message will show that **You successfully updated the role group**, select **Done**.
+
+    ![](../Images/ms102-p15t1p4.png)
 
 13. Leave all tabs in your Edge browser open for the next lab exercise.
 

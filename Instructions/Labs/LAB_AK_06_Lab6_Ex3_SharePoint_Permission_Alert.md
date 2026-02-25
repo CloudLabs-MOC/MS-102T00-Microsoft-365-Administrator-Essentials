@@ -18,37 +18,47 @@ In this task, you will set up an alert in SharePoint to notify users or administ
 
 5. On the **Name your alert, categorize it, and choose a severity** window, enter the following information:
 
-	- Name: **Add user as a site collection administrator**
+	- Name: **Add user as a site collection administrator (1)**
 
-	- Description: **This alert notifies Lynne Robbins when a user is added to the site collection administrators on a SharePoint site collection.**
+	- Description: **This alert notifies Lynne Robbins when a user is added to the site collection administrators on a SharePoint site collection. (2)**
 
-	- Severity: **Medium**
+	- Severity: **Medium (3)**
 
-	- Category: **Permissions**
+	- Category: **Permissions (4)**
 
-6. Select **Next**.
+6. Select **Next (5)**.
+
+	![](../Images/ms102-p17t1p1.png)
 
 7. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
 
-	- Activity is: select the **Select an activity** field, then in the menu that appears, scroll down to the **Site administration activities** section and select **Added site collection admin**
+	- Activity is: select the **Select an activity** field, then in the menu that appears, scroll down to the **Site administration activities** section and select **Added site collection admin (1)**
 
-	- How do you want the alert to be triggered? **Every time an activity matches the rule**
+	- How do you want the alert to be triggered? **Every time an activity matches the rule (2)**
 
-8. Select **Next**.
+8. Select **Next (3)**.
+
+	![](../Images/ms102-p17t1p2.png)
 
 9. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
 
-	- Email recipients: Remove **Holly Dickson** and add **Lynne Robbins**
+	- Email recipients: Remove **Holly Dickson** and add **Lynne Robbins (1)**
 
-	- Daily notification limit: **No limit**
+	- Daily notification limit: **No limit (2)**
 
-10. Select **Next**.
+10. Select **Next (3)**.
 
-11. On the **Review your settings** page, under the **Do you want to turn the policy on right away?** option, select **Yes, turn it on right away** and then select **Submit**. 
+	![](../Images/ms102-p17t1p3.png)
+
+11. On the **Review your settings** page, under the **Do you want to turn the policy on right away?** option, select **Yes, turn it on right away (1)** and then select **Submit (2)**. 
+
+	![](../Images/ms102-p17t1p4.png)
 
 12. On the **New Alert Policy** window, select **Done**.
 
 13. Verify your new alert policy appears in the list on the **Alert policy** page, its **Type** is set to **Custom**, and its **Status** in **On**.
+
+	![](../Images/ms102-p17t1p5.png)
 
 14. Leave all the Edge browser tabs open for the next task.
 
@@ -68,13 +78,19 @@ In the prior task, you configured an alert designed to notify Lynne Robbins when
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
+	> **Note:** If you’re prompted to sign in, use the account for Holly Dickson.
+
 1. On the **Site Settings** window, under the **Users and Permissions** section, select **Site permissions**. 
+
+	![](../Images/ms102-p17t2p1.png)
 
 1. In the ribbon at the top of the page, the **Permissions** tab is displayed by default. Under the **Manage** drop-down, select **Site Collection Administrators**.
 
-	![](../Images/sitecollection.png)
+	![](../Images/ms102-p17t2p2.png)
 
-1. In the **Site Collection Administrators** dialog box, the Global administrator account that was assigned by default to this role group is displayed in the data entry field. To the right of this account, enter **Alex**, select **Alex Wilber** from the list of users that appears, and then select **OK**. 
+1. In the **Site Collection Administrators** dialog box, the Global administrator account that was assigned by default to this role group is displayed in the data entry field. To the right of this account, enter **Alex**, select **Alex Wilber (1)** from the list of users that appears, and then select **OK (2)**. 
+
+	![](../Images/ms102-p17t2p3.png)
 
 1. Switch to **LON-CL2** and open **Outlook**, where you are logged in as **Lynne**.
 
