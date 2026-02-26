@@ -47,7 +47,7 @@ In this task, you will set up and execute a Drive-by URL attack to simulate how 
 
 11. Select **Next (3)**.
 
-	- ![](../Images/ms-102-107.png)Select **Next**.
+	![](../Images/ms-102-107.png)
 
 12. On the **Configure Payload** page, enter the following information: 
 
@@ -145,9 +145,13 @@ In this task, you will analyze the outcome of the Drive-by URL attack, examining
 
 1. On LON-CL2, in the Edge browser, you should have a tab open containing Lynne Robbins' Outlook mailbox from the prior lab exercise. In Lynne's Outlook Inbox, you should see the email that was sent by the Attack Simulator that's from **klemens@tailspintoys.com**. The subject of the email is **Free toy giveaway promotion from Tailspin Toys**. Select the email to open it and review the details in the body of the message. 
 
+	![](../Images/ms102-p20t3p1.png)
+
 	>**NOTE:** It can take up to 15 minutes for the email to arrive.  Wait for the email before proceeding.
 
 1. Select the link that is included in the email. Even though you know this is a Drive-by URL attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign. Selecting this link displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization.  Read through the contents of this site, which uses the landing page template that you selected in the prior task when setting up the attack simulation. 
+
+	![](../Images/ms102-p20t3p2.png)
 
 1. In the **Outlook** tab in your Edge browser, select the picture of Lynne Robbins in the upper-right corner of the window. In Lynne's profile window that appears, select **Sign out**.
 

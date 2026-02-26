@@ -16,9 +16,11 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 1. In your Edge browser, select the **Alert policy - Microsoft 365 security** tab. This tab should still be displaying the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
-1. On the **Alert policy** page, you want to search through the default System policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery** and then hit Enter. 
+1. On the **Alert policy** page, you want to search through the default System policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery (1)** and then hit Enter.
 
-1. In the policy list, select the **eDiscovery search started or exported** policy that appears. 
+1. In the policy list, select the **eDiscovery search started or exported (2)** policy that appears. 
+
+	![](../Images/ms102-p18t1p1.png)
 
 1. An **eDiscovery search started or exported** pane should appear. Scroll down through the pane and verify the default settings for this predefined policy are configured as follows:
 
@@ -38,9 +40,13 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 		- Daily notification limit: **No limit**
 
+			![](../Images/ms102-p18t1p2.png)
+
 1. At the top of the pane, select the **Edit policy** button.
 
 1. On the **eDiscovery search started or exported** window that appears, the only setting that can be edited for this default policy is the **Email recipients** setting. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here; instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select the **Cancel** button at the bottom of the window.
+
+	![](../Images/ms102-p18t1p3.png)
 
 1. On the **eDiscovery search started or exported** pane, select the **X** in the upper-right corner to close it. 
 
@@ -56,45 +62,68 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.  
 
-2. In your Edge browser, select the **Microsoft Purview** admin center tab.  
+1. In the **Microsoft 365 admin center**, under **Admin centers**, select **Microsoft Purview**.
+
+	![](../Images/ms102-p18t2p1.png)
 
 1. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
-1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)** select **eDiscovery (2)** group, and Under **eDiscovery**, select **Content Search**.
+1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)** select **eDiscovery (2)** group, and Under **eDiscovery**, select **Content Search (3)**.
 
-	![](../Images/ms-102-102.png)
+	![](../Images/ms102-p18t2p2.png)
+
+	![](../Images/ms102-p18t2p3.png)
 
 	> **Note:** If you encounter an **permission error -** _You are not a member of the content search case_ please follow the below steps to add the eDiscovery manager role to Holly.
 	
 	 - In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
 
-		![](../Images/ediscovery1.png)
+		![](../Images/ms102-p18t2p4.png)
 
 	 - In the list of Role groups, select **eDiscovery Manager (1)** and click on **Edit (2)**.
  
 	   ![](../Images/ediscovery2.png)
 
-	 - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** and click on **Select (3)**. Now click on **Next** twice, select **Save** and **Done**.
+	 - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** (Holly@otuwamocZZZZZZ.onmicrosoft.com) and click on **Select (3)**. Now click on **Next** twice, select **Save** and **Done**.
 	
 	  	![](../Images/ediscovery3.png)
 
-1. On the **Searches** tab, select **Create a search**. This initiates the **New search wizard**.  
+	 - In the **Manage eDiscovery Administrator** window, select the **Choose users** button. Search for and select **Holly Dickson**, and then click **Select**. Holly’s name should now appear in the list. Select **Next**.
 
-1. In the **New search** wizard, on the **Name and description** page, enter **Confidential search** in the **Name** field and then select **Create**.
+	 - In the Review the role group and finish window, verify Holly is listed as a member of both role groups, and then select **Save**.
 
-1. In the **Confidential search** window, select **Add sources**.  
-   - In the search pane, locate and select the **Sales and Marketing** mailbox (or, if not available, select **All mailboxes**).  
-   - Select **Save and close**.  
+	 - In the confirmation pane, select **Done**.
 
-1. On the **Query** tab, in the condition builder, enter **Confidential** in the keyword field, and then press **Enter**.  
+1. On the **Content Search** tab, under **Searches**, select **Create a search**. This initiates the **New search wizard**.
 
-1. Select the **Run query** button.  
+	![](../Images/ms102-p18t2p5.png)
 
-1. On the **Choose search results** page, leave the default values, and then select **Run query** again.  
+1. In the **New search** wizard, on the **Name and description** page, enter **Confidential search (1)** in the **Name** field and then select **Create (2)**.
+
+	![](../Images/ms102-p18t2p6.png)
+
+1. In the **Confidential search** window, select **Add sources**.
+
+   - In the Search for sources pane search **Inside Sales (1)**, locate and select the **Inside Sales (2)**.  
+   - Select **Save and close (3)**.
+
+		![](../Images/ms102-p18t2p7.png)
+
+1. On the **Query** tab, in the condition builder, enter **Confidential (1)** in the keyword field, and then press **Enter**. 
+
+1. Select the **Run query (2)** button. 
+
+	![](../Images/ms102-p18t2p8.png)
+
+1. On the **Choose search results** page, leave the default values, and then select **Run Query** again.  
+
+	![](../Images/ms102-p18t2p9.png)
 
 1. Back on the **Confidential search** window, the **Statistics** tab should now display results.  
 
-   **Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
+	![](../Images/ms102-p18t2p10.png)
+
+    >**Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
 
 Leave your browser open in **LON-CL1** and do not close any tabs.  
 

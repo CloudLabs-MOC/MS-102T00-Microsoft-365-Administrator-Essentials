@@ -30,6 +30,10 @@ In this task, you will configure Microsoft Entra Pass-Through Authentication to 
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
+    >**Note:** In the **Pick an account** window, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
+
+        ![](../Images/ms102-p9t1p1.png)
+
 6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication (1)** and then select **Next (2)**. 
 
    ![](../Images/29.png)
@@ -40,9 +44,11 @@ In this task, you will configure Microsoft Entra Pass-Through Authentication to 
 
 8. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **Username** and **Pa55w.rd** as the **Password**, and then select **OK**. 
 
+    ![](../Images/ms102-p9t1p2.png)
+
 9. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**. 
 
-   ![](../Images/31.png)
+   ![](../Images/ms102-p9t1p3.png)
 
 10. On the **Ready to configure** page, select **Configure**. It may take a minute or so for the configuration to complete.
 
@@ -50,13 +56,15 @@ In this task, you will configure Microsoft Entra Pass-Through Authentication to 
 
 11. On the **Configuration complete** page, note the message indicating the current sign on method for Microsoft Entra is PTA. Select **Exit**. Pass-Through Authentication has now been enabled. 
 
-    ![](../Images/33.png)
+    ![](../Images/ms102-p9t1p4.png)
 
 12. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://entra.microsoft.com**
 
-1. This opens the **Microsoft Entra admin center**. Under **Entra ID**, in the navigation pane, select **Entra Connect**. 
+1. This opens the **Microsoft Entra admin center**. Under **Entra ID**, in the navigation pane, select **Entra Connect (1)**. 
 
-17. On the **Microsoft Entra Connect | Get started** page, in the middle navigation pane, select **Connect Sync**.
+17. On the **Microsoft Entra Connect | Get started** page, in the left navigation pane, select **Connect Sync (2)**.
+
+    ![](../Images/ms102-p9t1p5.png)
 
 18. On the **Microsoft Entra Connect | Connect Sync** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**. 
 
@@ -147,11 +155,15 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
 17. In your browser, close the **Change  your password** tab. 
 
-18. You should now test the lockout threshold functionality. In the **Authentication methods - Azure Active Directory admin center** tab, select Holly Dickson's user icon in the upper right corner of the screen, and in the menu that appears select **Sign out**.  
+18. You should now test the lockout threshold functionality. In the **Authentication methods - Azure Active Directory admin center** tab, select Holly Dickson's user icon **(1)** in the upper right corner of the screen, and in the menu that appears select **Sign out (2)**.
+    
+    ![](../Images/ms102-p9t1p6.png)
 
 19. Once you are signed out as Holly, the **Pick an account** window will appear in the **Sign in to Microsoft Azure** tab. As a best practice when signing out from a Microsoft online service as one user and signing back in as another, close all your browser tabs except for the **Sign out** or **Sign in** tab. In this case, close the other tabs now and leave the **Sign in** tab open. In the **Pick an account** window, select **Use another account**. 
 
-    ![](../Images/3.png)
+1. When **Which account do you want to sign out of?** window appears, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
+
+    ![](../Images/ms102-p9t1p7.png)
 
 20. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) (1)** username, and then select **(2)**. 
 
@@ -169,7 +181,7 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
 23. Because MFA is enabled for all users except for the M365 pilot project group members (of which, Laura is not a member), a **Let's keep your account secure** window appears so that you can complete the MFA process for Laura. This is verification that your sign-in attempt using Laura's actual password was successful.  <br>
 
-	**Note:** You do NOT need to complete the MFA process for Laura, since this is your last lab exercise using the LON-DC1 domain controller. You can close all applications on LON-DC1.
+    >**Note:** You do NOT need to complete the MFA process for Laura, since this is your last lab exercise using the LON-DC1 domain controller. You can close all applications on LON-DC1.
  
    
 ## Review

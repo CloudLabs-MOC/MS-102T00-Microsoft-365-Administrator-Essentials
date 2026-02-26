@@ -19,13 +19,13 @@ This task involves managing user roles and licenses within Microsoft 365 for Ada
 
 	- Select **Reset Password (4)**.
 
-		![Access Your VM and Lab Guide](../Images/ms-102-32.png)
+		![Access Your VM and Lab Guide](../Images/ms102-p2t1p1.png)
 
 1. On the **Reset Password** page. Clear (uncheck) the **Automatically create a password (1)** check box, which will display a **new field (2)** for entering an administrator defined password, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account (i.e. <inject key="AzureAdUserPassword"></inject>)
 
 1. Clear (uncheck) the **Require this user to change their password when they first sign in (3)** check box. Select **Reset Password (4)** button. If a **Save password** dialog box appears towards the top of the screen, select **Never**.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-33.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t1p2.png)
 
 1. Go back from the **Password has been reset** page. Now on the **Holly Dickson** page. Select **Manage Roles** under **Roles** section. 
 
@@ -71,17 +71,19 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. If a **Welcome to your Microsoft 365 Copilot app** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
+1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-    ![](../Images/lab1-e1-11-0.png)
+    ![](../Images/ms102-p1t1p5.png)
 
 	>**Note:** If a any pop-up appears, select the **X** in the upper right-hand corner of the window to close it. 
 
 1. The **Microsoft 365 Copilot** page appears in your Edge browser in the **Microsoft 365 Copilot** tab. This is Holly's Microsoft 365 home page. Note that Holly's initials appear in the below-left corner of the screen, however, Holly's name is not displayed. This is because Holly's account did not exist at the time you added the Microsoft 365 pilot project users to the group that was associated with the custom theme in the prior lab exercise. Since Holly wants to see her name at the top of each Microsoft 365 window when she's logged into the system, she first wants to add her account to the group of Microsoft 365 pilot project users.
 
-	![Access Your VM and Lab Guide](../Images/lab1-e1-11-4.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t2p2.png)
 
-1. In the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the **Microsoft 365 admin center** in a new browser tab. 
+1. In the column of application icons that appears on the far left-side of the screen, select **Apps (1)** and then click on **Admin (2)** . This opens the **Microsoft 365 admin center** in a new browser tab. 
+
+	![](../Images/ms102-p2t2p1.png)
 
 	>**Note:** Select **X** for closing the **Business Advisor** pop-up.
 
@@ -109,7 +111,7 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. Hover your mouse over **Alex Wilber** and select the key icon that appears.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-37.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t2p3.png)
 
 1. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password (1)** check box. 
 
@@ -119,7 +121,7 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
 1. Select **Reset Password (4)**. If a **Save password** dialog box appears at the top of the screen, select **Never**. Then select **Close** on the **Password has been reset** pane.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-38.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t2p4.png)
 
 1. Repeat steps 19-23 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, reset each of their passwords to the same **Microsoft 365 Tenant Password** 
 	- Password:- <inject key="AzureAdUserPassword"></inject>
@@ -138,11 +140,11 @@ In this task, you will create Microsoft 365 Groups to enable collaboration acros
 
 1. Select the **+ Add a Microsoft 365 group (4)** option that appears on the menu bar above the list of groups. This initiates the **Add a Microsoft 365 group** wizard. 
 
-	![Access Your VM and Lab Guide](../Images/ms-102-39.png)	
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p1.png)	
 
 1. In the **Set up the basics** page, enter **Inside Sales (1)** in the **Name** field, and then enter **Collaboration group for the Inside Sales team (2)** in the **Description** field (Note: even if you don't enter a description, you must still select into this field to enable the **Next** button). Select **Next (3)**.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-40.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p2.png)
 
 1. You will now assign Allan Deyoung and Patti Fernandez as owners of the Inside Sales group. In the **Assign owners** window, select **+ Assign owners (1)**.
 	
@@ -152,17 +154,17 @@ In this task, you will create Microsoft 365 Groups to enable collaboration acros
 
 1. On the **Assign owners** page, **Allan and Patti (1)** should appear as owners of the group. Select **Next (2)**.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-42.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p3.png)
 
 1. You will now assign Diego Siciliani and Lynne Robbins as members of the Inside Sales group. In the **Add members** page, select **+ Add members (1)**.
 
-1. In the **Add members** pane that appears, select the check boxes next to **Diego Siciliani** and **Lynne Robbins** users (2), and then select the **Add (3)** button at the bottom of the pane.
+1. In the **Add members** pane that appears, select the check boxes next to **Diego Siciliani** and **Lynne Robbins** users **(2)**, and then select the **Add (3)** button at the bottom of the pane.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-43.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p4.png)
 
 1. On the **Add members** page, **Diego and Lynne (1)** should appear as members of the group. Select **Next (2)**.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-44.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p5.png)
 
 1. In the **Edit settings** page, enter the following information: 
 
@@ -172,17 +174,17 @@ In this task, you will create Microsoft 365 Groups to enable collaboration acros
 
 	- Select **Next (3)**.
 
-		![Access Your VM and Lab Guide](../Images/ms-102-45.png)
+		![Access Your VM and Lab Guide](../Images/ms102-p2t3p6.png)
 
 1. In the **Review and finish adding group** page, review the content that you entered. If anything needs to be fixed, select **Edit** under the specific area that needs adjustment, make any necessary corrections, and then select **Next** to continue back to this page. Once everything is correct, select **Create group**.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-46.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p7.png)
 
 1. It may take a minute or so for the **Inside Sales** group created window to appear.
 
 1. Select **Close**. This returns you to the **Active teams and groups** page, which should display the **Microsoft 365** group tab. Since the **Inside Sales** group was a Microsoft 365 group, it should eventually display on this tab.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-47.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p8.png)
 
 1. Repeat steps 3-14 to add a new group with the following information: 
 
@@ -206,19 +208,19 @@ In this task, you will create Microsoft 365 Groups to enable collaboration acros
 
 1. In the **Accounting** pane that appears, the **General** tab is displayed by default. Select the **Membership** tab.
 
-1. In the **Membership** tab, four sub-tabs (Owners, Members, Site visitors, and About membership and permissions) are displayed in the left-hand column. The **Owners** sub-tab is displayed by default. In the **Owners** sub-tab, **Joni Sherman** should appear as the only group owner. 
+1. In the **Membership** tab, four sub-tabs (Owners, Members, Site visitors, and About membership and permissions) are displayed in the left-hand column. The **Owners** sub-tab is displayed by default. In the **Owners (1)** sub-tab, **Joni Sherman (2)** should appear as the only group owner. 
 
 	![Access Your VM and Lab Guide](../Images/ownersrole.png)
 
 1. Select the **Members (1)** sub-tab. In the **Members** sub-tab, select the **Add members (2)** button. 
 
-	![Access Your VM and Lab Guide](../Images/ms-102-48.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p9.png)
 
 1. In the **Add team members to Accounting** pane, select in the **Search by name or email address** field. This displays the list of active users.
 
 1. In the list of users, select **Alex Wilber**,  **Joni Sherman**, and then select **Lynne Robbins** **users (1)**. Once all three users are selected, select the **Add (2)** button at the bottom of the pane.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-49.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p10.png)
 
 1. Once the three new members have been added to the group, select the **X** in the upper right-hand corner of the **Accounting** pane to close it. 
 
@@ -228,7 +230,7 @@ In this task, you will create Microsoft 365 Groups to enable collaboration acros
 
 	- Description: **IT administrative personnel**
 
-		![Access Your VM and Lab Guide](../Images/ms-102-50.png)
+		![Access Your VM and Lab Guide](../Images/ms102-p2t3p11.png)
 
 1. There is no owner, email address, or privacy setting for Security groups. Members must be added to a Security group after creating the group, which you will do in the next few steps. On the **Edit settings** page, you're NOT going to assign Azure AD roles to the group, so simply select **Next**.
 
@@ -246,15 +248,15 @@ In this task, you will create Microsoft 365 Groups to enable collaboration acros
 
 1. The **Members (1)** tab displays sections for the Owners and the Members. Under the **Members** section, you can see that there are no members. Under this section, select **View all and manage members (2)** to add members to the group. 
 
-	![Access Your VM and Lab Guide](../Images/ms-102-51.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p12.png)
 
 1. In the **Members** pane that appears, select **+ Add members**. This displays the list of active Microsoft 365 users.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-52.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p13.png)
 
-1. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Bowen**, and **Nestor Wilke** **users (1)**, and then at the bottom of the pane select the **Add (2)** button. 
+1. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Brown**, and **Nestor Wilke** **users (1)**, and then at the bottom of the pane select the **Add (2)** button. 
 
-	![Access Your VM and Lab Guide](../Images/ms-102-53.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t3p14.png)
 
 1. In the **Members** pane, verify the three users that you selected appear. Select the **X** in the upper right-hand corner to close the **Members** pane. 
 
@@ -313,7 +315,11 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 		Connect-MgGraph -Scopes 'Group.ReadWrite.All', 'Directory.ReadWrite.All'
 		```
 
-1. select **Use another account**. 
+1. On the **Let's get you signed in** window, select **Work or student account (1)** and then select **Continue (2)**.
+
+	![](../Images/ms102-p2t4p1.png)
+
+	>**Note:** If the **PowerShell** window closes, reopen it with elevated privileges by selecting **Run as administrator**, and then execute the above commands again.
 
 1. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). For the password, sign-in with the same **Microsoft 365 Tenant Password** 
 	
@@ -323,7 +329,17 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box and then select **Accept (2)**.
 
-	![Access Your VM and Lab Guide](../Images/ms-102-56.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t4p2.png)
+
+1. On the **Sign in to all apps, websites, and services on this device?** window, click on **Yes**.
+
+	![](../Images/ms102-p2t4p3.png)
+
+1. On the **Account added to this device** window, click on **Done**.
+
+	![](../Images/ms102-p2t4p4.png)
+
+	>**Note:** If the **PowerShell** window closes, reopen it with elevated privileges by selecting **Run as administrator**, and then execute the above commands again.
 
 1. You will now use Microsoft Graph PowerShell to display the list of active groups. The Inside Sales group should not appear in this list. Type the following command and press Enter (Note: it may take a minute or so for the list of groups to appear):
 	
@@ -331,7 +347,7 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 	Get-MgGroup
 	```
 
-	![Access Your VM and Lab Guide](../Images/ms-102-57.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t4p5.png)
 	
 1. As the note at the start of this task indicated, at this point you would normally run the **Get-MgDirectoryDeletedItem** cmdlet to display the list of deleted objects, which would include the ID of the **Inside Sales** group that you deleted in the prior task. However, given the current issues with this cmdlet, you should instead run the following series of commands to retrieve this ID. Type in each command and press Enter:    
 	
@@ -370,11 +386,13 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 	Get-MgGroup
 	```
 
-	![Access Your VM and Lab Guide](../Images/insidesales.png)
+	![Access Your VM and Lab Guide](../Images/ms102-p2t4p6.png)
 
 1. Leave your Windows PowerShell window open for the next exercise, simply minimize the PowerShell window for now.
 
 1. You now want to verify that the recovery process correctly updated the group's membership. In your Edge browser, in the **Microsoft 365 admin center**, navigate to the **Active teams & groups** windows, review the **Teams & Microsoft 365 groups** tab in the list of Teams & Microsoft 365 groups, select the **Inside Sales** group (select the name and not the check box). 
+
+	![](../Images/ms102-p2t4p7.png)
 
 	>**Note:** If the Inside Sales group does not appear, wait a minute or two and then select **Refresh** on the menu bar above the list of groups.
 

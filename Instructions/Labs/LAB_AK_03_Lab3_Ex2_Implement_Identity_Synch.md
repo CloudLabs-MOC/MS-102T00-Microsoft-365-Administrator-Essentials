@@ -14,6 +14,8 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
 1. After finishing the previous lab exercise, you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. If not then enter the URL **https://admin.microsoft.com/** and sign-in with the Holly's account.
 
+	>**Note:** If you are not already signed in, sign in using **[Holly@otuwamocZZZZZZ.onmicrosoft.com](mailto:Holly@otuwamocZZZZZZ.onmicrosoft.com)** (where *ZZZZZZ* is the tenant prefix provided by your lab hosting provider) and enter the provided password to continue.
+
 	>**Note:** On the **Business Advisor** pop-up select **Skip for now** twice.
 
 1. In your **Edge** browser, select the **Microsoft 365 admin center** tab, and then in the navigation pane, select **Users**, and then select **Active Users**.
@@ -26,17 +28,23 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
 	![](../Images/L3E2T1S5-2904.png)
 
-1. On the **Select a migration option** page, read the explanation of each option so that you understand the migration options that are available. Select the **Continuous sync** option and then select **Next**.
+1. On the **Select a migration option** page, read the explanation of each option so that you understand the migration options that are available. Select the **Continuous sync (1)** option and then select **Next (2)**.
 
-	![](../Images/L3E2T1S5-2904.png)
+	![](../Images/ms102-p8t1p1.png)
 
 1. On the **Prepare by running IdFix** page, since you already ran IdFix in the prior lab exercise, there's no need to download and run it again. Select **Next**.
 
+	![](../Images/ms102-p8t1p2.png)
+
 1. On the **Review synchronization tools** page, Holly had originally planned to select the **Microsoft Entra Connect Sync** option given Adatum's Exchange hybrid deployment. But just to verify that this is the correct solution, Holly has decided to use the system tool that recommends the synchronization tool to use based on your synchronization requirements. Holly will use this feature to verify whether Microsoft Entra Connect Sync is the correct choice for Adatum. 
 
-1. Select **Help me decide**. This option enables you to select from amongst a variety of requirements that your organization may have.  
+1. Select **Help me decide**. This option enables you to select from amongst a variety of requirements that your organization may have.
+
+	![](../Images/ms102-p8t1p3.png)
 
 1. By selecting the **Help me decide** option, the wizard displays a list of predefined requirements that can impact which synchronization tool an organization should use. In the list of requirements that appears, select the following three Adatum requirements to see which sync tool the system recommends (Note how the recommendation either remains the same or changes after selecting each additional requirement): <br/>
+
+	![](../Images/ms102-p8t1p4.png)
 
 	- Select **I require the ability for users to access both on-premises and cloud-based applications using the same passwords (Password hash sync and Password writeback).** 
 
@@ -59,12 +67,20 @@ In this task, you will install Microsoft Entra Connect on a designated server an
     To access it, open a new browser tab and go to: **https://entra.microsoft.com**
 
     - Sign in if prompted.  
-    - In the **Microsoft Entra admin center**, use the **Search resources, services, and docs** box to search for **Microsoft Entra Connect**.
+    - In the **Microsoft Entra admin center**, use the **Search resources, services, and docs** box to search for **Microsoft Entra Connect (1)** and select **Microsoft Entra Connect Get started (2)** from the result.
+
+	![](../Images/ms102-p8t1p4.png)
+
+	> **Note:** If prompted for Multi-Factor Authentication (MFA), complete the setup process and proceed with the authentication steps as instructed.
 
 1. On the **Microsoft Entra Connect | Get started** page:  
-    - Select the **Manage** tab.  
-    - Scroll down and choose **Download Connect Sync Agent**.  
-    - Select **Accept terms & Download** to begin.  
+    - Select the **Manage (1)** tab.  
+    - Scroll down and choose **Download Connect Sync Agent (2)**.  
+    - Select **Accept terms & Download (3)** to begin. 
+
+		![](../Images/ms102-p8t1p5.png) 
+
+		![](../Images/ms102-p8t1p6.png)
 
 1. If a **Downloads** window appears at the top of the screen, select the **Open file** link that appears below the **AzureADConnect.msi** file once it finishes downloading. <br/>
 
@@ -110,31 +126,47 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
 1. From **Type here to search** search and select **Azure AD Connect**.
 
-1. On the **Welcome to Microsoft Entra ID Connect** window in the setup wizard, select the **I agree to the license terms and privacy notice** check box and then select **Continue**.
+1. On the **Welcome to Microsoft Entra ID Connect** window in the setup wizard, select the **I agree to the license terms and privacy notice (1)** check box and then select **Continue (2)**.
+
+	![](../Images/ms102-p8t1p8.png)
 
 1. On the **Express Settings** page, read the instruction regarding a single Windows Server AD forest and then select **Use express settings**.
 
-1. On the **Connect to Microsoft Entra ID** window, enter **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** in the **USERNAME** field. In the **PASSWORD** field, enter <inject key="AzureAdUserPassword"></inject>, and then select **Next**. 
+	![](../Images/ms102-p8t1p9.png)
+
+1. On the **Connect to Microsoft Entra ID** window, enter **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** in the **USERNAME** field. In the **PASSWORD** field, enter <inject key="AzureAdUserPassword"></inject>, and then select **Next**.
+
+	![](../Images/ms102-p8t1p10.png)
 
 	>**Note:** If the **Next** button is not enabled, then tab off the **PASSWORD** field to enable it.
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix. 
 
-1. On the **Connect to AD DS** page, enter **adatum\Administrator** in the **USERNAME** field, enter **Pa55w.rd** in the **PASSWORD** field, and then select **Next**.  
+1. On the **Connect to AD DS** page, enter **adatum\Administrator (1)** in the **USERNAME** field, enter **Pa55w.rd (2)** in the **PASSWORD** field, and then select **Next (3)**.
+
+	![](../Images/ms102-p8t1p11.png)
 
 	>**Note:** (if the **Next** button is not enabled, then tab off the PASSWORD field to enable it). 
 
-1. In the **Microsoft Entra sign-in configuration** window, select the **Continue without matching all UPN suffixes to verified domains** check box at the bottom of the page and then select **Next**.
+1. In the **Microsoft Entra sign-in configuration** window, select the **Continue without matching all UPN suffixes to verified domains (1)** check box at the bottom of the page and then select **Next (2)**.
 
-1. On the **Ready to configure** screen, select the check box for **Start the synchronization process when configuration completes** if it’s not already selected, and then select **Install**.   
+	![](../Images/ms102-p8t1p12.png)
+
+1. On the **Ready to configure** screen, select the check box for **Start the synchronization process when configuration completes (1)** if it’s not already selected, and then select **Install (2)**.
+
+	![](../Images/ms102-p8t1p13.png)
 
 	>**IMPORTANT:** While Holly eventually plans install an Exchange hybrid deployment, she will not do so now. For the purpose of this lab, do **NOT** select the **Exchange hybrid deployment** option. 
 
-1. Wait for the configuration to complete (which may take several minutes). On the **Configuration complete** page, select **Exit**. 
+1. Wait for the configuration to complete (which may take several minutes). On the **Configuration complete** page, select **Exit**.
 
-1. Select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select the icon to display all apps. Select **Azure AD Connect** to expand the group, and then select **Synchronization Service** to start this desktop application. 
+	![](../Images/ms102-p8t1p14.png)
 
-	>**Note:** If you selected **Azure AD Connect** in the **Start** menu and it expanded and you were able to select **Synchronization Service**, then proceed to the next step (step 27). However, if **Azure AD Connect** did not expand when you selected it in the **Start** menu, then you will need to close all applications and then restart LON-DC1. 
+1. Select the **Start (1)** button, scroll through the list of applications, expand **Azure AD Connect (2)**, and then select **Synchronization Service (3)** to open it.
+
+	![](../Images/ms102-p8t1p15.png)
+
+	>**Note:** If you selected **Azure AD Connect** in the **Start** menu and it expanded and you were able to select **Synchronization Service**, then proceed to the next step (step 30). However, if **Azure AD Connect** did not expand when you selected it in the **Start** menu, then you will need to close all applications and then restart LON-DC1. 
 
 	>**Note:** The remaining instructions in this step are what you should do if you needed to restart LON-DC1. 
 
@@ -146,22 +178,15 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
 1. On the **Microsoft Office Home** page, select **Admin** to open the **Microsoft 365 admin center**. Then select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select **Azure AD Connect** to expand the group (this time it should expand), and then select **Synchronization Service**.  
 
-1. Maximize the **Synchronization Service Manager on LON-DC1** window. The **Operations** tab at the top of the screen is displayed by default so that you can monitor the synchronization process, which automatically started when you selected this program. 
+1. Maximize the **Synchronization Service Manager on LON-DC1** window. The **Operations** tab at the top of the screen is displayed by default so that you can monitor the synchronization process, which automatically started when you selected this program.
 
-1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-no-objects**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.  
+	![](../Images/ms102-p8t1p16.png)
+
+1. Wait for the **Export** profile to complete for **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD**. When it finishes, its **Status** should be **completed-no-objects**. Once it's complete and you see this status, select any of the these **otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) - AAD** row.
+
+	![](../Images/ms102-p8t1p17.png)
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
-	
-1. In the bottom portion of the screen, a detail pane appears showing the detailed information for this selected operation. 
-
-	- In the **Export Statistics** pane on the left, note the number of on-premises users that were added to Azure Active Directory and the number that were updated. 
-	- In the **Export Errors** pane on the right, note the errors that appear. If you recall back in the prior lab exercise when you ran the IdFix tool, there were two users with validation errors that you purposely did not fix (**Ngoc Bich Tran** and **An Dung Dao**). 
-
-		- Select the first link (CN={xxxxxx...) under the **Export Errors** column that applies to the first **DataValidationFailed** error. This will display the first of these two users that were not synchronized by the Microsoft Entra ID Connect tool. Review the error to see why this account is broken. **Tip:** In the **Connector Space Object Properties** window, select the **Export Error** tab. In the **Error Information** section, select the **Detail** button. Review the detailed error information, and then select **Close**. Select **Close** again. 
-
-		- Select the second Data Validation error link and verify this error is for the second user that you purposely did not fix. Follow the same steps as before to review the error for this user.   
-
-	>**IMPORTANT:** Because a synchronization had not been performed prior to this, the initial synchronization was a **Full Synchronization** (see the **Profile Name** column in the top pane). Because the synchronization process will continue to run automatically every 30 minutes, any subsequent synchronizations will display **Delta Synchronization** as its **Profile Name**. If you leave the **Synchronization Service Manager** window open, after 30 minutes you will see that it attempts to synchronize the two users who were not synchronized during the initial synchronization. These will display as a **Delta Synchronization** rather than a **Full Synchronization**.
 
 1. Now that you have seen Microsoft Entra ID Connect complete a Full Synchronization, in the next task you will make some updates and manually force an immediate synchronization rather than waiting for it to synchronize updates every 30 minutes. Close the **Synchronization Service Manager on LON-DC1** window. 
 
@@ -186,9 +211,11 @@ In this task, you will create sample group accounts in your on-premises Active D
 
 4. You will begin by adding members to one of the built-in, on-premises security groups. Maximize the **Active Directory Users and Computers** window. In the console tree in the left-hand pane, under **Adatum.com**, select the **Builtin** folder. This will display all the built-in security group folders that were automatically created at the time the **Adatum.com** domain was created.
 
-5. In the detail pane on the right, double-click the **Print Operators** security group.
+5. In the detail pane on the right, double-click the **Print Operators (1)** security group.
 
-6. In the **Print Operators Properties** window, select the **Members** tab and then select the **Add** button.
+6. In the **Print Operators Properties** window, select the **Members (2)** tab and then select the **Add (3)** button.
+
+	![](../Images/ms102-p8t2p1.png)
 
 7. In the **Select Users, Contacts, Computers, Service Accounts, or Groups** window, in the **Enter the object names to select** field, type the following names. Type one by one and select **Check names**, click on **OK**, then again select **Add** to check for the another names:  
 
@@ -198,11 +225,17 @@ In this task, you will create sample group accounts in your on-premises Active D
 
 	- **Morgan Brooks**  
 
+		![](../Images/ms102-p8t2p2.png)
+
 8. Once they are all validated, select **OK** to return to the **Print Operators Properties** window.
 
 9. In the **Print Operators Properties** window, select **OK** to return to the **Active Directory Users and Computers** window.
 
-10. You will now create a new security group. In the console tree under **Adatum.com**, right-click on the **Research** folder, select **New,** and then select **Group**.  
+	![](../Images/ms102-p8t2p3.png)
+
+10. You will now create a new security group. In the console tree under **Adatum.com**, right-click on the **Research (1)** folder, select **New (2)** and then select **Group (3)**.
+
+	![](../Images/ms102-p8t2p4.png)
 
 11. In the **New Object - Group** window, enter the following information:
 
@@ -238,9 +271,11 @@ In this task, you will create sample group accounts in your on-premises Active D
 
 In this task, you will modify the membership of the test groups created earlier to confirm that changes in group membership are properly reflected in Microsoft Entra ID after synchronization.
 
-1. This task continues from where the previous task left off in LON-DC1. In the **Active Directory Users and Computers** window, in the console tree under **Adatum.com**, the **Research** organizational unit is still selected. In the detail pane on the right, double-click the **Research** security group.
+1. This task continues from where the previous task left off in LON-DC1. In the **Active Directory Users and Computers** window, in the console tree under **Adatum.com**, the **Research (1)** organizational unit is still selected. In the detail pane on the right, double-click the **Research (2)** security group.
 
-2. In the **Research Properties** window, select the **Members** tab to view the members of this group.  
+2. In the **Research Properties** window, select the **Members (3)** tab to view the members of this group.
+
+	![](../Images/ms102-p8t3p1.png)
 
 3. You want to remove the following users from the group:
 
@@ -308,15 +343,21 @@ In this task, you will verify that the directory synchronization was successful 
 
 1. In the **Active teams and groups** window, the **Teams & Microsoft 365 gropus** tab is displayed by default. Select the **Security groups** tab. Verify the **Print Operators** group does NOT appear in the list of security groups. As mentioned previously, built-in security groups such as the **Print Operators** group are not synced from the on-premises AD to Microsoft Entra ID, even when you add members to the group as you did in the earlier task.
 
-1. Verify the **Manufacturing** group appears. This group appears as a mail-enabled security group rather than a standard security group because you added an email address (**manufacturing@adatum.com**) to the on-premises group in the prior task.  
+1. Verify the **Manufacturing** group appears. This group appears as a mail-enabled security group rather than a standard security group because you added an email address (**manufacturing@adatum.com**) to the on-premises group in the prior task. 
+
+	![](../Images/ms102-p8t5p1.png)
 
 	>**Note:** You may need to wait up to 10 minutes before the **Manufacturing** group appears. Continue to refresh the list until you see the group.  
 
 1. For the **Manufacturing** group, check the value displayed in the **Email** column. Verify the group email address was changed during directory synchronization from **manufacturing@adatum.com** to **manufacturing@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**, which is the group's mailbox in Exchange Online.  Hover your mouse over the icon in the **Sync status** column and verify that it indicates **Synced from on-premises**. 
 
+	![](../Images/ms102-p8t5p2.png)
+
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-1. To the right of the **Manufacturing** group is a vertical ellipsis icon (three periods vertically aligned). Hold your mouse over this icon. Note the message that appears which indicates you can only manage this group in your on-premises environment. 
+1. To the right of the **Manufacturing** group is a vertical ellipsis icon (three periods vertically aligned). Hold your mouse over this icon. Note the message that appears which indicates you can only manage this group in your on-premises environment.
+
+	![](../Images/ms102-p8t5p3.png)
 
 1. Now let’s examine this group using Windows PowerShell. If **Windows PowerShell** is already open on the taskbar, then select the PowerShell icon and proceed to the next step; otherwise, type **PowerShell** in the **Search** field on the taskbar and then right-click on the **Windows PowerShell** application and select **Run as administrator**. Maximize your PowerShell window.
 
@@ -327,10 +368,6 @@ In this task, you will verify that the directory synchronization was successful 
 		```powershell
 		Install-Module -Name Microsoft.Graph
 		```
-
-		```powershell
-		Install-Module Microsoft.Graph.Groups -Scope CurrentUser 
-		``` 
 
 	- b. At the command prompt, type the following command and press Enter:  
 
@@ -358,11 +395,17 @@ In this task, you will verify that the directory synchronization was successful 
 	Connect-MgGraph -Scopes 'Group.Read.All', 'User.Read.All'
 	```
 
-1. In the **Pick an account** window that appears, select **Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)**. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**. 
+1. 1. In the **Sign in** window that appears, select **Work or school account (1)**. Then choose **Continue (2)**. On the next screen, enter **[Holly@otuwamocZZZZZZ.onmicrosoft.com](mailto:Holly@otuwamocZZZZZZ.onmicrosoft.com)** (where *ZZZZZZ* is the tenant prefix provided by your lab hosting provider), enter the password **<inject key="AzureAdUserPassword"></inject>**, and select **Sign in**.
 
-	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+		![](../Images/ms102-p8t5p4.png)
 
-1. If a **Permissions requested** dialog box appears, select the **Consent on behalf of your organization** check box and then select **Accept**.
+		>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
+1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box, and then select **Accept (2)**.
+
+	![](../Images/ms102-p2t4p2.png)
+
+1. On the **Sign in to all apps, websites, and services on this device?** window, click on **No, this app only**.
 
 1. You will now use PowerShell to display the list of groups in Microsoft 365. This list should include the groups that you manually created in Microsoft 365, as well as the groups that were created in the on-premises Active Directory that were just synchronized with Microsoft 365. Type the following command and then press Enter:
 
@@ -372,7 +415,7 @@ In this task, you will verify that the directory synchronization was successful 
 
 1. You now want to display the members of the **Research** group. In the list of groups, highlight the ID for the **Research** group and then press **Ctrl+C** to copy the ID to the clipboard. 
 
-   ![](../Images/18.png)
+   ![](../Images/ms102-p8t5p5.png)
 
 1. Type the following command, paste in the Research group's ID (**Ctrl+V**) in the appropriate spot, and then press Enter:  
 
@@ -380,7 +423,7 @@ In this task, you will verify that the directory synchronization was successful 
 	Get-MgGroupMember -GroupId 'paste in the group's object ID here'
 	```
 
-    ![](../Images/19.png)
+    ![](../Images/ms102-p8t5p6.png)
 	
 1. In the list of group members that were displayed in the prior step, note how the results simply show the object ID of each member. Without displaying the user names, this command doesn't help you verify whether the group members were synchronized. To work around this issue, you're going to repeat the prior command, but this time you'll add an additional component that retrieves the User record for each member of the group and displays the User's attributes, which includes the user name. 
 
@@ -400,7 +443,7 @@ In this task, you will verify that the directory synchronization was successful 
 
 	- Tai Zecirevic  
 
-	 	![](../Images/21.png)
+	 	![](../Images/ms102-p8t5p6.png)
 
 1. In the prior task, you added the **Manufacturing** group in the on-premises Active Directory, and you assigned three users to the group. You now want to verify the members of the **Manufacturing** group were synchronized when the group was added in Microsoft 365 during the synchronization process, to do so, you must first scroll back up to the list of groups, highlight the object ID for the **Manufacturing** group and then press **Ctrl+C** to copy the ID to the clipboard. 
 
@@ -422,7 +465,7 @@ In this task, you will verify that the directory synchronization was successful 
 
 	- Dawn Williamson
 
-		![](../Images/groupmember.png)
+		![](../Images/ms102-p8t5p8.png)
 
 1. You have now validated that your test groups and user accounts were synchronized properly. Once you have completed the validation steps, close your PowerShell window. 
 

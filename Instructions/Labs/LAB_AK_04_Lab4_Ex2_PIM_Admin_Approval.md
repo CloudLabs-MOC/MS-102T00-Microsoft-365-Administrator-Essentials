@@ -33,7 +33,7 @@ In this task, you will configure settings to require approval before users are a
 
 1. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, select **show all**, scroll down and select **All Admin centers (1)** from the Admin centers section, and select **Microsoft Entra (2)**.
 
-    ![](../Images/ms-102-66.png)
+    ![](../Images/ms102-p10t1p1.png)
 
 1. In the **Microsoft Entra admin center**, select **ID governance (1)** in the navigation pane to expand this group, and then select **Privileged Identity Management (2)**.
 
@@ -41,7 +41,7 @@ In this task, you will configure settings to require approval before users are a
 
 1. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-    ![](../Images/ms-102-68.png)
+    ![](../Images/ms102-p10t1p2.png)
 
 1. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings (1)**. 
 
@@ -53,7 +53,7 @@ In this task, you will configure settings to require approval before users are a
 
 1. In the **Role setting details -  Global Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 
-    ![](../Images/ms-102-70.png)
+    ![](../Images/ms102-p10t1p3.png)
 
 1. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **Azure MFA** option is selected by default for the **On activation, require** setting (if it's not selected, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
 
@@ -61,19 +61,21 @@ In this task, you will configure settings to require approval before users are a
 
 1. The window then displays a group of three settings, each of which has a corresponding check box. Select the **Require Approval to activate** check box. By doing so, the **Select approver(s)** section becomes enabled. Do not change the default settings of the other two check boxes.
 
+    ![](../Images/ms102-p10t1p4.png)
+
 1. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select **No approver selected (+)** option. In the **Select a member** pane that opens on the right, you would normally scroll through the list of users and select **Holly Dickson**. However, since over 200 users were synchronized from the on-premises Active Directory to Microsoft Entra ID in the prior lab exercise, scrolling through the user list will be too time consuming. 
 
-    ![](../Images/ms-102-72.png)
+    ![](../Images/ms102-p10t1p5.png)
 
-1. Therefore, enter **Holly Dickson (1)** in the **Search** box. In the list of users whose first name starts with Holly, select Holly Dickson's user account that pertains to the onmicrosoft.com domain (**Holly@otuwamocZZZZZZ.onmicrosoft.comm (2)**) (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Do NOT select Holly's user account that applies to the custom domain. Then select the **Select** button.
+1. Therefore, enter **Holly Dickson (1)** in the **Search** box. In the list of users whose first name starts with Holly, select Holly Dickson's user account that pertains to the onmicrosoft.com domain (**Holly@otuwamocZZZZZZ.onmicrosoft.comm (2)**) (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Do NOT select Holly's user account that applies to the custom domain. Then select the **Select (3)** button.
 
-    ![](../Images/ms-102-73.png)
+    ![](../Images/ms102-p10t1p6.png)
 
     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
 1. In the **Edit role setting - Global Administrator** window, select the **Notification** tab at the top of the page.
 
-    ![](../Images/ms-102-74.png)
+    ![](../Images/ms102-p10t1p7.png)
 
 1. On the **Notification** tab, note the three activities that can trigger a notification being sent: **Send notifications when...**    
 
@@ -109,7 +111,7 @@ In this task, you will assign an eligible group to the Global Administrator role
 
 1. In the **Groups | All groups** window, in the detail pane on the right, select **New group** in the menu bar.
 
-    ![](../Images/ms-102-77.png)
+    ![](../Images/ms102-p10t2p1.png)
 
 1. In the **New group** window, enter the following information:
 
@@ -129,9 +131,7 @@ In this task, you will assign an eligible group to the Global Administrator role
 
     - Select the **Create (8)** button at the bottom of the page.
 
-	    ![](../Images/ms-102-78.png)
-
-        ![](../Images/ms-102-79.png)
+	    ![](../Images/ms102-p10t2p2.png)
 
 	    >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
@@ -145,29 +145,33 @@ In this task, you will assign an eligible group to the Global Administrator role
 
 1. In the **OTU WA MOC | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This window displays the following sections - Assign, Activate, Approve, and Audit. Under the **Assign** section, select the **Assign Eligibility** button.
 
-    ![](../Images/ms-102-81.png)
+    ![](../Images/ms102-p10t2p3.png)
 
 1. In the **OTU WA MOC | Roles** window, search for and select the "**Global Administrator**" role.
 
-    ![](../Images/lab4-e1-11-6.png)
+    ![](../Images/ms102-p10t2p4.png)
 
 1. In the **Global Administrator | Assignments** window, select **+ Add assignments** on the menu bar. 
 
 1. In the **Add assignments** window, the **Membership** tab is displayed by default. Under **Select member(s)**, select **No member selected**.
 
+    ![](../Images/ms102-p10t2p5.png)
+
 1. In the **Select a member** pane that appears on the right, enter **PIM** in the **Search** field. This will display the list of eligible users and groups whose name starts with **PIM (1)**. Select the **PIM-Global-Administrators (2)** group that appears, and then select the **Select (3)** button.
 
-    ![](../Images/ms-102-83.png)
+    ![](../Images/ms102-p10t2p6.png)
 
 1. In the **Add assignments** window, select **Next >** (this does the same thing as selecting the **Setting** tab). 
 
-1. In the **Add assignments** window, under the **Setting** tab, verify the **Assignment type** option is set to **Eligible**. Also verify the **Permanently eligible** check box is selected (if not, then do so now), and then select **Assign**. 
+1. In the **Add assignments** window, under the **Setting** tab, verify the **Assignment type** option is set to **Eligible**. Also verify the **Permanently eligible** check box is selected (if not, then do so now), and then select **Assign**.
+
+    ![](../Images/ms102-p10t2p7.png)
 
 1. In the **Global Administrator | Assignments** window, note that the **PIM-Global-Administrators** group is an eligible assignment to the Global Administrator role. Because **PIM-Global-Administrators** is a group, it means that all members of this group (which consists of Patti Fernandez) are now eligible to be assigned the Global Administrator role.
 
     >**Note:** Lab testing has shown that it can sometimes take up to 30 minutes for new assignments to appear under the **Eligible assignments** tab. If **PIM-Global-Administrators** doesn't appear immediately, wait a few minutes and then select the **Refresh** option on the menu bar. Continue to select the **Refresh** option every few minutes until **PIM-Global-Administrators** appears in the list of **Eligible assignments**.
 
-    ![](../Images/ms-102-84.png)
+    ![](../Images/ms102-p10t2p8.png)
 
 1. Leave all browser tabs open for the next task.
 
@@ -188,25 +192,29 @@ In this task, you will submit a request to be assigned the Global Administrator 
 
     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-1. In the **Welcome to Microsoft Azure** dialog box that appears, select **Cancel** to skip the tour.
+    >**Note:** If you are prompted to configure Multi-Factor Authentication (MFA), complete the MFA setup process as instructed. Once the setup is finished, proceed with the sign-in process.
 
 1. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the forward arrow icon). This opens the **All services** window.
 
-    ![](../Images/ms-102-86.png)
+    ![](../Images/ms102-p10t3p1.png)
 
 1. In the **All services** window, enter **Microsoft Entra Privileged Identity Management** in the **Search** box at the top of the page. In the list of search results, select **Microsoft Entra Privileged Identity Management**.
 
+    ![](../Images/ms102-p10t3p2.png)
+
 1. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My Roles** under the **Tasks** section.
+
+    ![](../Images/ms102-p10t3p3.png)
 
 1. In the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed by default. Remember, in the prior task Holly assigned Patti as a member of the **PIM-Global-Administrators** group, which Holly later assigned as an eligible group for the Global Administrator role. As such, this role appears in the list of **Eligible assignments (1)**. Under the **Action** column for the Global Administrator role, select **Activate (2)**.
 
-    ![](../Images/ms-102-87.png)
+    ![](../Images/ms102-p10t3p4.png)
 
 1. In the **Activate - Global Administrator** pane, a warning message is displayed at the top of the pane indicating additional verification is required. Select this message to continue.
 
 1. In the **Activate - Global Administrator** pane that appears on the right-side of the screen, in **Duration (Hours)** field reduced the time to **0.5 (1)**, and enter **Testing PIM (2)** in the **Reason** field. Select the **Activate (3)** button at the bottom of the pane, and wait for the Status to get succeeded for all the steps, it will automatically refresh the browser.
 
-    ![](../Images/ms-102-88.png)
+    ![](../Images/ms102-p10t3p5.png)
 
 1. On the **My roles | Microsoft Entra roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note the Global Administrator role does not yet appear. While the role has been activated, it has not been assigned to Patti's account since Holly has not yet approved Patti's request.  
 
@@ -224,6 +232,8 @@ In this task, you will review and approve the request for the Global Administrat
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Tasks**, select **Approve requests**.
 
+    ![](../Images/ms102-p10t3p6.png)
+
 4. In the **OTU WA MOC | Approve requests** window, in the **Requests for role activations** section, select the check box to the left of the **Global Administrator (1)** request from Patti Fernandez, and then select the **Approve (2)** button.
 
 	>**Note:** Wait for a while if the requests haven’t appeared yet. Since it may take some time, you can proceed with the next exercise and come back later to check here.
@@ -232,13 +242,15 @@ In this task, you will review and approve the request for the Global Administrat
 
 5. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
 
+    ![](../Images/ms102-p10t4p1.png)
+
 6.  Hover your mouse over the **Edge** icon on the taskbar and select the window on the right to go back to the InPrivate Browser session where Patti is signed in. 
 
-7. In the **My roles | Microsoft Entra roles** window, the **Active assignments (1)** tab is currently selected from the prior task, prior to approving Patti's request. Select **Refresh** on the menu bar.
+7. In the **My roles | Microsoft Entra roles** page, ensure the **Active assignments (1)** tab is selected. Verify that the **Global Administrator (2)** role shows a **State** of **Activated**. If needed, you can select **Deactivate** under the **Action** column to deactivate the role.
 
     >**Note:** How the Global Administrator role is now activated for Patti. You have just verified that Patti has been assigned the Global Administrator role using Microsoft Entra Privileged Identity Management.
 
-    ![](../Images/ms-102-91.png)
+    ![](../Images/ms102-p10t4p2.png)
 
 8. Close the InPrivate browser session.
 

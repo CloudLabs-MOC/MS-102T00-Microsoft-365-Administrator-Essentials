@@ -12,15 +12,25 @@ In this task, you will turn on Microsoft Defender for Office 365, which provides
 
 1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, under **Admin centers**, select **Security**. This will open a new tab in your browser for **Microsoft Defender**. 
+2. In your Edge browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, under **Admin centers**, select **Security**. This will open a new tab in your browser for **Microsoft Defender**.
 
-3. In the **Microsoft 365 Defender** portal, scroll down to the bottom of the **Email & collaboration** section in the left-hand navigation pane and select **Policies & rules** .
+    ![](../Images/ms102-p13t1p1.png)
+
+3. In the **Microsoft 365 Defender** portal, scroll down to the bottom of the **Email & collaboration (1)** section in the left-hand navigation pane and select **Policies & rules (2)**.
+
+    ![](../Images/ms102-p13t1p2.png)
 
 4. In the **Policies & rules** window, select **Threat policies**.
 
+    ![](../Images/ms102-p13t1p3.png)
+
 5. In the **Threat policies** window, under the **Policies** section, select **Safe attachments**.
 
+    ![](../Images/ms102-p13t1p4.png)
+
 6. In the **Safe attachments** window, select **Global settings** (gear icon) on the menu bar.
+
+    ![](../Images/ms102-p13t1p5.png)
 
 7. In the **Global settings** pane that appears, set the following options and then select **Save** (if necessary):
 
@@ -28,21 +38,29 @@ In this task, you will turn on Microsoft Defender for Office 365, which provides
 
     - **Turn on Safe Documents for Office clients** - verify the toggle switch is set to **On** (set it to **On** if necessary)
 
+        ![](../Images/ms102-p13t1p6.png)
+
         >**Note:** If both toggle switches are already set to **On**, then the **Save** button at the bottom of the pane will remain disabled since no changes were made. In this case, select **Cancel**.
 
 8. On the **Safe attachments** window, click on **+ Create** on the menu bar to initiate the **Create Safe Attachments policy** wizard.
 
-9. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name** field and then select **Next**.
+9. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name (1)** field and then select **Next (2)**.
 
-10. On the **Users and domains** page, you can define specific users, groups, and domains to which the new policy will apply. Since **AttachmentPolicy1** will apply to all users and groups in Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain, you're only going to enter that domain value. Enter **on** in the **Domains** field. In the menu that appears showing the suggested domains that include this value, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
+    ![](../Images/ms102-p13t1p7.png)
+
+10. On the **Users and domains** page, you can define specific users, groups, and domains to which the new policy will apply. Since **AttachmentPolicy1** will apply to all users and groups in Adatum's **otuwamocZZZZZZ.onmicrosoft.com** domain, you're only going to enter that domain value. Enter **on** in the **Domains** field. In the menu that appears showing the suggested domains that include this value, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com (1)** domain. Adatum's domain will now appear below the **Domains** field. Select **Next (2)**.
+
+    ![](../Images/ms102-p13t1p8.png)
 
     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-11. On the **Settings** page, select the **Dynamic Delivery (Preview messages)** option. This option will deliver all email messages; however, for an email with attachments, it will hold the files, test them, and then reattach the files to the messages once the files are scanned and marked acceptable. 
+11. On the **Settings** page, select the **Dynamic Delivery (Preview messages) (1)** option. This option will deliver all email messages; however, for an email with attachments, it will hold the files, test them, and then reattach the files to the messages once the files are scanned and marked acceptable. 
 
-12. Under the **Redirect messages with detected attachments** section, select the **Enable redirect** check box. 
+12. Under the **Redirect messages with detected attachments** section, select the **Enable redirect (2)** check box. 
 
-13. In the **Send messages that contain monitored attachments to the specified email address** field, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com** as username, and then select **Next**.
+13. In the **Send messages that contain monitored attachments to the specified email address** field, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (3)** as username, and then select **Next (4)**.
+
+    ![](../Images/ms102-p13t1p9.png)
 
     >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 

@@ -43,31 +43,29 @@ In this task, you will enable multifactor authentication (MFA) for the Global Ad
 
 1. In the **Pick an account** window, select **Holly**'s account and then select **Next**. In the **Enter password** window, enter **<inject key="AzureAdUserPassword"></inject>** and select **Sign in**.
 
-1. Because MFA is enabled for Holly, a **Action Required** window appears. Select **Next**.
+1. Because MFA is enabled for Holly. On the **Let’s keep your account secure** screen, click **Next**.
 
-	![](../Images/actionrequired.png)
+    ![](../Images/ms102-p19t1p1(1).png)
 
-1. On the **Microsoft Authenticator** page, you have to install the Microsoft Authenticator app in your phone. Select **Next**, on the **Start by getting the app** page. On **Set up your account** page, select **Next**. 
+4. Download and install the **Microsoft Authenticator** app on your mobile device from the Google Play Store or Apple App Store, then return to this screen and click **Next** to continue.
 
-	![](../Images/mfa3.png)
+    ![](../Images/ms102-p19t1p1.png)
 
-1. On **Set up your account** page, select **Next**.
+4. Open the **Microsoft Authenticator** app on your mobile device, allow notifications if prompted, tap **Add account**, select **Work or school**, and then return to this screen and click **Next** to continue.
 
-1. On **Scan the QR code**, first scan the code from your phone using Authenticator app, after scanning select **Next**, on the **Scan the QR code** page. On **Let's try it out** page, enter the code in your phone, after entering the code as you can see the **Notification approved** message, select **Next**.
+    ![](../Images/ms102-p19t1p2.png)
 
-	![](../Images/mfa4.png)
+5. Open the **Microsoft Authenticator** app on your mobile device, use it to scan the displayed QR code to connect your account, then return to this screen and click **Next** to continue.
 
-1. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (use your country specific formatting). Verify the **Receive a code** option is selected and then select **Next**.
+    ![](../Images/ms102-p19t1p3.png)
+ 
+6. Check the notification in your **Microsoft Authenticator** app, enter the number displayed on this screen to approve the sign-in request, and complete the authentication process.
 
-1. Retrieve the verification code from the text message that is sent to your phone.
+    ![](../Images/ms102-p19t1p4.png)
 
-1. In the **Phone** window, enter the 6-digit verification code in the code field and then select **Next**. When the Phone window displays a message indicating your phone was registered successfully, select **Next**.
+7. The Microsoft Authenticator app has been successfully added and set as your default sign-in method; click **Done** to complete the setup process.
 
-1. Once it shows the **Verification complete. Your phone has been registered.**, select **Next**.
-
-	![](../Images/mfa5.png)
-
-1. On the **Success!** page, select **Done**.
+    ![](../Images/ms102-p19t1p5.png)
 
 1. If a **Stay signed in?** dialog box appears, select the **Don’t show this again** check box and then select **Yes.** 
 
@@ -89,6 +87,8 @@ In this lab exercise, you will use one of the existing payload templates. In the
 1. You should still have the Microsoft Defender portal open in your Edge browser from the prior task. If not, enter https://security.microsoft.com in the address bar, and then if you receive a dialog box asking for a second form of authentication, proceed through the verification process. If not, sign-in as Holly using the Administrative username and Administrative password provided by your lab-hosting provider and if required, complete the MFA sign-in process.
 
 1. In the **Microsoft 365 Defender** portal, under the **Email & collaboration** section in the left-hand navigation pane, select **Attack simulation training**. If a **Welcome to Attack simulation training** window appears, select **Close**.
+
+	>**Note:** If you do not see the **Attack simulation training** option under the Email & collaboration section in the Microsoft 365 Defender portal, skip this lab and the next lab (Lab 06 - Exercise 6) for now. The remaining labs are independent and can be completed without this feature. Once the Attack simulation training option becomes available in your tenant, you can return and complete these labs.
 
 1. On the **Attack simulation training** page, Holly has decided to conduct a simulated account breach in which she will use a URL to try and obtain usernames and passwords. This is referred to in the Attack Simulator as a **Credentials Harvest** attack. 
 
@@ -152,6 +152,8 @@ In this task, you will review the results of a previously run attack simulation 
 
 1. Select the **Pay Now** button in the email. Even though you know this is a spear phishing attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
 
+	![](../Images/ms102-p19t3p1.png)
+
 1. In the **Sign in** dialog box that appears, enter **lynne.robbins@otuwamoc101832.onmicrosoft.com**' as username, and then enter the password as **<inject key="AzureAdUserPassword"></inject>** in the **Enter password** window. Select **Sign in**. 
 
 1. This displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this site, which uses the landing page template that you selected in the prior task when setting up the attack simulation.
@@ -164,7 +166,8 @@ In this task, you will review the results of a previously run attack simulation 
 
 1. In LON-CL1, in your Edge browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **PhishingTest1** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **PhishingTest1** simulation should now appear. Select the **PhishingTest1** simulation to view the diagnostic results that were captured for this simulation.
 
-1. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right-hand corner of the window to close it. 
+1. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right-hand corner of the window to close it.
+	![](../Images/ms102-p19t3p2.png)
 
 1. Leave your browser open in LON-CL1 and do not close any of the tabs.
 

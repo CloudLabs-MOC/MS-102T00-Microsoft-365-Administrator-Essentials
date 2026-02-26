@@ -18,9 +18,9 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
 3. In the **Microsoft 365 Copilot page** page, select **Apps (1)**. On the **Apps** page, close the **Welcome to Apps** window by selecting the **X** in the upper-right corner of the window. In the row of app tiles, select **Outlook (2)**. 
 
-	![](../Images/lab1-e1-11-10.png)
+	![](../Images/ms102-p5t1p1.png)
 
-4. If you're automatically signed into Outlook using Holly's account, then proceed to the next step. However, if a **Pick an account** window appears, select Holly's account, if an **Enter password** window appears, enter Password:- <inject key="AzureAdUserPassword"></inject> and select **Sign in**.
+4. If you're automatically signed into Outlook using Holly's account, then proceed to the next step. However, if a **Pick an account** window appears, select Holly's account, if an **Enter password** window appears, enter Password:- **<inject key="AzureAdUserPassword"></inject>** and select **Sign in**.
 
 	>**Note:** If a **Stay signed in?** window appears, select the **Don't show this again** check box and select **Yes**.
 
@@ -42,7 +42,7 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
 11. This opens the **Microsoft Remote Connectivity Analyzer** portal. In the navigation bar on the left, select **Message Analyzer**. This opens the **Message Header Analyzer** tool.
 
-	![](../Images/messageana.png)
+	![](../Images/ms102-p5t1p2.png)
 
 12. Take a moment to review the **Message Header Analyzer** tool. It consists of two sections: 
 
@@ -82,13 +82,13 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
 27. Scroll down through the navigation pane, and under **Admin centers (1),** select **Exchange (2)**. This will open the Exchange admin center in a new tab. 
 
-	![](../Images/L2E2T1S25-2904.png)
+	![](../Images/ms102-p5t1p3.png)
 
 	>**Note:** If a **Toolbar** window appears, select the **Next** button twice and then the **Finish** button to navigate through the three windows. If a **Learn about the new menu** window appears, select the X to close it.
 
 28. In the **Exchange admin center**, in the left navigation pane, select **Mail flow (1)**, and then select **Message trace (2)**. 
 
-	![](../Images/L2E2T1S26-2904.png)
+	![](../Images/ms102-p5t1p4.png)
 
 29. In the **Message trace** window, the **Default queries** tab is displayed by default. In this tab, select **+ Start a trace** on the menu bar. 
 
@@ -127,19 +127,21 @@ In this task, you will monitor the health of Microsoft 365 services and analyze 
 
 1. In the **Microsoft 365 admin center** navigation pane, select **Show all**,  select **Health (1)** and then select **Service health (2)**. 
 
-	![](../Images/L2E2T2S2-2904.png)
+	![](../Images/ms102-p5t1p5.png)
 
 1. On the **Service health** page, the **Overview** tab is displayed by default. Select the **Issue history** tab.  
 
-1. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this filter option appears to the right of the **Search** field). In the list of service health incidents, select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
+1. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this filter option appears to the right of the **Search** field). In the list of service health incidents, select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it.
+
+	![](../Images/ms102-p5t2p1.png)
 
 1. In the **Microsoft 365 admin center**, in the left navigation pane, select **Reports (1)**, and then select **Usage (2)**. 
 
-	![](../Images/L2E2T2S5-2904.png)
+	![](../Images/ms102-p5t2p2.png)
 
 1. On the **Usage** page, scroll down and locate the **Microsoft 365 apps (1)** > **Active users (2)** chart. 
 
-	![](../Images/L2E2T2S6-2904.png)
+	![](../Images/ms102-p5t2p3.png)
 
 	>**Note:** If you are not able to see any charts, so as you can see the message on the Overview page, which displays **Microsoft 365 usage reports show how people in your business are using Microsoft 365 services. Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours**. 
 
@@ -149,7 +151,7 @@ In this task, you will monitor the health of Microsoft 365 services and analyze 
 
 1. In the **Exchange admin center**, select **Reports (1)** in the navigation pane, and then select **Mail flow (2)**. 
 
-	![](../Images/L2E2T2S8-2904.png)
+	![](../Images/ms102-p5t2p4.png)
 
 1. In the **Mail flow reports** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). Review the information displayed for this report. 
 
@@ -168,17 +170,21 @@ In this task, you will create and submit a support request through the Microsoft
 
 	>**Note:** If the left-hand navigation pane has been minimized and only displays icons without any text, select the Navigation menu icon (the three horizontal lines) at the top of the navigation pane to expand it and display the accompanying text. 
 
-	![](../Images/servicerequest.png)
+	![](../Images/ms102-p5t2p5.png)
 
 1. The **Service request history** window displays any outstanding service request tickets. You should verify that no service request tickets appear on this page. 
 	
 1. In the navigation pane, under the **Support** group, select **Help & Support**.
 
-1. In the **How can we help?** pane that appears, select the **Message** field (which currently displays **Example: Can't install Office**) and type the following message: **Can't install Office**. Then select the forward arrow that appears next to the field. This displays self-help solutions with insights and recommended articles to assist with your request. 
+1. In the **Support Assistant** pane that appears, locate the message input field at the bottom of the chat window. In the text box, type **Can’t install Office**, and then select the **send (arrow) icon** next to the field. The Support Assistant will respond with self-help solutions, insights, and recommended articles to help resolve your issue.
+
+	![](../Images/ms102-p5t2p6.png)
 
 1. Select one of the recommended articles. After reviewing the article. 
 
-1. If you need further assistance and would like to speak to a Microsoft support agent, select the **headset** icon (the middle icon) at the top of the **Support article** pane to get help from a Microsoft support agent. Select the **headset** icon now.
+1. If you need further assistance and would like to speak to a Microsoft support agent, select the **headset** icon (the middle icon) at the top of the Support article pane to get help from a Microsoft support agent. Select the **headset** icon now.
+
+	![](../Images/ms102-p5t2p7.png)
 
 1. In the **Contact support** pane that appears, do NOT enter any information; instead, just review the information that you would enter to complete this request in a real-world situation. You could also attach any necessary documents before selecting **Contact me** at the bottom of the page.   
 

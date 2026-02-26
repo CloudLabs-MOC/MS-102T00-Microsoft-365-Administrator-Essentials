@@ -30,27 +30,95 @@ In this task, you will simulate a scenario that triggers the first Data Loss Pre
 
 		![](../Images/policy.png)
 
-	- If you will recieve a **Send blocked** pop-up which, select **OK**.
+5. Once the policy tip is displayed, select **Send.**
 
-		![](../Images/sendblocked.png)
+6. Select Holly's **Sent Items** folder to verify the email was sent.
+
+7. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject: **Notification: DLP Policy Test 1**. Select this email and review its content. 
+
+	![](../Images/ms102-p23t1p1.png)
 
 1. Leave the Outlook tab open in the Edge browser for the next task. 
-	
+
+8. Switch to **LON-CL2**. 
+
+9. If you need to sign into the VM, the local **LON-CL2\admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
+
+10. On the taskbar, select the icon for the **Edge** browser.
+
+11. In the Edge browser, enter the following URL: **https://outlook.office365.com**
+
+12. In the **Pick an account** window, select Lynne Robbins' account (**lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the **<inject key="AzureAdUserPassword"></inject>** that you assigned to Lynne's account and then select **Sign in**. 
+
+13. On the **Stay signed in** window, select the **Don't show this again** check box and select **Yes**.
+
+14. In Lynne's Inbox, verify that she received the email from Holly Dickson that has the subject line: **DLP Policy Test 1**. Select the message to verify the content containing the IP address was not removed. 
+
+	![](../Images/ms102-p23t1p2.png)
+
+15. Leave the Outlook tab open in the Edge browser for the next task.
+
+16. Switch back to **LON-CL1**.
+
 ### Task 2 – Test the second DLP Policy rule  
 
 In this task, you will validate the second DLP policy rule by performing actions that should match its conditions, ensuring the rule applies the appropriate restrictions or notifications.
 
-1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 	
-1. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
+2. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
 	- Add a subject: **DLP Policy Test 2**
 
 	- Message area: **Hey Lynne - I will test the following IP addresses: 192.168.0.1 and 172.16.0.1**
 
-1. Select **Send**. You should immediately receive a **Send blocked** pop-up.
+	>**Note:** When drafting this email with sensitive data (in this case, multiple IP addresses), it will trigger the IP address policy that you previously created, and specifically, the multiple IP address rule. As such, a **Policy tip** should be displayed indicating the email message violates an organizational policy. You'll ignore this policy tip and send the email anyway in order to test the remainder of the DLP policy, which will block the email. Once you test the email block, you'll override the blockage by entering a business justification for sending this sensitive data, and then you'll try and send the email again.
 
-1. Leave the Outlook tab open in the Edge browser for the next task.
+3. Once the policy tip is displayed, select **Send**. You should immediately receive a **Send blocked** dialog box that indicates the message includes one or more recipients who aren't authorized to receive sensitive information. Select **OK**.
+
+	![](../Images/ms102-p23t2p1.png)
+
+	>**Note:** Normally you would override the block before sending it, but in this case we wanted you to experience the block to see how it works. In the next steps, you'll override the block and attempt to re-send the email.
+
+4. Select Holly's **Sent Items** folder to verify the email was not sent.
+
+	![](../Images/ms102-p23t2p2.png)
+
+5. Select Holly's **Inbox** folder. Note that the email message is no longer displayed. Select Holly's **Drafts** folder, which contains a copy of the email. Select the email.
+
+6. To send this email, you must override the block BEFORE you select the **Send** button. To override the block, in the policy tip that appears at the top of the message, select **Show details**.
+
+7. In the detail message that appears in the policy tip, select **Override**.
+
+	![](../Images/ms102-p23t2p3.png)
+
+8. In the dialog box that appears, the **I have a business justification (1)** option is selected by default. Leave this option selected and enter **Lynne must be informed of the IP addresses I'm testing** in the **Enter explanation here (2)** field. Select **Override (3)**.
+
+	![](../Images/ms102-p23t2p4.png)
+
+	>**Note:** Notice how the policy tip message has changed to indicate you have chosen to send the message even though it appears to contain sensitive information.
+
+1. Now click on **Send**.
+
+9. Select Holly's **Sent Items** folder to verify the email was sent.
+
+	![](../Images/ms102-p23t2p5.png)
+
+10. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject: **Notification: DLP Policy Test 2**. Select this email and review its content.
+
+	![](../Images/ms102-p23t2p6.png)
+	
+11. Switch to **LON-CL2**. 
+
+12. You should still be logged into **Outlook on the Web** in the LON-CL2 VM as **Lynne Robbins**. In your **Edge** browser, Lynne’s mailbox should still be open in **Outlook on the web** from when you last used it in the previous task.
+
+13. In Lynne's Inbox, verify that she received the email from Holly Dickson that has the subject line: **DLP Policy Test 2**. Select the message to verify the content containing the IP addresses was not removed. 
+
+	![](../Images/ms102-p23t2p7.png)
+
+14. Leave the Outlook tab open in the Edge browser for the next task.
+
+15. Switch back to **LON-CL1**.
 
 ## Review
 

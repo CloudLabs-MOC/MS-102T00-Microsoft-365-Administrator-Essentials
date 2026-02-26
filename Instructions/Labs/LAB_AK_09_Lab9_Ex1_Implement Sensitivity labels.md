@@ -19,25 +19,23 @@ In this task, you will download and install the Azure Information Protection Uni
 
 1. In **Microsoft Edge**, open a new tab and enter (or copy and paste) the following URL in the address bar: **[Microsoft Purview Information Protection client](https://www.microsoft.com/en-us/download/details.aspx?id=53018&lc=1033&msockid=26b47a4f8b336e87014e6f028a7f6fa0)**.
 
-1. Select **Download**, under **Important! Selecting a language below will dynamically change the complete page content to that language.**, select **PurviewInfoProtection.exe (1)** and **Download (2)**.
+1. Select **Download**, under **Important! Selecting a language below will dynamically change the complete page content to that language.**, select **PurviewInfoProtection_Preview.exe (1)** and **Download (2)**.
 
 	![](../Images/L9E1T1S3.1-3004.png)
 
-	![](../Images/L9E1T1S3.2-3004.png)
+	![](../Images/ms102-p24t1p1.png)
 
-1. In the Downloads window that appears at the top right of the page, you will see the **PurviewInfoProtection.exe** file being downloaded. Once the file has finished downloading, select the **Open file** link that appears below the file name.
+1. In the Downloads window that appears at the top right of the page, you will see the **PurviewInfoProtection_Preview.exe** file being downloaded. Once the file has finished downloading, select the **Open file** link that appears below the file name.
 
 1. The **Microsoft Azure Information Protection** wizard will open. If the wizard does not display on the desktop, select the icon for the wizard on the taskbar to display the wizard.
 
-1. In the wizard, on the **Install the Azure Information Protection client** page, clear (uncheck) the **Help improve Azure Information Protection by send usage statistics to Microsoft** check box and then select the **I agree** button.
+1. In the wizard, on the **Install the Azure Information Protection client** page, check the box adjacent to **I acknowledge that the AIP Add-in for Office will be uninstalled (required) (1)** and then clear (uncheck) the **Help improve Azure Information Protection by send usage statistics to Microsoft (2)** check box and then select the **I agree (3)** button.
 
-1. If a **User Account Control notification** dialog box appears that asks whether the app is allowed to make changes to this device, select **Yes**.
+	![](../Images/ms102-p24t1p2.png)
 
 1. Once the installation is complete, select **Close**.
 
-1. In your Edge browser, close the **Download** tab that you opened in this task to download the Azure Information Protection client.
-
-You have successfully installed the AIP Unified Label client on the Client 1 VM.
+You have successfully installed the **Microsoft Purview Information Protection** client on the LON-CL1 VM.
 
 
 ### Task 2 – Create a Sensitivity Label
@@ -52,15 +50,15 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. On the **Microsoft Purview** portal, in the left-hand navigation pane, under **Solutions**, select **Information protection** and then select **Sensitivity labels**. 
 
-1. On the **Sensitivity labels** page, a warning message is displayed in the middle of the page indicating: **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint. You can turn on here, but note that additional configuration is required for Multi-Geo environments.** 
-
-1. Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inside its Microsoft 365 environment. 
+1. If on the **Sensitivity labels** page, a warning message is displayed in the middle of the page indicating: **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint. You can turn on here, but note that additional configuration is required for Multi-Geo environments.** Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inside its Microsoft 365 environment. 
 
 	![](../Images/MS-102-image-19.png)
 
     >**Note:** how the message has now changed to indicate: **You can now create sensitivity labels with privacy and access control settings for Teams, SharePoint sites, and Microsoft 365 Groups.**	
 
 1. On the **Sensitivity labels** page, select **+ Create**, and then choose **Label** from the dropdown menu. This starts the **New sensitivity label** wizard. 
+
+	![](../Images/ms102-p24t2p1.png)
 
 1. In the **New sensitivity label** wizard, on the **Name and tooltip** page, enter the following information:
 
@@ -137,7 +135,7 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 		
 1. Select **Next**.
 
-1. On the **Define protection settings for groups and sites** page, leave both check boxes blank and select **Next**.
+1. On the **Define protection settings for groups and sites** page, leave all check boxes blank and select **Next**.
 
 1. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option and make any necessary changes. When all information appears correct, select **Create label**.
 
@@ -147,11 +145,11 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 	- To correct this issue, select **OK** in the **Error** dialog box, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling for files and emails** section and select **Edit**.
 	
-1. This will return you to the **Choose protection settings for labeled items** page in the wizard. Select **Next** on this page, select **Next** on the **Encryption** page, and then select **Next** on the **Content Marking** page. This will take you to the **Auto-labeling for files and emails** page. 
+1. This will return you to the **Choose protection settings for the types of items you selected** page in the wizard. Select **Next** on this page, select **Next** on the **Access control** page, and then select **Next** on the **Content Marking** page. This will take you to the **Auto-labeling for files and emails** page. 
 
 1. On the **Auto-labeling for files and emails** page, to the right of the **Content contains** condition, select the **trash can icon**. This will remove the existing **Content contains** condition for the **PII** label that you created. 
 
-	![](../Images/MS-102-image-20.png)
+	![](../Images/ms102-p24t2p2.png)
 
 	>**Note:** In the remaining steps, you will add a new condition that only contains two sensitivity information types rather than all the sensitivity information types like you did originally.
 
@@ -165,11 +163,13 @@ In this task, you will create a new sensitivity label in the Microsoft Purview c
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. On the **Your sensitivity label was created** page, choose **Don't create a policy yet** and then select **Done**.
+1. On the **Your sensitivity label was created** page, choose **Don't create a policy yet (1)** and then select **Done (2)**.
+
+	![](../Images/ms102-p24t2p3.png)
 
 1. Now it's time to publish the **PII** label. On the **Information protection** window, the **Labels** tab is displayed by default. In the list of labels, if the **PII** label does not appear, select **Refresh** on the menu bar. Once the **PII** label appears, select the check box that appears to the left of it. 
 
-1. Select the **Publish label** option that appears in the menu bar above the list of labels. This initiates a **Create policy** wizard.
+1. Select the **Publish labels** option that appears in the menu bar above the list of labels. This initiates a **Create policy** wizard.
 
 1. In the **Create policy** wizard, on the **Choose sensitivity labels to publish** page, under **Sensitivity labels to publish**, **PII** label is already selected, select **Next** for **Assign admin units**. On **Assign admin units** select **Next**.
 
@@ -199,7 +199,9 @@ In this task, you will apply a sensitivity label to a document using the Azure I
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-1. On the **Microsoft 365 admin center** tab, select **App Launcher**, select the **Word** icon. This will navigate you to the Microsoft Word Online. 
+1. On the **M365 Copilot** tab, select **Apps (1)** from thew left navigation pane, select the **Word (2)** icon. This will navigate you to the Microsoft Word Online. 
+
+	![](../Images/ms102-p24t3p1.png)
 
 	>**Note:** In the next task, you will return back to the **Microsoft Office Home** tab by selecting the **Back** arrow at the top of this **Word** tab.
 
@@ -211,19 +213,27 @@ In this task, you will apply a sensitivity label to a document using the Azure I
 
 1. If the Word ribbon displays icons for each feature but does not break the icons out by group, then select the down-arrow on the far right-side of the ribbon, and then under **Ribbon layout**, select **Classic ribbon**. This will switch the ribbon to the traditional ribbon style that is broken out by feature group (such as Undo, Clipboard, Font, Paragraph, Styles, and so forth).
 
+	![](../Images/ms102-p24t3p2.png)
+
 1. In the **Word** document, type **Testing personally identifiable information (PII).**
 
-1. Because you enabled Sensitivity labels at the start of this exercise, and since the label you created by running the script on day 1 of the course has fully propagated through Microsoft 365, Word should display a **Sensitivity** group on the ribbon at the top of the page. Select the down arrow in the **Sensitivity** group. In the drop-down menu that appears, it should display the **PII** label the script created and published. Since the **PII** label is enabled for this document, a check mark is displayed next to **PII**. 
+1. Because you enabled Sensitivity labels at the start of this exercise, and since the label you created by running the script on day 1 of the course has fully propagated through Microsoft 365, Word should display a **Sensitivity** group on the ribbon at the top of the page. Select the down arrow in the **Sensitivity** group. In the drop-down menu that appears, it should display the **PII** label the script created and published. Since the **PII** label is enabled for this document, a check mark is displayed next to **PII**.
+
+	![](../Images/ms102-p24t3p3.png)
 
 1. In this first validation test, you're going to attempt to remove this sensitivity label from being applied to this document. When you created the **PII** policy and **PII** label in the prior task, the same options you selected were applied to the **PII** policy and **PII** label by the Lab 1 script. One of the label policy options requires users to provide justification to remove a label or to select a lower classification label. You will now verify whether this setting is functioning properly. 
 	
 1. To remove the label from this document, select the **PII** label that appears in this drop-down menu.
 	
-1. In the **Justification Required** window that appears, select the **Other (explain)** option. In the **Explain why you're changing this label** field, enter **Testing what happens when a label is removed** and then select **Change**.
+1. In the **Justification Required** window that appears, select the **Other (explain) (1)** option. In the **Explain why you're changing this label** field, enter **Testing what happens when a label is removed (2)** and then select **Change (3)**.
+
+	![](../Images/ms102-p24t3p4.png)
 
 1. In the **Sensitivity** group in the Word ribbon, select the down arrow. In the drop-down menu that appears, note that while **PII** is displayed, it no longer has a check mark displayed next to it. This indicates the **PII** sensitivity label is no longer being applied to this document.  
 
 1. To re-apply the sensitivity label to the document, select **PII** in the drop-down menu. Once again select the drop-down arrow in the **Sensitivity** group. The drop-down menu that appears should display the **PII** label, and it should display a check mark next to it that indicates it is being applied to this document.
+
+	> **Note:** If you receive a pop-up stating that the label cannot be applied because others are editing, select a different label first, and then try applying the PII label again.
 
 1. In the Word document, enter **111-11-1111** below the previous line of text that you entered. This number is the same format as a U.S. Social Security Number.
 
@@ -235,15 +245,15 @@ In this task, you will apply a sensitivity label to a document using the Azure I
 
 1. On the right-side of the menu bar, select the **Share** button. In the drop-down menu that appears, select **Share**.
 
-1. In the **Send link** window that appears, select **Anyone with the link can edit**. 
-
 1. On the **Sharing settings** page that appears, select **People you choose**. Under **More settings (1)**, iIn the menu that appears, select **Can view (2)**. 
 
 	![](../Images/ProtectedDocument1.png)
 
 1. On the **Send link** window, enter **Joni** in the **Add a name, group or email** field. A list of users whose name starts with **joni** should appear. Select **Joni Sherman**. 
 
-1. Select the **Copy link** button. 
+1. Select the **Copy link** button.
+
+	![](../Images/ms102-p24t3p5.png)
 
 You have just successfully created an AIP protected Word document that is read-only protected. The document is accessible only by its creator, Holly Dickson, and by Joni Sherman (with Read-only permission), to whom the document was shared.
 
@@ -285,15 +295,17 @@ To verify whether the protection that you assigned to the document works, you wi
 
 12. In the **Pick an account** window, select **Use another account**.
 
-13. In the **Sign in** window, enter **JoniS@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and then select **Next**.
+13. In the **Sign in** window, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and then select **Next**.
 
 	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-14. On the **Enter password** window, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account and then select **Sign in**.
+14. On the **Enter password** window, enter **<inject key="AzureAdUserPassword"></inject>** provided by your lab hosting provider for the tenant admin account and then select **Sign in**.
 
 15. If a **Welcome** window appears, select the X to close it.
 
 16. In Joni’s **Inbox** in **Outlook on the web**, open the email that Holly just sent her by selecting the email in the Inbox. Note the **Sensitive - Do Not Share** watermark that appears in the message. These are the header and footer watermarks were entered in the PII label created by the PowerShell script, which are the same watermarks that you configured for the label that you created in the prior task.
+
+	![](../Images/ms102-p24t4p1.png)
 
 17. Select the attached file to open it.
 
@@ -313,7 +325,7 @@ To verify whether the protection that you assigned to the document works, you wi
 
 24. However, if a **Sign in** window appears, it's because the file is RMS protected and no AIP unified labeling client is installed on LON-CL2. In this case, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. 
 
-23. In the **Sign in** window, enter **JoniS@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and then select **Next.** In the **Enter password** window, enter the same **Microsoft 365 Tenant Password** provided by your lab hosting provider for the tenant admin account (i.e. the MOD Administrator account) and then select **Sign in.** 
+23. In the **Sign in** window, enter **joni.sherman@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider)** and then select **Next.** In the **Enter password** window, enter **<inject key="AzureAdUserPassword"></inject>** provided by your lab hosting provider for the tenant admin account (i.e. the MOD Administrator account) and then select **Sign in.** 
 
 	>**Note:** On Stay signed in to all your apps, select **No, sign in to this app only.**
 

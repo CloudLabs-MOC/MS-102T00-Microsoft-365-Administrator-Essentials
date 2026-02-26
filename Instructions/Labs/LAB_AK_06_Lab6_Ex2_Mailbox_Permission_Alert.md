@@ -12,9 +12,13 @@ In this task, you will create a mailbox permission alert to monitor and notify w
 
 2. **Microsoft Defender** portal should still be open in your Edge browser from the prior task. Select the **Microsoft Defender** tab now. In the left-hand navigation pane, under the **Email & collaboration** section, select **Policies & rules**. 
 
+	![](../Images/ms102-p16t1p1.png)
+
 3. On the **Policies & rules** window, select **Alert policy**. If a dialog box appears indicating the alert policy portal has been updated, select the **Dismiss** button.
 
 4. In the **Alert Policy** window, note the message at the top of the page indicating the fact that mail flow alerts have moved to the Exchange admin center. Mail flow alerts can no longer be maintained in the Microsoft Defender security portal. Since you will be creating a mailbox permission alert and not a mail flow alert, you can continue on with this task in the Microsoft Defender portal. In the **Alert Policy** window, review the list of preconfigured alert policies that are available in Microsoft 365. Select **+ New Alert Policy** on the menu bar. This initiates the **New Alert Policy** wizard.
+
+	![](../Images/ms102-p16t1p2.png)
 
 5. On the **Name your alert, categorize it, and choose a severity** page, enter the following information:
 
@@ -28,29 +32,37 @@ In this task, you will create a mailbox permission alert to monitor and notify w
 
 6. Select **Next (5)**.
 
-	![](../Images/ms-102-101.png)
+	![](../Images/ms102-p16t1p3.png)
 
 7. On the **Choose an activity, conditions and when to trigger the alert** page, enter the following information:
 
-	- Activity is: Select in the field, which displays a long list of activities. To filter the list to mail-related activities only, enter **mail** in the field and then select **Granted mailbox permission** from the list of activities containing **mail**.
+	- Activity is: Select in the field, which displays a long list of activities. To filter the list to mail-related activities only, enter **mail** in the field and then select **Granted mailbox permission (1)** from the list of activities containing **mail**.
 
-	- How do you want the alert to be triggered?: **Every time an activity matches the rule**
+	- How do you want the alert to be triggered?: **Every time an activity matches the rule (2)**
 
-8. Select **Next**.
+8. Select **Next (3)**.
+
+	![](../Images/ms102-p16t1p4.png)
 
 9. On the **Decide if you want to notify people when this alert is triggered** page, enter the following information:
 
-	- Email recipients: Select the "X" to the right of **Holly Dickson's** account to remove her, enter **Lynne** in the field, and then select **Lynne Robbins** from the list of users whose first name starts with **Lynne**
+	- Email recipients: Select the "X" to the right of **Holly Dickson's** account to remove her, enter **Lynne** in the field, and then select **Lynne Robbins (1)** from the list of users whose first name starts with **Lynne**
 
-	- Daily notification limit: **No limit**
+	- Daily notification limit: **No limit (2)**
 
-10. Select **Next**.
+10. Select **Next (3)**.
 
-11. On the **Review your settings** page, review the settings and if anything needs to be corrected, select its corresponding **Edit** option and make the necessary corrections. When everything is correct, under the **Do you want to turn the policy on right away?** setting, select **Yes, turn it on right away**. Select **Submit**.
+	![](../Images/ms102-p16t1p5.png)
+
+11. On the **Review your settings** page, review the settings and if anything needs to be corrected, select its corresponding **Edit** option and make the necessary corrections. When everything is correct, under the **Do you want to turn the policy on right away?** setting, select **Yes, turn it on right away (1)**. Select **Submit (2)**.
+
+	![](../Images/ms102-p16t1p6.png)
 
 12. On the **New Alert Policy** window, select **Done**.
 
 13. Verify your new alert policy appears in the list on the **Alert policy** page, its **Type** is set to **Custom**, and its **Status** in **On** (depending on the size of your monitor, you may have to scroll to the right to view the Status column).
+
+	![](../Images/ms102-p16t1p7.png)
 
 14. Leave the Alert policy tab in your Edge browser open for the next task.
 
@@ -69,11 +81,17 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 1. On the **Lynne Robbins** tab, select **Licenses and apps**. Ensure that the **Microsoft 365 Business Premium** license is assigned. If it is not, select the checkbox and click **Save changes**.
 
+	![](../Images/ms102-p16t2p1.png)
+
 1. From the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. This opens the Exchange admin center for Exchange Online.
+
+	![](../Images/ms102-p16t2p2.png)
 
 1. In the **Exchange admin center**, the **Manage Mailboxes** window appears by default (if it doesn't, then in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**). 
 
 1. In the **Manage Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check box to the left of his name).
+
+	![](../Images/ms102-p16t2p3.png)
 
    >**Note:** If user **Alex Wilber** is not present under **Manage Mailboxes** then we need to assign Exchange Online (Plan 1) license. To assign the license please follow the below steps.
    
@@ -84,6 +102,8 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 1. In the **Alex Wilber** pane that appears, the **General** tab is displayed by default. Select the **Delegation** tab.
 
 1. On the **Delegation** tab, there are three mailbox permissions that can be updated: **Send as**, **Send on behalf**, and **Read and manage (Full Access)**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission:
+
+	![](../Images/ms102-p16t2p4.png)
 
 	- Select the **Edit** button for the permission. 
 	
