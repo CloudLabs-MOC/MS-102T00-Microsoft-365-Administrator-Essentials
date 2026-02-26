@@ -169,6 +169,8 @@ You will then go back into Holly's Outlook mailbox and open the email in her Sen
     >**Note:** In the Safe Links policy that you created, you selected the option to have Safe Links check a list of known, malicious links whenever a user selects a link in an email. So when you selected this link in the email message to the http://tailspintoys.com URL that was on the blocked list, Safe Links returned the malicious website warning page. You just verified that the Safe Links policy that you created is working.
 
     ![](../Images/ms-102-100.png)
+
+    >**Note:** It may take up to 24 hours for the policy to fully activate. If you do not see the warning message indicating that the website is classified as malicious, please wait 24 hours and try again.
   
 1. You should now prepare LON-CL2 for the next lab that will use it. In your Edge browser, in the Outlook tab, select the circle with the **O1** initials in the upper right-hand corner. In the **ODL user** profile window that appears, select **Sign out**.
 

@@ -88,6 +88,8 @@ In this lab exercise, you will use one of the existing payload templates. In the
 
 1. In the **Microsoft 365 Defender** portal, under the **Email & collaboration** section in the left-hand navigation pane, select **Attack simulation training**. If a **Welcome to Attack simulation training** window appears, select **Close**.
 
+	>**Note:** If you do not see the **Attack simulation training** option under the Email & collaboration section in the Microsoft 365 Defender portal, skip this lab and the next lab (Lab 06 - Exercise 6) for now. The remaining labs are independent and can be completed without this feature. Once the Attack simulation training option becomes available in your tenant, you can return and complete these labs.
+
 1. On the **Attack simulation training** page, Holly has decided to conduct a simulated account breach in which she will use a URL to try and obtain usernames and passwords. This is referred to in the Attack Simulator as a **Credentials Harvest** attack. 
 
 	>**Note:** Notice the tabs that appear across the top of the **Attack simulation training** page (where the **Overview** tab is displayed by default).You can launch this attack either from **Simulations** tab by selecting the **+ Launch a simulation**. Since the **Overview** tab has additional information and is the default page when selecting the **Attack simulation training** service, it is recommended that you launch it from there so that you can learn about the specifics of this type of attack. 

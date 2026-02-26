@@ -40,7 +40,7 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 		- Daily notification limit: **No limit**
 
-		![](../Images/ms102-p18t1p2.png)
+			![](../Images/ms102-p18t1p2.png)
 
 1. At the top of the pane, select the **Edit policy** button.
 
@@ -88,6 +88,12 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 	
 	  	![](../Images/ediscovery3.png)
 
+	 - In the **Manage eDiscovery Administrator** window, select the **Choose users** button. Search for and select **Holly Dickson**, and then click **Select**. Holly’s name should now appear in the list. Select **Next**.
+
+	 - In the Review the role group and finish window, verify Holly is listed as a member of both role groups, and then select **Save**.
+
+	 - In the confirmation pane, select **Done**.
+
 1. On the **Content Search** tab, under **Searches**, select **Create a search**. This initiates the **New search wizard**.
 
 	![](../Images/ms102-p18t2p5.png)
@@ -96,11 +102,12 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 	![](../Images/ms102-p18t2p6.png)
 
-1. In the **Confidential search** window, select **Add sources (1)**.  
-   - In the search pane, locate and select the **Sales and Marketing** mailbox (or, if not available, select **All mailboxes (2)**).  
+1. In the **Confidential search** window, select **Add sources**.
+
+   - In the Search for sources pane search **Inside Sales (1)**, locate and select the **Inside Sales (2)**.  
    - Select **Save and close (3)**.
 
-	![](../Images/ms102-p18t2p7.png)
+		![](../Images/ms102-p18t2p7.png)
 
 1. On the **Query** tab, in the condition builder, enter **Confidential (1)** in the keyword field, and then press **Enter**. 
 
@@ -108,11 +115,15 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 	![](../Images/ms102-p18t2p8.png)
 
-1. On the **Choose search results** page, leave the default values, and then select **Run query** again.  
+1. On the **Choose search results** page, leave the default values, and then select **Run Query** again.  
+
+	![](../Images/ms102-p18t2p9.png)
 
 1. Back on the **Confidential search** window, the **Statistics** tab should now display results.  
 
-   **Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
+	![](../Images/ms102-p18t2p10.png)
+
+    >**Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
 
 Leave your browser open in **LON-CL1** and do not close any tabs.  
 
