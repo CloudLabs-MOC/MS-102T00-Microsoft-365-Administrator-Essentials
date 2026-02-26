@@ -48,7 +48,7 @@ In this task, you will simulate a scenario that triggers the first Data Loss Pre
 
 11. In the Edge browser, enter the following URL: **https://outlook.office365.com**
 
-12. In the **Pick an account** window, select Lynne Robbins' account (**lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the <DID> that you assigned to Lynne's account and then select **Sign in**. 
+12. In the **Pick an account** window, select Lynne Robbins' account (**lynne.robbins@otuwamocZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the **<inject key="AzureAdUserPassword"></inject>** that you assigned to Lynne's account and then select **Sign in**. 
 
 13. On the **Stay signed in** window, select the **Don't show this again** check box and select **Yes**.
 

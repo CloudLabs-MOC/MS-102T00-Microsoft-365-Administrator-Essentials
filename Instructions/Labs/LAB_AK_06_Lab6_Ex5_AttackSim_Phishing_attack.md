@@ -150,6 +150,8 @@ In this task, you will review the results of a previously run attack simulation 
 
 1. Select the **Pay Now** button in the email. Even though you know this is a spear phishing attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
 
+	![](../Images/ms102-p19t3p1.png)
+
 1. In the **Sign in** dialog box that appears, enter **lynne.robbins@otuwamoc101832.onmicrosoft.com**' as username, and then enter the password as **<inject key="AzureAdUserPassword"></inject>** in the **Enter password** window. Select **Sign in**. 
 
 1. This displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this site, which uses the landing page template that you selected in the prior task when setting up the attack simulation.
@@ -162,7 +164,8 @@ In this task, you will review the results of a previously run attack simulation 
 
 1. In LON-CL1, in your Edge browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **PhishingTest1** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **PhishingTest1** simulation should now appear. Select the **PhishingTest1** simulation to view the diagnostic results that were captured for this simulation.
 
-1. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right-hand corner of the window to close it. 
+1. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right-hand corner of the window to close it.
+	![](../Images/ms102-p19t3p2.png)
 
 1. Leave your browser open in LON-CL1 and do not close any of the tabs.
 
