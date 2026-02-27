@@ -117,7 +117,7 @@ In the prior lab exercise involving the Global administrator role, Holly updated
 
 5. In the **OTU WA MOC | Settings** window, select the **Helpdesk Administrator** role.
 
-    **>Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Helpdesk administrator role.
+    >**Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Helpdesk administrator role.
 
 6. In the **Role setting details -  Helpdesk Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 

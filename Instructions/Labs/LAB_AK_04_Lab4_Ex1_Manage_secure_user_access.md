@@ -32,7 +32,7 @@ In this task, you will configure Microsoft Entra Pass-Through Authentication to 
 
     >**Note:** In the **Pick an account** window, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
 
-        ![](../Images/ms102-p9t1p1.png)
+    ![](../Images/ms102-p9t1p1.png)
 
 6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication (1)** and then select **Next (2)**. 
 

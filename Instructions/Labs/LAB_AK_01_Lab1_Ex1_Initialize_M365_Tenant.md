@@ -96,7 +96,6 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
     ![](../Images/ms102-p1t1p4(4).png)
 
-
 	```powershell
     Get-MgUser -All | ForEach-Object {
     Update-MgUser -UserId $_.Id -UsageLocation "US"

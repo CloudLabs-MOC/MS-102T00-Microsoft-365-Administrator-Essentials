@@ -104,7 +104,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. In the **Confidential search** window, select **Add sources**.
 
-   - In the Search for sources pane search **Inside Sales (1)**, locate and select the **Inside Sales (2)**.  
+   - In the Search for sources pane search, **Inside Sales (1)** (or, if not available, select **Sales and Marketing mailbox** or **All mailboxes**), locate and select the **Inside Sales (2)**.  
    - Select **Save and close (3)**.
 
 		![](../Images/ms102-p18t2p7.png)
