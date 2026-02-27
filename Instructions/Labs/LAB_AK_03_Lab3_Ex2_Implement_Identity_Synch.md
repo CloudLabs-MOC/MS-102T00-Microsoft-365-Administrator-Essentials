@@ -69,9 +69,9 @@ In this task, you will install Microsoft Entra Connect on a designated server an
     - Sign in if prompted.  
     - In the **Microsoft Entra admin center**, use the **Search resources, services, and docs** box to search for **Microsoft Entra Connect (1)** and select **Microsoft Entra Connect Get started (2)** from the result.
 
-	![](../Images/ms102-p8t1p4.png)
+		![](../Images/ms102-p8t1p4.png)
 
-	> **Note:** If prompted for Multi-Factor Authentication (MFA), complete the setup process and proceed with the authentication steps as instructed.
+		> **Note:** If prompted for Multi-Factor Authentication (MFA), complete the setup process and proceed with the authentication steps as instructed.
 
 1. On the **Microsoft Entra Connect | Get started** page:  
     - Select the **Manage (1)** tab.  

@@ -136,11 +136,11 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. On the **Microsoft 365 Copilot home page** (Laura’s Microsoft 365 landing page), observe that the usual list of Microsoft 365 app icons does not appear in the left navigation pane. This indicates that a Microsoft 365 license has not yet been assigned to Laura’s account.
 
-	![](../Images/ms102-p6t1p11)
+	![](../Images/ms102-p6t1p11.png)
 
 1. From the left navigation menu, select **Apps (1)**. Select the **Install apps (2)** button, and then in the drop-down menu that appears, select **Microsoft 365 apps (3)**. This opens the **My account** window for Laura.
 
-	![](../Images/ms102-p6t1p12)
+	![](../Images/ms102-p6t1p12.png)
 
 1. In Laura's **My account** window, under the **Office apps & devices** tile, select **View apps & devices**. Note the message that appears at the top of page. Laura has not been assigned a license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. 
 
