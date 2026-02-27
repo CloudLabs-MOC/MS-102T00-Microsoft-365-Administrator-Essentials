@@ -10,7 +10,10 @@ In your lab environment, your lab hosting provider has already obtained a Micros
 
 You are logged into the LON-CL1. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (ODL user). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Entra ID and for later labs using Information Rights Management, audit alerts, Microsoft Graph PowerShell.
 
-> **Note:** Please ensure you manage your VM uptime carefully. Once you complete your lab activities for the day, **stop or deallocate the VM** to preserve the remaining uptime and continue the lab on subsequent days. For detailed instructions on VM usage and stopping/deallocating the VM, refer to the **Getting Started** page.
+> [!IMPORTANT] 
+> Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of 40 hours is fully exhausted before completing the labs, access will be lost. To avoid this, **once you finish using the lab for the day, please stop or deallocate the VM from the Resources tab**. Refer to the **[Managing Your Virtual Machine](#managing-your-virtual-machine)** section for step-by-step instructions.  
+
+> If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
  
 ### Task 0- Pre-requisite
 
