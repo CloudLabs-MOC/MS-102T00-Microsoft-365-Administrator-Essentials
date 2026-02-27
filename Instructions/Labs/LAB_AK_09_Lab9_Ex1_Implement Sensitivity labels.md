@@ -10,6 +10,9 @@ To address this timing issue, you ran that PowerShell script back on day 1 to cr
 
 Because we want you to gain experience creating and publishing a label and label policy using the Microsoft 365 UI, you will still create a sensitivity label and label policy in this lab. However, when you perform the tasks to test the label and label policy, you won't test the ones that you created and published in the UI, since that label and label policy won't be available to test for 24 hours. Instead, you will test the label and label policy that you created and published using the script that you ran back on day 1 of this class.
 
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+
+> If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
 ### Task 1 – Install the Azure Information Protection Unified Labeling client
 

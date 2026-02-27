@@ -6,6 +6,10 @@ Having created a Safe Attachments policy, Holly Dickson now wants to create a Sa
 
 >**IMPORTANT:** This lab exercise consists of two tasks. The first task creates a Safe Links policy, and then the second task validates the policy. The problem with this lab is that when you create a safe links policy, it takes at least 30 minutes for the new policy to propagate through the system. **This means that after performing Task 1, you must wait at least 30 minutes before performing Task 2. If you perform Task 2 immediately after performing Task 1, then Task 2 will fail.** After completing Task 1, you should continue with the training class. Your instructor will provide guidance on when you can perform Task 2 depending on the next break that occurs in the class schedule.
 
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+
+> If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
+
 ### Task 1 – Create a Safe Links Policy  
 
 In this task, you will create a Safe Links policy that applies to all users in your tenant. You will then add the http://tailspintoys.com URL to the company-wide list of blocked URLs (i.e. the Tenant Block List) that you will define in the Microsoft Defender portal. The blocked URLs and other options defined in the Safe Links global settings are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you must create at least one Safe Links policy for these global settings to be active.

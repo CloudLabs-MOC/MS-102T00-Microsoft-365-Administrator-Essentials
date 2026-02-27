@@ -6,6 +6,10 @@ Holly Dickson is now at the point in her pilot project where she wants to test t
 
 >**NOTE:** We have intermittently experienced issues in the past where DLP policies and policy tips do not work as expected in this lab exercise. This is due to throttling issues that sometimes occur between our VM lab environment and the Microsoft 365 trial tenant. This is not indicative of the normal experience within Microsoft 365 production environments. It is also not indicative of the normal training experience. We apologize if you run into this issue during this lab exercise.
 
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+
+> If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
+
 ### Task 1 – Test the first DLP Policy rule
 
 In this task, you will simulate a scenario that triggers the first Data Loss Prevention (DLP) policy rule to verify that it correctly identifies and handles sensitive data as configured.
