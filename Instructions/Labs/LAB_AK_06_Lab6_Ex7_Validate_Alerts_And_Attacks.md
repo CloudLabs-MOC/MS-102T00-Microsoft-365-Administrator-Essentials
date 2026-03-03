@@ -1,5 +1,9 @@
 # Lab 06 - Exercise 7: Validate alert nofications and simulated attacks
 
+> **!IMPORTANT**: `Once you launch the track, you’ll have access to a virtual machine (VM) for 40 hours. The displayed track duration of 30 days indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of 40 hours is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.`
+
+> `If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.`
+
 This lab included three exercises in which you configured Microsoft 365 to create alert notifications (Exercises 2 through 4). It also included two exercises that created simulated attacks (Exercises 5 and 6). All five exercises generated an email notification, which have to be validated to ensure the alerts and simulated attacks are working properly. 
 
 For each of these exercises, it could take up to 15 minutes for the system to create its corresponding email. Rather than having you wait up to 15 minutes to receive the email at the end of each those exercises, (which is 75 total minutes of wait time; 5 exercises x 15 minutes each), you were instructed to proceed to the next exercise and validate the emails in this final Lab 6 exercise. By this time, hopefully all emails for these five exercises have been generated and you will not have to endure any wait time.
