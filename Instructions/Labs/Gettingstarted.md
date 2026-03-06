@@ -34,12 +34,18 @@ For convenience, you can open the lab guide in a separate window by selecting th
 1. Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
     - Once you finish using the lab for the day, please **stop or deallocate** the VM from the Resources tab as shown in the image below.
- 
-    - **Label (2)** indicates **starting the VM**, and **label (3)** indicates **stopping or deallocating** it. Stopping or deallocating the VM helps preserve the VM uptime limit so you can continue working the next day without exhausting the available uptime.
+
+    - **Label (2)** indicates your **maximum uptime limit** and **remaining uptime**.
+
+    - **Label (3)** indicates **Starting the VM**, and **label (4)** indicates **stopping or deallocating** it. All VMs can be stopped and start from resources tab. Stopping or deallocating the VMs helps preserve the VM uptime limit so you can continue working the next day without exhausting the available uptime.
  
     - Please note that once the lab is launched, the overall lab session cannot be paused and will continue to run until the allotted time is fully consumed. Only the VM itself can be stopped or deallocated as described above.
  
-      ![Manage Your Virtual Machine](../Images/ms-102-g5n.png)
+      ![Manage Your Virtual Machine](../Images/ms-102-vm-manage.png)
+
+2. **NOTE:** If any virtual machine remains idle for approximately **30 minutes**, a **warning pop-up window** will appear (as shown in below image) indicating that the machine will shut down in **10 minutes** unless the warning is *cancelled*.
+
+    ![](../Images/idleness-tracking-warning.png)
 
 2. To initiate the required VMs, use the dropdown menu located at the top of the lab environment
 
