@@ -1,7 +1,7 @@
 
 [
   {
-    "Name": "MS-102 : Microsoft 365 Administrator and Essentials (ECPI Customer)",
+    "Name": "MS-102 : Microsoft 365 Administrator and Essentials - ECPI Customer",
     "Language": "English",
     "BaseURL": "https://github.com/MicrosoftLearning/MS-102T00-Microsoft-365-Administrator-Essentials",
     "Files": [
@@ -104,4 +104,5 @@
     ]
   }
 ]
+
 
