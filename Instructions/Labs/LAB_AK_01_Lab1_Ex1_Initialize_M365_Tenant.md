@@ -36,6 +36,8 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
 1. On the **Licenses**, under **Subscriptions (1)**, select **Enterprise Mobility + Security E5 (2)**.
 
+    > **NOTE:** If the license is not visible in the list, wait **10–15 minutes**, refresh the page, and check again. If the license still does not appear after waiting, contact **[cloudlabs-support@spektrasystems.com](mailto:cloudlabs-support@spektrasystems.com)** for further assistance.
+
     ![Access Your VM and Lab Guide](../Images/subscriptions.png)
 
 1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber, Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Bowen, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
