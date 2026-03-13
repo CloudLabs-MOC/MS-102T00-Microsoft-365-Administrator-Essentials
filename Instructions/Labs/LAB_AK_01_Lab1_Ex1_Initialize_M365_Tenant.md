@@ -40,7 +40,7 @@ You are logged into the LON-CL1. When you access Microsoft 365 for the first tim
 
     ![Access Your VM and Lab Guide](../Images/subscriptions.png)
 
-1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber, Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Bowen, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
+1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber, Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Brown, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
 
     ![Access Your VM and Lab Guide](../Images/ms102-p1t1p1.png)
 
@@ -345,7 +345,7 @@ In this task, you will enable Audit Logging in the Microsoft 365 compliance cent
    
     ![](../Images/auditsearch.png)
 
-    >**Note:** If you recieve **Client Error**, select **OK**.
+    >**Note:** If you receive **Client Error**, select **OK**.
 
 4. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
@@ -397,4 +397,5 @@ In this lab, you have:
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
  ![](../Images/ms-102-g-next.png)
+
 
