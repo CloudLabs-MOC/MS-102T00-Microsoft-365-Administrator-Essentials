@@ -38,10 +38,16 @@ For convenience, you can open the lab guide in a separate window by selecting th
     - **Label (2)** indicates your **maximum uptime limit** and **remaining uptime**.
 
     - **Label (3)** indicates **Starting the VM**, and **label (4)** indicates **stopping or deallocating** it. All VMs can be stopped and start from resources tab. Stopping or deallocating the VMs helps preserve the VM uptime limit so you can continue working the next day without exhausting the available uptime.
- 
+
+    - **Label (5)** and **Label (6)** indicates child VMs control to stop and start.
+
+        ![](../Images/image%20(5).png)
+
     - Please note that once the lab is launched, the overall lab session cannot be paused and will continue to run until the allotted time is fully consumed. Only the VM itself can be stopped or deallocated as described above.
  
       ![Manage Your Virtual Machine](../Images/ms-102-vm-manage.png)
+
+
 
 2. **NOTE:** If any virtual machine remains idle for approximately **30 minutes**, a **warning pop-up window** will appear (as shown in below image) indicating that the machine will shut down in **10 minutes** unless the warning is *cancelled*.
 
@@ -50,6 +56,10 @@ For convenience, you can open the lab guide in a separate window by selecting th
 2. To initiate the required VMs, use the dropdown menu located at the top of the lab environment
 
     ![Manage Your Virtual Machine](../Images/ms-102-g4.png)
+
+    > **NOTE:** If the drop-down to switch between virtual machines is not visible, connect to the **LON-CL1 VM**, and then select the required virtual machine from there to log in.
+    >
+    > ![](../Images/2026-04-17_23-31-58.png)
  
 3. When logging into the Hyper-V virtual machines, if a message appears stating **"Press Ctrl+Alt+Delete to unlock"**, navigate to the **Actions** menu in the Virtual Machine Connection window and select the **Ctrl+Alt+Delete** option, as shown in the image below.
 
