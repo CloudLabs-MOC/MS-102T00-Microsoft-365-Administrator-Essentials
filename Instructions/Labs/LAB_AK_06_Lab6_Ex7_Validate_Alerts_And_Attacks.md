@@ -2,7 +2,7 @@
 
 > **!IMPORTANT**: `Once you launch the track, you’ll have access to a virtual machine (VM) for 40 hours. The displayed track duration of 30 days indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of 40 hours is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.`
 
-> `If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.`
+> `If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and the lab duration cannot be extended.`
 
 This lab included three exercises in which you configured Microsoft 365 to create alert notifications (Exercises 2 through 4). It also included two exercises that created simulated attacks (Exercises 5 and 6). All five exercises generated an email notification, which have to be validated to ensure the alerts and simulated attacks are working properly. 
 
