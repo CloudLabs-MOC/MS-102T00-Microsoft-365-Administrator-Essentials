@@ -347,6 +347,8 @@ In this task, you will enable Audit Logging in the Microsoft 365 compliance cent
 
     >**Note:** If you receive **Client Error**, select **OK**.
 
+    ![](../Images/lab1-n1.png)
+
 4. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
 5. Close the **Microsoft 365 Defender** tab in your Edge browser. Leave your browser open and proceed to the next task. 
