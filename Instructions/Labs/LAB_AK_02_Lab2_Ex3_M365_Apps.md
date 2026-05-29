@@ -85,6 +85,10 @@ In this task, you will review how user licensing impacts the ability to install 
 
 	![](../Images/ms102-p6t1p6.png)
 
+	> **Note:** If you receive an error indicating that **Laura** cannot be found, or if the **From this location** field shows **LON-CL2** instead of **Adatum.com**, open **Hyper-V Manager** and verify that **LON-DC1** is running. If it is stopped, start **LON-DC1**, wait for it to finish booting, and then repeat this step.
+
+	![](../Images/note-1.png)
+
 1. It will pop up a dialog box to enter **Network Credentials** of Laura, please enter **Username** as **adatum\laura** and **password** as **Pa55w.rd**. Select **OK**.
 
 	![](../Images/L2E3T1S13.2-2904.png)
