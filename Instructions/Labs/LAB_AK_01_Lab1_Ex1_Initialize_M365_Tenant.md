@@ -1,4 +1,4 @@
-# Lab 01 - Exercise 1: Initialize your Microsoft 365 Tenant 
+# Lab 01 - Exercise 1: Initialize your Microsoft 365 Tenant
 
 > **!IMPORTANT**: `Once you launch the track, you’ll have access to a virtual machine (VM) for 40 hours. The displayed track duration of 30 days indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of 40 hours is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.`
 
@@ -6,107 +6,109 @@
 
 ## Lab scenario
 
-Adatum Corporation is a subsidiary of Contoso Electronics. Adatum runs its legacy applications (such as Microsoft Exchange Server 2019) in an on-premises deployment. However, it recently subscribed to Microsoft 365, thereby creating a hybrid deployment in which it must synchronize its on-premises and cloud deployments. 
+Adatum Corporation is a subsidiary of Contoso Electronics. Adatum runs its legacy applications (such as Microsoft Exchange Server 2019) in an on-premises deployment. However, it recently subscribed to Microsoft 365, thereby creating a hybrid deployment in which it must synchronize its on-premises and cloud deployments.
 
 As Adatum's Microsoft 365 administrator, you have been tasked with deploying Microsoft 365 in Adatum’s hybrid deployment using a virtualized lab environment. In this exercise, you will set up Adatum's Microsoft 365 trial tenant.
 
-In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you. 
+In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you.
 
 You are logged into the LON-CL1. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (ODL user). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Entra ID and for later labs using Information Rights Management, audit alerts, Microsoft Graph PowerShell.
- 
+
 ### Task 0- Pre-requisite
 
 1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the **LON-CL1**. If your VM environment opens with one of the other machines (such as **LON-DC1**), then switch to **LON-CL1** now.
 
-    >**Important**: **LON-CL1** is the Lab-VM itself.
+   > **Important**: **LON-CL1** is the Lab-VM itself.
 
 1. In **search resources, services, and docs**, type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-    ![Access Your VM and Lab Guide](../Images/microsoftentra.png)
+   ![Access Your VM and Lab Guide](../Images/microsoftentra.png)
 
 1. From the left navigation menu, under **Manage (1)** section, select **Users (2)** from the left-hand navigation pane, under **All users (3)** pane search for **Alex Wilber (4)**, and select the **Alex Wilber (5)** from the list.
 
-    ![Access Your VM and Lab Guide](../Images/manageusers.png)
+   ![Access Your VM and Lab Guide](../Images/manageusers.png)
 
-    ![Access Your VM and Lab Guide](../Images/alexwilber.png)
+   ![Access Your VM and Lab Guide](../Images/alexwilber.png)
 
 1. On the left-hand side navigation, select **Licenses (1)**, select **Go to M365 Admin center (2)**.
 
-    ![Access Your VM and Lab Guide](../Images/licenses.png)
+   ![Access Your VM and Lab Guide](../Images/licenses.png)
 
 1. On the **Licenses**, under **Subscriptions (1)**, select **Enterprise Mobility + Security E5 (2)**.
 
-    > **NOTE:** If the license is not visible in the list, wait **10–15 minutes**, refresh the page, and check again. If the license still does not appear after waiting, contact **[cloudlabs-support@spektrasystems.com](mailto:cloudlabs-support@spektrasystems.com)** for further assistance.
+   > **NOTE:** If the license is not visible in the list, wait **10–15 minutes**, refresh the page, and check again. If the license still does not appear after waiting, contact **[cloudlabs-support@spektrasystems.com](mailto:cloudlabs-support@spektrasystems.com)** for further assistance.
 
-    ![Access Your VM and Lab Guide](../Images/subscriptions.png)
+   ![Access Your VM and Lab Guide](../Images/subscriptions.png)
 
 1. On the **Enterprise Mobility + Security E5**, select **+ Assign licenses (1)**. On the **Assign licenses to users** pane, search and select for **Alex Wilber, Allan Deyoung, Joni Sherman, Lynne Robbins, Diego Siciliani, Isaiah Langer, Megan Brown, Nestor Wilke, and Patti Fernandez (2)** and select **Assign (3)**.
 
-    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p1.png)
+   ![Access Your VM and Lab Guide](../Images/ms102-p1t1p1.png)
 
-    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p2.png)
+   ![Access Your VM and Lab Guide](../Images/ms102july26-p1t1p1.png)
 
-1. After assigning the **Enterprise Mobility + Security E5** licenses, select **Licenses - Subscriptions** at the top to return to the subscriptions list. 
+1. After assigning the **Enterprise Mobility + Security E5** licenses, select **Licenses - Subscriptions** at the top to return to the subscriptions list.
 
-    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p3.png)
+   ![Access Your VM and Lab Guide](../Images/ms102-p1t1p3.png)
 
 1. From the list of available subscriptions, select **Microsoft 365 Business Premium** to continue with the next licensing assignment steps.
 
 1. On the **Microsoft 365 Business Premium** page, select **+ Assign licenses**. In the **Assign licenses to users** pane, search for and select **Alex Wilber**, **Joni Sherman**, and **Lynne Robbins (1)**, and then select **Assign licenses (2)**.
 
-     ![](../Images/lab1-e1-11-13.png)
+   ![](../Images/lab1-e1-11-13.png)
 
-     ![](../Images/lab1-e1-11-14.png)
+   ![](../Images/ms102july26-p1t1p2.png)
 
 1. Close the assigned licenses pane, and close the **Microsoft 365 admin center**.
 
 1. On the Lab-VM, in the Type here to search box, type **Windows PowerShell (1)**. In the **Windows PowerShell (2)** results, right-click and select **Run as administrator (3)**, and run the following commands to assign the usage location to all users:
 
-    ![Access Your VM and Lab Guide](../Images/ms102-p1t1p4.png)
+   ![Access Your VM and Lab Guide](../Images/ms102-p1t1p4.png)
 
-    ```powershell
-    Install-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201 -Force
-    ```
-    ```powershell
-    Import-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201
-    ```
-    ```powershell
-    Install-Module Microsoft.Graph -Scope CurrentUser -Force
-    ```
+   ```powershell
+   Install-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201 -Force
+   ```
 
-    >**Note:** Your response will initiate the installation of all the Microsoft Graph sub-modules. Once all the installation messages (for each sub-module) have finished displaying, it will still take approximately 5 to 10 minutes to complete the Microsoft Graph PowerShell installation. During this time, the cursor will continue to blink below the untrusted repository message. This may be a good time to take a short break.
+   ```powershell
+   Import-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201
+   ```
 
-    >**Note:** If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All** and then press Enter. .
+   ```powershell
+   Install-Module Microsoft.Graph -Scope CurrentUser -Force
+   ```
 
-    >**Note:** Please wait until the command above executes successfully.
+   > **Note:** Your response will initiate the installation of all the Microsoft Graph sub-modules. Once all the installation messages (for each sub-module) have finished displaying, it will still take approximately 5 to 10 minutes to complete the Microsoft Graph PowerShell installation. During this time, the cursor will continue to blink below the untrusted repository message. This may be a good time to take a short break.
 
-	```powershell
-    Connect-MgGraph -Scopes "User.ReadWrite.All"
-    ```
+   > **Note:** If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All** and then press Enter. .
 
-    >**Note:** On the **Let's get you signed in** window, select **Work or school account (1)** and then click **Continue (2)**.
+   > **Note:** Please wait until the command above executes successfully.
 
-    ![](../Images/ms102-p1t1p4(1).png)
+   ```powershell
+   Connect-MgGraph -Scopes "User.ReadWrite.All"
+   ```
 
-	>**Note:** Provide the ODL credentials, on the Sign in page, enter the username **<inject key="AzureAdUserEmail"></inject>**, and enter the password **<inject key="AzureAdUserPassword"></inject>**
+   > **Note:** On the **Let's get you signed in** window, select **Work or school account (1)** and then click **Continue (2)**.
 
-    >**Note:** On the **Permission requested** page, check **(1)** the **Consent on behalf of your organization** box and then click **Accept (2)**.
+   ![](<../Images/ms102-p1t1p4(1).png>)
 
-    ![](../Images/ms102-p1t1p4(2).png)
+   > **Note:** Provide the ODL credentials, on the Sign in page, enter the username **<inject key="AzureAdUserEmail"></inject>**, and enter the password **<inject key="AzureAdUserPassword"></inject>**
 
-    >**Note:** On the **Sign in to all apps, websites, and services on this device?** window, click on **Yes**. And then on the **Account added to this device** click **Done**.
+   > **Note:** On the **Permission requested** page, check **(1)** the **Consent on behalf of your organization** box and then click **Accept (2)**.
 
-    ![](../Images/ms102-p1t1p4(3).png)
+   ![](<../Images/ms102-p1t1p4(2).png>)
 
-    ![](../Images/ms102-p1t1p4(4).png)
+   > **Note:** On the **Sign in to all apps, websites, and services on this device?** window, click on **Yes**. And then on the **Account added to this device** click **Done**.
 
-	```powershell
-    Get-MgUser -All | ForEach-Object {
-    Update-MgUser -UserId $_.Id -UsageLocation "US"
-    }
-	```
+   ![](<../Images/ms102-p1t1p4(3).png>)
 
-12. Close the **Windows Powershell**. Now, you can start with the Task 1.
+   ![](<../Images/ms102-p1t1p4(4).png>)
+
+   ```powershell
+   Get-MgUser -All | ForEach-Object {
+   Update-MgUser -UserId $_.Id -UsageLocation "US"
+   }
+   ```
+
+1. Close the **Windows Powershell**. Now, you can start with the Task 1.
 
 ### Task 1- Set up Adatum's Organization Profile
 
@@ -114,274 +116,291 @@ In this task, you will configure the basic organizational settings for Adatum, i
 
 1. Open **Microsoft Edge**, launch a new tab, and navigate to the **Microsoft 365 Home page** by entering the URL: `https://www.microsoft365.com` in the address bar.
 
-    >**Note:** if any pop-up appears select **Skip for now**.
-    
+1. On the homepage, click on **Sign in** to login to M365 portal.
+
+   ![](../Images/ms102july26-p1t1p3.png)
+
+   > **Note:** if any pop-up appears select **Skip for now**.
+
 1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
-    ![](../Images/ms102-p1t1p5.png)
+   ![](../Images/ms102-p1t1p5.png)
 
 1. The **M365 Copilot** page appears in your Edge browser in the **M365 Copilot** tab. This is the ODL user's Microsoft 365 home page.
 
-	>**Note:** Notice the initials **O1** displayed inside a circle in the bottom-left corner of the screen. These represent the **ODL user** account, which is the tenant admin account you just signed in with. When a user, such as the ODL user, does not have a profile picture assigned, their initials are shown instead.
+   > **Note:** Notice the initials **O1** displayed inside a circle in the bottom-left corner of the screen. These represent the **ODL user** account, which is the tenant admin account you just signed in with. When a user, such as the ODL user, does not have a profile picture assigned, their initials are shown instead.
 
-    ![](../Images/ms102-p1t1p6.png)
+   ![](../Images/ms102july26-p1t1p4.png)
 
-1. On the **M365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Apps (1)**, and then select **Admin (2)**, this will open up Microsoft 365 admin center in a new browser tab. 
+1. On the **M365 Copilot** page, in the list of application icons that appear in the left-hand pane, select **Apps (1)**, and then select **More apps (2)**, this will open up Apps section. Now select **All apps (3)**.
 
-	![](../Images/ms102-p1t1p7.png)
+   ![](../Images/ms102july26-p1t1p5.png)
 
-    >**Note:** Close the **Business Advisor** pop-up.
+   ![](../Images/ms102july26-p1t1p6.png)
 
-1. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane and then select **Settings**. In the **Settings (1)** group, select **Org settings (2)**. 
+1. Select **Admin** from **All apps** page. This will open up **Microsoft 365 admin center** in a new browser tab.
 
-	![](../Images/settingsorgsettings.png)
+   ![](../Images/ms102july26-p1t1p7.png)
+
+   > **Note:** Close the **Business Advisor** pop-up.
+
+1. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane and then select **Settings**. In the **Settings (1)** group, select **Org settings (2)**.
+
+   ![](../Images/settingsorgsettings.png)
 
 1. On the **Org settings** page, the **Services** tab is displayed by default. Select the **Organization profile** tab.
 
 1. In the **Organization profile** tab, select **Release preferences** from the list of profile data.
 
-    >**Note:** One of the benefits of Microsoft 365 is its ability to have the latest features and updates automatically applied to your environment. This process can reduce maintenance costs and overhead for an organization and allow early-adopter users to test new features. By setting up your **Release preferences**, you can control how and when your Microsoft 365 tenant receives these updates.
+   > **Note:** One of the benefits of Microsoft 365 is its ability to have the latest features and updates automatically applied to your environment. This process can reduce maintenance costs and overhead for an organization and allow early-adopter users to test new features. By setting up your **Release preferences**, you can control how and when your Microsoft 365 tenant receives these updates.
 
-    ![](../Images/release.png)
+   ![](../Images/release.png)
 
 1. In the **Release preferences** pane that appears, select the **Targeted release for select users** option and then select **Save**.
 
-	>**Note:** the **Targeted release for select users** option enables you to create a control group of users who will preview updates so that you can prepare the updates for your entire organization. The **Targeted release for everyone** option is more commonly used in development environments, where you can get updates early for your entire organization. In non-development environments, such as Adatum, targeted release to a select group of users is a more typical preference as it enables an organization to control when it wants to make updates available to everyone once they've been reviewed by the control group.
+   > **Note:** the **Targeted release for select users** option enables you to create a control group of users who will preview updates so that you can prepare the updates for your entire organization. The **Targeted release for everyone** option is more commonly used in development environments, where you can get updates early for your entire organization. In non-development environments, such as Adatum, targeted release to a select group of users is a more typical preference as it enables an organization to control when it wants to make updates available to everyone once they've been reviewed by the control group.
 
-	![](../Images/MS-102-image-4.png)
+   ![](../Images/MS-102-image-4.png)
 
 1. In the **Release preferences** pane, below the list of release options, select the **Select users** option.
 
-    ![](../Images/selectusers.png)
+   ![](../Images/selectusers.png)
 
 1. In the **Choose users for targeted release** pane, click inside the **Who should receive targeted releases?** field, and select each of the following users from the list.
 
-    >**Note:** You must select each **User (1)**, one at a time. After selecting a user, you must select inside the **Who should receive targeted releases?** field again to re-display the list so that you can select the next user. 
+   > **Note:** You must select each **User (1)**, one at a time. After selecting a user, you must select inside the **Who should receive targeted releases?** field again to re-display the list so that you can select the next user.
+   - **Alex Wilber**
+   - **Joni Sherman**
+   - **Lynne Robbins**
+   - **ODL_User <inject key="DeploymentID" enableCopy="false"/>**
 
-	- **Alex Wilber**
-	- **Joni Sherman**
-	- **Lynne Robbins**
-	- **ODL_User <inject key="DeploymentID" enableCopy="false"/>**
+     > **Note:** Alex, Joni, and Lynne are part of Holly's Microsoft 365 pilot team. Their accounts will be used throughout the labs for this course.
 
-	    >**Note:** Alex, Joni, and Lynne are part of Holly's Microsoft 365 pilot team. Their accounts will be used throughout the labs for this course.
-    
 1. Select **Save (2)**.
 
-    ![](../Images/jonisherman.png)
+   ![](../Images/jonisherman.png)
 
-1. At the top of the **Release preferences** pane, note the message indicating the **4 users were added to the targeted release (1)**. Select the **X (2)** in the upper right-hand corner to close the pane. 
+1. At the top of the **Release preferences** pane, note the message indicating the **4 users were added to the targeted release (1)**. Select the **X (2)** in the upper right-hand corner to close the pane.
 
-    ![](../Images/ms-102-16.png)
+   ![](../Images/ms-102-16.png)
 
 1. Remain logged into **LON-CL1** with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
-### Task 2- Create a custom theme for Adatum's pilot project team 
+### Task 2- Create a custom theme for Adatum's pilot project team
 
 In this task, you will design and implement a custom theme tailored to Adatum's pilot project team, aligning with their branding and user experience requirements. This includes customizing colors, fonts, layouts, and other UI elements to support team identity and usability.
 
-1. In the **Microsoft 365 admin center**, select **Teams & groups (1)** in the left-hand navigation pane, and then under it, select **Active teams & groups (2)**. 
+1. In the **Microsoft 365 admin center**, select **Teams & groups (1)** in the left-hand navigation pane, and then under it, select **Active teams & groups (2)**.
 
-    ![](../Images/activeteamsgroups.png)
+   ![](../Images/activeteamsgroups.png)
 
-1. In the **Active teams and groups** page, there's a tab for viewing each of the group types. This tab displays the existing **Teams & Microsoft 365 groups (1)**. Select the **+ Add a Microsoft 365 group (2)** option that appears on the menu bar. This initiates the **Add a Microsoft 365 group** wizard. 
+1. In the **Active teams and groups** page, there's a tab for viewing each of the group types. This tab displays the existing **Teams & Microsoft 365 groups (1)**. Select the **+ Add a Microsoft 365 group (2)** option that appears on the menu bar. This initiates the **Add a Microsoft 365 group** wizard.
 
-	![](../Images/teamsgroups.png)
+   ![](../Images/teamsgroups.png)
 
 1. In the **Set up the basics** page, enter **M365 pilot project (1)** in the **Name** field, and then enter **Members of the Microsoft 365 pilot project team (2)** in the **Description** field (Note: even if you don't enter a description, you must still select into this field to enable the **Next** button). Select **Next (3)**.
 
-	![](../Images/ms102-p1t2p1.png)
+   ![](../Images/ms102-p1t2p1.png)
 
 1. You will now assign the ODL user as owner of the **M365 pilot project** group. In the **Assign owners** window, select **+ Assign owners**.
-	
 1. In the **Assign owners** pane that appears, select the check box next to **odl_user <inject key="DeploymentID" enableCopy="false"/> (1)**, and then select the **Add(1) (2)** button at the bottom of the pane.
 
-	![](../Images/ms102-p1t2p2.png)
+   ![](../Images/ms102-p1t2p2.png)
 
 1. On the **Assign owners** page, **ODL user (1)** should appear as owner of the group. Select **Next (2)**.
 
-    ![](../Images/assignowners.png)
+   ![](../Images/ms102july26-p1t1p8.png)
 
 1. You will now assign members to the M365 pilot project group. In the **Add members** page, select **+ Add members (1)**.
 
 1. In the **Add members** pane that appears, select the check boxes next to the following **users (2)**: **Alex Wilber**, **Allan Deyoung**, **Diego Siciliani**, **Isaiah Langer**, **Joni Sherman**, **Lynne Robbins**, **Megan Brown**, **ODL user**, **Nestor Wilke**, and **Patti Fernandez**. Then select the **Add (10) (3)** button at the bottom of the pane.
 
-    ![](../Images/ms102-p1t2p3.png)
+   ![](../Images/ms102-p1t2p3.png)
 
 1. On the **Add members** page, verify all the 10 users are listed as members of the group. If you missed a user, select **+ Add members** and then add any users that you missed. When all 10 users appear on this page, select **Next**.
 
-    ![](../Images/ms102-p1t2p4.png)
+   ![](../Images/ms102july26-p1t1p9.png)
 
 1. In the **Edit settings** page, enter the following information:
+   - Enter **m365pilotproject (1)** in the **Group email address** field.
+   - In the **Privacy** field, select **Private (2)**.
+   - Select **Next (3)**.
 
-	- Enter **m365pilotproject (1)** in the **Group email address** field.
-	
-	- In the **Privacy** field, select **Private (2)**.
-	
-	- Select **Next (3)**.
-
-        ![](../Images/ms-102-19.png)
+     ![](../Images/ms-102-19.png)
 
 1. In the **Review and finish adding group** page, review the content that you entered. If anything needs to be fixed, select **Edit** under the specific area that needs adjustment, make any necessary corrections, and then select **Next** to continue back to this page. Once everything is correct, select **Create group**.
 
-    ![](../Images/creategroup.png)
+   ![](../Images/creategroup.png)
 
 1. Once the **M365 pilot project group created** window appears, note the comment at the top of the page that it may take 5 minutes for the new group to appear in the list of Active groups. Select **Close**.
 
-    ![](../Images/m365owners.png)
+   ![](../Images/m365owners.png)
 
 1. This returns you to the **Active teams and groups** page, which should display the **Teams & Microsoft 365 groups** group tab. Since the **M365 pilot project** group was a Microsoft 365 group, it should eventually display on this tab.
 
-    ![](../Images/ms-102-20.png)
+   ![](../Images/ms-102-20.png)
 
-    >**Note:** If necessary, select the **Refresh** option on the menu bar until you see the M365 pilot project group in the list of Teams & Microsoft 365 groups.
+   > **Note:** If necessary, select the **Refresh** option on the menu bar until you see the M365 pilot project group in the list of Teams & Microsoft 365 groups.
 
-1. In the **Microsoft 365 admin center**, under the **Settings** group in the navigation pane, select **Org settings**. 
+1. In the **Microsoft 365 admin center**, under the **Settings** group in the navigation pane, select **Org settings**.
 
 1. On the **Org settings** page, select the **Organization profile** tab.
 
 1. In the list of **Organization profile (1)** data, select **Custom themes (2)**.
 
-	![](../Images/organizationprofile.png)
+   ![](../Images/organizationprofile.png)
 
 1. In the **Customize Microsoft 365 for your organization** pane that appears, you can customize the default theme that users see when signed into Microsoft 365, and you can add additional custom themes. Select the **+ Add theme** option.
 
-    ![](../Images/ms-102-21.png)
+   ![](../Images/ms-102-21.png)
 
-1. On the **Default theme** pane, notice how the **Show the user's display name (1)** option is not selected. Select that check box, and **Save (2)**. Select the back arrow at the top of the pane to return to  the **Customize Microsoft 365 for your organization** pane.
+1. On the **Default theme** pane, notice how the **Show the user's display name (1)** option is not selected. Select that check box, and **Save (2)**. Select the back arrow at the top of the pane to return to the **Customize Microsoft 365 for your organization** pane.
 
-	>**Note:** Holly decides to make the **Show the user's display name** option a permanent feature, she selected this option in the **Default theme** pane so that it applies to all Adatum users.
+   > **Note:** Holly decides to make the **Show the user's display name** option a permanent feature, she selected this option in the **Default theme** pane so that it applies to all Adatum users.
 
-    ![](../Images/ms102-p1t2p5.png)
+   ![](../Images/ms102-p1t2p5.png)
 
 1. In the **Customize Microsoft 365 for your organization** pane that appears, you can customize the default theme that users see when signed into Microsoft 365, and you can add additional custom themes. Select the **+ Add theme** option.
 
-    ![](../Images/ms-102-21.png)
+   ![](../Images/ms-102-21.png)
 
 1. In the **New group theme** pane that appears, the **General** tab is displayed by default. Enter **M365 pilot project theme (1)** in the **Name** field.
 
 1. Select inside the **Groups** field. In the list of groups that appears, select **M365 pilot project (2)** if it appears in the list of groups.
 
-	>**Note:** If **M365 pilot project** doesn't appear in the list of groups, then enter **M365** in the **Groups** field. A search results box should appear that displays the **M365 pilot project** group. Select **M365 pilot project**. 
+   > **Note:** If **M365 pilot project** doesn't appear in the list of groups, then enter **M365** in the **Groups** field. A search results box should appear that displays the **M365 pilot project** group. Select **M365 pilot project**.
 
 1. Select the **Show the user's display name (3)** check box. This is the setting that Holly wants to customize for the M365 pilot project team members.
- 
-    ![](../Images/ms102-p1t2p6.png)
-    
+
+   ![](../Images/ms102-p1t2p6.png)
+
 1. Select the **Logos** tab and take some time to review its options. Do the same for the **Colors** tab. Note the various theme and branding options that are available for you to update.
 
-	>**Note:** For the purpose of this lab, you can change any of the options or leave the default values as is. For example, in your real-world environment, you can add the logo of your company and set the background image as the default for all your users. For this lab, feel free to change the colors for your navigation pane, text color, icon color, and accent color. 
+   > **Note:** For the purpose of this lab, you can change any of the options or leave the default values as is. For example, in your real-world environment, you can add the logo of your company and set the background image as the default for all your users. For this lab, feel free to change the colors for your navigation pane, text color, icon color, and accent color.
 
-	**Go ahead and explore the different options for this theme that will be used by the Microsoft 365 pilot project team members. Make any changes that you wish.** 
+   **Go ahead and explore the different options for this theme that will be used by the Microsoft 365 pilot project team members. Make any changes that you wish.**
 
-	>**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it's recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
+   > **Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it's recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
-1. Select **Save**. Close the **M365 pilot project theme** pane once your changes are saved. 
+1. Select **Save**. Close the **M365 pilot project theme** pane once your changes are saved.
 
-1. Click the **Refresh** icon at the top of the screen, located to the left of the address bar. After the screen refreshes, note that the **ODL user** name now appears to the left of the circle with the **O1** initials. This change reflects the custom theme you recently applied, which displays the signed-in user's name next to their profile picture or initials. 
+1. Click the **Refresh** icon at the top of the screen, located to the left of the address bar. After the screen refreshes, note that the **ODL user** name now appears to the left of the circle with the **O1** initials. This change reflects the custom theme you recently applied, which displays the signed-in user's name next to their profile picture or initials.
 
-    ![](../Images/ms-102-24.png)
+   ![](../Images/ms-102-24.png)
 
 1. In the **Microsoft 365 admin center**, select **Active users (2)** from the **Users (1)** drop-down in the left navigation pane.
 
 1. Select **Nestor Wilke (3)** (not the check box). On the **Account (4)** tab, under **Roles** select **Manage roles (5)**.
 
-    ![](../Images/ms102-p1t2p7.png)
+   ![](../Images/ms102-p1t2p7.png)
 
 1. On the **Manage admin roles** page, select **Admin center access (1)**, and select **Global Administrator (2)**.
 
 1. Select **Save Changes (3)**. After saving the changes close the pane.
 
-    ![](../Images/ms102-p1t2p8.png)
+   ![](../Images/ms102-p1t2p8.png)
 
 1. Remain logged into **LON-CL1** with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
-### Task 3 - Enable Information Rights Management for SharePoint Online  
+### Task 3 - Enable Information Rights Management for SharePoint Online
 
 In this task, you will enable Information Rights Management (IRM) for SharePoint Online to protect sensitive documents by restricting actions such as copying, printing, or forwarding. This helps ensure data is only accessible to authorized users, even after downloading.
 
->**Important:** While you will validate IRM for Exchange and SharePoint in Lab 7, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 7, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online. Keep this time issue in mind if you plan to enable IRM in your real-world deployment. 
+> **Important:** While you will validate IRM for Exchange and SharePoint in Lab 7, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 7, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online. Keep this time issue in mind if you plan to enable IRM in your real-world deployment.
 
 1. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane to see all the navigation options. Under the **Admin centers** group, select **SharePoint**. This will open the **SharePoint admin center** in a new tab.
 
+   ![](../Images/ms102july26-p1t1p10.png)
+
 1. In the **Welcome to your new home page** window, select **Take the tour**.
 
-    ![](../Images/ms-102-27.png)
+   ![](../Images/ms-102-27.png)
 
-1. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
+1. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**.
 
 1. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text that says: **classic settings page**.
 
-    ![](../Images/settingspage.png)
+   ![](../Images/settingspage.png)
 
 1. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section. In the options to the right of this section, select the **Use the IRM service specified in your configuration (1)** option, and then select the **Refresh IRM Settings (2)** button.
 
-    ![](../Images/usetheirm.png)
+   ![](../Images/usetheirm.png)
 
-1. Scroll to the bottom of the page and select the **OK** button. 
+1. Scroll to the bottom of the page and select the **OK** button.
 
 1. Once the changes have been saved, you will be returned to the top of the **Settings** page. In your browser, close the current tab that you're on. This will return you to the **Settings** page in the **SharePoint admin center**.
 
 1. Close this **SharePoint admin center** tab in your Edge browser. Leave the other tabs open in your browser for the next task.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
 > - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="4727ed8b-1c44-4d48-8572-630a6026f8df" />
 
-
-### Task 4 – Turn on Audit Logging to enable Alert Policies 
+### Task 4 – Turn on Audit Logging to enable Alert Policies
 
 In this task, you will enable Audit Logging in the Microsoft 365 compliance center to support the creation and operation of Alert Policies, allowing you to monitor and respond to user and admin activities across your organization.
 
 1. In the **Microsoft 365 admin center**, under the **Admin centers** section in the left-hand navigation pane, select **Security**. This will open the **Microsoft 365 Defender** portal in a new tab in your browser.
 
-2. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit (1)** under **System**.
+   ![](../Images/ms102july26-p1t1p11.png)
 
-3. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity (2)**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
+2. In the Microsoft Defender portal, if the navigation pane is hidden, select **Show navigation (1)**. Then, scroll down towards the bottom of the left-hand navigation pane, expand **System (2)** if necessary, and select **Audit (3)**.
 
-    >**Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
-   
-    ![](../Images/auditsearch.png)
+   ![](../Images/ms102july26-p1t1p12.png)
 
-    >**Note:** If you receive **Client Error**, select **OK**.
+3. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity**. If this banner appears, then auditing is NOT turned on for your organization. This banner is your prompt to turn on audit logging.
 
-    ![](../Images/lab1-n1.png)
+   > **Note:** Select this banner now to turn on audit logging, and on the **Security** pop-up select **Yes**, and if it says **We're updating your organization to support customization. Please allow 24 to 48 hours before you retry this operation.**, select **OK**.
 
-4. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
- 
-5. Close the **Microsoft 365 Defender** tab in your Edge browser. Leave your browser open and proceed to the next task. 
+   ![](../Images/ms102july26-p1t1p13.png)
 
-### Task 5 – Install Microsoft Graph PowerShell   
+   > **Note:** If you receive **Client Error**, select **OK**.
+
+   ![](../Images/lab1-n1.png)
+
+   > **Note:** After selecting **Start recording user and admin activity**, the **Complete organizational setup** dialog may appear. Select **Yes** to continue. The **Start recording user and admin activity** banner may remain visible for a few minutes while the request is being processed. Refresh the page after a short wait. If the banner is still displayed, continue with the remaining exercises and return to the **Audit** page later to verify whether audit logging has been enabled.
+
+   ![](../Images/ms102july26-p1t1p14.png)
+
+4. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.
+
+5. Close the **Microsoft 365 Defender** tab in your Edge browser. Leave your browser open and proceed to the next task.
+
+### Task 5 – Install Microsoft Graph PowerShell
 
 In this task, you will install the Microsoft Graph PowerShell SDK to enable management and automation of Microsoft 365 services through Graph API cmdlets.
 
-1. On LON-CL1, you must open an elevated instance of **Windows PowerShell**. Type **power** in the Search box that appears in the bottom left corner of the taskbar. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu that appears. 
+1. On LON-CL1, you must open an elevated instance of **Windows PowerShell**. Type **power** in the Search box that appears in the bottom left corner of the taskbar. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu that appears.
 
 1. Maximize your PowerShell window. In **Windows PowerShell**, type the following command at the command prompt to install the Microsoft Graph PowerShell module from the PowerShell Gallery and then press Enter:
-	
-    ```powershell
-    Install-Module Microsoft.Graph -Scope CurrentUser
-    ```
+
+   ```powershell
+   Install-Module Microsoft.Graph -Scope CurrentUser
+   ```
 
 1. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All** and then press Enter.
 
-    >**Note:** Your response will initiate the installation of all the Microsoft Graph sub-modules. Once all the installation messages (for each sub-module) have finished displaying, it will still take approximately 5 to 10 minutes to complete the Microsoft Graph PowerShell installation. During this time, the cursor will continue to blink below the untrusted repository message. This may be a good time to take a short break.
+   > **Note:** Your response will initiate the installation of all the Microsoft Graph sub-modules. Once all the installation messages (for each sub-module) have finished displaying, it will still take approximately 5 to 10 minutes to complete the Microsoft Graph PowerShell installation. During this time, the cursor will continue to blink below the untrusted repository message. This may be a good time to take a short break.
 
-1. A command prompt will appear once Microsoft Graph PowerShell has been installed. Run the following command to see the complete list of sub-modules that were installed under the Microsoft.Graph primary module:  
-	
-    ```powershell
-    Get-InstalledModule Microsoft.Graph.* 
-    ```
-	 >**Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step. 
+1. A command prompt will appear once Microsoft Graph PowerShell has been installed. Run the following command to see the complete list of sub-modules that were installed under the Microsoft.Graph primary module:
+
+   ```powershell
+   Get-InstalledModule Microsoft.Graph.*
+   ```
+
+   > **Note:** The labs that use Microsoft Graph PowerShell in this course will use the following sub-modules: Microsoft.Graph.Identity.DirectoryManagement, Microsoft.Graph.Users, and Microsoft.Graph.Groups. To access the cmdlets for a sub-module, you must first import the sub-module. You can either import all 30+ sub-modules at one time using the "Import-Module Microsoft.Graph" command, or you can import each module that's needed to perform whatever function you're doing (for example, "Import-Module Microsoft.Graph.Users" to perform user maintenance) at a particular point in time. For the purpose of this training, since the later lab exercises will only use three sub-modules, you will NOT import all 40+ sub-modules now. Instead, you will wait to import these three sub-modules when they're needed in later labs. Proceed to the next step.
 
 1. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **RemoteSigned** enables Holly to load all signed configuration files and run all signed scripts. At the command prompt, type the following command, and then press Enter:
-	
-     ```powershell
-     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-     ```
-1. If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
+
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+   ```
+
+1. If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.**
 
 1. Do not close the PowerShell window. Keep the Windows PowerShell window open but minimize it for now. Stay logged into **LON-CL1** and keep the Edge browser open.
 
@@ -395,9 +414,6 @@ In this lab, you have:
 - Explored how to turn on Audit Logging to enable Alert Policies.
 - Installed Microsoft Graph PowerShell.
 
-
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
- ![](../Images/ms-102-g-next.png)
-
-
+![](../Images/ms-102-g-next.png)
