@@ -70,7 +70,17 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
    > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
+1. Select **Use your password instead**.
+
+   ![](../Images/july26-p3t1p6.png)
+
 1. In the **Enter password** window, enter <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+
+   ![](../Images/july26-p3t1p7.png)
+
+   > **Note:** If prompted to set up Multi-Factor Authentication (MFA), select Skip for now. MFA is not required for this lab and can be configured at a later time.
+
+   > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
 
 1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
@@ -325,7 +335,13 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 1. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). For the password, sign-in with the same **Microsoft 365 Tenant Password**
    - Password:- <inject key="AzureAdUserPassword"></inject>
 
+     ![](../Images/july26-p3t1p6.png)
+
+     ![](../Images/july26-p3t1p7.png)
+
      > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
+     > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box and then select **Accept (2)**.
 
