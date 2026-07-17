@@ -115,8 +115,7 @@ In this task, you will use PowerShell commands to assign delegated administrativ
 
    > **Note:** For example: $ServiceSupportRoleTemplate = @{ RoleTemplateID = "fe930be7-5e62-47db-91af-98c3a49a38b1" }
 
-1. To verify the Service Support Administrator role has been enabled, type in the following command and press enter. This command will display the list of enabled role:  
-
+1. To verify the Service Support Administrator role has been enabled, type in the following command and press enter. This command will display the list of enabled role:
 
    ```powershell
    Get-MgDirectoryRole | Sort DisplayName | Format-Table Id, DisplayName
@@ -236,7 +235,9 @@ In this task, you will begin by examining the administrative properties of two u
 
      > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-     > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 04 Password"></inject>**
+     > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+     >
+     > ![](../Images/july26-envpass.png)
 
 1. On the **Stay signed in?** window, select **Yes**. If a **Save password** window appears, select **Never**.
 
@@ -271,7 +272,9 @@ In this task, you will begin by examining the administrative properties of two u
 
      > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-     > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 05 Password"></inject>**
+     > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+     >
+     > ![](../Images/july26-envpass.png)
 
 1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
@@ -377,6 +380,10 @@ In this task, you will begin by examining the administrative properties of two u
      ![](../Images/july26-p3t1p7.png)
 
      > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+
+   > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+   >
+   > ![](../Images/july26-envpass.png)
 
 1. The **Pick an account** window should appear, and it should display an error message indicating **Your account has been locked. Contact your support person to unlock it, then try again.** You have just verified that Alex (or someone who has obtained Alex's username and password) cannot log in.
 

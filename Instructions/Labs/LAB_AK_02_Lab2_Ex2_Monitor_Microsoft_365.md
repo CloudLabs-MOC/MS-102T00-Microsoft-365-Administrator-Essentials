@@ -23,7 +23,9 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
      > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-     > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+     > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+     >
+     > ![](../Images/july26-envpass.png)
 
 3. In the **Microsoft 365 Copilot page** page, select **Apps (1)**, and then select **Outlook (2)**.
 
@@ -37,7 +39,9 @@ In this task, you will investigate and resolve mail delivery issues in Microsoft
 
    > **Note:** If a **Stay signed in?** window appears, select the **Don't show this again** check box and select **Yes**.
 
-   > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+   > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+   >
+   > ![](../Images/july26-envpass.png)
 
    > **Note:** If a **Action Required** popup window appears, click **Ask Later**.
 

@@ -20,7 +20,9 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
    > **Note:** If you are not already signed in, sign in using **[Holly@otuwamocZZZZZZ.onmicrosoft.com](mailto:Holly@otuwamocZZZZZZ.onmicrosoft.com)** (where _ZZZZZZ_ is the tenant prefix provided by your lab hosting provider) and enter the provided password to continue.
 
-   > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+   > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+   >
+   > ![](../Images/july26-envpass.png)
 
    > **Note:** On the **Business Advisor** pop-up select **Skip for now** twice.
 
@@ -148,7 +150,9 @@ In this task, you will install Microsoft Entra Connect on a designated server an
 
    > **Note:** If the **Next** button is not enabled, then tab off the **PASSWORD** field to enable it.
 
-   > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+   > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+   >
+   > ![](../Images/july26-envpass.png)
 
    > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
@@ -410,7 +414,9 @@ In this task, you will verify that the directory synchronization was successful 
 
    > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-   > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+   > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+   >
+   > ![](../Images/july26-envpass.png)
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box, and then select **Accept (2)**.
 
