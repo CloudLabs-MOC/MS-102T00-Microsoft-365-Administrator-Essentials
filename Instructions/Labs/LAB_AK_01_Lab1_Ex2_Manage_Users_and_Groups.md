@@ -80,7 +80,9 @@ In this task, you will create and configure new user accounts in Microsoft 365, 
 
    > **Note:** If prompted to set up Multi-Factor Authentication (MFA), select Skip for now. MFA is not required for this lab and can be configured at a later time.
 
-   > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+   > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+   >
+   > ![](../Images/july26-envpass.png)
 
 1. If a **All your work in one place, now easier with AI** dialog box appears in the middle of the page, elect the **X** in the upper right-hand corner of the window to close it.
 
@@ -332,7 +334,7 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 
    > **Note:** If the **PowerShell** window closes, reopen it with elevated privileges by selecting **Run as administrator**, and then execute the above commands again.
 
-1. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). For the password, sign-in with the same **Microsoft 365 Tenant Password**
+1. A **Sign in** window will appear requesting your credentials. Sign in using Holly@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider). Now click on **Use your password instead** and for the password, sign-in with the same **Microsoft 365 Tenant Password**
    - Password:- <inject key="AzureAdUserPassword"></inject>
 
      ![](../Images/july26-p3t1p6.png)
@@ -341,7 +343,9 @@ In this task, you will use PowerShell commands to restore deleted Microsoft 365 
 
      > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-     > **Note:** If signing in with the Microsoft 365 tenant password results in an **incorrect password** or **invalid password** error, use the following password instead: **<inject key="User 08 Password"></inject>**
+     > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+     >
+     > ![](../Images/july26-envpass.png)
 
 1. On the **Permissions requested** dialog box that appears, select the **Consent on behalf of your organization (1)** check box and then select **Accept (2)**.
 

@@ -8,57 +8,59 @@
 
 In this exercise you will test a default Microsoft 365 alert policy that notifies all tenant administrators, such as Holly Dickson, whenever an eDiscovery search has been created or exported.
 
->**Note:** Creating an eDiscovery alert of this nature is important because an eDiscovery search, when left unregulated, can pull sensitive content that can be exported to an unauthorized source.
+> **Note:** Creating an eDiscovery alert of this nature is important because an eDiscovery search, when left unregulated, can pull sensitive content that can be exported to an unauthorized source.
 
-> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.  
+> **!IMPORTANT**: Once you launch the track, you’ll have access to a virtual machine (VM) for **40 hours**. The displayed track duration of **30 days** indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of **40 hours** is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.
 
 > If the full 40 hours of VM uptime is exhausted, the VM will no longer be accessible, and **the lab duration cannot be extended**.
 
-### Task 1 – Review the default eDiscovery Alert 
+### Task 1 – Review the default eDiscovery Alert
 
 In this task, you will verify whether a default Microsoft 365 alert is triggered when somebody in your tenant creates an eDiscovery search or exports data from an existing search. Since Holly Dickson is assigned the Global Administrator role, she is automatically a member of the Tenant Admins and will be one of the recipients of this alert.
 
 1. You should still be in **LON-CL2** after completing the prior lab exercise. You should now switch back to **LON-CL1**.
 
-1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 1. In your Edge browser, select the **Alert policy - Microsoft 365 security** tab. This tab should still be displaying the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
 1. On the **Alert policy** page, you want to search through the default System policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery (1)** and then hit Enter.
 
-1. In the policy list, select the **eDiscovery search started or exported (2)** policy that appears. 
+1. In the policy list, select the **eDiscovery search started or exported (2)** policy that appears.
 
-	![](../Images/ms102-p18t1p1.png)
+   ![](../Images/ms102-p18t1p1.png)
 
 1. An **eDiscovery search started or exported** pane should appear. Scroll down through the pane and verify the default settings for this predefined policy are configured as follows:
+   - Status: **On**
+   - Conditions: Select the down arrow for the **Create alert settings** section to expand it, then verify the following settings:
+     - Conditions: **Activity is eDiscoverySearchStartedOrExported**
 
-	- Status: **On**
-	
-	- Conditions: Select the down arrow for the **Create alert settings** section to expand it, then verify the following settings:
+     - Aggregation: **Single event**
 
-		- Conditions: **Activity is eDiscoverySearchStartedOrExported**
+     - Scope: **All users**
 
-		- Aggregation: **Single event**
+       ![](../Images/p17t1p1-july26.png)
 
-		- Scope: **All users**
+   - Email recipients: Select the down arrow for the **Set your recipients** section to expand it, then verify the following settings:
+     - Recipients: **TenantAdmins**
 
-	- Email recipients: Select the down arrow for the **Set your recipients** section to expand it, then verify the following settings: 
+     - Daily notification limit: **No limit**
 
-		- Recipients: **TenantAdmins**
-
-		- Daily notification limit: **No limit**
-
-			![](../Images/ms102-p18t1p2.png)
+       ![](../Images/ms102-p18t1p2.png)
 
 1. At the top of the pane, select the **Edit policy** button.
 
+   ![](../Images/p17t1p2-july26.png)
+
 1. On the **eDiscovery search started or exported** window that appears, the only setting that can be edited for this default policy is the **Email recipients** setting. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here; instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select the **Cancel** button at the bottom of the window.
 
-	![](../Images/ms102-p18t1p3.png)
+   ![](../Images/ms102-p18t1p3.png)
 
-1. On the **eDiscovery search started or exported** pane, select the **X** in the upper-right corner to close it. 
+1. On the **eDiscovery search started or exported** pane, select the **X** in the upper-right corner to close it.
 
-	>**Note:** You can also edit a policy's setting by selecting the vertical ellipsis icon under the **Actions** column at the far-right end of the policy's row on the **Alert Policy** window. 
+   ![](../Images/p17t1p3-july26.png)
+
+   > **Note:** You can also edit a policy's setting by selecting the vertical ellipsis icon under the **Actions** column at the far-right end of the policy's row on the **Alert Policy** window.
 
 1. Leave all the Edge browser tabs open for the next task.
 
@@ -68,72 +70,82 @@ You have now reviewed the default Microsoft 365 eDiscovery alert that notifies t
 
 To test this default alert, Holly Dickson will create an eDiscovery search. This activity should trigger the alert policy, which should send an alert notification email to all Tenant Admins. Holly is a Global admin. By default, Global admins are members of the Tenant Admin group; therefore, she should receive the email notification generated by this alert. You will validate whether Holly received the email.
 
-1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.  
+1. On **LON-CL1**, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 1. In the **Microsoft 365 admin center**, under **Admin centers**, select **Microsoft Purview**.
 
-	![](../Images/ms102-p18t2p1.png)
+   ![](../Images/ms102-p18t2p1.png)
 
 1. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
+1. If the **Welcome to the new Microsoft Purview portal!** dialog appears, click the **Get started** button.
+
+   ![](../Images/p17t1p4-july26.png)
+
 1. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Solutions (1)** select **eDiscovery (2)** group, and Under **eDiscovery**, select **Content Search (3)**.
 
-	![](../Images/ms102-p18t2p2.png)
+   ![](../Images/ms102-p18t2p2.png)
 
-	![](../Images/ms102-p18t2p3.png)
+   ![](../Images/ms102-p18t2p3.png)
 
-	> **Note:** If you encounter an **permission error -** _You are not a member of the content search case_ please follow the below steps to add the eDiscovery manager role to Holly.
-	
-	 - In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
+   > **Note:** If you encounter an **permission error -** _You are not a member of the content search case_ please follow the below steps to add the eDiscovery manager role to Holly.
 
-		![](../Images/ms102-p18t2p4.png)
+   ![](../Images/p17t1p5-july26.png)
+   - In the **Microsoft Purview** portal from the left pane click on **Settings (1)**, expand **Roles and scopes (2)** and select **Role groups (3)**.
 
-	 - In the list of Role groups, select **eDiscovery Manager (1)** and click on **Edit (2)**.
- 
-	   ![](../Images/ediscovery2.png)
+     ![](../Images/ms102-p18t2p4.png)
 
-	 - In the **eDiscovery Manager** page, click on **Choose users (1)** and search and select for **Holly Dickson (2)** (Holly@otuwamocZZZZZZ.onmicrosoft.com) and click on **Select (3)**. Now click on **Next** twice, select **Save** and **Done**.
-	
-	  	![](../Images/ediscovery3.png)
+   - In the list of Role groups, select **eDiscovery Manager (1)** and click on **Edit (2)**.
 
-	 - In the **Manage eDiscovery Administrator** window, select the **Choose users** button. Search for and select **Holly Dickson**, and then click **Select**. Holly’s name should now appear in the list. Select **Next**.
+     ![](../Images/p17t1p6-july26.png)
 
-	 - In the Review the role group and finish window, verify Holly is listed as a member of both role groups, and then select **Save**.
+   - On the **eDiscovery Manager** page, select the **Members** tab and click **Add Administrators**.
 
-	 - In the confirmation pane, select **Done**.
+     ![](../Images/p17t1p7-july26.png)
+
+   - In the **Choose users** pane, search for **Holly** **(1)**, select **Holly Dickson** (**Holly@otuwamocZZZZZZ.onmicrosoft.com**) **(2)**, and then click **Select** **(3)**.
+
+     ![](../Images/p17t1p8-july26.png)
+
+   - Verify that **Holly Dickson** has been added under the **eDiscovery Administrator** role group, and then click **Done**.
+
+     ![](../Images/p17t1p9-july26.png)
+
+   - When the **Warning** dialog appears, click **Confirm** to save the changes to the role group.
+
+     ![](../Images/p17t1p10-july26.png)
 
 1. On the **Content Search** tab, under **Searches**, select **Create a search**. This initiates the **New search wizard**.
 
-	![](../Images/ms102-p18t2p5.png)
+   ![](../Images/ms102-p18t2p5.png)
 
 1. In the **New search** wizard, on the **Name and description** page, enter **Confidential search (1)** in the **Name** field and then select **Create (2)**.
 
-	![](../Images/ms102-p18t2p6.png)
+   ![](../Images/ms102-p18t2p6.png)
 
-1. In the **Confidential search** window, select **Add sources**.
+1. In the **Confidential search** window, select **Add sources (1)**.
+   - In the Search for sources pane search, **Inside Sales (2)** (or, if not available, select **Sales and Marketing mailbox** or **All mailboxes**), locate and select the **Inside Sales (3)**.
+   - Select **Save and close (4)**.
 
-   - In the Search for sources pane search, **Inside Sales (1)** (or, if not available, select **Sales and Marketing mailbox** or **All mailboxes**), locate and select the **Inside Sales (2)**.  
-   - Select **Save and close (3)**.
+     ![](../Images/p17t1p11-july26.png)
 
-		![](../Images/ms102-p18t2p7.png)
+1. On the **Query** tab, in the condition builder, enter **Confidential (1)** in the keyword field, and then press **Enter**.
 
-1. On the **Query** tab, in the condition builder, enter **Confidential (1)** in the keyword field, and then press **Enter**. 
+1. Select the **Run query (2)** button.
 
-1. Select the **Run query (2)** button. 
+   ![](../Images/ms102-p18t2p8.png)
 
-	![](../Images/ms102-p18t2p8.png)
+1. On the **Choose search results** page, leave the default values, and then select **Run Query** again.
 
-1. On the **Choose search results** page, leave the default values, and then select **Run Query** again.  
+   ![](../Images/ms102-p18t2p9.png)
 
-	![](../Images/ms102-p18t2p9.png)
+1. Back on the **Confidential search** window, the **Statistics** tab should now display results.
 
-1. Back on the **Confidential search** window, the **Statistics** tab should now display results.  
+   ![](../Images/ms102-p18t2p10.png)
 
-	![](../Images/ms102-p18t2p10.png)
+   > **Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
 
-    >**Note:** Running this search should trigger the **eDiscovery alert**, which generates an email notification to all users with Tenant Admin permissions. It may take several minutes for the email to be delivered. Instead of waiting, proceed to the next exercise.
-
-Leave your browser open in **LON-CL1** and do not close any tabs.  
+Leave your browser open in **LON-CL1** and do not close any tabs.
 
 ## Review
 
@@ -143,4 +155,5 @@ In this lab, you have:
 - Validated the default eDiscovery Alert.
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
- ![](../Images/ms-102-g-next.png)
+
+![](../Images/ms-102-g-next.png)

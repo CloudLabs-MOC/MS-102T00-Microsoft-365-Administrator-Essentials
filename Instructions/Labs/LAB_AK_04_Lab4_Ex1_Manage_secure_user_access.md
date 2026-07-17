@@ -1,4 +1,4 @@
-# Lab 04 - Exercise 1: Manage secure user access 
+# Lab 04 - Exercise 1: Manage secure user access
 
 > **!IMPORTANT**: `Once you launch the track, you’ll have access to a virtual machine (VM) for 40 hours. The displayed track duration of 30 days indicates the time frame during which you can use your VM. Please plan your lab sessions accordingly. If the VM uptime of 40 hours is fully exhausted before completing the labs, access will be lost. To avoid this and for detailed instructions on VM usage and stopping/deallocating the VM, refer to the Getting Started page.`
 
@@ -6,83 +6,85 @@
 
 ## Lab scenario
 
-As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by Adatum’s CTO to deploy Pass-through Authentication (PTA) and Microsoft Entra Smart Lockout as a means of strengthening password management throughout the organization. 
+As Holly Dickson, Adatum’s Microsoft 365 Administrator, you have been asked by Adatum’s CTO to deploy Pass-through Authentication (PTA) and Microsoft Entra Smart Lockout as a means of strengthening password management throughout the organization.
 
-
-### Task 1: Deploy Microsoft Entra Pass-Through Authentication 
+### Task 1: Deploy Microsoft Entra Pass-Through Authentication
 
 In this task, you will configure Microsoft Entra Pass-Through Authentication to enable secure password validation for on-premises users directly against your Active Directory, without the need to store passwords in the cloud.
 
 1.  You should still be logged into **LON-DC1** as the local **adatum\administrator** from the prior task.
 
-2. On LON-DC1, select the **Start (1)** button on the taskbar, and then in the **Start** menu, select the **All Apps (2)** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect (3)**.
+2.  On LON-DC1, select the **Start (1)** button on the taskbar, and then in the **Start** menu, select the **All Apps (2)** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect (3)**.
 
-   ![](../Images/25.png)
+    ![](../Images/25.png)
 
-1. This will initiate the **Welcome to Microsoft Entra Connect Sync** wizard.
+3.  This will initiate the **Welcome to Microsoft Entra Connect Sync** wizard.
 
-3. In the **Welcome to Microsoft Entra Connect** window, you will receive a page indicating the synchronization service scheduler is suspended until this setup wizard is closed. This is because if you start the Microsoft Entra Connect installation wizard (which you did in an earlier task), then the scheduler is temporarily suspended. Select **Configure.**
+4.  In the **Welcome to Microsoft Entra Connect** window, you will receive a page indicating the synchronization service scheduler is suspended until this setup wizard is closed. This is because if you start the Microsoft Entra Connect installation wizard (which you did in an earlier task), then the scheduler is temporarily suspended. Select **Configure.**
 
-   ![](../Images/26.png)
+    ![](../Images/26.png)
 
-4. On the **Additional tasks** page, select the **Change user sign-in (1)** task and then select **Next (2)**. 
+5.  On the **Additional tasks** page, select the **Change user sign-in (1)** task and then select **Next (2)**.
 
-   ![](../Images/27.png)
+    ![](../Images/p8t1p1-july26.png)
 
-5. On the **Connect to Microsoft Entra** page, sign into Microsoft Entra ID. The **USERNAME** field is already filled with **Holly@otuwamocZZZZZZ.onmicrosoft.com (1)**. In the **PASSWORD** field, enter the **<inject key="AzureAdUserPassword"></inject>**, and then select **Next (2)**.
+6.  On the **Connect to Microsoft Entra** page, sign into Microsoft Entra ID. The **USERNAME** field is already filled with **Holly@otuwamocZZZZZZ.onmicrosoft.com (1)**. In the **PASSWORD** field, enter the **<inject key="AzureAdUserPassword"></inject>**, and then select **Next (2)**.
 
     ![](../Images/28.png)
 
-	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+    > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-    >**Note:** In the **Pick an account** window, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
+    > **Note:** In the **Pick an account** window, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
 
     ![](../Images/ms102-p9t1p1.png)
 
-6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication (1)** and then select **Next (2)**. 
+    > **Note:** If the password provided above does not work, navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
+    >
+    > ![](../Images/july26-envpass.png)
 
-   ![](../Images/29.png)
+7.  On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication (1)** and then select **Next (2)**.
 
-7. On the **Enable single sign-on** page, select **Enter credentials**.
+    ![](../Images/29.png)
 
-   ![](../Images/30.png)
+8.  On the **Enable single sign-on** page, select **Enter credentials**.
 
-8. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **Username** and **Pa55w.rd** as the **Password**, and then select **OK**. 
+    ![](../Images/30.png)
+
+9.  In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **Username** and **Pa55w.rd** as the **Password**, and then select **OK**.
 
     ![](../Images/ms102-p9t1p2.png)
 
-9. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**. 
+10. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**.
 
-   ![](../Images/ms102-p9t1p3.png)
+    ![](../Images/ms102-p9t1p3.png)
 
-10. On the **Ready to configure** page, select **Configure**. It may take a minute or so for the configuration to complete.
+11. On the **Ready to configure** page, select **Configure**. It may take a minute or so for the configuration to complete.
 
     ![](../Images/32.png)
 
-11. On the **Configuration complete** page, note the message indicating the current sign on method for Microsoft Entra is PTA. Select **Exit**. Pass-Through Authentication has now been enabled. 
+12. On the **Configuration complete** page, note the message indicating the current sign on method for Microsoft Entra is PTA. Select **Exit**. Pass-Through Authentication has now been enabled.
 
     ![](../Images/ms102-p9t1p4.png)
 
-12. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://entra.microsoft.com**
+13. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://entra.microsoft.com**
 
-1. This opens the **Microsoft Entra admin center**. Under **Entra ID**, in the navigation pane, select **Entra Connect (1)**. 
+14. This opens the **Microsoft Entra admin center**. Under **Entra ID**, in the navigation pane, select **Entra Connect (1)**.
 
-17. On the **Microsoft Entra Connect | Get started** page, in the left navigation pane, select **Connect Sync (2)**.
+15. On the **Microsoft Entra Connect | Get started** page, in the left navigation pane, select **Connect Sync (2)**.
 
     ![](../Images/ms102-p9t1p5.png)
 
-18. On the **Microsoft Entra Connect | Connect Sync** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**. 
+16. On the **Microsoft Entra Connect | Connect Sync** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**.
 
     ![](../Images/lab4-e1-11-1.png)
 
-19. On the **Passthrough Authentication** page, review the list of servers on which your pass-through authentication agents are installed. This should display **LON-DC1.Adatum.com**.
+17. On the **Passthrough Authentication** page, review the list of servers on which your pass-through authentication agents are installed. This should display **LON-DC1.Adatum.com**.
 
-	![](../Images/londc1.png)
+    ![](../Images/londc1.png)
 
-20. Select the **X** in the upper-right corner of the **Passthrough Authentication** page to close it, and then do the same to close the **Microsoft Entra Connect | Connect Sync** page and the **Adatum Corporation | Overview** page. You should now be back to the **Microsoft Entra admin center**.
+18. Select the **X** in the upper-right corner of the **Passthrough Authentication** page to close it, and then do the same to close the **Microsoft Entra Connect | Connect Sync** page and the **Adatum Corporation | Overview** page. You should now be back to the **Microsoft Entra admin center**.
 
-21. Leave the **Microsoft Entra admin center** open as you will use it in the next task.
-   
+19. Leave the **Microsoft Entra admin center** open as you will use it in the next task.
 
 ### Task 2: Deploy Microsoft Entra Smart Lockout
 
@@ -96,7 +98,7 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
 3. Maximize the **Group Policy Management** window.
 
-4. You want to edit the group policy that includes your organization's account lockout policy. If necessary, in the root console tree in the left-hand pane, expand **Forest:Adatum.com**, then expand **Domains**, and then expand **Adatum.com**.  Under **Adatum.com**, right-click on **Default Domain Policy (1)** and then select **Edit (2)** in the menu.
+4. You want to edit the group policy that includes your organization's account lockout policy. If necessary, in the root console tree in the left-hand pane, expand **Forest:Adatum.com**, then expand **Domains**, and then expand **Adatum.com**. Under **Adatum.com**, right-click on **Default Domain Policy (1)** and then select **Edit (2)** in the menu.
 
    ![](../Images/10.png)
 
@@ -106,89 +108,88 @@ In this task, you will implement Microsoft Entra Smart Lockout to protect user a
 
 7. In the **Account Policies** folder, select **Account Lockout Policy**.
 
-    ![](../Images/9.png)
+   ![](../Images/9.png)
 
-8. As you can see in the right-hand pane, none of the smart lockout parameters have been defined. You are going to use the **Microsoft Entra admin center** to assign corresponding values in the Entra ID context.  
+8. As you can see in the right-hand pane, none of the smart lockout parameters have been defined. You are going to use the **Microsoft Entra admin center** to assign corresponding values in the Entra ID context.
 
-9. Select the Edge browser icon on the taskbar, which should be displaying the **Microsoft Entra admin center**. 
+9. Select the Edge browser icon on the taskbar, which should be displaying the **Microsoft Entra admin center**.
 
-9. In the **Microsoft Entra admin center**, under **Entra ID** in the navigation pane, select **Authentication methods** 
+10. In the **Microsoft Entra admin center**, under **Entra ID** in the navigation pane, select **Authentication methods**.
 
-12. In the **Authentication methods | Policies** page, in the middle pane under the **Manage** section, select **Password protection.**
+    ![](../Images/p8t1p2-july26.png)
+
+11. In the **Authentication methods | Policies** page, in the middle pane under the **Manage** section, select **Password protection.**
 
     ![](../Images/7.png)
 
-13. In the **Authentication methods | Password protection** window, in the detail pane on the right, enter the following information:
+12. In the **Authentication methods | Password protection** window, in the detail pane on the right, enter the following information:
+    - In the **Custom smart lockout** section:
+      - **Lockout threshold:** this field indicates how many failed sign-ins are allowed on an account before its first lockout. The default is 10. For testing purposes, Adatum has requested that you set this to **3 (1)**.
 
-	- In the **Custom smart lockout** section:
+      - **Lockout duration in seconds:** This is the length in seconds of each lockout. The default is 60 seconds (one minute). Adatum has requested that you change this to **90 (2)** seconds.
 
-		- **Lockout threshold:** this field indicates how many failed sign-ins are allowed on an account before its first lockout. The default is 10. For testing purposes, Adatum has requested that you set this to **3 (1)**.
+    - In the **Custom banned passwords** section:
+      - **Enforce custom list**: select **Yes (3)**
 
-		- **Lockout duration in seconds:** This is the length in seconds of each lockout. The default is 60 seconds (one minute). Adatum has requested that you change this to **90 (2)** seconds.
+      - **Custom banned password list (4):** Enter the following values (press Enter after entering each value so that each value is on a separate line):
+        - **Password01**
 
-	- In the **Custom banned passwords** section:
+        - **F00tball01**
 
-		- **Enforce custom list**: select **Yes (3)**
+        - **Se@Hawks1**
 
-		- **Custom banned password list (4):** Enter the following values (press Enter after entering each value so that each value is on a separate line):
+        - **Never4get!!**
 
-			- **Password01**
+    - In the **Mode** section, select **Enforced (5)**
 
-			- **F00tball01**
-
-			- **Se@Hawks1**
-
-			- **Never4get!!**
-
-	- In the **Mode** section, select **Enforced (5)**
-
-14. Select **Save (6)** on the menu bar at the top of the page.
+13. Select **Save (6)** on the menu bar at the top of the page.
 
     ![](../Images/6.png)
 
-15. You should now test the banned password functionality. Select Holly Dickson's user icon in the upper right corner of the screen, click on **View account**.
+14. You should now test the banned password functionality. Select Holly Dickson's user icon in the upper right corner of the screen, click on **View account**.
 
     ![](../Images/5.png)
 
-1. In the **My account** window that appears, in the **Password** tile, select **CHANGE PASSWORD**.
+15. In the **My account** window that appears, click on the **hamburger icon ☰ (1)**, expand **My Account (2)** section and select **CHANGE PASSWORD**.
 
-    ![](../Images/lab4-e1-11-2.png)
+    ![](../Images/p8t1p3-july26.png)
 
-16. A new tab will open displaying the **Change your password** window. Enter **Never4get!!** in the **New password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
+16. If prompted to sign in. Navigate to the **Environment** tab in the lab guide and scroll down to the **Environment Information** section. There you'll find the current password for the user account required to sign in.
 
-	![](../Images/invalidpassword.png)
+17. A new tab will open displaying the **Change your password** window. Enter **Never4get!!** in the **New password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
 
-17. In your browser, close the **Change  your password** tab. 
+    ![](../Images/invalidpassword.png)
 
-18. You should now test the lockout threshold functionality. In the **Authentication methods - Azure Active Directory admin center** tab, select Holly Dickson's user icon **(1)** in the upper right corner of the screen, and in the menu that appears select **Sign out (2)**.
-    
+18. In your browser, close the **Change your password** tab.
+
+19. You should now test the lockout threshold functionality. In the **Authentication methods - Microsoft Entra admin center** tab, select Holly Dickson's user icon **(1)** in the upper right corner of the screen, and in the menu that appears select **Sign out (2)**.
+
     ![](../Images/ms102-p9t1p6.png)
 
-19. Once you are signed out as Holly, the **Pick an account** window will appear in the **Sign in to Microsoft Azure** tab. As a best practice when signing out from a Microsoft online service as one user and signing back in as another, close all your browser tabs except for the **Sign out** or **Sign in** tab. In this case, close the other tabs now and leave the **Sign in** tab open. In the **Pick an account** window, select **Use another account**. 
+20. Once you are signed out as Holly, the **Pick an account** window will appear in the **Sign in to Microsoft Azure** tab. As a best practice when signing out from a Microsoft online service as one user and signing back in as another, close all your browser tabs except for the **Sign out** or **Sign in** tab. In this case, close the other tabs now and leave the **Sign in** tab open. In the **Pick an account** window, select **Use another account**.
 
-1. When **Which account do you want to sign out of?** window appears, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
+21. When **Which account do you want to sign out of?** window appears, select **Holly@otuwamocZZZZZZ.onmicrosoft.com**.
 
     ![](../Images/ms102-p9t1p7.png)
 
-20. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) (1)** username, and then select **(2)**. 
+22. In the **Sign in** window, enter **Laura@otuwamocZZZZZZ.onmicrosoft.com (where ZZZZZZ is the tenant prefix provided by your lab hosting provider) (1)** username, and then select **(2)**.
 
-	>**Note:** For example, in **odl_user_<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+    > **Note:** For example, in **odl*user*<inject key="DeploymentID" enableCopy="false"/>@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion (**otuwamocZZZZZZ.onmicrosoft.com**) represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-	![](../Images/2.png)
+    ![](../Images/2.png)
 
-21. On the **Enter password** window, enter any random mix of letters and then select **Sign in**. Note the invalid password error message that appears. Repeat this step 2 more times. Since you set the **Lockout threshold** to **3**, your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
-    
+23. On the **Enter password** window, enter any random mix of letters and then select **Sign in**. Note the invalid password error message that appears. Repeat this step 2 more times. Since you set the **Lockout threshold** to **3**, your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
+
     ![](../Images/1.png)
 
-	>**Note:** If you do not receive this lockout message after the third attempt, then the system has not yet finished propagating this lockout threshold change throughout the service. It may take several minutes for the change to take effect. Wait a few minutes and then sign-in again with a bogus password. Testing of this lab has seen varying results. The change sometimes propagates almost immediately so that you get locked out after the third sign-in attempt. Other times it has taken anywhere from 5 to 10 minutes before the lockout message is displayed. Continue this process until you receive the lockout message, at which point Laura's account will be temporarily locked to prevent unauthorized access.
+    > **Note:** If you do not receive this lockout message after the third attempt, then the system has not yet finished propagating this lockout threshold change throughout the service. It may take several minutes for the change to take effect. Wait a few minutes and then sign-in again with a bogus password. Testing of this lab has seen varying results. The change sometimes propagates almost immediately so that you get locked out after the third sign-in attempt. Other times it has taken anywhere from 5 to 10 minutes before the lockout message is displayed. Continue this process until you receive the lockout message, at which point Laura's account will be temporarily locked to prevent unauthorized access.
 
-22. You will be prohibited from logging in again as Laura until after the **90 second lockout duration** that you set earlier. Once you've been locked out, wait 90 seconds and then sign back in as **Laura**'s account. 
+24. You will be prohibited from logging in again as Laura until after the **90 second lockout duration** that you set earlier. Once you've been locked out, wait 90 seconds and then sign back in as **Laura**'s account.
 
-23. Because MFA is enabled for all users except for the M365 pilot project group members (of which, Laura is not a member), a **Let's keep your account secure** window appears so that you can complete the MFA process for Laura. This is verification that your sign-in attempt using Laura's actual password was successful.  <br>
+25. Because MFA is enabled for all users except for the M365 pilot project group members (of which, Laura is not a member), a **Let's keep your account secure** window appears so that you can complete the MFA process for Laura. This is verification that your sign-in attempt using Laura's actual password was successful. <br>
 
-    >**Note:** You do NOT need to complete the MFA process for Laura, since this is your last lab exercise using the LON-DC1 domain controller. You can close all applications on LON-DC1.
- 
-   
+    > **Note:** You do NOT need to complete the MFA process for Laura, since this is your last lab exercise using the LON-DC1 domain controller. You can close all applications on LON-DC1.
+
 ## Review
 
 In this lab, you have:
@@ -198,4 +199,4 @@ In this lab, you have:
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
- ![](../Images/ms-102-g-next.png)
+![](../Images/ms-102-g-next.png)
