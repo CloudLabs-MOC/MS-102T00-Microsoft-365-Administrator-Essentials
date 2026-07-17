@@ -8,10 +8,9 @@
 
 Having created a Safe Attachments policy, Holly Dickson now wants to create a Safe Links policy and then validate the policy to ensure that it works properly.
 
->**IMPORTANT:** This lab exercise consists of two tasks. The first task creates a Safe Links policy, and then the second task validates the policy. The problem with this lab is that when you create a safe links policy, it takes at least 30 minutes for the new policy to propagate through the system. **This means that after performing Task 1, you must wait at least 30 minutes before performing Task 2. If you perform Task 2 immediately after performing Task 1, then Task 2 will fail.** After completing Task 1, you should continue with the training class. Your instructor will provide guidance on when you can perform Task 2 depending on the next break that occurs in the class schedule.
+> **IMPORTANT:** This lab exercise consists of two tasks. The first task creates a Safe Links policy, and then the second task validates the policy. The problem with this lab is that when you create a safe links policy, it takes at least 30 minutes for the new policy to propagate through the system. **This means that after performing Task 1, you must wait at least 30 minutes before performing Task 2. If you perform Task 2 immediately after performing Task 1, then Task 2 will fail.** After completing Task 1, you should continue with the training class. Your instructor will provide guidance on when you can perform Task 2 depending on the next break that occurs in the class schedule.
 
-
-### Task 1 – Create a Safe Links Policy  
+### Task 1 – Create a Safe Links Policy
 
 In this task, you will create a Safe Links policy that applies to all users in your tenant. You will then add the http://tailspintoys.com URL to the company-wide list of blocked URLs (i.e. the Tenant Block List) that you will define in the Microsoft Defender portal. The blocked URLs and other options defined in the Safe Links global settings are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you must create at least one Safe Links policy for these global settings to be active.
 
@@ -21,62 +20,64 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 3. In the **Microsoft 365 Defender** portal, you should still be on the **Safe attachments** page after completing the previous task. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe attachments**), select **Threat policies**.
 
-    >**NOTE:** If you had closed the **Safe Attachments** tab after the prior task, then navigate to the **Threat policies** page by selecting **Policies & rules** in the left-hand navigation pane, and then selecting **Threat policies**.
+   ![](../Images/p13t1p1-july26.png)
+
+   > **NOTE:** If you had closed the **Safe Attachments** tab after the prior task, then navigate to the **Threat policies** page by selecting **Policies & rules** in the left-hand navigation pane, and then selecting **Threat policies**.
 
 4. In the **Threat policies** window, under the **Policies** section, select **Safe Links**.
 
-    ![](../Images/ms102-p14t1p1.png)
+   ![](../Images/ms102-p14t1p1.png)
 
 5. On the **Safe links** page, select **+ Create** on the menu bar. This initiates the **Create safe links policy** wizard.
 
 6. On the **Name your policy (1)** page, enter **LinkPolicy1** in the **Name** field and then select **Next (2)**.
 
-    ![](../Images/ms102-p14t1p2.png)
+   ![](../Images/ms102-p14t1p2.png)
 
 7. On the **Users and domains** page, enter **on** in the **Domains** field. In the menu of suggested domains that appears, select Adatum's **otuwamocZZZZZZ.onmicrosoft.com (1)** domain. Adatum's domain will now appear below the **Domains** field. Select **Next (2)**.
 
-    ![](../Images/ms102-p14t1p3.png)
+   ![](../Images/ms102-p14t1p3.png)
 
-    >**Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
+   > **Note:** For example, in **odl_user_@otuwamocZZZZZZ.onmicrosoft.com**, the highlighted portion **(otuwamocZZZZZZ.onmicrosoft.com)** represents the domain name or tenant prefix, which you can replace with your desired tenant prefix.
 
-8. On the **URL & click protection settings** page, update the following settings and then select **Next (3)**: 
+8. On the **URL & click protection settings** page, update the following settings and then select **Next (3)**:
+   - Under the **Email (1)** section, verify that all check boxes are selected (if any are not selected by default, then select them now):
+   - Under the **Click protection settings** section:
+     - **Track user clicks (2)** - Adatum does not want to track user clicks, so clear this check box if it's selected by default
 
-    - Under the **Email (1)** section, verify that all check boxes are selected (if any are not selected by default, then select them now):
-    - Under the **Click protection settings** section:
-        - **Track user clicks (2)** - Adatum does not want to track user clicks, so clear this check box if it's selected by default
+       ![](../Images/ms102-p14t1p4.png)
 
-            ![](../Images/ms102-p14t1p4.png)
-   
 9. On the **Notification** page, verify the **Use the default notification text** option is selected (if necessary, select it now) and then select **Next**.
 
-10. On the **Review** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the necessary corrections. Once they all appear correct, select **Submit**. 
+   ![](../Images/p13t1p2-july26.png)
 
-11. On the **New Safe Links policy created** page, select **Done**. 
+10. On the **Review** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the necessary corrections. Once they all appear correct, select **Submit**.
+
+11. On the **New Safe Links policy created** page, select **Done**.
 
     ![](../Images/ms102-p14t1p5.png)
 
-1. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list.
+12. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list.
 
-12. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe links**), select **Threat policies**.
+13. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe links**), select **Threat policies**.
 
-13. In the **Threat policies** page, under the **Rules** section, select **Tenant Allow/Block Lists**.
+14. In the **Threat policies** page, under the **Rules** section, select **Tenant Allow/Block Lists**.
 
     ![](../Images/ms102-p14t1p6.png)
 
-14. On the **Tenant Allow/Block Lists** page, the **Domains & addresses** tab is displayed by default. Select the **URLs (1)** tab.
+15. On the **Tenant Allow/Block Lists** page, the **Domains & addresses** tab is displayed by default. Select the **URLs (1)** tab.
 
-15. On the **URLs** tab, select **+ Add (2)** drop-down and select **Block (3)** on the menu bar. In the **Block URLs** pane that appears, enter **http://tailspintoys.com/** in the **Add URLs with wildcards (20 max) (4)** field and then select **Add (5)**.
+16. On the **URLs** tab, select **+ Add (2)** drop-down and select **Block (3)** on the menu bar. In the **Block URLs** pane that appears, enter `http://tailspintoys.com/*` in the **Add URLs with wildcards (20 max) (4)** field and then select **Add (5)**.
 
     ![](../Images/ms102-p14t1p7.png)
 
-    ![](../Images/ms102-p14t1p8.png)
+    ![](../Images/p13t1p4-july26.png)
 
-    > **Note:** When you enter the URL, make sure you enter the wildcard at the end of it. The * wildcard represents "any characters" and is used to match multiple URLs. When you enter **https://tailspintoys.com/*** , you're telling Microsoft 365 to block all URLs that start with https://tailspintoys.com/, including any subdirectories, paths, or additional characters after the domain. This ensures a broader and more effective block, covering any page or resource under the tailspintoys.com domain. If you enter https://tailspintoys.com without the wildcard (*), Microsoft 365 might interpret it as an exact match to that specific domain. As such, it may fail to block it because URLs on the web typically have paths, query strings, or other parts after the domain name. For example, https://tailspintoys.com/contact or https://tailspintoys.com/shop would not be blocked if you only specify https://tailspintoys.com without a wildcard.
- 
+    > **Note:** When you enter the URL, make sure you enter the wildcard at the end of it. The \* wildcard represents "any characters" and is used to match multiple URLs. When you enter **https://tailspintoys.com/*** , you're telling Microsoft 365 to block all URLs that start with https://tailspintoys.com/, including any subdirectories, paths, or additional characters after the domain. This ensures a broader and more effective block, covering any page or resource under the tailspintoys.com domain. If you enter https://tailspintoys.com without the wildcard (\*), Microsoft 365 might interpret it as an exact match to that specific domain. As such, it may fail to block it because URLs on the web typically have paths, query strings, or other parts after the domain name. For example, https://tailspintoys.com/contact or https://tailspintoys.com/shop would not be blocked if you only specify https://tailspintoys.com without a wildcard.
 
-    >**STOP!!** As mentioned at the start of this lab exercise, now that you have created a Safe Links policy, you must wait at least 30 minutes for the policy to propagate through the system before you can perform the next task in this exercise. 
+    > **STOP!!** As mentioned at the start of this lab exercise, now that you have created a Safe Links policy, you must wait at least 30 minutes for the policy to propagate through the system before you can perform the next task in this exercise.
 
-    >**Do NOT proceed to the next task!** You can continue with the training course and perform the next task when your instructor feels it's appropriate given the class' training schedule. 
+    > **Do NOT proceed to the next task!** You can continue with the training course and perform the next task when your instructor feels it's appropriate given the class' training schedule.
 
 ### Task 2 – Validate the Safe Links policy
 
@@ -89,94 +90,92 @@ You will then go back into Holly's Outlook mailbox and open the email in her Sen
 
 1. On LON-CL1, in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-1. In your **Microsoft Edge** browser, select the **Microsoft 365 Copilot** tab, in the left-hand navigation pane, select **Apps (1)** and then select the **Outlook (2)** app. 
+1. In your **Microsoft Edge** browser, select the **Microsoft 365 Copilot** tab, in the left-hand navigation pane, select **Apps (1)** and then select the **Outlook (2)** app.
 
-    ![](../Images/ms102-p14t2p1.png)
+   ![](../Images/p10t1p9-july26.png)
 
 1. **Outlook** will open in a new tab in your browser, and Holly's **Inbox** will be displayed.
 
 1. Select the **New mail** button in the upper left part of the screen.
 
+   ![](../Images/p13t1p3-july26.png)
+
 1. In the email form that appears, enter the following information:
+   - To: You will be sending an email to the ODL user, so enter **<inject key="AzureAdUserEmail"></inject>** in the **To** field and then select the **<inject key="AzureAdUserEmail"></inject> (1)** email address from the user list.
 
-    - To: You will be sending an email to the ODL user, so enter **<inject key="AzureAdUserEmail"></inject>** in the **To** field and then select the **<inject key="AzureAdUserEmail"></inject> (1)** email address from the user list.
+   - Add a subject: **Test email with an unblocked URL (2)**
 
-    - Add a subject: **Test email with an unblocked URL (2)**
+   - Body of the message: **This message is linked to an unblocked URL. (3)**
 
-    - Body of the message: **This message is linked to an unblocked URL. (3)**
+     ![](../Images/ms102-p14t2p2.png)
 
-        ![](../Images/ms102-p14t2p2.png)
-  
 1. Select the entire text string **(1)** that you just added in the body of the message. From the top menu bar select **Link (1)** drop-down and select the **Insert hyperlink (3)**.
 
-    ![](../Images/ms102-p14t2p3.png)
+   ![](../Images/ms102-p14t2p3.png)
 
 1. In the **Insert link** window that appears, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL) (1)** field, enter the following URL: **http://adatum.com/aboutus**
 
 1. Select **OK (2)**. In the body of the email, the message should now be hyperlinked.
 
-    ![](../Images/ms102-p14t2p4.png)
+   ![](../Images/ms102-p14t2p4.png)
 
 1. Select the **Send** button. Select Holly's **Sent Items (1)** folder to verify the message was sent **(2)**.
 
-    ![](../Images/ms102-p14t2p5.png)
+   ![](../Images/ms102-p14t2p5.png)
 
 1. Select the **New mail** button in the upper left part of the screen
-   
 1. In the email form that appears in the right-hand pane, enter the following information:
+   - To: You will be sending an email to the ODL user, so enter **<inject key="AzureAdUserEmail"></inject>** in the **To** field and then select the **<inject key="AzureAdUserEmail"></inject>** email address from the user list.
 
-    - To: You will be sending an email to the ODL user, so enter **<inject key="AzureAdUserEmail"></inject>** in the **To** field and then select the **<inject key="AzureAdUserEmail"></inject>** email address from the user list.
+   - Add a subject: **Free stuff for Adatum users**
 
-    - Add a subject: **Free stuff for Adatum users**
-
-    - Body of the message: **Please click on me for free toys from Tailspin Toys.**
+   - Body of the message: **Please click on me for free toys from Tailspin Toys.**
 
 1. Select the entire text string that you just added in the body of the message. From the top menu bar select **Link** drop-down and select the **Insert hyperlink**.
 
-1. A row of formatting icons should appear. Select the **Insert a hyperink** icon, which depicts two half-ovals with a line in between. 
+1. A row of formatting icons should appear. Select the **Insert a hyperink** icon, which depicts two half-ovals with a line in between.
 
-1. In the **Insert link** window that appears, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**
+1. In the **Insert link** window that appears, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL) (1)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**
 
-1. Select **OK**. In the body of the email, the message should now be hyperlinked. 
+1. Select **OK (2)**. In the body of the email, the message should now be hyperlinked.
+
+   ![](../Images/p13t1p5-july26.png)
 
 1. Select the **Send** button. Select Holly's **Sent Items** folder to verify the message was sent.
 
-1. You now want to go the ODL user's Inbox in Outlook and validate whether the Safe Links policy you created in the prior task worked on the email that you just sent from Holly to the ODL user. To do this, you must first switch to the **LON-CL2**. 
+1. You now want to go the ODL user's Inbox in Outlook and validate whether the Safe Links policy you created in the prior task worked on the email that you just sent from Holly to the ODL user. To do this, you must first switch to the **LON-CL2**.
 
 1. At the end of Lab 2, you should have logged into LON-CL2 as the local **Administrator** account (lon-cl2\admin).
-    
-    >**Note:** if you are logged in as Laura Atkins, then navigate back to the hyper-v manager, right click on **LON-CL2** VM and select **Turn-off**, right click again select **start**, then connect to the VM by right clicking on the **LON-CL2**, and select **connect**. Select **Other user**, and then log in as the local **(lon-cl2\admin)** with a password of **Pa55w.rd**.
+
+   > **Note:** if you are logged in as Laura Atkins, then navigate back to the hyper-v manager, right click on **LON-CL2** VM and select **Turn-off**, right click again select **start**, then connect to the VM by right clicking on the **LON-CL2**, and select **connect**. Select **Other user**, and then log in as the local **(lon-cl2\admin)** with a password of **Pa55w.rd**.
 
 1. On **LON-CL2**, select the **Microsoft Edge** icon in the taskbar, maximize the window and then enter the following URL in the address bar: **https://outlook.office365.com**
 
 1. In the **Pick an account** window, select **Use another account**, and then in the **Sign in** window, enter the username and password for the ODL user account,
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 1. In the ODL User's Inbox, perform the following checks:
+   - Verify that you received the first email that Holly sent that contained the Subject line **"Test email with an unblocked URL"**. This email showed that the email system is working, and that an email with an unblocked URL could successfully be sent and not be blocked by Safe Links since it isn't malicious.
 
-    -  Verify that you received the first email that Holly sent that contained the Subject line **"Test email with an unblocked URL"**. This email showed that the email system is working, and that an email with an unblocked URL could successfully be sent and not be blocked by Safe Links since it isn't malicious.
+   - Next, verify that Holly's email with the Subject line **"Free stuff for Adatum users"** never arrived in the ODL User's Inbox. Since you already verified from Holly's Sent Items folder that the email was sent, the fact that it never arrived verifies that the email was blocked due to the blocked URL.
 
-    - Next, verify that Holly's email with the Subject line **"Free stuff for Adatum users"** never arrived in the ODL User's Inbox. Since you already verified from Holly's Sent Items folder that the email was sent, the fact that it never arrived verifies that the email was blocked due to the blocked URL.
-
-        ![](../Images/ms102-p14t2p6.png)
+     ![](../Images/ms102-p14t2p6.png)
 
 1. You now want to go back to Holly's Outlook mailbox, open the email with the subject line **"Free stuff for Adatum users"** that's in Holly's Sent Items folder, and verify the Safe Links policy that you created is working.
-
-    - To do this, you must first switch back to the **LON-CL1**.
+   - To do this, you must first switch back to the **LON-CL1**.
 
 1. On LON-CL1, you should still be in the **Sent Items** folder in Holly's Outlook mailbox. Select the email with the subject line "**Free stuff for Adatum users**" to open the email message, and then select the hyperlinked message in the body of the email.
 
 1. A new tab should open in your **Edge** browser that attempts to take you to the **http://tailspintoys.com/aboutus/freetoys** site. The web page that appears should display the following warning message: **This website is classified as malicious**.
 
-    >**Note:** In the Safe Links policy that you created, you selected the option to have Safe Links check a list of known, malicious links whenever a user selects a link in an email. So when you selected this link in the email message to the http://tailspintoys.com URL that was on the blocked list, Safe Links returned the malicious website warning page. You just verified that the Safe Links policy that you created is working.
+   > **Note:** In the Safe Links policy that you created, you selected the option to have Safe Links check a list of known, malicious links whenever a user selects a link in an email. So when you selected this link in the email message to the http://tailspintoys.com URL that was on the blocked list, Safe Links returned the malicious website warning page. You just verified that the Safe Links policy that you created is working.
 
-    ![](../Images/ms-102-100.png)
+   ![](../Images/ms-102-100.png)
 
-    >**Note:** It may take up to 24 hours for the policy to fully activate. If you do not see the warning message indicating that the website is classified as malicious, please wait 24 hours and try again.
-  
+   > **Note:** It may take up to 24 hours for the policy to fully activate. If you do not see the warning message indicating that the website is classified as malicious, please wait 24 hours and try again.
+
 1. You should now prepare LON-CL2 for the next lab that will use it. In your Edge browser, in the Outlook tab, select the circle with the **O1** initials in the upper right-hand corner. In the **ODL user** profile window that appears, select **Sign out**.
 
 1. Once you are signed out of Outlook, close the Edge Browser. LON-CL2 is now ready for use in Lab 6.
@@ -190,4 +189,4 @@ In this lab, you have:
 
 ## The lab has been completed successfully. Click **Next >>** to proceed to the next exercise.
 
- ![](../Images/ms-102-g-next.png)
+![](../Images/ms-102-g-next.png)
