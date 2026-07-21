@@ -50,6 +50,12 @@ In this task, you will use the IdFix tool to scan your on-premises Active Direct
 
    ![](../Images/p6t1p1-july26.png)
 
+   > **Note:** If you are unable to paste the copied URL directly into the **LON-DC1** virtual machine, use the following workaround. From the **LON-CL1** home screen, open the **LON-DC1** virtual machine. In the **Virtual Machine Connection** window, select **Clipboard** > **Type Clipboard Text** (**Ctrl+V**) to paste the copied URL or any other copied text into the **LON-DC1** virtual machine. This method ensures the clipboard contents are transferred correctly.
+   >
+   > ![](<../Images/p6t1p1(1)-july26.png>)
+   >
+   > ![](<../Images/p6t1p1(2)-july26.png>)
+
 3. After **Microsoft - IdFix** is downloaded, click on **Open file**.
 
    ![](../Images/p6t1p2-july26.png)
