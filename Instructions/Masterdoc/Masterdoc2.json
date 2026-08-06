@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/MicrosoftLearning/MS-102T00-Microsoft-365-Administrator-Essentials",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-2026/Instructions/Labs/Gettingstarted.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/prod-2026/Instructions/Labs/combined_gettingstarted_page.md",
         "Order": 1
       },
       {
@@ -103,5 +103,3 @@
     ]
   }
 ]
-
-
