@@ -54,6 +54,8 @@ The lab architecture demonstrates how Microsoft 365 services work together to ma
 
 6. **Microsoft Purview Compliance Portal:** Provides compliance and information protection capabilities, including retention policies, message encryption, DLP policies, and sensitivity labels.
 
+    ![](../Images/MS-102-archdiagram.png)
+    
 ## Explanation of Components
 
 1. **Microsoft 365 Tenant:** The organizational container for Microsoft 365 services, initialized and configured at the start of the labs to host users, groups, and administrative settings.
