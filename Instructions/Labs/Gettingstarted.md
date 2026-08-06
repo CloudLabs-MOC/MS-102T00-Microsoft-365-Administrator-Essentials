@@ -160,3 +160,6 @@ Learner Support Contacts:
     ![](../Images/ms-102-g-next.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+
+
+## Happy Learning!!
