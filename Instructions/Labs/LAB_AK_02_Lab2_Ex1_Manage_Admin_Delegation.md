@@ -208,19 +208,19 @@ In this task, you will begin by examining the administrative properties of two u
 
    ![](../Images/ms102-p4t2p1.png)
 
-1. On the **LON-CL1** dropdown menu **(1)**, select **LON-CL2** **(2)** to connect.
+1. On the **LON-CL1** virtual machine, double-click **LON-CL2** to open the virtual machine.
 
-   ![](../Images/lab1-e1-11-7.png)
-
-1. From the top-menu drop-down, and on the **Connect to LON-CL2** pop-up select **Connect**.
+   ![](../Images/ms102-08-l2n.png)
 
    > **Note:** if required maximize the **LON-CL2** VM.
 
 1. In **LON-CL2**, on the log-in screen, you will log in as the local **Admin** account with a password of **Pa55w.rd**.
 
+   ![](../Images/ms102-08-l2.png)
+
    > **Note:** If a **Networks** window appears, select **Yes**.
 
-1. On the taskbar, select the **Microsoft Edge** icon. Maximize your Edge browser window if necessary.
+1. On the taskbar or desktop, select the **Microsoft Edge** icon. Maximize your Edge browser window if necessary.
 
    > **Note:** if any tabs opened close all the tabs.
 

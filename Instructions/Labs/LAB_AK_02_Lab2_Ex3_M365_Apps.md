@@ -62,6 +62,8 @@ In this task, you will review how user licensing impacts the ability to install 
 
    > **Note:** if required maximize the **LON-CL2** VM.
 
+   > **Note:** You can also access the **LON-CL2** virtual machine directly from the desktop of the **LON-CL1** host virtual machine.
+
 1. In **LON-CL2**, on the log-in screen, you will log in as the local **Admin** account with a password of **Pa55w.rd**.
 
    > **Note:** If a **Networks** window appears, select **Yes**.
@@ -74,11 +76,11 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. Click on **Add(1)** and in **Enter the object names to select**, type **Laura (2)** and click on **Ok (3)**.
 
-   ![](../Images/ms102-p6t1p6.png)
-
-   > **Note:** If you receive an error indicating that **Laura** cannot be found, or if the **From this location** field shows **LON-CL2** instead of **Adatum.com**, open **Hyper-V Manager** and verify that **LON-DC1** is running. If it is stopped, start **LON-DC1**, wait for it to finish booting, and then repeat this step.
+   > **Note:** `If you receive an error indicating that Laura cannot be found, or if the From this location field shows LON-CL2 instead of Adatum.com, open Hyper-V Manager and verify that LON-DC1 is running. If it is stopped, start LON-DC1, wait for it to finish booting, and then repeat this step.`
 
    ![](../Images/note-1.png)
+
+   ![](../Images/ms102-p6t1p6.png)
 
 1. On the **Name Not Found** window, click on **OK**.
 
@@ -129,6 +131,8 @@ In this task, you will review how user licensing impacts the ability to install 
    > **Note**: if it asks you to change the password, then change the password for the laura's account.
 
 1. In the **Stay signed in?** window, select **Yes**.
+
+   > **Note:** If the **Let's keep your account secure** screen appears instead, follow the prompts to set up **Microsoft Authenticator** and complete the MFA setup. For detailed steps, refer to **Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible** section on **Page 1**.
 
 1. In the **All your work in one place, now easier with AI.** dialog box that appears in the middle of the screen, close it by clicking on **X**.
 

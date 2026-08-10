@@ -46,7 +46,7 @@ In this task, you will use the IdFix tool to scan your on-premises Active Direct
 
 1. You should still be logged into **LON-DC1** as the **Administrator** from the prior task.
 
-2. On **LON-DC1**, select the **Microsoft Edge** icon on the taskbar. In your **Microsoft Edge** browser, enter the following URL in the address bar to access the Microsoft -IdFix Overview page: `https://github.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/raw/refs/heads/prod-new/IdFix-Tool/IdFix.Setup.2.6.0.3.msi`
+2. On **LON-DC1**, select the **Microsoft Edge** icon on the desktop. In your **Microsoft Edge** browser, enter the following URL in the address bar to access the Microsoft -IdFix Overview page: `https://github.com/CloudLabs-MOC/MS-102T00-Microsoft-365-Administrator-Essentials/raw/refs/heads/prod-new/IdFix-Tool/IdFix.Setup.2.6.0.3.msi`
 
    ![](../Images/p6t1p1-july26.png)
 
